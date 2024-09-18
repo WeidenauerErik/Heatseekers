@@ -17,7 +17,7 @@
    git clone https://github.com/WeidenauerErik/heatseekers.git
 
 ## Authors
-- **Felix Friesnbichler & Jan Willimek**: responsible for the transfer of microcontroller and server (Raspberrypi) 
+- **Felix Friesnbichler & Jan Willimek**: responsible for the transfer from the microcontroller and to the server (Raspberrypi) 
 - **Erik Weidenauer**: responsible for the backend and basic functions
 - **Julian Fichtinger**: responsible for the design
 
