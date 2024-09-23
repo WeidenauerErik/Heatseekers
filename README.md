@@ -22,5 +22,3 @@
 - **Felix Friesnbichler & Jan Willimek**: responsible for the transfer from the microcontroller and to the server (Raspberrypi)
 - **Erik Weidenauer**: responsible for the backend and basic functions
 - **Julian Fichtinger**: responsible for the design
-
-Translated with DeepL.com (free version)
