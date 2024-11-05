@@ -1,4 +1,4 @@
-from flask import Flask, Response, render_template_string, request, redirect, url_for
+from flask import Flask, Response, render_template_string, request
 import logging
 from datetime import datetime
 import functions

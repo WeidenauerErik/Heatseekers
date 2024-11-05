@@ -1,0 +1,16 @@
+2024-10-21 12:58:29,660 - INFO - Server started, log file: ./logs/2024-10-21_12-58-29.log
+2024-10-21 12:58:29,663 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.21.16.72:8000
+2024-10-21 12:58:29,663 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-21 12:58:36,316 - INFO - Login page accessed
+2024-10-21 12:58:36,319 - INFO - 10.21.16.72 - - [21/Oct/2024 12:58:36] "GET / HTTP/1.1" 200 -
+2024-10-21 12:58:39,933 - INFO - [{'name': 'Max', 'age': 30}, {'name': 'Anna', 'age': 25}, {'name': 'Tom', 'age': 35}]
+2024-10-21 12:58:39,934 - INFO - View page accessed
+2024-10-21 12:58:39,936 - INFO - 10.21.16.72 - - [21/Oct/2024 12:58:39] "POST /view HTTP/1.1" 200 -
+2024-10-21 12:58:39,979 - INFO - Video feed accessed
+2024-10-21 12:58:39,989 - INFO - 10.21.16.72 - - [21/Oct/2024 12:58:39] "[36mGET /static/x.js HTTP/1.1[0m" 304 -
+2024-10-21 12:58:39,990 - INFO - 10.21.16.72 - - [21/Oct/2024 12:58:39] "[36mGET /static/stylesheet.css HTTP/1.1[0m" 304 -
+2024-10-21 12:58:40,346 - INFO - 10.21.16.72 - - [21/Oct/2024 12:58:40] "GET /video_feed HTTP/1.1" 200 -
+2024-10-21 12:58:40,492 - INFO - 10.21.16.72 - - [21/Oct/2024 12:58:40] "GET /static/icon.png HTTP/1.1" 200 -

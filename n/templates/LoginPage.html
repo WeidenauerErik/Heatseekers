@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <link rel="preload" href="{{ url_for('static', filename='MainPage.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='LoginPage.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='icon.png') }}" type="image/x-icon">
+
+    <title>Heatseekers - Login</title>
+</head>
+<body>
+<div class="stripe"><p>Welcome to HeatSeekers</p></div>
+
+<h1>Login to HeatSeekers!</h1>
+
+<form action="/view" method="Post">
+    <section class="LoginField">
+        <div class="loginItem">
+            <input id="email" name="email" required type="text">
+            <span>Email</span>
+        </div>
+
+        <div class="loginItem">
+            <input id="password" name="password" required type="password">
+            <span>Password</span>
+        </div>
+
+        <button type="submit"
+                class="submitButton">
+            Login
+        </button>
+    </section>
+</form>
+
+</body>
+</html>

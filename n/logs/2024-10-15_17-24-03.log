@@ -1,0 +1,46 @@
+2024-10-15 17:24:03,366 - INFO - Server started, log file: ./logs/2024-10-15_17-24-03.log
+2024-10-15 17:24:03,370 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.21.16.72:8000
+2024-10-15 17:24:03,370 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-15 17:24:06,313 - INFO - Index page accessed
+2024-10-15 17:24:06,317 - INFO - 10.21.16.72 - - [15/Oct/2024 17:24:06] "GET / HTTP/1.1" 200 -
+2024-10-15 17:24:06,367 - INFO - Video feed accessed
+2024-10-15 17:24:06,369 - INFO - 10.21.16.72 - - [15/Oct/2024 17:24:06] "GET /static/stylesheet.css HTTP/1.1" 200 -
+2024-10-15 17:24:06,369 - INFO - 10.21.16.72 - - [15/Oct/2024 17:24:06] "[36mGET /static/selects.css HTTP/1.1[0m" 304 -
+2024-10-15 17:24:06,370 - INFO - 10.21.16.72 - - [15/Oct/2024 17:24:06] "[36mGET /static/x.js HTTP/1.1[0m" 304 -
+2024-10-15 17:24:06,736 - INFO - 10.21.16.72 - - [15/Oct/2024 17:24:06] "GET /video_feed HTTP/1.1" 200 -
+2024-10-15 17:24:06,772 - INFO - 10.21.16.72 - - [15/Oct/2024 17:24:06] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
+2024-10-15 17:26:26,535 - INFO - Index page accessed
+2024-10-15 17:26:26,539 - INFO - 10.21.16.72 - - [15/Oct/2024 17:26:26] "GET / HTTP/1.1" 200 -
+2024-10-15 17:26:26,587 - INFO - Video feed accessed
+2024-10-15 17:26:26,589 - INFO - 10.21.16.72 - - [15/Oct/2024 17:26:26] "[36mGET /static/selects.css HTTP/1.1[0m" 304 -
+2024-10-15 17:26:26,589 - INFO - 10.21.16.72 - - [15/Oct/2024 17:26:26] "GET /static/stylesheet.css HTTP/1.1" 200 -
+2024-10-15 17:26:26,590 - INFO - 10.21.16.72 - - [15/Oct/2024 17:26:26] "[36mGET /static/x.js HTTP/1.1[0m" 304 -
+2024-10-15 17:26:26,823 - INFO - 10.21.16.72 - - [15/Oct/2024 17:26:26] "GET /video_feed HTTP/1.1" 200 -
+2024-10-15 17:26:26,909 - INFO - 10.21.16.72 - - [15/Oct/2024 17:26:26] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
+2024-10-15 17:26:42,588 - INFO - Index page accessed
+2024-10-15 17:26:42,592 - INFO - 10.21.16.72 - - [15/Oct/2024 17:26:42] "GET / HTTP/1.1" 200 -
+2024-10-15 17:26:42,651 - INFO - 10.21.16.72 - - [15/Oct/2024 17:26:42] "GET /static/stylesheet.css HTTP/1.1" 200 -
+2024-10-15 17:26:42,651 - INFO - Video feed accessed
+2024-10-15 17:26:42,653 - INFO - 10.21.16.72 - - [15/Oct/2024 17:26:42] "[36mGET /static/x.js HTTP/1.1[0m" 304 -
+2024-10-15 17:26:42,653 - INFO - 10.21.16.72 - - [15/Oct/2024 17:26:42] "[36mGET /static/selects.css HTTP/1.1[0m" 304 -
+2024-10-15 17:26:42,886 - INFO - 10.21.16.72 - - [15/Oct/2024 17:26:42] "GET /video_feed HTTP/1.1" 200 -
+2024-10-15 17:26:42,958 - INFO - 10.21.16.72 - - [15/Oct/2024 17:26:42] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
+2024-10-15 17:26:46,911 - INFO - Index page accessed
+2024-10-15 17:26:46,916 - INFO - 10.21.16.72 - - [15/Oct/2024 17:26:46] "GET / HTTP/1.1" 200 -
+2024-10-15 17:26:46,948 - INFO - 10.21.16.72 - - [15/Oct/2024 17:26:46] "[36mGET /static/stylesheet.css HTTP/1.1[0m" 304 -
+2024-10-15 17:26:46,983 - INFO - Video feed accessed
+2024-10-15 17:26:46,985 - INFO - 10.21.16.72 - - [15/Oct/2024 17:26:46] "[36mGET /static/selects.css HTTP/1.1[0m" 304 -
+2024-10-15 17:26:46,987 - INFO - 10.21.16.72 - - [15/Oct/2024 17:26:46] "[36mGET /static/x.js HTTP/1.1[0m" 304 -
+2024-10-15 17:26:47,218 - INFO - 10.21.16.72 - - [15/Oct/2024 17:26:47] "GET /video_feed HTTP/1.1" 200 -
+2024-10-15 17:26:47,264 - INFO - 10.21.16.72 - - [15/Oct/2024 17:26:47] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
+2024-10-15 17:29:23,468 - INFO - Index page accessed
+2024-10-15 17:29:23,471 - INFO - 10.21.16.72 - - [15/Oct/2024 17:29:23] "GET / HTTP/1.1" 200 -
+2024-10-15 17:29:23,541 - INFO - Video feed accessed
+2024-10-15 17:29:23,543 - INFO - 10.21.16.72 - - [15/Oct/2024 17:29:23] "[36mGET /static/selects.css HTTP/1.1[0m" 304 -
+2024-10-15 17:29:23,543 - INFO - 10.21.16.72 - - [15/Oct/2024 17:29:23] "[36mGET /static/stylesheet.css HTTP/1.1[0m" 304 -
+2024-10-15 17:29:23,544 - INFO - 10.21.16.72 - - [15/Oct/2024 17:29:23] "[36mGET /static/x.js HTTP/1.1[0m" 304 -
+2024-10-15 17:29:23,776 - INFO - 10.21.16.72 - - [15/Oct/2024 17:29:23] "GET /video_feed HTTP/1.1" 200 -
+2024-10-15 17:29:23,883 - INFO - 10.21.16.72 - - [15/Oct/2024 17:29:23] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -

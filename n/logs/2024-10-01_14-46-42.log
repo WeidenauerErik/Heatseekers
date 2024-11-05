@@ -1,0 +1,13 @@
+2024-10-01 14:46:42,243 - INFO - Server started, log file: ./logs/2024-10-01_14-46-42.log
+2024-10-01 14:46:42,249 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.21.16.72:8000
+2024-10-01 14:46:42,249 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-01 14:46:44,151 - INFO - Index page accessed
+2024-10-01 14:46:44,157 - INFO - 10.21.16.72 - - [01/Oct/2024 14:46:44] "GET / HTTP/1.1" 200 -
+2024-10-01 14:46:44,208 - INFO - 10.21.16.72 - - [01/Oct/2024 14:46:44] "[36mGET /static/stylesheet.css HTTP/1.1[0m" 304 -
+2024-10-01 14:46:44,216 - INFO - Video feed accessed
+2024-10-01 14:46:44,218 - INFO - 10.21.16.72 - - [01/Oct/2024 14:46:44] "[36mGET /static/selects.css HTTP/1.1[0m" 304 -
+2024-10-01 14:46:44,219 - INFO - 10.21.16.72 - - [01/Oct/2024 14:46:44] "[36mGET /static/x.js HTTP/1.1[0m" 304 -
+2024-10-01 14:46:44,571 - INFO - 10.21.16.72 - - [01/Oct/2024 14:46:44] "GET /video_feed HTTP/1.1" 200 -
