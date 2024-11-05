@@ -1,77 +1,20 @@
-2024-10-30 19:15:20,559 - INFO - Server started, log file: ./logs/2024-10-30_19-15-20.log
-2024-10-30 19:15:20,563 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2024-11-05 16:24:04,059 - INFO - Server started, log file: ./logs/2024-11-05_16-24-04.log
+2024-11-05 16:24:04,065 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:8000
- * Running on http://192.168.1.113:8000
-2024-10-30 19:15:20,563 - INFO - [33mPress CTRL+C to quit[0m
-2024-10-30 19:15:22,549 - INFO - Login page accessed
-2024-10-30 19:15:22,557 - INFO - 192.168.1.113 - - [30/Oct/2024 19:15:22] "GET / HTTP/1.1" 200 -
-2024-10-30 19:15:22,601 - INFO - 192.168.1.113 - - [30/Oct/2024 19:15:22] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
-2024-10-30 19:15:25,995 - INFO - View page accessed
-2024-10-30 19:15:25,999 - INFO - 192.168.1.113 - - [30/Oct/2024 19:15:25] "POST /view HTTP/1.1" 200 -
-2024-10-30 19:15:26,050 - INFO - 192.168.1.113 - - [30/Oct/2024 19:15:26] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
-2024-10-30 19:15:26,051 - INFO - Video feed accessed
-2024-10-30 19:15:26,059 - INFO - 192.168.1.113 - - [30/Oct/2024 19:15:26] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
-2024-10-30 19:15:26,458 - INFO - 192.168.1.113 - - [30/Oct/2024 19:15:26] "GET /video_feed HTTP/1.1" 200 -
-2024-10-30 19:15:40,127 - INFO - View page accessed
-2024-10-30 19:15:40,130 - INFO - 192.168.1.113 - - [30/Oct/2024 19:15:40] "POST /view HTTP/1.1" 200 -
-2024-10-30 19:15:40,154 - INFO - 192.168.1.113 - - [30/Oct/2024 19:15:40] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
-2024-10-30 19:15:40,158 - INFO - Video feed accessed
-2024-10-30 19:15:40,160 - INFO - 192.168.1.113 - - [30/Oct/2024 19:15:40] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
-2024-10-30 19:15:40,440 - INFO - 192.168.1.113 - - [30/Oct/2024 19:15:40] "GET /video_feed HTTP/1.1" 200 -
-2024-10-30 19:15:49,068 - INFO - View page accessed
-2024-10-30 19:15:49,070 - INFO - 192.168.1.113 - - [30/Oct/2024 19:15:49] "POST /view HTTP/1.1" 200 -
-2024-10-30 19:15:49,117 - INFO - 192.168.1.113 - - [30/Oct/2024 19:15:49] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
-2024-10-30 19:15:49,123 - INFO - Video feed accessed
-2024-10-30 19:15:49,125 - INFO - 192.168.1.113 - - [30/Oct/2024 19:15:49] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
-2024-10-30 19:15:49,538 - INFO - 192.168.1.113 - - [30/Oct/2024 19:15:49] "GET /video_feed HTTP/1.1" 200 -
-2024-10-30 19:16:35,761 - INFO - View page accessed
-2024-10-30 19:16:35,764 - INFO - 192.168.1.113 - - [30/Oct/2024 19:16:35] "POST /view HTTP/1.1" 200 -
-2024-10-30 19:16:35,800 - INFO - 192.168.1.113 - - [30/Oct/2024 19:16:35] "GET /static/MainPage.css HTTP/1.1" 200 -
-2024-10-30 19:16:35,800 - INFO - Video feed accessed
-2024-10-30 19:16:35,802 - INFO - 192.168.1.113 - - [30/Oct/2024 19:16:35] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
-2024-10-30 19:16:36,205 - INFO - 192.168.1.113 - - [30/Oct/2024 19:16:36] "GET /video_feed HTTP/1.1" 200 -
-2024-10-30 19:16:36,270 - INFO - 192.168.1.113 - - [30/Oct/2024 19:16:36] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
-2024-10-30 19:17:03,143 - INFO - Login page accessed
-2024-10-30 19:17:03,145 - INFO - 192.168.1.113 - - [30/Oct/2024 19:17:03] "GET / HTTP/1.1" 200 -
-2024-10-30 19:17:03,192 - INFO - 192.168.1.113 - - [30/Oct/2024 19:17:03] "GET /static/LoginPage.css HTTP/1.1" 200 -
-2024-10-30 19:17:03,273 - INFO - 192.168.1.113 - - [30/Oct/2024 19:17:03] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
-2024-10-30 19:17:04,205 - INFO - Login page accessed
-2024-10-30 19:17:04,209 - INFO - 192.168.1.113 - - [30/Oct/2024 19:17:04] "GET / HTTP/1.1" 200 -
-2024-10-30 19:17:04,248 - INFO - 192.168.1.113 - - [30/Oct/2024 19:17:04] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
-2024-10-30 19:17:04,337 - INFO - 192.168.1.113 - - [30/Oct/2024 19:17:04] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
-2024-10-30 19:18:00,208 - INFO - Login page accessed
-2024-10-30 19:18:00,211 - INFO - 192.168.1.113 - - [30/Oct/2024 19:18:00] "GET / HTTP/1.1" 200 -
-2024-10-30 19:18:00,248 - INFO - 192.168.1.113 - - [30/Oct/2024 19:18:00] "GET /static/LoginPage.css HTTP/1.1" 200 -
-2024-10-30 19:18:00,374 - INFO - 192.168.1.113 - - [30/Oct/2024 19:18:00] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
-2024-10-30 19:18:06,171 - INFO - View page accessed
-2024-10-30 19:18:06,174 - INFO - 192.168.1.113 - - [30/Oct/2024 19:18:06] "POST /view HTTP/1.1" 200 -
-2024-10-30 19:18:06,217 - INFO - 192.168.1.113 - - [30/Oct/2024 19:18:06] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
-2024-10-30 19:18:06,222 - INFO - Video feed accessed
-2024-10-30 19:18:06,225 - INFO - 192.168.1.113 - - [30/Oct/2024 19:18:06] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
-2024-10-30 19:18:06,627 - INFO - 192.168.1.113 - - [30/Oct/2024 19:18:06] "GET /video_feed HTTP/1.1" 200 -
-2024-10-30 19:19:03,467 - INFO - View page accessed
-2024-10-30 19:19:03,470 - INFO - 192.168.1.113 - - [30/Oct/2024 19:19:03] "POST /view HTTP/1.1" 200 -
-2024-10-30 19:19:03,515 - INFO - 192.168.1.113 - - [30/Oct/2024 19:19:03] "GET /static/MainPage.css HTTP/1.1" 200 -
-2024-10-30 19:19:03,558 - INFO - Video feed accessed
-2024-10-30 19:19:03,560 - INFO - 192.168.1.113 - - [30/Oct/2024 19:19:03] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
-2024-10-30 19:19:03,896 - INFO - 192.168.1.113 - - [30/Oct/2024 19:19:03] "GET /video_feed HTTP/1.1" 200 -
-2024-10-30 19:19:03,971 - INFO - 192.168.1.113 - - [30/Oct/2024 19:19:03] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
-2024-10-30 19:19:20,930 - INFO - View page accessed
-2024-10-30 19:19:20,933 - INFO - 192.168.1.113 - - [30/Oct/2024 19:19:20] "POST /view HTTP/1.1" 200 -
-2024-10-30 19:19:20,981 - INFO - Video feed accessed
-2024-10-30 19:19:20,981 - INFO - 192.168.1.113 - - [30/Oct/2024 19:19:20] "GET /static/MainPage.css HTTP/1.1" 200 -
-2024-10-30 19:19:20,982 - INFO - 192.168.1.113 - - [30/Oct/2024 19:19:20] "GET /video_feed HTTP/1.1" 200 -
-2024-10-30 19:19:20,983 - INFO - 192.168.1.113 - - [30/Oct/2024 19:19:20] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
-2024-10-30 19:19:21,099 - INFO - 192.168.1.113 - - [30/Oct/2024 19:19:21] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
-2024-10-30 19:19:30,197 - INFO - View page accessed
-2024-10-30 19:19:30,200 - INFO - 192.168.1.113 - - [30/Oct/2024 19:19:30] "POST /view HTTP/1.1" 200 -
-2024-10-30 19:19:30,245 - INFO - 192.168.1.113 - - [30/Oct/2024 19:19:30] "GET /static/MainPage.css HTTP/1.1" 200 -
-2024-10-30 19:19:30,250 - INFO - Video feed accessed
-2024-10-30 19:19:30,252 - INFO - 192.168.1.113 - - [30/Oct/2024 19:19:30] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
-2024-10-30 19:19:30,712 - INFO - 192.168.1.113 - - [30/Oct/2024 19:19:30] "GET /video_feed HTTP/1.1" 200 -
-2024-10-30 19:19:30,791 - INFO - 192.168.1.113 - - [30/Oct/2024 19:19:30] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
-2024-10-30 19:21:54,936 - ERROR - Exception on /view [GET]
+ * Running on http://10.0.76.44:8000
+2024-11-05 16:24:04,065 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-05 16:24:07,625 - INFO - Login page accessed
+2024-11-05 16:24:07,629 - INFO - 10.0.76.44 - - [05/Nov/2024 16:24:07] "GET / HTTP/1.1" 200 -
+2024-11-05 16:24:07,687 - INFO - 10.0.76.44 - - [05/Nov/2024 16:24:07] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-11-05 16:24:07,761 - INFO - 10.0.76.44 - - [05/Nov/2024 16:24:07] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
+2024-11-05 16:24:09,905 - INFO - View page accessed
+2024-11-05 16:24:09,907 - INFO - 10.0.76.44 - - [05/Nov/2024 16:24:09] "POST /view HTTP/1.1" 200 -
+2024-11-05 16:24:09,955 - INFO - 10.0.76.44 - - [05/Nov/2024 16:24:09] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-05 16:24:09,961 - INFO - Video feed accessed
+2024-11-05 16:24:09,963 - INFO - 10.0.76.44 - - [05/Nov/2024 16:24:09] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-05 16:24:10,321 - INFO - 10.0.76.44 - - [05/Nov/2024 16:24:10] "GET /video_feed HTTP/1.1" 200 -
+2024-11-05 16:24:10,356 - ERROR - Exception on /favicon.ico [GET]
 Traceback (most recent call last):
   File "/home/weidi/Desktop/4BI/ITPÜ/Heatseekers/PyCharm/.venv/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
     rv = self.dispatch_request()
@@ -84,9 +27,9 @@ Traceback (most recent call last):
   File "/home/weidi/Desktop/4BI/ITPÜ/Heatseekers/PyCharm/.venv/lib/python3.12/site-packages/flask/ctx.py", line 362, in match_request
     result = self.url_adapter.match(return_rule=True)  # type: ignore
              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/weidi/Desktop/4BI/ITPÜ/Heatseekers/PyCharm/.venv/lib/python3.12/site-packages/werkzeug/routing/map.py", line 624, in match
-    raise MethodNotAllowed(valid_methods=list(e.have_match_for)) from None
-werkzeug.exceptions.MethodNotAllowed: 405 Method Not Allowed: The method is not allowed for the requested URL.
+  File "/home/weidi/Desktop/4BI/ITPÜ/Heatseekers/PyCharm/.venv/lib/python3.12/site-packages/werkzeug/routing/map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
 
 During handling of the above exception, another exception occurred:
 
@@ -104,8 +47,8 @@ Traceback (most recent call last):
     return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 TypeError: errorhandler() takes 0 positional arguments but 1 was given
-2024-10-30 19:21:54,938 - INFO - 192.168.1.113 - - [30/Oct/2024 19:21:54] "[35m[1mGET /view HTTP/1.1[0m" 500 -
-2024-10-30 19:21:54,950 - ERROR - Error on request:
+2024-11-05 16:24:10,362 - INFO - 10.0.76.44 - - [05/Nov/2024 16:24:10] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2024-11-05 16:24:10,380 - ERROR - Error on request:
 Traceback (most recent call last):
   File "/home/weidi/Desktop/4BI/ITPÜ/Heatseekers/PyCharm/.venv/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
     rv = self.dispatch_request()
@@ -117,9 +60,9 @@ Traceback (most recent call last):
   File "/home/weidi/Desktop/4BI/ITPÜ/Heatseekers/PyCharm/.venv/lib/python3.12/site-packages/flask/ctx.py", line 362, in match_request
     result = self.url_adapter.match(return_rule=True)  # type: ignore
              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/weidi/Desktop/4BI/ITPÜ/Heatseekers/PyCharm/.venv/lib/python3.12/site-packages/werkzeug/routing/map.py", line 624, in match
-    raise MethodNotAllowed(valid_methods=list(e.have_match_for)) from None
-werkzeug.exceptions.MethodNotAllowed: 405 Method Not Allowed: The method is not allowed for the requested URL.
+  File "/home/weidi/Desktop/4BI/ITPÜ/Heatseekers/PyCharm/.venv/lib/python3.12/site-packages/werkzeug/routing/map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
 
 During handling of the above exception, another exception occurred:
 
@@ -156,7 +99,13 @@ Traceback (most recent call last):
     server_error = self.ensure_sync(handler)(server_error)
                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 TypeError: errorhandler() takes 0 positional arguments but 1 was given
-2024-10-30 19:21:55,267 - ERROR - Exception on /favicon.ico [GET]
+2024-11-05 16:24:19,258 - INFO - View page accessed
+2024-11-05 16:24:19,260 - INFO - 10.0.76.44 - - [05/Nov/2024 16:24:19] "POST /view HTTP/1.1" 200 -
+2024-11-05 16:24:19,303 - INFO - 10.0.76.44 - - [05/Nov/2024 16:24:19] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-05 16:24:19,304 - INFO - Video feed accessed
+2024-11-05 16:24:19,306 - INFO - 10.0.76.44 - - [05/Nov/2024 16:24:19] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-05 16:24:19,669 - INFO - 10.0.76.44 - - [05/Nov/2024 16:24:19] "GET /video_feed HTTP/1.1" 200 -
+2024-11-05 16:24:19,712 - ERROR - Exception on /favicon.ico [GET]
 Traceback (most recent call last):
   File "/home/weidi/Desktop/4BI/ITPÜ/Heatseekers/PyCharm/.venv/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
     rv = self.dispatch_request()
@@ -189,8 +138,8 @@ Traceback (most recent call last):
     return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 TypeError: errorhandler() takes 0 positional arguments but 1 was given
-2024-10-30 19:21:55,269 - INFO - 192.168.1.113 - - [30/Oct/2024 19:21:55] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
-2024-10-30 19:21:55,272 - ERROR - Error on request:
+2024-11-05 16:24:19,713 - INFO - 10.0.76.44 - - [05/Nov/2024 16:24:19] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2024-11-05 16:24:19,718 - ERROR - Error on request:
 Traceback (most recent call last):
   File "/home/weidi/Desktop/4BI/ITPÜ/Heatseekers/PyCharm/.venv/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
     rv = self.dispatch_request()

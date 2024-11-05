@@ -9,7 +9,7 @@
 2024-10-01 09:21:27,538 - INFO - 10.21.16.72 - - [01/Oct/2024 09:21:27] "GET /static/stylesheet.css HTTP/1.1" 200 -
 2024-10-01 09:21:27,538 - INFO - 10.21.16.72 - - [01/Oct/2024 09:21:27] "GET /static/selects.css HTTP/1.1" 200 -
 2024-10-01 09:21:27,546 - INFO - Video feed accessed
-2024-10-01 09:21:27,547 - INFO - 10.21.16.72 - - [01/Oct/2024 09:21:27] "GET /static/x.js HTTP/1.1" 200 -
+2024-10-01 09:21:27,547 - INFO - 10.21.16.72 - - [01/Oct/2024 09:21:27] "GET /static/MainPage.js HTTP/1.1" 200 -
 2024-10-01 09:21:27,895 - INFO - 10.21.16.72 - - [01/Oct/2024 09:21:27] "GET /video_feed HTTP/1.1" 200 -
 2024-10-01 09:21:28,506 - INFO - 10.21.16.72 - - [01/Oct/2024 09:21:28] "GET /static/icon.png HTTP/1.1" 200 -
 2024-10-01 09:21:54,476 - INFO - Index page accessed
@@ -17,5 +17,5 @@
 2024-10-01 09:21:54,574 - INFO - 10.21.16.72 - - [01/Oct/2024 09:21:54] "[36mGET /static/stylesheet.css HTTP/1.1[0m" 304 -
 2024-10-01 09:21:54,591 - INFO - Video feed accessed
 2024-10-01 09:21:54,594 - INFO - 10.21.16.72 - - [01/Oct/2024 09:21:54] "[36mGET /static/selects.css HTTP/1.1[0m" 304 -
-2024-10-01 09:21:54,595 - INFO - 10.21.16.72 - - [01/Oct/2024 09:21:54] "[36mGET /static/x.js HTTP/1.1[0m" 304 -
+2024-10-01 09:21:54,595 - INFO - 10.21.16.72 - - [01/Oct/2024 09:21:54] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
 2024-10-01 09:21:54,939 - INFO - 10.21.16.72 - - [01/Oct/2024 09:21:54] "GET /video_feed HTTP/1.1" 200 -

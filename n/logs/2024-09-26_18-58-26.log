@@ -9,7 +9,7 @@
 2024-09-26 18:58:30,765 - INFO - 172.20.10.2 - - [26/Sep/2024 18:58:30] "GET /static/stylesheet.css HTTP/1.1" 200 -
 2024-09-26 18:58:30,774 - INFO - Video feed accessed
 2024-09-26 18:58:30,776 - INFO - 172.20.10.2 - - [26/Sep/2024 18:58:30] "[36mGET /static/selects.css HTTP/1.1[0m" 304 -
-2024-09-26 18:58:30,794 - INFO - 172.20.10.2 - - [26/Sep/2024 18:58:30] "[36mGET /static/x.js HTTP/1.1[0m" 304 -
+2024-09-26 18:58:30,794 - INFO - 172.20.10.2 - - [26/Sep/2024 18:58:30] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
 2024-09-26 18:58:31,173 - INFO - 172.20.10.2 - - [26/Sep/2024 18:58:31] "GET /video_feed HTTP/1.1" 200 -
 2024-09-26 18:58:31,240 - INFO - 172.20.10.2 - - [26/Sep/2024 18:58:31] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
 2024-09-26 18:59:33,848 - INFO - Index page accessed

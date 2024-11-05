@@ -1,0 +1,91 @@
+2024-11-05 16:41:49,540 - INFO - Server started, log file: ./logs/2024-11-05_16-41-49.log
+2024-11-05 16:41:49,544 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.0.76.44:8000
+2024-11-05 16:41:49,544 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-05 16:41:52,665 - INFO - Login page accessed
+2024-11-05 16:41:52,668 - INFO - 127.0.0.1 - - [05/Nov/2024 16:41:52] "GET / HTTP/1.1" 200 -
+2024-11-05 16:41:52,685 - INFO - 127.0.0.1 - - [05/Nov/2024 16:41:52] "GET /static/LoginPage.css HTTP/1.1" 200 -
+2024-11-05 16:41:52,975 - INFO - 127.0.0.1 - - [05/Nov/2024 16:41:52] "GET /static/icon.png HTTP/1.1" 200 -
+2024-11-05 16:41:54,280 - INFO - View page accessed
+2024-11-05 16:41:54,282 - INFO - 127.0.0.1 - - [05/Nov/2024 16:41:54] "POST /view HTTP/1.1" 200 -
+2024-11-05 16:41:54,317 - INFO - 127.0.0.1 - - [05/Nov/2024 16:41:54] "GET /static/MainPage.css HTTP/1.1" 200 -
+2024-11-05 16:41:54,325 - INFO - Video feed accessed
+2024-11-05 16:41:54,326 - INFO - 127.0.0.1 - - [05/Nov/2024 16:41:54] "GET /static/MainPage.js HTTP/1.1" 200 -
+2024-11-05 16:41:54,791 - INFO - 127.0.0.1 - - [05/Nov/2024 16:41:54] "GET /video_feed HTTP/1.1" 200 -
+2024-11-05 16:42:06,712 - INFO - View page accessed
+2024-11-05 16:42:06,714 - INFO - 127.0.0.1 - - [05/Nov/2024 16:42:06] "POST /view HTTP/1.1" 200 -
+2024-11-05 16:42:06,736 - INFO - Video feed accessed
+2024-11-05 16:42:06,739 - INFO - 127.0.0.1 - - [05/Nov/2024 16:42:06] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-05 16:42:06,739 - INFO - 127.0.0.1 - - [05/Nov/2024 16:42:06] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-05 16:42:06,740 - INFO - 127.0.0.1 - - [05/Nov/2024 16:42:06] "GET /video_feed HTTP/1.1" 200 -
+2024-11-05 16:42:06,861 - INFO - 127.0.0.1 - - [05/Nov/2024 16:42:06] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
+2024-11-05 16:44:06,026 - INFO - View page accessed
+2024-11-05 16:44:06,029 - INFO - 127.0.0.1 - - [05/Nov/2024 16:44:06] "POST /view HTTP/1.1" 200 -
+2024-11-05 16:44:06,076 - INFO - Video feed accessed
+2024-11-05 16:44:06,079 - INFO - 127.0.0.1 - - [05/Nov/2024 16:44:06] "GET /static/MainPage.css HTTP/1.1" 200 -
+2024-11-05 16:44:06,080 - INFO - 127.0.0.1 - - [05/Nov/2024 16:44:06] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-05 16:44:06,532 - INFO - 127.0.0.1 - - [05/Nov/2024 16:44:06] "GET /video_feed HTTP/1.1" 200 -
+2024-11-05 16:44:06,607 - INFO - 127.0.0.1 - - [05/Nov/2024 16:44:06] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
+2024-11-05 16:44:18,180 - INFO - View page accessed
+2024-11-05 16:44:18,183 - INFO - 127.0.0.1 - - [05/Nov/2024 16:44:18] "POST /view HTTP/1.1" 200 -
+2024-11-05 16:44:18,230 - INFO - 127.0.0.1 - - [05/Nov/2024 16:44:18] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-05 16:44:18,232 - INFO - 127.0.0.1 - - [05/Nov/2024 16:44:18] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-05 16:44:18,232 - INFO - Video feed accessed
+2024-11-05 16:44:18,233 - INFO - 127.0.0.1 - - [05/Nov/2024 16:44:18] "GET /video_feed HTTP/1.1" 200 -
+2024-11-05 16:44:18,396 - INFO - 127.0.0.1 - - [05/Nov/2024 16:44:18] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
+2024-11-05 16:45:00,678 - INFO - View page accessed
+2024-11-05 16:45:00,680 - INFO - 127.0.0.1 - - [05/Nov/2024 16:45:00] "POST /view HTTP/1.1" 200 -
+2024-11-05 16:45:00,714 - INFO - 127.0.0.1 - - [05/Nov/2024 16:45:00] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-05 16:45:00,715 - INFO - Video feed accessed
+2024-11-05 16:45:00,716 - INFO - 127.0.0.1 - - [05/Nov/2024 16:45:00] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-05 16:45:01,184 - INFO - 127.0.0.1 - - [05/Nov/2024 16:45:01] "GET /video_feed HTTP/1.1" 200 -
+2024-11-05 16:45:01,258 - INFO - 127.0.0.1 - - [05/Nov/2024 16:45:01] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
+2024-11-05 16:45:20,854 - INFO - View page accessed
+2024-11-05 16:45:20,857 - INFO - 127.0.0.1 - - [05/Nov/2024 16:45:20] "POST /view HTTP/1.1" 200 -
+2024-11-05 16:45:20,903 - INFO - Video feed accessed
+2024-11-05 16:45:20,903 - INFO - 127.0.0.1 - - [05/Nov/2024 16:45:20] "GET /static/MainPage.css HTTP/1.1" 200 -
+2024-11-05 16:45:20,905 - INFO - 127.0.0.1 - - [05/Nov/2024 16:45:20] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-05 16:45:20,905 - INFO - 127.0.0.1 - - [05/Nov/2024 16:45:20] "GET /video_feed HTTP/1.1" 200 -
+2024-11-05 16:45:21,054 - INFO - 127.0.0.1 - - [05/Nov/2024 16:45:21] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
+2024-11-05 16:45:38,836 - INFO - View page accessed
+2024-11-05 16:45:38,838 - INFO - 127.0.0.1 - - [05/Nov/2024 16:45:38] "POST /view HTTP/1.1" 200 -
+2024-11-05 16:45:38,861 - INFO - 127.0.0.1 - - [05/Nov/2024 16:45:38] "GET /static/MainPage.css HTTP/1.1" 200 -
+2024-11-05 16:45:38,862 - INFO - Video feed accessed
+2024-11-05 16:45:38,863 - INFO - 127.0.0.1 - - [05/Nov/2024 16:45:38] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-05 16:45:39,319 - INFO - 127.0.0.1 - - [05/Nov/2024 16:45:39] "GET /video_feed HTTP/1.1" 200 -
+2024-11-05 16:45:39,399 - INFO - 127.0.0.1 - - [05/Nov/2024 16:45:39] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
+2024-11-05 16:45:55,815 - INFO - 127.0.0.1 - - [05/Nov/2024 16:45:55] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-05 16:47:23,034 - INFO - View page accessed
+2024-11-05 16:47:23,037 - INFO - 127.0.0.1 - - [05/Nov/2024 16:47:23] "POST /view HTTP/1.1" 200 -
+2024-11-05 16:47:23,077 - INFO - 127.0.0.1 - - [05/Nov/2024 16:47:23] "GET /static/MainPage.css HTTP/1.1" 200 -
+2024-11-05 16:47:23,078 - INFO - Video feed accessed
+2024-11-05 16:47:23,080 - INFO - 127.0.0.1 - - [05/Nov/2024 16:47:23] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-05 16:47:23,080 - INFO - 127.0.0.1 - - [05/Nov/2024 16:47:23] "GET /video_feed HTTP/1.1" 200 -
+2024-11-05 16:47:43,313 - INFO - View page accessed
+2024-11-05 16:47:43,316 - INFO - 127.0.0.1 - - [05/Nov/2024 16:47:43] "POST /view HTTP/1.1" 200 -
+2024-11-05 16:47:43,384 - INFO - Video feed accessed
+2024-11-05 16:47:43,385 - INFO - 127.0.0.1 - - [05/Nov/2024 16:47:43] "GET /static/MainPage.css HTTP/1.1" 200 -
+2024-11-05 16:47:43,387 - INFO - 127.0.0.1 - - [05/Nov/2024 16:47:43] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-05 16:47:43,845 - INFO - 127.0.0.1 - - [05/Nov/2024 16:47:43] "GET /video_feed HTTP/1.1" 200 -
+2024-11-05 16:47:45,571 - INFO - 127.0.0.1 - - [05/Nov/2024 16:47:45] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
+2024-11-05 16:47:51,261 - INFO - Login page accessed
+2024-11-05 16:47:51,264 - INFO - 127.0.0.1 - - [05/Nov/2024 16:47:51] "GET / HTTP/1.1" 200 -
+2024-11-05 16:47:51,313 - INFO - 127.0.0.1 - - [05/Nov/2024 16:47:51] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-11-05 16:47:52,860 - INFO - Video feed accessed
+2024-11-05 16:47:53,193 - INFO - 127.0.0.1 - - [05/Nov/2024 16:47:53] "GET /video_feed HTTP/1.1" 200 -
+2024-11-05 16:48:10,178 - INFO - View page accessed
+2024-11-05 16:48:10,181 - INFO - 127.0.0.1 - - [05/Nov/2024 16:48:10] "POST /view HTTP/1.1" 200 -
+2024-11-05 16:48:10,228 - INFO - 127.0.0.1 - - [05/Nov/2024 16:48:10] "GET /static/MainPage.css HTTP/1.1" 200 -
+2024-11-05 16:48:10,238 - INFO - Video feed accessed
+2024-11-05 16:48:10,240 - INFO - 127.0.0.1 - - [05/Nov/2024 16:48:10] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-05 16:48:10,572 - INFO - 127.0.0.1 - - [05/Nov/2024 16:48:10] "GET /video_feed HTTP/1.1" 200 -
+2024-11-05 16:48:10,645 - INFO - 127.0.0.1 - - [05/Nov/2024 16:48:10] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
+2024-11-05 16:48:52,332 - INFO - View page accessed
+2024-11-05 16:48:52,335 - INFO - 127.0.0.1 - - [05/Nov/2024 16:48:52] "POST /view HTTP/1.1" 200 -
+2024-11-05 16:48:52,383 - INFO - 127.0.0.1 - - [05/Nov/2024 16:48:52] "GET /static/MainPage.css HTTP/1.1" 200 -
+2024-11-05 16:48:52,384 - INFO - Video feed accessed
+2024-11-05 16:48:52,385 - INFO - 127.0.0.1 - - [05/Nov/2024 16:48:52] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-05 16:48:52,720 - INFO - 127.0.0.1 - - [05/Nov/2024 16:48:52] "GET /video_feed HTTP/1.1" 200 -
+2024-11-05 16:48:52,791 - INFO - 127.0.0.1 - - [05/Nov/2024 16:48:52] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
