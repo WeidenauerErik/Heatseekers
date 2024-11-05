@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='MainPage.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='icon.png') }}" type="image/x-icon">
+
+    <title>Heatseekers - Main Page</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<div id="app">
+    <div class="navbar">
+        <div></div>
+        <h1>Heatseekers</h1>
+        <div id="admin-page-div"><a href="{{ url_for('admin_page')}}">Du blader Wichser</a></div>
+    </div>
+
+    <div class="container">
+        <div class="top-left">
+            <label class="switch">
+                <input type="checkbox" v-model="isTemperatureBarChart" @change="updateChart('temperature')">
+                <span class="slider round"></span>
+            </label>
+            <canvas id="temperature"></canvas>
+        </div>
+
+        <div class="top-right">
+            <label class="switch">
+                <input type="checkbox" v-model="isHumidityBarChart" @change="updateChart('humidity')">
+                <span class="slider round"></span>
+            </label>
+            <canvas id="humidity"></canvas>
+        </div>
+
+        <div class="bottom-left">
+            <img src="{{ url_for('video_feed') }}" alt="Webcam Feed" id="webcam"/>
+        </div>
+
+        <div class="bottom-right">
+            <p>Additional Information or Controls</p>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='MainPage.js') }}"></script>
+</div>
+</body>
+
+</html>

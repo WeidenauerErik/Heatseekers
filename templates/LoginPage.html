@@ -7,6 +7,7 @@
 
     <link rel="preload" href="{{ url_for('static', filename='MainPage.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='LoginPage.css') }}">
+
     <link rel="icon" href="{{ url_for('static', filename='icon.png') }}" type="image/x-icon">
 
     <title>Heatseekers - Login</title>
@@ -19,11 +20,13 @@
 <form action="/view" method="Post">
     <section class="LoginField">
         <div class="loginItem">
+            <label for="email"></label>
             <input id="email" name="email" required type="text">
             <span>Email</span>
         </div>
 
         <div class="loginItem">
+            <label for="password"></label>
             <input id="password" name="password" required type="password">
             <span>Password</span>
         </div>

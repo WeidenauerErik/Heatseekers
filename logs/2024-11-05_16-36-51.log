@@ -1,0 +1,15 @@
+2024-11-05 16:36:51,338 - INFO - Server started, log file: ./logs/2024-11-05_16-36-51.log
+2024-11-05 16:36:51,341 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.0.76.44:8000
+2024-11-05 16:36:51,341 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-05 16:36:55,651 - INFO - Login page accessed
+2024-11-05 16:36:55,655 - INFO - 127.0.0.1 - - [05/Nov/2024 16:36:55] "GET / HTTP/1.1" 200 -
+2024-11-05 16:36:55,704 - INFO - 127.0.0.1 - - [05/Nov/2024 16:36:55] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-11-05 16:36:58,679 - INFO - View page accessed
+2024-11-05 16:36:58,681 - INFO - 127.0.0.1 - - [05/Nov/2024 16:36:58] "POST /view HTTP/1.1" 200 -
+2024-11-05 16:36:58,727 - INFO - 127.0.0.1 - - [05/Nov/2024 16:36:58] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-05 16:36:58,728 - INFO - Video feed accessed
+2024-11-05 16:36:58,741 - INFO - 127.0.0.1 - - [05/Nov/2024 16:36:58] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-05 16:36:59,187 - INFO - 127.0.0.1 - - [05/Nov/2024 16:36:59] "GET /video_feed HTTP/1.1" 200 -

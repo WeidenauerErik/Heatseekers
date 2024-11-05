@@ -29,6 +29,11 @@ def index():
     app.logger.info('Login page accessed')
     return render_template_string(functions.read_file("templates/LoginPage.html"))
 
+@app.route('/admin')
+def admin_page():
+    app.logger.info('Admin page accessed')
+    return render_template_string(functions.read_file("templates/AdminPage.html"))
+
 @app.route('/view', methods=['POST'])
 def view():
     email = request.form.get('email')
@@ -39,6 +44,9 @@ def view():
     for tmp in user:
         if email == tmp['email'] and hashed_password == tmp['password']:
             app.logger.info('View page accessed')
+            if tmp['admin'] == 'true':
+                return render_template_string(functions.read_file("templates/MainPage-admin.html"))
+
             return render_template_string(functions.read_file("templates/MainPage.html"))
 
     app.logger.info('Login failed')

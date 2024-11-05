@@ -47,7 +47,7 @@ Traceback (most recent call last):
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 TypeError: errorhandler() takes 0 positional arguments but 1 was given
 2024-10-29 17:37:48,399 - INFO - Video feed accessed
-2024-10-29 17:37:48,401 - INFO - 192.168.1.111 - - [29/Oct/2024 17:37:48] "GET /static/x.js HTTP/1.1" 200 -
+2024-10-29 17:37:48,401 - INFO - 192.168.1.111 - - [29/Oct/2024 17:37:48] "GET /static/MainPage.js HTTP/1.1" 200 -
 2024-10-29 17:37:48,403 - INFO - 192.168.1.111 - - [29/Oct/2024 17:37:48] "[35m[1mGET /static/stylesheet.css HTTP/1.1[0m" 500 -
 2024-10-29 17:37:48,418 - ERROR - Error on request:
 Traceback (most recent call last):

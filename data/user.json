@@ -2,8 +2,15 @@
     "users": [
         {
             "id" : "1",
-            "email" : "admin@serverraumüberwachung.com",
-            "password" : "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3"
+            "email" : "admin",
+            "password" : "123",
+            "admin" : "true"
+        },
+        {
+            "id" : "2",
+            "email" : "user",
+            "password" : "123",
+            "admin" : "false"
         }
     ]
 }

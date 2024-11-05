@@ -1,3 +1,4 @@
+import time
 import cv2
 import json
 import time
@@ -33,6 +34,7 @@ def gen_camera_feed():
             frame = buffer.tobytes()
             yield (b'--frame\r\n'
                    b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')
+            time.sleep(max(0,1/10-(time.time()-start_time)))
 
             time.sleep(max(0, 1 / 10 - (time.time() - start_time)))
     except Exception as e:

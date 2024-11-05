@@ -30,13 +30,31 @@
             background-color: #1F4959;
             padding: 15px;
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
+        }
+
+        #admin-page-div {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
         }
 
         .navbar h1 {
             margin: 0;
+            padding: 0;
             color: white;
             font-size: 2em;
+        }
+
+        .navbar a {
+            margin: 0;
+            padding: 0;
+            color: white;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            text-decoration: white;
         }
 
         .container {

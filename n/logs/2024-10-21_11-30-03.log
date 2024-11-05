@@ -11,6 +11,6 @@
 2024-10-21 11:30:10,676 - INFO - 10.18.106.155 - - [21/Oct/2024 11:30:10] "GET /view?email=erik.weidenauer@gmail.com&password=assdf HTTP/1.1" 200 -
 2024-10-21 11:30:10,714 - INFO - Video feed accessed
 2024-10-21 11:30:10,723 - INFO - 10.18.106.155 - - [21/Oct/2024 11:30:10] "GET /static/stylesheet.css HTTP/1.1" 200 -
-2024-10-21 11:30:10,723 - INFO - 10.18.106.155 - - [21/Oct/2024 11:30:10] "GET /static/x.js HTTP/1.1" 200 -
+2024-10-21 11:30:10,723 - INFO - 10.18.106.155 - - [21/Oct/2024 11:30:10] "GET /static/MainPage.js HTTP/1.1" 200 -
 2024-10-21 11:30:11,082 - INFO - 10.18.106.155 - - [21/Oct/2024 11:30:11] "GET /video_feed HTTP/1.1" 200 -
 2024-10-21 11:30:11,184 - INFO - 10.18.106.155 - - [21/Oct/2024 11:30:11] "GET /static/icon.png HTTP/1.1" 200 -
