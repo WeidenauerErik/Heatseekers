@@ -1,0 +1,36 @@
+2024-11-05 16:25:32,121 - INFO - Server started, log file: ./logs/2024-11-05_16-25-32.log
+2024-11-05 16:25:32,127 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.21.16.131:8000
+2024-11-05 16:25:32,127 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-05 16:25:33,852 - INFO - Error page accessed
+2024-11-05 16:25:33,859 - INFO - 127.0.0.1 - - [05/Nov/2024 16:25:33] "GET /error HTTP/1.1" 200 -
+2024-11-05 16:25:33,875 - INFO - 127.0.0.1 - - [05/Nov/2024 16:25:33] "[36mGET /static/ErrorPage.css HTTP/1.1[0m" 304 -
+2024-11-05 16:25:34,116 - INFO - Error page accessed
+2024-11-05 16:25:34,119 - INFO - 127.0.0.1 - - [05/Nov/2024 16:25:34] "GET /error HTTP/1.1" 200 -
+2024-11-05 16:25:34,127 - INFO - 127.0.0.1 - - [05/Nov/2024 16:25:34] "[36mGET /static/ErrorPage.css HTTP/1.1[0m" 304 -
+2024-11-05 16:25:34,298 - INFO - Error page accessed
+2024-11-05 16:25:34,300 - INFO - 127.0.0.1 - - [05/Nov/2024 16:25:34] "GET /error HTTP/1.1" 200 -
+2024-11-05 16:25:34,308 - INFO - 127.0.0.1 - - [05/Nov/2024 16:25:34] "[36mGET /static/ErrorPage.css HTTP/1.1[0m" 304 -
+2024-11-05 16:25:34,461 - INFO - Error page accessed
+2024-11-05 16:25:34,463 - INFO - 127.0.0.1 - - [05/Nov/2024 16:25:34] "GET /error HTTP/1.1" 200 -
+2024-11-05 16:25:34,470 - INFO - 127.0.0.1 - - [05/Nov/2024 16:25:34] "[36mGET /static/ErrorPage.css HTTP/1.1[0m" 304 -
+2024-11-05 16:25:34,588 - INFO - Error page accessed
+2024-11-05 16:25:34,591 - INFO - 127.0.0.1 - - [05/Nov/2024 16:25:34] "GET /error HTTP/1.1" 200 -
+2024-11-05 16:25:34,598 - INFO - 127.0.0.1 - - [05/Nov/2024 16:25:34] "[36mGET /static/ErrorPage.css HTTP/1.1[0m" 304 -
+2024-11-05 16:25:35,210 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-05 16:25:35,210 - INFO - 127.0.0.1 - - [05/Nov/2024 16:25:35] "[32mPOST /LoginPage.html HTTP/1.1[0m" 302 -
+2024-11-05 16:25:35,218 - INFO - Error page accessed
+2024-11-05 16:25:35,222 - INFO - 127.0.0.1 - - [05/Nov/2024 16:25:35] "GET /error HTTP/1.1" 200 -
+2024-11-05 16:25:35,234 - INFO - 127.0.0.1 - - [05/Nov/2024 16:25:35] "[36mGET /static/ErrorPage.css HTTP/1.1[0m" 304 -
+2024-11-05 16:25:35,655 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-05 16:25:35,656 - INFO - 127.0.0.1 - - [05/Nov/2024 16:25:35] "[32mPOST /LoginPage.html HTTP/1.1[0m" 302 -
+2024-11-05 16:25:35,661 - INFO - Error page accessed
+2024-11-05 16:25:35,663 - INFO - 127.0.0.1 - - [05/Nov/2024 16:25:35] "GET /error HTTP/1.1" 200 -
+2024-11-05 16:25:35,670 - INFO - 127.0.0.1 - - [05/Nov/2024 16:25:35] "[36mGET /static/ErrorPage.css HTTP/1.1[0m" 304 -
+2024-11-05 16:25:35,866 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-05 16:25:35,866 - INFO - 127.0.0.1 - - [05/Nov/2024 16:25:35] "[32mPOST /LoginPage.html HTTP/1.1[0m" 302 -
+2024-11-05 16:25:35,869 - INFO - Error page accessed
+2024-11-05 16:25:35,872 - INFO - 127.0.0.1 - - [05/Nov/2024 16:25:35] "GET /error HTTP/1.1" 200 -
+2024-11-05 16:25:35,880 - INFO - 127.0.0.1 - - [05/Nov/2024 16:25:35] "[36mGET /static/ErrorPage.css HTTP/1.1[0m" 304 -

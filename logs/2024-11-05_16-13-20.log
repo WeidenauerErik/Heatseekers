@@ -1,0 +1,12 @@
+2024-11-05 16:13:20,073 - INFO - Server started, log file: ./logs/2024-11-05_16-13-20.log
+2024-11-05 16:13:20,079 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.21.16.131:8000
+2024-11-05 16:13:20,079 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-05 16:13:22,495 - INFO - Error page accessed
+2024-11-05 16:13:22,501 - INFO - 127.0.0.1 - - [05/Nov/2024 16:13:22] "GET /error HTTP/1.1" 200 -
+2024-11-05 16:13:22,517 - INFO - 127.0.0.1 - - [05/Nov/2024 16:13:22] "GET /static/ErrorPage.css HTTP/1.1" 200 -
+2024-11-05 16:13:54,056 - INFO - Error page accessed
+2024-11-05 16:13:54,059 - INFO - 127.0.0.1 - - [05/Nov/2024 16:13:54] "GET /error HTTP/1.1" 200 -
+2024-11-05 16:13:54,072 - INFO - 127.0.0.1 - - [05/Nov/2024 16:13:54] "[36mGET /static/ErrorPage.css HTTP/1.1[0m" 304 -

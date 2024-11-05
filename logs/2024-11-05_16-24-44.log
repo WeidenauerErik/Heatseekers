@@ -1,0 +1,47 @@
+2024-11-05 16:24:44,308 - INFO - Server started, log file: ./logs/2024-11-05_16-24-44.log
+2024-11-05 16:24:44,315 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.21.16.131:8000
+2024-11-05 16:24:44,315 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-05 16:24:47,103 - INFO - Login page accessed
+2024-11-05 16:24:47,110 - INFO - 127.0.0.1 - - [05/Nov/2024 16:24:47] "GET / HTTP/1.1" 200 -
+2024-11-05 16:24:47,113 - INFO - Video feed accessed
+2024-11-05 16:24:47,146 - INFO - 127.0.0.1 - - [05/Nov/2024 16:24:47] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-11-05 16:24:48,548 - INFO - 127.0.0.1 - - [05/Nov/2024 16:24:48] "GET /video_feed HTTP/1.1" 200 -
+2024-11-05 16:24:49,792 - INFO - Error page accessed
+2024-11-05 16:24:49,795 - INFO - 127.0.0.1 - - [05/Nov/2024 16:24:49] "GET /error HTTP/1.1" 200 -
+2024-11-05 16:24:49,815 - INFO - 127.0.0.1 - - [05/Nov/2024 16:24:49] "[36mGET /static/ErrorPage.css HTTP/1.1[0m" 304 -
+2024-11-05 16:24:50,736 - INFO - Login failed
+2024-11-05 16:24:50,738 - INFO - 127.0.0.1 - - [05/Nov/2024 16:24:50] "POST /view HTTP/1.1" 200 -
+2024-11-05 16:24:50,756 - INFO - 127.0.0.1 - - [05/Nov/2024 16:24:50] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-11-05 16:24:58,600 - INFO - Login failed
+2024-11-05 16:24:58,605 - INFO - 127.0.0.1 - - [05/Nov/2024 16:24:58] "POST /view HTTP/1.1" 200 -
+2024-11-05 16:24:58,615 - INFO - 127.0.0.1 - - [05/Nov/2024 16:24:58] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-11-05 16:25:02,896 - INFO - Login page accessed
+2024-11-05 16:25:02,900 - INFO - 127.0.0.1 - - [05/Nov/2024 16:25:02] "GET / HTTP/1.1" 200 -
+2024-11-05 16:25:02,911 - INFO - 127.0.0.1 - - [05/Nov/2024 16:25:02] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-11-05 16:25:06,905 - INFO - Error page accessed
+2024-11-05 16:25:06,908 - INFO - 127.0.0.1 - - [05/Nov/2024 16:25:06] "GET /error HTTP/1.1" 200 -
+2024-11-05 16:25:06,919 - INFO - 127.0.0.1 - - [05/Nov/2024 16:25:06] "[36mGET /static/ErrorPage.css HTTP/1.1[0m" 304 -
+2024-11-05 16:25:08,177 - ERROR - An error occurred: 405 Method Not Allowed: The method is not allowed for the requested URL.
+2024-11-05 16:25:08,177 - INFO - 127.0.0.1 - - [05/Nov/2024 16:25:08] "[32mGET /view HTTP/1.1[0m" 302 -
+2024-11-05 16:25:08,192 - INFO - Error page accessed
+2024-11-05 16:25:08,196 - INFO - 127.0.0.1 - - [05/Nov/2024 16:25:08] "GET /error HTTP/1.1" 200 -
+2024-11-05 16:25:08,206 - INFO - 127.0.0.1 - - [05/Nov/2024 16:25:08] "[36mGET /static/ErrorPage.css HTTP/1.1[0m" 304 -
+2024-11-05 16:25:10,321 - ERROR - An error occurred: 405 Method Not Allowed: The method is not allowed for the requested URL.
+2024-11-05 16:25:10,321 - INFO - 127.0.0.1 - - [05/Nov/2024 16:25:10] "[32mPOST / HTTP/1.1[0m" 302 -
+2024-11-05 16:25:10,328 - INFO - Error page accessed
+2024-11-05 16:25:10,330 - INFO - 127.0.0.1 - - [05/Nov/2024 16:25:10] "GET /error HTTP/1.1" 200 -
+2024-11-05 16:25:10,340 - INFO - 127.0.0.1 - - [05/Nov/2024 16:25:10] "[36mGET /static/ErrorPage.css HTTP/1.1[0m" 304 -
+2024-11-05 16:25:26,278 - INFO - Error page accessed
+2024-11-05 16:25:26,281 - INFO - 127.0.0.1 - - [05/Nov/2024 16:25:26] "GET /error HTTP/1.1" 200 -
+2024-11-05 16:25:26,292 - INFO - 127.0.0.1 - - [05/Nov/2024 16:25:26] "[36mGET /static/ErrorPage.css HTTP/1.1[0m" 304 -
+2024-11-05 16:25:27,151 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-05 16:25:27,151 - INFO - 127.0.0.1 - - [05/Nov/2024 16:25:27] "[32mPOST /LoginPage.html HTTP/1.1[0m" 302 -
+2024-11-05 16:25:27,159 - INFO - Error page accessed
+2024-11-05 16:25:27,160 - INFO - 127.0.0.1 - - [05/Nov/2024 16:25:27] "GET /error HTTP/1.1" 200 -
+2024-11-05 16:25:27,171 - INFO - 127.0.0.1 - - [05/Nov/2024 16:25:27] "[36mGET /static/ErrorPage.css HTTP/1.1[0m" 304 -
+2024-11-05 16:25:29,686 - INFO - Error page accessed
+2024-11-05 16:25:29,689 - INFO - 127.0.0.1 - - [05/Nov/2024 16:25:29] "GET /error HTTP/1.1" 200 -
+2024-11-05 16:25:29,699 - INFO - 127.0.0.1 - - [05/Nov/2024 16:25:29] "[36mGET /static/ErrorPage.css HTTP/1.1[0m" 304 -

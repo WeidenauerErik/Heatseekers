@@ -1,4 +1,6 @@
-from flask import Flask, Response, render_template_string, request
+import hashlib
+
+from flask import Flask, Response, render_template_string, request, redirect, url_for
 import logging
 from datetime import datetime
 import functions
@@ -29,13 +31,13 @@ def index():
 
 @app.route('/view', methods=['POST'])
 def view():
-
     email = request.form.get('email')
     password = request.form.get('password')
 
+    hashed_password = hashlib.sha256(password.encode()).hexdigest()
     user = functions.get_User("data/user.json")
     for tmp in user:
-        if email == tmp['email'] and password == tmp['password']:
+        if email == tmp['email'] and hashed_password == tmp['password']:
             app.logger.info('View page accessed')
             return render_template_string(functions.read_file("templates/MainPage.html"))
 
@@ -49,10 +51,15 @@ def video_feed():
     app.logger.info('Video feed accessed')
     return Response(functions.gen_camera_feed(), mimetype='multipart/x-mixed-replace; boundary=frame')
 
-@app.errorhandler(Exception)
-def errorhandler():
-    app.logger.error('An error occurred')
+@app.route('/error')
+def error():
+    app.logger.info('Error page accessed')
     return render_template_string(functions.read_file("templates/ErrorPage.html"))
+
+@app.errorhandler(Exception)
+def handle_exception(e):
+    app.logger.error(f'An error occurred: {e}')
+    return redirect(url_for('error'))
 
 if __name__ == '__main__':
     app.logger.info(f'Server started, log file: {log_filename}')

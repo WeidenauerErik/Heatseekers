@@ -1,0 +1,47 @@
+2024-11-05 16:20:27,487 - INFO - Server started, log file: ./logs/2024-11-05_16-20-27.log
+2024-11-05 16:20:27,493 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.21.16.131:8000
+2024-11-05 16:20:27,493 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-05 16:20:33,532 - ERROR - An error occurred: 405 Method Not Allowed: The method is not allowed for the requested URL.
+2024-11-05 16:20:33,533 - INFO - 10.21.16.131 - - [05/Nov/2024 16:20:33] "[32mGET /view HTTP/1.1[0m" 302 -
+2024-11-05 16:20:33,547 - INFO - Error page accessed
+2024-11-05 16:20:33,555 - INFO - 10.21.16.131 - - [05/Nov/2024 16:20:33] "GET /error HTTP/1.1" 200 -
+2024-11-05 16:20:33,573 - INFO - 10.21.16.131 - - [05/Nov/2024 16:20:33] "[36mGET /static/ErrorPage.css HTTP/1.1[0m" 304 -
+2024-11-05 16:20:37,435 - INFO - Error page accessed
+2024-11-05 16:20:37,439 - INFO - 10.21.16.131 - - [05/Nov/2024 16:20:37] "GET /error HTTP/1.1" 200 -
+2024-11-05 16:20:37,442 - INFO - 10.21.16.131 - - [05/Nov/2024 16:20:37] "[36mGET /static/ErrorPage.css HTTP/1.1[0m" 304 -
+2024-11-05 16:20:37,475 - INFO - 10.21.16.131 - - [05/Nov/2024 16:20:37] "[36mGET /static/ErrorPage.css HTTP/1.1[0m" 304 -
+2024-11-05 16:20:38,438 - ERROR - An error occurred: 405 Method Not Allowed: The method is not allowed for the requested URL.
+2024-11-05 16:20:38,439 - INFO - 10.21.16.131 - - [05/Nov/2024 16:20:38] "[32mGET /view HTTP/1.1[0m" 302 -
+2024-11-05 16:20:38,449 - INFO - Error page accessed
+2024-11-05 16:20:38,453 - INFO - 10.21.16.131 - - [05/Nov/2024 16:20:38] "GET /error HTTP/1.1" 200 -
+2024-11-05 16:20:38,465 - INFO - 10.21.16.131 - - [05/Nov/2024 16:20:38] "[36mGET /static/ErrorPage.css HTTP/1.1[0m" 304 -
+2024-11-05 16:20:42,180 - INFO - Error page accessed
+2024-11-05 16:20:42,184 - INFO - 10.21.16.131 - - [05/Nov/2024 16:20:42] "GET /error HTTP/1.1" 200 -
+2024-11-05 16:20:42,186 - INFO - 10.21.16.131 - - [05/Nov/2024 16:20:42] "[36mGET /static/ErrorPage.css HTTP/1.1[0m" 304 -
+2024-11-05 16:20:42,196 - INFO - 10.21.16.131 - - [05/Nov/2024 16:20:42] "[36mGET /static/ErrorPage.css HTTP/1.1[0m" 304 -
+2024-11-05 16:20:48,586 - ERROR - An error occurred: 405 Method Not Allowed: The method is not allowed for the requested URL.
+2024-11-05 16:20:48,586 - INFO - 127.0.0.1 - - [05/Nov/2024 16:20:48] "[32mGET /view HTTP/1.1[0m" 302 -
+2024-11-05 16:20:48,593 - INFO - Error page accessed
+2024-11-05 16:20:48,595 - INFO - 127.0.0.1 - - [05/Nov/2024 16:20:48] "GET /error HTTP/1.1" 200 -
+2024-11-05 16:20:48,631 - INFO - 127.0.0.1 - - [05/Nov/2024 16:20:48] "[36mGET /static/ErrorPage.css HTTP/1.1[0m" 304 -
+2024-11-05 16:20:52,680 - INFO - Login page accessed
+2024-11-05 16:20:52,686 - INFO - 127.0.0.1 - - [05/Nov/2024 16:20:52] "GET / HTTP/1.1" 200 -
+2024-11-05 16:20:52,689 - INFO - 127.0.0.1 - - [05/Nov/2024 16:20:52] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-11-05 16:20:52,696 - INFO - 127.0.0.1 - - [05/Nov/2024 16:20:52] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-11-05 16:20:54,353 - INFO - View page accessed
+2024-11-05 16:20:54,358 - INFO - 127.0.0.1 - - [05/Nov/2024 16:20:54] "POST /view HTTP/1.1" 200 -
+2024-11-05 16:20:54,366 - INFO - Video feed accessed
+2024-11-05 16:20:54,374 - INFO - 127.0.0.1 - - [05/Nov/2024 16:20:54] "[36mGET /static/x.js HTTP/1.1[0m" 304 -
+2024-11-05 16:20:54,375 - INFO - 127.0.0.1 - - [05/Nov/2024 16:20:54] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-05 16:20:55,823 - INFO - 127.0.0.1 - - [05/Nov/2024 16:20:55] "GET /video_feed HTTP/1.1" 200 -
+2024-11-05 16:21:40,927 - ERROR - An error occurred: 405 Method Not Allowed: The method is not allowed for the requested URL.
+2024-11-05 16:21:40,927 - INFO - 127.0.0.1 - - [05/Nov/2024 16:21:40] "[32mGET /view HTTP/1.1[0m" 302 -
+2024-11-05 16:21:40,934 - INFO - Error page accessed
+2024-11-05 16:21:40,938 - INFO - 127.0.0.1 - - [05/Nov/2024 16:21:40] "GET /error HTTP/1.1" 200 -
+2024-11-05 16:21:40,948 - INFO - 127.0.0.1 - - [05/Nov/2024 16:21:40] "[36mGET /static/ErrorPage.css HTTP/1.1[0m" 304 -
+2024-11-05 16:21:41,303 - INFO - Error page accessed
+2024-11-05 16:21:41,307 - INFO - 127.0.0.1 - - [05/Nov/2024 16:21:41] "GET /error HTTP/1.1" 200 -
+2024-11-05 16:21:41,315 - INFO - 127.0.0.1 - - [05/Nov/2024 16:21:41] "[36mGET /static/ErrorPage.css HTTP/1.1[0m" 304 -

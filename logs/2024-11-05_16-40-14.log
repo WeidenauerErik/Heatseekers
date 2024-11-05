@@ -1,0 +1,18 @@
+2024-11-05 16:40:14,826 - INFO - Server started, log file: ./logs/2024-11-05_16-40-14.log
+2024-11-05 16:40:14,832 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.21.16.131:8000
+2024-11-05 16:40:14,832 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-05 16:40:25,765 - INFO - Login page accessed
+2024-11-05 16:40:25,771 - INFO - 127.0.0.1 - - [05/Nov/2024 16:40:25] "GET / HTTP/1.1" 200 -
+2024-11-05 16:40:25,777 - INFO - 127.0.0.1 - - [05/Nov/2024 16:40:25] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-11-05 16:40:28,925 - INFO - Login failed
+2024-11-05 16:40:28,928 - INFO - 127.0.0.1 - - [05/Nov/2024 16:40:28] "POST /view HTTP/1.1" 200 -
+2024-11-05 16:40:28,936 - INFO - 127.0.0.1 - - [05/Nov/2024 16:40:28] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-11-05 16:40:33,237 - INFO - Login failed
+2024-11-05 16:40:33,241 - INFO - 127.0.0.1 - - [05/Nov/2024 16:40:33] "POST /view HTTP/1.1" 200 -
+2024-11-05 16:40:33,250 - INFO - 127.0.0.1 - - [05/Nov/2024 16:40:33] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-11-05 16:40:49,912 - INFO - Login failed
+2024-11-05 16:40:49,917 - INFO - 127.0.0.1 - - [05/Nov/2024 16:40:49] "POST /view HTTP/1.1" 200 -
+2024-11-05 16:40:49,929 - INFO - 127.0.0.1 - - [05/Nov/2024 16:40:49] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -

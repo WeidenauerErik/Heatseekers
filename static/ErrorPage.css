@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@100&display=swap');
+
+        * {
+            font-family: 'Noto Sans Gujarati', sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        p {
+            margin-bottom: 30px;
+        }
