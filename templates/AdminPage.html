@@ -4,17 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='MainPage.css') }}">
+    <link rel="stylesheet" href="../static/AdminPage.css">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='AdminPage.css') }}">
     <link rel="icon" href="{{ url_for('static', filename='icon.png') }}" type="image/x-icon">
 
-    <title>Heatseekers - Main Page</title>
+    <title>Heatseekers - Admin Page</title>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
 <div id="app">
-<p>admin page</p>
+    <div id="navbar">
+        <div></div>
+        <h1>Heatseekers</h1>
+        <div></div>
+    </div>
+
+    <div id="user-container">
+        <div class="user">
+            <p>
+                username
+            </p>
+            <label class="switch">
+                <input type="checkbox" v-model="isTemperatureBarChart" @change="updateChart('temperature')">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='MainPage.js') }}"></script>
 </div>
 </body>
+
 </html>

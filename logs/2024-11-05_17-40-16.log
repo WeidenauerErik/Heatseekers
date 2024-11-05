@@ -1,0 +1,43 @@
+2024-11-05 17:40:16,574 - INFO - Server started, log file: ./logs/2024-11-05_17-40-16.log
+2024-11-05 17:40:16,578 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.0.76.44:8000
+2024-11-05 17:40:16,578 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-05 17:40:21,653 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-05 17:40:21,654 - INFO - 10.0.76.44 - - [05/Nov/2024 17:40:21] "[32mGET /admis HTTP/1.1[0m" 302 -
+2024-11-05 17:40:21,668 - INFO - Error page accessed
+2024-11-05 17:40:21,671 - INFO - 10.0.76.44 - - [05/Nov/2024 17:40:21] "GET /error HTTP/1.1" 200 -
+2024-11-05 17:40:21,721 - INFO - 10.0.76.44 - - [05/Nov/2024 17:40:21] "GET /static/ErrorPage.css HTTP/1.1" 200 -
+2024-11-05 17:40:25,229 - INFO - Admin page accessed
+2024-11-05 17:40:25,232 - INFO - 10.0.76.44 - - [05/Nov/2024 17:40:25] "GET /admin HTTP/1.1" 200 -
+2024-11-05 17:40:25,257 - INFO - 10.0.76.44 - - [05/Nov/2024 17:40:25] "GET /static/AdminPage.css HTTP/1.1" 200 -
+2024-11-05 17:40:25,274 - INFO - Video feed accessed
+2024-11-05 17:40:25,276 - INFO - 10.0.76.44 - - [05/Nov/2024 17:40:25] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-05 17:40:25,740 - INFO - 10.0.76.44 - - [05/Nov/2024 17:40:25] "GET /video_feed HTTP/1.1" 200 -
+2024-11-05 17:40:44,370 - INFO - Admin page accessed
+2024-11-05 17:40:44,374 - INFO - 10.0.76.44 - - [05/Nov/2024 17:40:44] "GET /admin HTTP/1.1" 200 -
+2024-11-05 17:40:44,419 - INFO - 10.0.76.44 - - [05/Nov/2024 17:40:44] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-05 17:40:44,425 - INFO - Video feed accessed
+2024-11-05 17:40:44,427 - INFO - 10.0.76.44 - - [05/Nov/2024 17:40:44] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-05 17:40:44,757 - INFO - 10.0.76.44 - - [05/Nov/2024 17:40:44] "GET /video_feed HTTP/1.1" 200 -
+2024-11-05 17:40:44,832 - INFO - 10.0.76.44 - - [05/Nov/2024 17:40:44] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
+2024-11-05 17:41:07,469 - INFO - Admin page accessed
+2024-11-05 17:41:07,471 - INFO - 10.0.76.44 - - [05/Nov/2024 17:41:07] "GET /admin HTTP/1.1" 200 -
+2024-11-05 17:41:07,517 - INFO - Video feed accessed
+2024-11-05 17:41:07,520 - INFO - 10.0.76.44 - - [05/Nov/2024 17:41:07] "GET /static/AdminPage.css HTTP/1.1" 200 -
+2024-11-05 17:41:07,521 - INFO - 10.0.76.44 - - [05/Nov/2024 17:41:07] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-05 17:41:07,975 - INFO - 10.0.76.44 - - [05/Nov/2024 17:41:07] "GET /video_feed HTTP/1.1" 200 -
+2024-11-05 17:41:08,048 - INFO - 10.0.76.44 - - [05/Nov/2024 17:41:08] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
+2024-11-05 17:41:42,413 - INFO - Admin page accessed
+2024-11-05 17:41:42,416 - INFO - 10.0.76.44 - - [05/Nov/2024 17:41:42] "GET /admin HTTP/1.1" 200 -
+2024-11-05 17:41:42,466 - INFO - Video feed accessed
+2024-11-05 17:41:42,467 - INFO - 10.0.76.44 - - [05/Nov/2024 17:41:42] "GET /static/AdminPage.css HTTP/1.1" 200 -
+2024-11-05 17:41:42,468 - INFO - 10.0.76.44 - - [05/Nov/2024 17:41:42] "GET /video_feed HTTP/1.1" 200 -
+2024-11-05 17:41:42,468 - INFO - 10.0.76.44 - - [05/Nov/2024 17:41:42] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-05 17:41:42,646 - INFO - 10.0.76.44 - - [05/Nov/2024 17:41:42] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
+2024-11-05 17:41:58,129 - INFO - Admin page accessed
+2024-11-05 17:41:58,131 - INFO - 10.0.76.44 - - [05/Nov/2024 17:41:58] "GET /admin HTTP/1.1" 200 -
+2024-11-05 17:41:58,177 - INFO - 10.0.76.44 - - [05/Nov/2024 17:41:58] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-05 17:41:58,179 - INFO - 10.0.76.44 - - [05/Nov/2024 17:41:58] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-05 17:41:58,287 - INFO - 10.0.76.44 - - [05/Nov/2024 17:41:58] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
