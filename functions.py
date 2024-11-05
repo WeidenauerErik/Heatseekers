@@ -1,3 +1,4 @@
+import time
 import cv2
 import json
 
@@ -20,6 +21,7 @@ def gen_camera_feed():
             raise Exception("No camera was found.")
 
         while True:
+            start_time = time.time()
             success, frame = camera.read()
             if not success:
                 raise Exception("Frame couldn't be read.")
@@ -31,6 +33,7 @@ def gen_camera_feed():
             frame = buffer.tobytes()
             yield (b'--frame\r\n'
                    b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')
+            time.sleep(max(0,1/10-(time.time()-start_time)))
 
     except Exception as e:
         print(f"Not defined Error: {e}")
