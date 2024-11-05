@@ -1,0 +1,22 @@
+2024-09-30 12:41:43,044 - INFO - Server started, log file: ./logs/2024-09-30_12-41-43.log
+2024-09-30 12:41:43,048 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.111:8000
+2024-09-30 12:41:43,048 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-30 12:41:46,788 - INFO - Index page accessed
+2024-09-30 12:41:46,793 - INFO - 192.168.1.111 - - [30/Sep/2024 12:41:46] "GET / HTTP/1.1" 200 -
+2024-09-30 12:41:46,827 - INFO - 192.168.1.111 - - [30/Sep/2024 12:41:46] "[36mGET /static/stylesheet.css HTTP/1.1[0m" 304 -
+2024-09-30 12:41:46,829 - INFO - 192.168.1.111 - - [30/Sep/2024 12:41:46] "[36mGET /static/selects.css HTTP/1.1[0m" 304 -
+2024-09-30 12:41:46,842 - INFO - Video feed accessed
+2024-09-30 12:41:46,843 - INFO - 192.168.1.111 - - [30/Sep/2024 12:41:46] "GET /static/x.js HTTP/1.1" 200 -
+2024-09-30 12:41:47,194 - INFO - 192.168.1.111 - - [30/Sep/2024 12:41:47] "GET /video_feed HTTP/1.1" 200 -
+2024-09-30 12:41:47,228 - INFO - 192.168.1.111 - - [30/Sep/2024 12:41:47] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
+2024-09-30 12:42:04,208 - INFO - Index page accessed
+2024-09-30 12:42:04,212 - INFO - 192.168.1.111 - - [30/Sep/2024 12:42:04] "GET / HTTP/1.1" 200 -
+2024-09-30 12:42:04,267 - INFO - 192.168.1.111 - - [30/Sep/2024 12:42:04] "[36mGET /static/stylesheet.css HTTP/1.1[0m" 304 -
+2024-09-30 12:42:04,267 - INFO - Video feed accessed
+2024-09-30 12:42:04,269 - INFO - 192.168.1.111 - - [30/Sep/2024 12:42:04] "[36mGET /static/selects.css HTTP/1.1[0m" 304 -
+2024-09-30 12:42:04,269 - INFO - 192.168.1.111 - - [30/Sep/2024 12:42:04] "[36mGET /static/x.js HTTP/1.1[0m" 304 -
+2024-09-30 12:42:04,501 - INFO - 192.168.1.111 - - [30/Sep/2024 12:42:04] "GET /video_feed HTTP/1.1" 200 -
+2024-09-30 12:42:04,538 - INFO - 192.168.1.111 - - [30/Sep/2024 12:42:04] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -

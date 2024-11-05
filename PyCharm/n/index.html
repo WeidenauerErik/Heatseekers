@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheet.css') }}">
+    <title>Heatseekers - Main Page</title>
+
+    <link rel="icon" href="{{ url_for('static', filename='icon.png') }}" type="image/x-icon">
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<div id="app">
+    <div class="navbar">
+        <h1>Heatseekers</h1>
+    </div>
+
+    <div class="container">
+        <div class="top-left">
+            <label>
+                <select v-model="temperatureChartType" @change="updateChart('temperature')">
+                    <option value="line">Line Chart</option>
+                    <option value="bar">Bar Chart</option>
+                </select>
+            </label>
+            <canvas id="temperature"></canvas>
+        </div>
+
+        <div class="top-right">
+            <label>
+                <select v-model="humidityChartType" @change="updateChart('humidity')">
+                    <option value="bar">Bar Chart</option>
+                    <option value="line">Line Chart</option>
+                </select>
+            </label>
+            <canvas id="humidity"></canvas>
+        </div>
+
+        <div class="bottom-left">
+            <img src="{{ url_for('video_feed') }}" alt="Webcam Feed" id="webcam"/>
+        </div>
+
+        <div class="bottom-right">
+            <p>Additional Information or Controls</p>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='x.js') }}"></script>
+</div>
+</body>
+
+</html>

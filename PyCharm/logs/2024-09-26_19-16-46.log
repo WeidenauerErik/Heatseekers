@@ -1,0 +1,21 @@
+2024-09-26 19:16:46,573 - INFO - Server started, log file: ./logs/2024-09-26_19-16-46.log
+2024-09-26 19:16:46,577 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.20.10.2:8000
+2024-09-26 19:16:46,577 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-26 19:16:52,693 - INFO - Index page accessed
+2024-09-26 19:16:52,699 - INFO - 172.20.10.2 - - [26/Sep/2024 19:16:52] "GET / HTTP/1.1" 200 -
+2024-09-26 19:16:52,745 - INFO - Video feed accessed
+2024-09-26 19:16:52,749 - INFO - 172.20.10.2 - - [26/Sep/2024 19:16:52] "[36mGET /static/stylesheet.css HTTP/1.1[0m" 304 -
+2024-09-26 19:16:52,753 - INFO - 172.20.10.2 - - [26/Sep/2024 19:16:52] "GET /static/x.js HTTP/1.1" 200 -
+2024-09-26 19:16:52,754 - INFO - 172.20.10.2 - - [26/Sep/2024 19:16:52] "[36mGET /static/selects.css HTTP/1.1[0m" 304 -
+2024-09-26 19:16:53,143 - INFO - 172.20.10.2 - - [26/Sep/2024 19:16:53] "GET /video_feed HTTP/1.1" 200 -
+2024-09-26 19:18:11,775 - INFO - Index page accessed
+2024-09-26 19:18:11,778 - INFO - 172.20.10.2 - - [26/Sep/2024 19:18:11] "GET / HTTP/1.1" 200 -
+2024-09-26 19:18:11,813 - INFO - Video feed accessed
+2024-09-26 19:18:11,814 - INFO - 172.20.10.2 - - [26/Sep/2024 19:18:11] "[36mGET /static/stylesheet.css HTTP/1.1[0m" 304 -
+2024-09-26 19:18:11,814 - INFO - 172.20.10.2 - - [26/Sep/2024 19:18:11] "GET /static/selects.css HTTP/1.1" 200 -
+2024-09-26 19:18:11,815 - INFO - 172.20.10.2 - - [26/Sep/2024 19:18:11] "GET /video_feed HTTP/1.1" 200 -
+2024-09-26 19:18:11,816 - INFO - 172.20.10.2 - - [26/Sep/2024 19:18:11] "[36mGET /static/x.js HTTP/1.1[0m" 304 -
+2024-09-26 19:18:11,928 - INFO - 172.20.10.2 - - [26/Sep/2024 19:18:11] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
