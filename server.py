@@ -40,6 +40,8 @@ def view():
     password = request.form.get('password')
 
     hashed_password = hashlib.sha256(password.encode()).hexdigest()
+
+    print(hashed_password)
     user = functions.get_User("data/user.json")
     for tmp in user:
         if email == tmp['email'] and hashed_password == tmp['password']:
