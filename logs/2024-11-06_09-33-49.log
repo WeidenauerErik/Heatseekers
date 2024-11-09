@@ -1,0 +1,44 @@
+2024-11-06 09:33:49,010 - INFO - Server started, log file: ./logs/2024-11-06_09-33-49.log
+2024-11-06 09:33:49,014 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.21.16.72:8000
+2024-11-06 09:33:49,014 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-06 09:33:52,833 - INFO - Login page accessed
+2024-11-06 09:33:52,837 - INFO - 10.21.16.72 - - [06/Nov/2024 09:33:52] "GET / HTTP/1.1" 200 -
+2024-11-06 09:33:52,860 - INFO - 10.21.16.72 - - [06/Nov/2024 09:33:52] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-11-06 09:34:00,461 - INFO - View page accessed
+2024-11-06 09:34:00,463 - INFO - 10.21.16.72 - - [06/Nov/2024 09:34:00] "POST /view HTTP/1.1" 200 -
+2024-11-06 09:34:00,494 - INFO - 10.21.16.72 - - [06/Nov/2024 09:34:00] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-06 09:34:00,495 - INFO - Video feed accessed
+2024-11-06 09:34:00,508 - INFO - 10.21.16.72 - - [06/Nov/2024 09:34:00] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-06 09:34:00,906 - INFO - 10.21.16.72 - - [06/Nov/2024 09:34:00] "GET /video_feed HTTP/1.1" 200 -
+2024-11-06 09:34:02,026 - INFO - Admin page accessed
+2024-11-06 09:34:02,029 - INFO - 10.21.16.72 - - [06/Nov/2024 09:34:02] "GET /admin HTTP/1.1" 200 -
+2024-11-06 09:34:02,079 - INFO - 10.21.16.72 - - [06/Nov/2024 09:34:02] "GET /static/AdminPage.css HTTP/1.1" 200 -
+2024-11-06 09:34:02,083 - INFO - 10.21.16.72 - - [06/Nov/2024 09:34:02] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-06 09:34:02,084 - INFO - 10.21.16.72 - - [06/Nov/2024 09:34:02] "GET /static/edit-icon.svg HTTP/1.1" 200 -
+2024-11-06 09:34:44,264 - INFO - Admin page accessed
+2024-11-06 09:34:44,267 - INFO - 10.21.16.72 - - [06/Nov/2024 09:34:44] "GET /admin HTTP/1.1" 200 -
+2024-11-06 09:34:44,317 - INFO - 10.21.16.72 - - [06/Nov/2024 09:34:44] "GET /static/AdminPage.css HTTP/1.1" 200 -
+2024-11-06 09:34:44,319 - INFO - 10.21.16.72 - - [06/Nov/2024 09:34:44] "[36mGET /static/edit-icon.svg HTTP/1.1[0m" 304 -
+2024-11-06 09:34:44,320 - INFO - 10.21.16.72 - - [06/Nov/2024 09:34:44] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-06 09:34:44,500 - INFO - 10.21.16.72 - - [06/Nov/2024 09:34:44] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
+2024-11-06 09:34:49,556 - INFO - Admin page accessed
+2024-11-06 09:34:49,559 - INFO - 10.21.16.72 - - [06/Nov/2024 09:34:49] "GET /admin HTTP/1.1" 200 -
+2024-11-06 09:34:49,614 - INFO - 10.21.16.72 - - [06/Nov/2024 09:34:49] "[36mGET /static/edit-icon.svg HTTP/1.1[0m" 304 -
+2024-11-06 09:34:49,614 - INFO - 10.21.16.72 - - [06/Nov/2024 09:34:49] "GET /static/AdminPage.css HTTP/1.1" 200 -
+2024-11-06 09:34:49,616 - INFO - 10.21.16.72 - - [06/Nov/2024 09:34:49] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-06 09:34:49,753 - INFO - 10.21.16.72 - - [06/Nov/2024 09:34:49] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
+2024-11-06 09:34:56,890 - INFO - Admin page accessed
+2024-11-06 09:34:56,893 - INFO - 10.21.16.72 - - [06/Nov/2024 09:34:56] "GET /admin HTTP/1.1" 200 -
+2024-11-06 09:34:56,937 - INFO - 10.21.16.72 - - [06/Nov/2024 09:34:56] "GET /static/AdminPage.css HTTP/1.1" 200 -
+2024-11-06 09:34:56,938 - INFO - 10.21.16.72 - - [06/Nov/2024 09:34:56] "[36mGET /static/edit-icon.svg HTTP/1.1[0m" 304 -
+2024-11-06 09:34:56,940 - INFO - 10.21.16.72 - - [06/Nov/2024 09:34:56] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-06 09:34:57,058 - INFO - 10.21.16.72 - - [06/Nov/2024 09:34:57] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
+2024-11-06 09:36:02,639 - INFO - Admin page accessed
+2024-11-06 09:36:02,643 - INFO - 10.21.16.72 - - [06/Nov/2024 09:36:02] "GET /admin HTTP/1.1" 200 -
+2024-11-06 09:36:02,691 - INFO - 10.21.16.72 - - [06/Nov/2024 09:36:02] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-06 09:36:02,697 - INFO - 10.21.16.72 - - [06/Nov/2024 09:36:02] "[36mGET /static/edit-icon.svg HTTP/1.1[0m" 304 -
+2024-11-06 09:36:02,699 - INFO - 10.21.16.72 - - [06/Nov/2024 09:36:02] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-06 09:36:02,817 - INFO - 10.21.16.72 - - [06/Nov/2024 09:36:02] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -

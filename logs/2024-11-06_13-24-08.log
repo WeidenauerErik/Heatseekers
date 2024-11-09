@@ -1,0 +1,34 @@
+2024-11-06 13:24:08,394 - INFO - Server started, log file: ./logs/2024-11-06_13-24-08.log
+2024-11-06 13:24:08,397 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.21.16.72:8000
+2024-11-06 13:24:08,397 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-06 13:24:12,631 - INFO - Delete user page accessed
+2024-11-06 13:24:12,634 - INFO - 10.21.16.72 - - [06/Nov/2024 13:24:12] "POST /delete-user HTTP/1.1" 200 -
+2024-11-06 13:24:12,666 - INFO - 10.21.16.72 - - [06/Nov/2024 13:24:12] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-06 13:24:12,831 - INFO - 10.21.16.72 - - [06/Nov/2024 13:24:12] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
+2024-11-06 13:24:14,129 - INFO - Delete user page accessed
+2024-11-06 13:24:14,131 - INFO - 10.21.16.72 - - [06/Nov/2024 13:24:14] "POST /delete-user HTTP/1.1" 200 -
+2024-11-06 13:24:14,152 - INFO - 10.21.16.72 - - [06/Nov/2024 13:24:14] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-06 13:24:15,791 - INFO - Delete user page accessed
+2024-11-06 13:24:15,792 - INFO - 10.21.16.72 - - [06/Nov/2024 13:24:15] "POST /delete-user HTTP/1.1" 200 -
+2024-11-06 13:24:15,812 - INFO - 10.21.16.72 - - [06/Nov/2024 13:24:15] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-06 13:24:16,795 - INFO - Delete user page accessed
+2024-11-06 13:24:16,797 - INFO - 10.21.16.72 - - [06/Nov/2024 13:24:16] "POST /delete-user HTTP/1.1" 200 -
+2024-11-06 13:24:16,815 - INFO - 10.21.16.72 - - [06/Nov/2024 13:24:16] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-06 13:24:18,053 - INFO - Delete user page accessed
+2024-11-06 13:24:18,055 - INFO - 10.21.16.72 - - [06/Nov/2024 13:24:18] "POST /delete-user HTTP/1.1" 200 -
+2024-11-06 13:24:18,089 - INFO - 10.21.16.72 - - [06/Nov/2024 13:24:18] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-06 13:24:18,629 - INFO - Delete user page accessed
+2024-11-06 13:24:18,632 - INFO - 10.21.16.72 - - [06/Nov/2024 13:24:18] "POST /delete-user HTTP/1.1" 200 -
+2024-11-06 13:24:18,650 - INFO - 10.21.16.72 - - [06/Nov/2024 13:24:18] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-06 13:24:19,047 - INFO - Delete user page accessed
+2024-11-06 13:24:19,049 - INFO - 10.21.16.72 - - [06/Nov/2024 13:24:19] "POST /delete-user HTTP/1.1" 200 -
+2024-11-06 13:24:19,087 - INFO - 10.21.16.72 - - [06/Nov/2024 13:24:19] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-06 13:24:19,588 - INFO - Delete user page accessed
+2024-11-06 13:24:19,590 - INFO - 10.21.16.72 - - [06/Nov/2024 13:24:19] "POST /delete-user HTTP/1.1" 200 -
+2024-11-06 13:24:19,617 - INFO - 10.21.16.72 - - [06/Nov/2024 13:24:19] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-06 13:24:20,032 - INFO - Delete user page accessed
+2024-11-06 13:24:20,033 - INFO - 10.21.16.72 - - [06/Nov/2024 13:24:20] "POST /delete-user HTTP/1.1" 200 -
+2024-11-06 13:24:20,055 - INFO - 10.21.16.72 - - [06/Nov/2024 13:24:20] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -

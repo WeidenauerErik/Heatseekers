@@ -1,9 +1,9 @@
 import hashlib
-
 from flask import Flask, Response, render_template_string, request, redirect, url_for
 import logging
 from datetime import datetime
 import functions
+from functions import get_AdminPage
 
 app = Flask(__name__)
 
@@ -24,15 +24,26 @@ console_handler.setFormatter(formatter)
 logger.addHandler(file_handler)
 logger.addHandler(console_handler)
 
+
 @app.route('/')
 def index():
     app.logger.info('Login page accessed')
     return render_template_string(functions.read_file("templates/LoginPage.html"))
 
+
 @app.route('/admin')
 def admin_page():
     app.logger.info('Admin page accessed')
-    return render_template_string(functions.read_file("templates/AdminPage.html"))
+    return functions.get_AdminPage()
+
+
+@app.route('/delete-user', methods=['POST'])
+def delete_user():
+    user_id = request.form.get('id')
+    print(user_id)
+    app.logger.info('Delete user page accessed')
+    return get_AdminPage()
+
 
 @app.route('/view', methods=['POST'])
 def view():
@@ -41,7 +52,6 @@ def view():
 
     hashed_password = hashlib.sha256(password.encode()).hexdigest()
 
-    print(hashed_password)
     user = functions.get_User("data/user.json")
     for tmp in user:
         if email == tmp['email'] and hashed_password == tmp['password']:
@@ -52,8 +62,7 @@ def view():
             return render_template_string(functions.read_file("templates/MainPage.html"))
 
     app.logger.info('Login failed')
-    return render_template_string(functions.read_file(
-        "templates/LoginPage.html") + "<p>Password or email incorrect!</p>")
+    return render_template_string(functions.read_file("templates/LoginPage.html") + "<p>Password or email incorrect!</p>")
 
 
 @app.route('/video_feed')
@@ -61,15 +70,18 @@ def video_feed():
     app.logger.info('Video feed accessed')
     return Response(functions.gen_camera_feed(), mimetype='multipart/x-mixed-replace; boundary=frame')
 
+
 @app.route('/error')
 def error():
     app.logger.info('Error page accessed')
     return render_template_string(functions.read_file("templates/ErrorPage.html"))
 
+
 @app.errorhandler(Exception)
 def handle_exception(e):
     app.logger.error(f'An error occurred: {e}')
     return redirect(url_for('error'))
+
 
 if __name__ == '__main__':
     app.logger.info(f'Server started, log file: {log_filename}')

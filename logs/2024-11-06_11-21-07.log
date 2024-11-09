@@ -1,0 +1,20 @@
+2024-11-06 11:21:07,253 - INFO - Server started, log file: ./logs/2024-11-06_11-21-07.log
+2024-11-06 11:21:07,257 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.21.16.72:8000
+2024-11-06 11:21:07,258 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-06 11:21:10,357 - INFO - Login page accessed
+2024-11-06 11:21:10,361 - INFO - 10.21.16.72 - - [06/Nov/2024 11:21:10] "GET / HTTP/1.1" 200 -
+2024-11-06 11:21:10,406 - INFO - 10.21.16.72 - - [06/Nov/2024 11:21:10] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-11-06 11:21:15,058 - INFO - View page accessed
+2024-11-06 11:21:15,061 - INFO - 10.21.16.72 - - [06/Nov/2024 11:21:15] "POST /view HTTP/1.1" 200 -
+2024-11-06 11:21:15,115 - INFO - 10.21.16.72 - - [06/Nov/2024 11:21:15] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-06 11:21:15,116 - INFO - Video feed accessed
+2024-11-06 11:21:15,123 - INFO - 10.21.16.72 - - [06/Nov/2024 11:21:15] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-06 11:21:15,581 - INFO - 10.21.16.72 - - [06/Nov/2024 11:21:15] "GET /video_feed HTTP/1.1" 200 -
+2024-11-06 11:21:16,430 - INFO - Admin page accessed
+2024-11-06 11:21:16,433 - INFO - 10.21.16.72 - - [06/Nov/2024 11:21:16] "GET /admin HTTP/1.1" 200 -
+2024-11-06 11:21:16,467 - INFO - 10.21.16.72 - - [06/Nov/2024 11:21:16] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-06 11:21:16,478 - INFO - 10.21.16.72 - - [06/Nov/2024 11:21:16] "[36mGET /static/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-06 11:21:16,493 - INFO - 10.21.16.72 - - [06/Nov/2024 11:21:16] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -

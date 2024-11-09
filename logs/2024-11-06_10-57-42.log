@@ -1,0 +1,25 @@
+2024-11-06 10:57:42,649 - INFO - Server started, log file: ./logs/2024-11-06_10-57-42.log
+2024-11-06 10:57:42,651 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.21.16.72:8000
+2024-11-06 10:57:42,651 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-06 10:58:21,279 - INFO - Login page accessed
+2024-11-06 10:58:21,283 - INFO - 10.21.16.72 - - [06/Nov/2024 10:58:21] "GET / HTTP/1.1" 200 -
+2024-11-06 10:58:21,319 - INFO - 10.21.16.72 - - [06/Nov/2024 10:58:21] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-11-06 10:58:25,393 - INFO - View page accessed
+2024-11-06 10:58:25,396 - INFO - 10.21.16.72 - - [06/Nov/2024 10:58:25] "POST /view HTTP/1.1" 200 -
+2024-11-06 10:58:25,430 - INFO - 10.21.16.72 - - [06/Nov/2024 10:58:25] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-06 10:58:25,431 - INFO - Video feed accessed
+2024-11-06 10:58:25,433 - INFO - 10.21.16.72 - - [06/Nov/2024 10:58:25] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-06 10:58:25,894 - INFO - 10.21.16.72 - - [06/Nov/2024 10:58:25] "GET /video_feed HTTP/1.1" 200 -
+2024-11-06 10:58:27,370 - INFO - Admin page accessed
+2024-11-06 10:58:27,372 - INFO - 10.21.16.72 - - [06/Nov/2024 10:58:27] "GET /admin HTTP/1.1" 200 -
+2024-11-06 10:58:27,420 - INFO - 10.21.16.72 - - [06/Nov/2024 10:58:27] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-06 10:58:27,430 - INFO - 10.21.16.72 - - [06/Nov/2024 10:58:27] "[36mGET /static/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-06 10:58:27,433 - INFO - 10.21.16.72 - - [06/Nov/2024 10:58:27] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-06 10:58:29,136 - INFO - Delete user page accessed
+2024-11-06 10:58:29,140 - INFO - 10.21.16.72 - - [06/Nov/2024 10:58:29] "POST /delete-user HTTP/1.1" 200 -
+2024-11-06 10:58:29,188 - INFO - 10.21.16.72 - - [06/Nov/2024 10:58:29] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-06 10:58:29,189 - INFO - 10.21.16.72 - - [06/Nov/2024 10:58:29] "[36mGET /static/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-06 10:58:29,191 - INFO - 10.21.16.72 - - [06/Nov/2024 10:58:29] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
