@@ -1,0 +1,15 @@
+2024-11-12 20:09:36,123 - INFO - Server started, log file: ./logs/2024-11-12_20-09-36.log
+2024-11-12 20:09:36,131 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.0.199:8000
+2024-11-12 20:09:36,131 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-12 20:09:38,827 - INFO - View page accessed
+2024-11-12 20:09:38,835 - INFO - 127.0.0.1 - - [12/Nov/2024 20:09:38] "POST /view HTTP/1.1" 200 -
+2024-11-12 20:09:38,847 - INFO - Video feed accessed
+2024-11-12 20:09:38,855 - INFO - 127.0.0.1 - - [12/Nov/2024 20:09:38] "GET /static/MainPage.js HTTP/1.1" 200 -
+2024-11-12 20:09:38,855 - INFO - 127.0.0.1 - - [12/Nov/2024 20:09:38] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-12 20:09:38,869 - INFO - 127.0.0.1 - - [12/Nov/2024 20:09:38] "GET /data/raspberrydata.txt?timestamp=1731438578866 HTTP/1.1" 200 -
+2024-11-12 20:09:40,260 - INFO - 127.0.0.1 - - [12/Nov/2024 20:09:40] "GET /video_feed HTTP/1.1" 200 -
+2024-11-12 20:09:40,380 - INFO - 127.0.0.1 - - [12/Nov/2024 20:09:40] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
+2024-11-12 20:09:43,884 - INFO - 127.0.0.1 - - [12/Nov/2024 20:09:43] "GET /data/raspberrydata.txt?timestamp=1731438583881 HTTP/1.1" 200 -

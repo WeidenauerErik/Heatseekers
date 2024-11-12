@@ -5,9 +5,12 @@ const app = Vue.createApp({
             humidityChart: null,
             isTemperatureBarChart: false,
             isHumidityBarChart: false,
-            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-            temperatureData: [65, 59, 80, 81, 56, 55, 40],
-            humidityData: [65, 59, 80, 81, 56, 55, 40]
+            labels: [],
+            temperatureData: [],
+            humidityData: [],
+            dataSource: '/data/raspberrydata.txt',
+            isFetchingData: false,  // Statusvariable, um den Abruf zu überwachen
+            intervalId: null,  // Zum Speichern der Interval-ID
         };
     },
     computed: {
@@ -18,11 +21,80 @@ const app = Vue.createApp({
             return this.isHumidityBarChart ? 'bar' : 'line';
         }
     },
-    mounted() {
+    async mounted() {
+        await this.fetchData(); // Initialer Datenabruf
         this.createChart('temperature', this.temperatureChartType, this.temperatureData, 'rgba(75, 192, 192, 0.2)', 'rgba(75, 192, 192, 1)');
         this.createChart('humidity', this.humidityChartType, this.humidityData, 'rgba(75, 192, 192, 0.2)', 'rgba(75, 192, 192, 1)');
+
+        // Set an interval to fetch and update the data every 5 seconds (5000 ms)
+        this.intervalId = setInterval(async () => {
+            if (!this.isFetchingData) {
+                console.log("Fetching new data...");
+                this.isFetchingData = true;
+                await this.fetchData();  // Fetch the latest data
+                this.updateChart('temperature');  // Update the temperature chart
+                this.updateChart('humidity');     // Update the humidity chart
+                this.isFetchingData = false;  // Reset the fetching status after the data has been processed
+            }
+        }, 5000); // 5000 ms = 5 seconds
+    },
+    beforeUnmount() {
+        clearInterval(this.intervalId);  // Clear interval when the component is destroyed
     },
     methods: {
+        async fetchData() {
+            try {
+                console.log("Fetching data from source...");
+                const response = await fetch(`/data/raspberrydata.txt?timestamp=${new Date().getTime()}`);
+                const rawData = await response.text();
+                console.log("Raw data fetched:", rawData);
+
+                const parsedData = rawData.trim().split('\n').slice(-15);
+                const newLabels = [];
+                const newTemperatureData = [];
+                const newHumidityData = [];
+
+                parsedData.forEach(entry => {
+                    const [dateTime, temperature, humidity, flood] = entry.split('/');
+                    let timeOnly = dateTime.split('-')[1];  // Gets 'hour_minute_second'
+                    const formattedTime = timeOnly.replace(/_/g, ':');
+                    newLabels.push(formattedTime);  // Use timeOnly as labels
+                    newTemperatureData.push(parseFloat(temperature));
+                    newHumidityData.push(parseFloat(humidity));
+                });
+
+                console.log("Parsed Data:", newLabels, newTemperatureData, newHumidityData);
+
+                // Only update the data if something has changed
+                let dataChanged = false;
+                if (newLabels.length !== this.labels.length ||
+                    newTemperatureData.length !== this.temperatureData.length ||
+                    newHumidityData.length !== this.humidityData.length) {
+                    dataChanged = true;
+                } else {
+                    // Compare each element individually for better performance
+                    for (let i = 0; i < newLabels.length; i++) {
+                        if (newLabels[i] !== this.labels[i] ||
+                            newTemperatureData[i] !== this.temperatureData[i] ||
+                            newHumidityData[i] !== this.humidityData[i]) {
+                            dataChanged = true;
+                            break;
+                        }
+                    }
+                }
+
+                if (dataChanged) {
+                    console.log("Data has changed. Updating...");
+                    this.labels = newLabels;
+                    this.temperatureData = newTemperatureData;
+                    this.humidityData = newHumidityData;
+                } else {
+                    console.log("Data has not changed. Skipping update.");
+                }
+            } catch (error) {
+                console.error("Error fetching data:", error);
+            }
+        },
         createChart(chartId, type, data, backgroundColor, borderColor) {
             const ctx = document.getElementById(chartId).getContext('2d');
             const chart = new Chart(ctx, {
@@ -55,18 +127,20 @@ const app = Vue.createApp({
             }
         },
         updateChart(chartId) {
-            if (chartId === 'temperature') {
-                if (this.temperatureChart) {
-                    this.temperatureChart.destroy();
-                }
-                this.createChart(chartId, this.temperatureChartType, this.temperatureData, 'rgba(75, 192, 192, 0.2)', 'rgba(75, 192, 192, 1)');
-            } else {
-                if (this.humidityChart) {
-                    this.humidityChart.destroy();
-                }
-                this.createChart(chartId, this.humidityChartType, this.humidityData, 'rgba(75, 192, 192, 0.2)', 'rgba(75, 192, 192, 1)');
+        if (chartId === 'temperature') {
+            console.log("Updating temperature chart...");
+            if (this.temperatureChart) {
+                this.temperatureChart.destroy();  // Zerstören Sie das alte Diagramm
             }
+            this.createChart('temperature', this.temperatureChartType, this.temperatureData, 'rgba(75, 192, 192, 0.2)', 'rgba(75, 192, 192, 1)');  // Neues Diagramm erstellen
+        } else {
+            console.log("Updating humidity chart...");
+            if (this.humidityChart) {
+                this.humidityChart.destroy();  // Zerstören Sie das alte Diagramm
+            }
+        this.createChart('humidity', this.humidityChartType, this.humidityData, 'rgba(75, 192, 192, 0.2)', 'rgba(75, 192, 192, 1)');  // Neues Diagramm erstellen
         }
+}
     }
 });
 

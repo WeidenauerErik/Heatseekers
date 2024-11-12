@@ -1,0 +1,14 @@
+2024-11-12 17:34:08,424 - INFO - Server started, log file: ./logs/2024-11-12_17-34-08.log
+2024-11-12 17:34:08,431 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.21.16.131:8000
+2024-11-12 17:34:08,431 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-12 17:34:10,650 - INFO - View page accessed
+2024-11-12 17:34:10,657 - INFO - 127.0.0.1 - - [12/Nov/2024 17:34:10] "POST /view HTTP/1.1" 200 -
+2024-11-12 17:34:10,670 - INFO - Video feed accessed
+2024-11-12 17:34:10,676 - INFO - 127.0.0.1 - - [12/Nov/2024 17:34:10] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-12 17:34:10,677 - INFO - 127.0.0.1 - - [12/Nov/2024 17:34:10] "GET /static/MainPage.js HTTP/1.1" 200 -
+2024-11-12 17:34:10,684 - INFO - 127.0.0.1 - - [12/Nov/2024 17:34:10] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:34:12,042 - INFO - 127.0.0.1 - - [12/Nov/2024 17:34:12] "GET /video_feed HTTP/1.1" 200 -
+2024-11-12 17:34:12,161 - INFO - 127.0.0.1 - - [12/Nov/2024 17:34:12] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -

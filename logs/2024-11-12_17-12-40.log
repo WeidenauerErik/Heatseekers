@@ -1,0 +1,60 @@
+2024-11-12 17:12:40,113 - INFO - Server started, log file: ./logs/2024-11-12_17-12-40.log
+2024-11-12 17:12:40,120 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.21.16.131:8000
+2024-11-12 17:12:40,120 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-12 17:12:40,254 - INFO - 127.0.0.1 - - [12/Nov/2024 17:12:40] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:12:45,254 - INFO - 127.0.0.1 - - [12/Nov/2024 17:12:45] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:12:50,253 - INFO - 127.0.0.1 - - [12/Nov/2024 17:12:50] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:12:55,253 - INFO - 127.0.0.1 - - [12/Nov/2024 17:12:55] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:13:00,253 - INFO - 127.0.0.1 - - [12/Nov/2024 17:13:00] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:13:05,254 - INFO - 127.0.0.1 - - [12/Nov/2024 17:13:05] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:13:10,253 - INFO - 127.0.0.1 - - [12/Nov/2024 17:13:10] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:13:15,253 - INFO - 127.0.0.1 - - [12/Nov/2024 17:13:15] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:13:19,522 - INFO - 127.0.0.1 - - [12/Nov/2024 17:13:19] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:13:24,525 - INFO - 127.0.0.1 - - [12/Nov/2024 17:13:24] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:13:29,523 - INFO - 127.0.0.1 - - [12/Nov/2024 17:13:29] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:13:34,522 - INFO - 127.0.0.1 - - [12/Nov/2024 17:13:34] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:13:40,251 - INFO - 127.0.0.1 - - [12/Nov/2024 17:13:40] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:13:45,254 - INFO - 127.0.0.1 - - [12/Nov/2024 17:13:45] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:13:50,251 - INFO - 127.0.0.1 - - [12/Nov/2024 17:13:50] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:13:54,525 - INFO - 127.0.0.1 - - [12/Nov/2024 17:13:54] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:13:59,523 - INFO - 127.0.0.1 - - [12/Nov/2024 17:13:59] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:14:04,523 - INFO - 127.0.0.1 - - [12/Nov/2024 17:14:04] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:14:09,523 - INFO - 127.0.0.1 - - [12/Nov/2024 17:14:09] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:14:15,253 - INFO - 127.0.0.1 - - [12/Nov/2024 17:14:15] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:14:20,254 - INFO - 127.0.0.1 - - [12/Nov/2024 17:14:20] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:14:25,255 - INFO - 127.0.0.1 - - [12/Nov/2024 17:14:25] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:14:30,254 - INFO - 127.0.0.1 - - [12/Nov/2024 17:14:30] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:14:35,254 - INFO - 127.0.0.1 - - [12/Nov/2024 17:14:35] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:14:40,255 - INFO - 127.0.0.1 - - [12/Nov/2024 17:14:40] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:14:45,254 - INFO - 127.0.0.1 - - [12/Nov/2024 17:14:45] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:14:50,253 - INFO - 127.0.0.1 - - [12/Nov/2024 17:14:50] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:14:55,254 - INFO - 127.0.0.1 - - [12/Nov/2024 17:14:55] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:15:00,253 - INFO - 127.0.0.1 - - [12/Nov/2024 17:15:00] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:15:05,255 - INFO - 127.0.0.1 - - [12/Nov/2024 17:15:05] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:15:10,254 - INFO - 127.0.0.1 - - [12/Nov/2024 17:15:10] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:15:39,389 - INFO - 127.0.0.1 - - [12/Nov/2024 17:15:39] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:15:44,524 - INFO - 127.0.0.1 - - [12/Nov/2024 17:15:44] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:15:49,524 - INFO - 127.0.0.1 - - [12/Nov/2024 17:15:49] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:15:54,525 - INFO - 127.0.0.1 - - [12/Nov/2024 17:15:54] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:15:59,523 - INFO - 127.0.0.1 - - [12/Nov/2024 17:15:59] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:16:04,523 - INFO - 127.0.0.1 - - [12/Nov/2024 17:16:04] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:16:09,524 - INFO - 127.0.0.1 - - [12/Nov/2024 17:16:09] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:16:14,524 - INFO - 127.0.0.1 - - [12/Nov/2024 17:16:14] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:16:19,524 - INFO - 127.0.0.1 - - [12/Nov/2024 17:16:19] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:16:24,525 - INFO - 127.0.0.1 - - [12/Nov/2024 17:16:24] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:16:29,524 - INFO - 127.0.0.1 - - [12/Nov/2024 17:16:29] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:16:34,525 - INFO - 127.0.0.1 - - [12/Nov/2024 17:16:34] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:16:39,524 - INFO - 127.0.0.1 - - [12/Nov/2024 17:16:39] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:16:44,523 - INFO - 127.0.0.1 - - [12/Nov/2024 17:16:44] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:16:49,525 - INFO - 127.0.0.1 - - [12/Nov/2024 17:16:49] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:16:54,524 - INFO - 127.0.0.1 - - [12/Nov/2024 17:16:54] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:17:00,255 - INFO - 127.0.0.1 - - [12/Nov/2024 17:17:00] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:17:05,255 - INFO - 127.0.0.1 - - [12/Nov/2024 17:17:05] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:17:10,256 - INFO - 127.0.0.1 - - [12/Nov/2024 17:17:10] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:17:15,255 - INFO - 127.0.0.1 - - [12/Nov/2024 17:17:15] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:17:19,524 - INFO - 127.0.0.1 - - [12/Nov/2024 17:17:19] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:17:25,256 - INFO - 127.0.0.1 - - [12/Nov/2024 17:17:25] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:17:30,256 - INFO - 127.0.0.1 - - [12/Nov/2024 17:17:30] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -

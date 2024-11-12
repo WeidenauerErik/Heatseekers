@@ -1,0 +1,22 @@
+2024-11-12 16:49:28,436 - INFO - Server started, log file: ./logs/2024-11-12_16-49-28.log
+2024-11-12 16:49:28,443 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.21.16.131:8000
+2024-11-12 16:49:28,443 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-12 16:49:32,516 - INFO - Login page accessed
+2024-11-12 16:49:32,520 - INFO - 127.0.0.1 - - [12/Nov/2024 16:49:32] "GET / HTTP/1.1" 200 -
+2024-11-12 16:49:32,549 - INFO - 127.0.0.1 - - [12/Nov/2024 16:49:32] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-11-12 16:49:36,855 - INFO - Login failed
+2024-11-12 16:49:36,859 - INFO - 127.0.0.1 - - [12/Nov/2024 16:49:36] "POST /view HTTP/1.1" 200 -
+2024-11-12 16:49:36,873 - INFO - 127.0.0.1 - - [12/Nov/2024 16:49:36] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-11-12 16:49:39,669 - INFO - View page accessed
+2024-11-12 16:49:39,673 - INFO - 127.0.0.1 - - [12/Nov/2024 16:49:39] "POST /view HTTP/1.1" 200 -
+2024-11-12 16:49:39,684 - INFO - Video feed accessed
+2024-11-12 16:49:39,687 - INFO - 127.0.0.1 - - [12/Nov/2024 16:49:39] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-12 16:49:39,687 - INFO - 127.0.0.1 - - [12/Nov/2024 16:49:39] "GET /static/MainPage.js HTTP/1.1" 200 -
+2024-11-12 16:49:39,696 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-12 16:49:39,697 - INFO - 127.0.0.1 - - [12/Nov/2024 16:49:39] "[32mGET /data/raspberrydata.txt HTTP/1.1[0m" 302 -
+2024-11-12 16:49:39,699 - INFO - Error page accessed
+2024-11-12 16:49:39,700 - INFO - 127.0.0.1 - - [12/Nov/2024 16:49:39] "GET /error HTTP/1.1" 200 -
+2024-11-12 16:49:41,082 - INFO - 127.0.0.1 - - [12/Nov/2024 16:49:41] "GET /video_feed HTTP/1.1" 200 -
