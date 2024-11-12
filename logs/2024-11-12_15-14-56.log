@@ -1,0 +1,14 @@
+2024-11-12 15:14:56,934 - INFO - Server started, log file: ./logs/2024-11-12_15-14-56.log
+2024-11-12 15:14:56,941 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.21.16.131:8000
+2024-11-12 15:14:56,941 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-12 15:14:59,194 - INFO - Login page accessed
+2024-11-12 15:14:59,198 - INFO - 127.0.0.1 - - [12/Nov/2024 15:14:59] "GET / HTTP/1.1" 200 -
+2024-11-12 15:14:59,209 - INFO - 127.0.0.1 - - [12/Nov/2024 15:14:59] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-11-12 15:15:03,920 - ERROR - An error occurred: string indices must be integers, not 'str'
+2024-11-12 15:15:03,921 - INFO - 127.0.0.1 - - [12/Nov/2024 15:15:03] "[32mPOST /delete-user HTTP/1.1[0m" 302 -
+2024-11-12 15:15:03,924 - INFO - Error page accessed
+2024-11-12 15:15:03,926 - INFO - 127.0.0.1 - - [12/Nov/2024 15:15:03] "GET /error HTTP/1.1" 200 -
+2024-11-12 15:15:03,936 - INFO - 127.0.0.1 - - [12/Nov/2024 15:15:03] "GET /static/ErrorPage.css HTTP/1.1" 200 -

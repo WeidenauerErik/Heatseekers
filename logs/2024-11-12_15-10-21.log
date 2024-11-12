@@ -1,0 +1,18 @@
+2024-11-12 15:10:21,863 - INFO - Server started, log file: ./logs/2024-11-12_15-10-21.log
+2024-11-12 15:10:21,871 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.21.16.131:8000
+2024-11-12 15:10:21,871 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-12 15:10:24,076 - INFO - Login page accessed
+2024-11-12 15:10:24,080 - INFO - 127.0.0.1 - - [12/Nov/2024 15:10:24] "GET / HTTP/1.1" 200 -
+2024-11-12 15:10:24,092 - INFO - 127.0.0.1 - - [12/Nov/2024 15:10:24] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-11-12 15:10:25,921 - INFO - Admin page accessed
+2024-11-12 15:10:25,924 - INFO - 127.0.0.1 - - [12/Nov/2024 15:10:25] "GET /admin HTTP/1.1" 200 -
+2024-11-12 15:10:25,933 - INFO - 127.0.0.1 - - [12/Nov/2024 15:10:25] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-12 15:10:25,934 - INFO - 127.0.0.1 - - [12/Nov/2024 15:10:25] "GET /static/delete-icon.svg HTTP/1.1" 200 -
+2024-11-12 15:10:25,941 - INFO - 127.0.0.1 - - [12/Nov/2024 15:10:25] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
+2024-11-12 15:10:29,948 - INFO - Delete user page accessed
+2024-11-12 15:10:29,952 - INFO - 127.0.0.1 - - [12/Nov/2024 15:10:29] "POST /delete-user HTTP/1.1" 200 -
+2024-11-12 15:10:29,964 - INFO - 127.0.0.1 - - [12/Nov/2024 15:10:29] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-12 15:10:29,964 - INFO - 127.0.0.1 - - [12/Nov/2024 15:10:29] "[36mGET /static/delete-icon.svg HTTP/1.1[0m" 304 -

@@ -1,0 +1,48 @@
+2024-11-12 15:46:31,937 - INFO - Server started, log file: ./logs/2024-11-12_15-46-31.log
+2024-11-12 15:46:31,944 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.21.16.131:8000
+2024-11-12 15:46:31,944 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-12 15:46:33,266 - INFO - Admin page accessed
+2024-11-12 15:46:33,275 - INFO - 127.0.0.1 - - [12/Nov/2024 15:46:33] "GET /admin HTTP/1.1" 200 -
+2024-11-12 15:46:33,292 - INFO - 127.0.0.1 - - [12/Nov/2024 15:46:33] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-12 15:46:33,292 - INFO - 127.0.0.1 - - [12/Nov/2024 15:46:33] "[36mGET /static/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-12 15:46:33,299 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-12 15:46:33,299 - INFO - 127.0.0.1 - - [12/Nov/2024 15:46:33] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2024-11-12 15:46:33,301 - INFO - Error page accessed
+2024-11-12 15:46:33,303 - INFO - 127.0.0.1 - - [12/Nov/2024 15:46:33] "GET /error HTTP/1.1" 200 -
+2024-11-12 15:47:53,637 - INFO - Delete user page accessed for user ID: 3
+2024-11-12 15:47:53,639 - INFO - 127.0.0.1 - - [12/Nov/2024 15:47:53] "POST /delete-user HTTP/1.1" 200 -
+2024-11-12 15:47:53,648 - INFO - 127.0.0.1 - - [12/Nov/2024 15:47:53] "[36mGET /static/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-12 15:47:53,649 - INFO - 127.0.0.1 - - [12/Nov/2024 15:47:53] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-12 15:47:53,653 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-12 15:47:53,654 - INFO - 127.0.0.1 - - [12/Nov/2024 15:47:53] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2024-11-12 15:47:53,655 - INFO - Error page accessed
+2024-11-12 15:47:53,657 - INFO - 127.0.0.1 - - [12/Nov/2024 15:47:53] "GET /error HTTP/1.1" 200 -
+2024-11-12 15:48:15,498 - ERROR - An error occurred: 405 Method Not Allowed: The method is not allowed for the requested URL.
+2024-11-12 15:48:15,499 - INFO - 127.0.0.1 - - [12/Nov/2024 15:48:15] "[32mGET /view HTTP/1.1[0m" 302 -
+2024-11-12 15:48:15,501 - INFO - Error page accessed
+2024-11-12 15:48:15,503 - INFO - 127.0.0.1 - - [12/Nov/2024 15:48:15] "GET /error HTTP/1.1" 200 -
+2024-11-12 15:48:15,513 - INFO - 127.0.0.1 - - [12/Nov/2024 15:48:15] "[36mGET /static/ErrorPage.css HTTP/1.1[0m" 304 -
+2024-11-12 15:48:15,518 - INFO - 127.0.0.1 - - [12/Nov/2024 15:48:15] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
+2024-11-12 15:48:19,846 - INFO - Login page accessed
+2024-11-12 15:48:19,850 - INFO - 127.0.0.1 - - [12/Nov/2024 15:48:19] "GET / HTTP/1.1" 200 -
+2024-11-12 15:48:19,861 - INFO - 127.0.0.1 - - [12/Nov/2024 15:48:19] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-11-12 15:48:22,917 - INFO - View page accessed
+2024-11-12 15:48:22,922 - INFO - 127.0.0.1 - - [12/Nov/2024 15:48:22] "POST /view HTTP/1.1" 200 -
+2024-11-12 15:48:22,937 - INFO - 127.0.0.1 - - [12/Nov/2024 15:48:22] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-12 15:48:22,938 - INFO - Video feed accessed
+2024-11-12 15:48:22,940 - INFO - 127.0.0.1 - - [12/Nov/2024 15:48:22] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-12 15:48:24,353 - INFO - 127.0.0.1 - - [12/Nov/2024 15:48:24] "GET /video_feed HTTP/1.1" 200 -
+2024-11-12 15:48:26,229 - INFO - Admin page accessed
+2024-11-12 15:48:26,230 - INFO - 127.0.0.1 - - [12/Nov/2024 15:48:26] "GET /admin HTTP/1.1" 200 -
+2024-11-12 15:48:26,240 - INFO - 127.0.0.1 - - [12/Nov/2024 15:48:26] "[36mGET /static/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-12 15:48:26,240 - INFO - 127.0.0.1 - - [12/Nov/2024 15:48:26] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-12 15:48:26,258 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-12 15:48:26,258 - INFO - 127.0.0.1 - - [12/Nov/2024 15:48:26] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2024-11-12 15:48:26,261 - INFO - Error page accessed
+2024-11-12 15:48:26,263 - INFO - 127.0.0.1 - - [12/Nov/2024 15:48:26] "GET /error HTTP/1.1" 200 -
+2024-11-12 15:48:34,129 - INFO - Login page accessed
+2024-11-12 15:48:34,130 - INFO - 127.0.0.1 - - [12/Nov/2024 15:48:34] "GET / HTTP/1.1" 200 -
+2024-11-12 15:48:34,145 - INFO - 127.0.0.1 - - [12/Nov/2024 15:48:34] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -

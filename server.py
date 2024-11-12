@@ -40,9 +40,39 @@ def admin_page():
 @app.route('/delete-user', methods=['POST'])
 def delete_user():
     user_id = request.form.get('id')
-    print(user_id)
-    app.logger.info('Delete user page accessed')
-    return get_AdminPage()
+    app.logger.info(f'Delete user page accessed for user ID: {user_id}')
+
+    data = functions.get_User("data/user.json")
+
+    data = [user for user in data if user['id'] != user_id]
+
+    functions.save_User("data/user.json", {"users": data})
+
+    return functions.get_AdminPage()
+
+@app.route('/create-user', methods=['POST'])
+def create_user():
+    email = request.form.get('email')
+    password = request.form.get('password')
+    admin = request.form.get('admin') == 'true'
+
+    users = functions.get_User("data/user.json")
+
+    new_id = str(len(users) + 1)
+
+    hashed_password = hashlib.sha256(password.encode()).hexdigest()
+
+    new_user = {
+        "id": new_id,
+        "email": email,
+        "password": hashed_password,
+        "admin": str(admin).lower()
+    }
+
+    users.append(new_user)
+    functions.save_User("data/user.json", {"users": users})
+
+    return redirect(url_for('admin_page'))
 
 
 @app.route('/view', methods=['POST'])

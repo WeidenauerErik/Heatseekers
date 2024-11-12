@@ -40,125 +40,188 @@ body {
 }
 
 #navbar h1 {
-    margin: 0;
-    padding: 0;
     color: white;
     font-size: 2em;
 }
 
 #navbar a {
-    margin: 0;
-    padding: 0;
     color: white;
     text-decoration: none;
 }
 
 #navbar a:hover {
-    text-decoration: white;
+    text-decoration: underline;
 }
 
 #user-container {
+    display: flex;
+    flex-direction: column;
     gap: 20px;
     margin: 20px;
-    background-color: white;
     padding: 20px;
+    background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    overflow: scroll;
+    max-height: 70vh;
+    overflow-y: auto;
 }
 
 #user-container .user {
     display: flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
     background-color: #86989B;
-    padding: 10px;
+    padding: 10px 15px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 10px;
 }
 
-#user-container .user p {
+#user-container .user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+#user-container .user-info p {
+    margin: 0;
+    color: #ffffff;
+}
+
+#user-container .user .user-email {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#user-container .user .admin-status {
+    font-size: 0.9em;
+    color: #d1d1d1;
+}
+
+#user-container .user form button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
     display: flex;
     align-items: center;
 }
 
 #user-container .user form button img {
-    width: 2rem;
+    width: 1.5rem;
 }
 
-#user-container .user form button {
-    width: 2rem;
-    display: flex;
-    align-items: center;
-}
-
-#user-container .user button {
-    background-color: transparent;
-    border: none;
-}
-
-#user-container .user button:hover {
-    cursor: grab;
-}
-
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 3.7rem;
-    height: 2.1rem;
-}
-
-/* Hide default HTML checkbox */
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-/* The slider */
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
+#newUserPopup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
     background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
+    border: 1px solid black;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
 }
 
-input:checked + .slider {
+#newUserPopup h2 {
+    margin-bottom: 10px;
+    color: #1F4959;
+}
+
+#newUserPopup form label {
+    margin-top: 10px;
+}
+
+#newUserPopup form input[type="email"],
+#newUserPopup form input[type="password"],
+#newUserPopup form input[type="checkbox"] {
+    margin-top: 5px;
+}
+
+.create-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.create-button {
     background-color: #1F4959;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    margin-bottom: 70px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
 }
 
-input:focus + .slider {
-    box-shadow: 0 0 1px #1F4959;
+.create-button:hover {
+    background-color: #2a6a81;
+    transform: scale(1.05);
 }
 
-input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
+#newUserPopup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #5C7C89;
+    border: 1px solid #1F4959;
+    border-radius: 10px;
+    color: white;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    text-align: center;
 }
 
-.slider.round {
-    border-radius: 34px;
+#newUserPopup h2 {
+    margin-bottom: 20px;
+    color: #FFFFFF;
 }
 
-.slider.round:before {
-    border-radius: 50%;
+#newUserPopup label {
+    display: block;
+    margin-top: 10px;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+#newUserPopup input[type="email"],
+#newUserPopup input[type="password"],
+#newUserPopup input[type="checkbox"] {
+    margin-top: 5px;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+}
+
+.popup-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.submit-button, .cancel-button {
+    background-color: #1F4959;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.submit-button:hover, .cancel-button:hover {
+    background-color: #2a6a81;
+    transform: scale(1.05);
+}
+
+.submit-button:active, .cancel-button:active {
+    transform: scale(1);
 }

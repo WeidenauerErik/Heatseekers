@@ -1,7 +1,7 @@
 import cv2
 import json
 import time
-from flask import render_template_string
+from flask import render_template
 
 
 def read_file(file_path):
@@ -57,19 +57,11 @@ def get_User(file_path):
         data = json.load(file)
     return data['users']
 
+def save_User(filepath, data):
+    with open(filepath, 'w') as file:
+        json.dump(data, file, indent=4)
+
 
 def get_AdminPage():
-    user = get_User("data/user.json")
-    output = ''
-    for tmp in user:
-        output += ('<div class="user"><p>' + tmp['email'] + '</p><form action="/delete-user" method="post">'
-            '<input type="hidden" value="' + tmp['id'] + '" name="id">'
-            '<label class="switch">'
-            '<input type="checkbox">'
-            '<span class="slider round"></span>'
-            '</label>'
-            '</form>'
-            '</div>')
-
-    output += '</div></div></div></body></html>'
-    return render_template_string(read_file("templates/AdminPage.html") + output)
+    users = get_User("data/user.json")
+    return render_template("admin_page.html", users=users)

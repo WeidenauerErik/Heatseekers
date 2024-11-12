@@ -1,0 +1,21 @@
+2024-11-12 15:53:11,896 - INFO - Server started, log file: ./logs/2024-11-12_15-53-11.log
+2024-11-12 15:53:11,903 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.21.16.131:8000
+2024-11-12 15:53:11,903 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-12 15:53:26,291 - INFO - View page accessed
+2024-11-12 15:53:26,298 - INFO - 127.0.0.1 - - [12/Nov/2024 15:53:26] "POST /view HTTP/1.1" 200 -
+2024-11-12 15:53:26,308 - INFO - Video feed accessed
+2024-11-12 15:53:26,317 - INFO - 127.0.0.1 - - [12/Nov/2024 15:53:26] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-12 15:53:26,318 - INFO - 127.0.0.1 - - [12/Nov/2024 15:53:26] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-12 15:53:27,713 - INFO - 127.0.0.1 - - [12/Nov/2024 15:53:27] "GET /video_feed HTTP/1.1" 200 -
+2024-11-12 15:53:27,834 - INFO - 127.0.0.1 - - [12/Nov/2024 15:53:27] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
+2024-11-12 15:56:37,674 - INFO - Admin page accessed
+2024-11-12 15:56:37,677 - INFO - 127.0.0.1 - - [12/Nov/2024 15:56:37] "GET /admin HTTP/1.1" 200 -
+2024-11-12 15:56:37,686 - INFO - 127.0.0.1 - - [12/Nov/2024 15:56:37] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-12 15:56:37,687 - INFO - 127.0.0.1 - - [12/Nov/2024 15:56:37] "[36mGET /static/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-12 15:56:37,716 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-12 15:56:37,718 - INFO - 127.0.0.1 - - [12/Nov/2024 15:56:37] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2024-11-12 15:56:37,721 - INFO - Error page accessed
+2024-11-12 15:56:37,722 - INFO - 127.0.0.1 - - [12/Nov/2024 15:56:37] "GET /error HTTP/1.1" 200 -

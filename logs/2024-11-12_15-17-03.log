@@ -1,0 +1,23 @@
+2024-11-12 15:17:03,834 - INFO - Server started, log file: ./logs/2024-11-12_15-17-03.log
+2024-11-12 15:17:03,841 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.21.16.131:8000
+2024-11-12 15:17:03,841 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-12 15:17:05,045 - INFO - Admin page accessed
+2024-11-12 15:17:05,053 - INFO - 127.0.0.1 - - [12/Nov/2024 15:17:05] "GET /admin HTTP/1.1" 200 -
+2024-11-12 15:17:05,075 - INFO - 127.0.0.1 - - [12/Nov/2024 15:17:05] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-12 15:17:05,076 - INFO - 127.0.0.1 - - [12/Nov/2024 15:17:05] "[36mGET /static/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-12 15:17:05,085 - INFO - 127.0.0.1 - - [12/Nov/2024 15:17:05] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
+2024-11-12 15:17:09,427 - INFO - Delete user page accessed
+2024-11-12 15:17:09,432 - INFO - 127.0.0.1 - - [12/Nov/2024 15:17:09] "POST /delete-user HTTP/1.1" 200 -
+2024-11-12 15:17:09,443 - INFO - 127.0.0.1 - - [12/Nov/2024 15:17:09] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-12 15:17:09,444 - INFO - 127.0.0.1 - - [12/Nov/2024 15:17:09] "[36mGET /static/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-12 15:17:10,390 - INFO - Delete user page accessed
+2024-11-12 15:17:10,394 - INFO - 127.0.0.1 - - [12/Nov/2024 15:17:10] "POST /delete-user HTTP/1.1" 200 -
+2024-11-12 15:17:10,405 - INFO - 127.0.0.1 - - [12/Nov/2024 15:17:10] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-12 15:17:10,406 - INFO - 127.0.0.1 - - [12/Nov/2024 15:17:10] "[36mGET /static/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-12 15:17:10,884 - INFO - Delete user page accessed
+2024-11-12 15:17:10,889 - INFO - 127.0.0.1 - - [12/Nov/2024 15:17:10] "POST /delete-user HTTP/1.1" 200 -
+2024-11-12 15:17:10,900 - INFO - 127.0.0.1 - - [12/Nov/2024 15:17:10] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-12 15:17:10,900 - INFO - 127.0.0.1 - - [12/Nov/2024 15:17:10] "[36mGET /static/delete-icon.svg HTTP/1.1[0m" 304 -
