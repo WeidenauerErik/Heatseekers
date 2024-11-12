@@ -3,23 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="../static/AdminPage.css">
-
-    <link rel="stylesheet" href="{{ url_for('static', filename='AdminPage.css') }}">
-    <link rel="icon" href="{{ url_for('static', filename='icon.png') }}" type="image/x-icon">
-
-    <title>Heatseekers - Admin Page</title>
-
-    <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Admin Page</title>
+    <link rel="stylesheet" type="text/css" href="/static/AdminPage.css">
 </head>
 <body>
-<div id="app">
-    <div id="navbar">
-        <div></div>
-        <h1>Heatseekers</h1>
-        <div></div>
-    </div>
+    <div id="app">
+        <div id="navbar">
+            <h1>Admin Dashboard</h1>
+        </div>
 
-    <div id="user-container">
+        <div id="user-container">
+    {% for tmp in users %}
+    <div class="user">
+        <div class="user-info">
+            <p class="user-email">{{ tmp.email }}</p>
+            <p class="admin-status">{{ "Admin" if tmp.admin == "true" else "User" }}</p>
+        </div>
+        <form action="/delete-user" method="post">
+            <input type="hidden" value="{{ tmp.id }}" name="id">
+            <button type="submit" class="delete-button">
+                <img src="/static/delete-icon.svg" alt="Delete" />
+            </button>
+        </form>
+    </div>
+    {% endfor %}
+</div>
+
+<!-- Create New User Button -->
+<div class="create-button-container">
+    <button onclick="document.getElementById('CreateUserPopup').style.display='block'" class="create-button">
+        Create New User
+    </button>
+</div>
+
+<div id="CreateUserPopup">
+    <h2>Create New User</h2>
+    <form action="/create-user" method="post">
+
+        <div>
+        <label for="email"></label>
+        <input type="email" id="email" name="email" required placeholder="EMAIL">
+        </div>
+
+        <div>
+            <label for="password"></label>
+        <input type="password" id="password" name="password" required placeholder="PASSWORD">
+        </div>
+
+        <div id="checkbox-container">
+            <p>isAdmin</p>
+            <label class="switch">
+                <input type="checkbox" id="admin" name="admin" value="true">
+                <span class="slider round"></span>
+            </label>
+        </div>
+
+        <div class="form-buttons">
+            <button type="submit" class="submit-button">Add User</button>
+            <button type="button" class="cancel-button" onclick="document.getElementById('CreateUserPopup').style.display='none'">Cancel</button>
+        </div>
+    </form>
+</div>
+
+<script>
+    window.onclick = function(event) {
+        var popup = document.getElementById('CreateUserPopup');
+        if (event.target == popup) {
+            popup.style.display = "none";
+        }
+    }
+</script>
+
+        <script>
+            window.onclick = function(event) {
+                var popup = document.getElementById('CreateUserPopup');
+                if (event.target == popup) {
+                    popup.style.display = "none";
+                }
+            }
+        </script>
+    </div>
+</body>
+</html>

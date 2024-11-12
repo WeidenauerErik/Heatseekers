@@ -1,0 +1,62 @@
+2024-11-12 17:02:30,114 - INFO - Server started, log file: ./logs/2024-11-12_17-02-30.log
+2024-11-12 17:02:30,133 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.31.190:8000
+2024-11-12 17:02:30,133 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-12 17:02:32,026 - INFO - Admin page accessed
+2024-11-12 17:02:32,036 - INFO - 192.168.31.190 - - [12/Nov/2024 17:02:32] "GET /admin HTTP/1.1" 200 -
+2024-11-12 17:02:32,203 - INFO - 192.168.31.190 - - [12/Nov/2024 17:02:32] "[36mGET /static/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-12 17:02:32,204 - INFO - 192.168.31.190 - - [12/Nov/2024 17:02:32] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-12 17:02:32,359 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-12 17:02:32,359 - INFO - 192.168.31.190 - - [12/Nov/2024 17:02:32] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2024-11-12 17:02:32,367 - INFO - Error page accessed
+2024-11-12 17:02:32,371 - INFO - 192.168.31.190 - - [12/Nov/2024 17:02:32] "GET /error HTTP/1.1" 200 -
+2024-11-12 17:02:36,293 - INFO - Admin page accessed
+2024-11-12 17:02:36,294 - INFO - 192.168.31.190 - - [12/Nov/2024 17:02:36] "GET /admin HTTP/1.1" 200 -
+2024-11-12 17:02:36,354 - INFO - 192.168.31.190 - - [12/Nov/2024 17:02:36] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-12 17:02:36,356 - INFO - 192.168.31.190 - - [12/Nov/2024 17:02:36] "[36mGET /static/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-12 17:02:36,506 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-12 17:02:36,506 - INFO - 192.168.31.190 - - [12/Nov/2024 17:02:36] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2024-11-12 17:02:36,512 - INFO - Error page accessed
+2024-11-12 17:02:36,516 - INFO - 192.168.31.190 - - [12/Nov/2024 17:02:36] "GET /error HTTP/1.1" 200 -
+2024-11-12 17:02:36,708 - INFO - Admin page accessed
+2024-11-12 17:02:36,709 - INFO - 192.168.31.190 - - [12/Nov/2024 17:02:36] "GET /admin HTTP/1.1" 200 -
+2024-11-12 17:02:36,769 - INFO - 192.168.31.190 - - [12/Nov/2024 17:02:36] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-12 17:02:36,780 - INFO - 192.168.31.190 - - [12/Nov/2024 17:02:36] "[36mGET /static/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-12 17:02:36,941 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-12 17:02:36,942 - INFO - 192.168.31.190 - - [12/Nov/2024 17:02:36] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2024-11-12 17:02:36,951 - INFO - Error page accessed
+2024-11-12 17:02:36,955 - INFO - 192.168.31.190 - - [12/Nov/2024 17:02:36] "GET /error HTTP/1.1" 200 -
+2024-11-12 17:02:37,029 - INFO - Admin page accessed
+2024-11-12 17:02:37,030 - INFO - 192.168.31.190 - - [12/Nov/2024 17:02:37] "GET /admin HTTP/1.1" 200 -
+2024-11-12 17:02:37,077 - INFO - 192.168.31.190 - - [12/Nov/2024 17:02:37] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-12 17:02:37,079 - INFO - 192.168.31.190 - - [12/Nov/2024 17:02:37] "[36mGET /static/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-12 17:02:37,163 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-12 17:02:37,164 - INFO - 192.168.31.190 - - [12/Nov/2024 17:02:37] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2024-11-12 17:02:37,172 - INFO - Error page accessed
+2024-11-12 17:02:37,175 - INFO - 192.168.31.190 - - [12/Nov/2024 17:02:37] "GET /error HTTP/1.1" 200 -
+2024-11-12 17:02:37,242 - INFO - Admin page accessed
+2024-11-12 17:02:37,243 - INFO - 192.168.31.190 - - [12/Nov/2024 17:02:37] "GET /admin HTTP/1.1" 200 -
+2024-11-12 17:02:37,286 - INFO - 192.168.31.190 - - [12/Nov/2024 17:02:37] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-12 17:02:37,289 - INFO - 192.168.31.190 - - [12/Nov/2024 17:02:37] "[36mGET /static/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-12 17:02:37,376 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-12 17:02:37,377 - INFO - 192.168.31.190 - - [12/Nov/2024 17:02:37] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2024-11-12 17:02:37,385 - INFO - Error page accessed
+2024-11-12 17:02:37,387 - INFO - 192.168.31.190 - - [12/Nov/2024 17:02:37] "GET /error HTTP/1.1" 200 -
+2024-11-12 17:02:37,486 - INFO - Admin page accessed
+2024-11-12 17:02:37,487 - INFO - 192.168.31.190 - - [12/Nov/2024 17:02:37] "GET /admin HTTP/1.1" 200 -
+2024-11-12 17:02:37,522 - INFO - 192.168.31.190 - - [12/Nov/2024 17:02:37] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-12 17:02:37,527 - INFO - 192.168.31.190 - - [12/Nov/2024 17:02:37] "[36mGET /static/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-12 17:02:37,636 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-12 17:02:37,636 - INFO - 192.168.31.190 - - [12/Nov/2024 17:02:37] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2024-11-12 17:02:37,643 - INFO - Admin page accessed
+2024-11-12 17:02:37,644 - INFO - 192.168.31.190 - - [12/Nov/2024 17:02:37] "GET /admin HTTP/1.1" 200 -
+2024-11-12 17:02:37,645 - INFO - Error page accessed
+2024-11-12 17:02:37,649 - INFO - 192.168.31.190 - - [12/Nov/2024 17:02:37] "GET /error HTTP/1.1" 200 -
+2024-11-12 17:02:37,693 - INFO - 192.168.31.190 - - [12/Nov/2024 17:02:37] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-12 17:02:37,700 - INFO - 192.168.31.190 - - [12/Nov/2024 17:02:37] "[36mGET /static/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-12 17:02:37,841 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-12 17:02:37,841 - INFO - 192.168.31.190 - - [12/Nov/2024 17:02:37] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2024-11-12 17:02:37,848 - INFO - Error page accessed
+2024-11-12 17:02:37,850 - INFO - 192.168.31.190 - - [12/Nov/2024 17:02:37] "GET /error HTTP/1.1" 200 -

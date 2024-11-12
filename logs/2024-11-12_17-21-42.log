@@ -1,0 +1,15 @@
+2024-11-12 17:21:42,267 - INFO - Server started, log file: ./logs/2024-11-12_17-21-42.log
+2024-11-12 17:21:42,285 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.31.190:8000
+2024-11-12 17:21:42,285 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-12 17:21:44,006 - INFO - Admin page accessed
+2024-11-12 17:21:44,017 - INFO - 192.168.31.190 - - [12/Nov/2024 17:21:44] "GET /admin HTTP/1.1" 200 -
+2024-11-12 17:21:44,134 - INFO - 192.168.31.190 - - [12/Nov/2024 17:21:44] "GET /static/AdminPage.css HTTP/1.1" 200 -
+2024-11-12 17:21:44,143 - INFO - 192.168.31.190 - - [12/Nov/2024 17:21:44] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-12 17:21:44,145 - INFO - 192.168.31.190 - - [12/Nov/2024 17:21:44] "[36mGET /static/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-12 17:21:44,280 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-12 17:21:44,281 - INFO - 192.168.31.190 - - [12/Nov/2024 17:21:44] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2024-11-12 17:21:44,288 - INFO - Error page accessed
+2024-11-12 17:21:44,290 - INFO - 192.168.31.190 - - [12/Nov/2024 17:21:44] "GET /error HTTP/1.1" 200 -

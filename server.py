@@ -1,9 +1,8 @@
 import hashlib
-from flask import Flask, Response, render_template_string, request, redirect, url_for
+from flask import Flask, Response, render_template_string, request, redirect, url_for, render_template
 import logging
 from datetime import datetime
 import functions
-from functions import get_AdminPage
 
 app = Flask(__name__)
 
@@ -28,7 +27,7 @@ logger.addHandler(console_handler)
 @app.route('/')
 def index():
     app.logger.info('Login page accessed')
-    return render_template_string(functions.read_file("templates/LoginPage.html"))
+    return render_template("LoginPage.html")
 
 
 @app.route('/admin')
@@ -92,7 +91,7 @@ def view():
             return render_template_string(functions.read_file("templates/MainPage.html"))
 
     app.logger.info('Login failed')
-    return render_template_string(functions.read_file("templates/LoginPage.html") + "<p>Password or email incorrect!</p>")
+    return render_template("LoginPage.html")+ "<p>Password or email incorrect!</p>"
 
 
 @app.route('/video_feed')

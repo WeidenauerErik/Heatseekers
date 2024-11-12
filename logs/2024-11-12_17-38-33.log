@@ -1,4 +1,11 @@
-<!DOCTYPE html>
+2024-11-12 17:38:33,784 - INFO - Server started, log file: ./logs/2024-11-12_17-38-33.log
+2024-11-12 17:38:33,807 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.31.190:8000
+2024-11-12 17:38:33,807 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-12 17:38:38,464 - INFO - Login page accessed
+2024-11-12 17:38:38,467 - ERROR - An error occurred: <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -39,3 +46,7 @@
 
 </body>
 </html>
+2024-11-12 17:38:38,474 - INFO - 192.168.31.190 - - [12/Nov/2024 17:38:38] "[32mGET / HTTP/1.1[0m" 302 -
+2024-11-12 17:38:38,484 - INFO - Error page accessed
+2024-11-12 17:38:38,493 - INFO - 192.168.31.190 - - [12/Nov/2024 17:38:38] "GET /error HTTP/1.1" 200 -
+2024-11-12 17:38:38,627 - INFO - 192.168.31.190 - - [12/Nov/2024 17:38:38] "GET /static/ErrorPage.css HTTP/1.1" 200 -

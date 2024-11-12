@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@100&display=swap');
-
+@import url('./Slider.css');
 * {
     font-family: 'Noto Sans Gujarati', sans-serif;
     box-sizing: border-box;
@@ -108,7 +108,7 @@ body {
     width: 1.5rem;
 }
 
-#newUserPopup {
+#CreateUserPopup {
     display: none;
     position: fixed;
     top: 50%;
@@ -116,25 +116,18 @@ body {
     transform: translate(-50%, -50%);
     padding: 20px;
     background-color: white;
-    border: 1px solid black;
     z-index: 1000;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     border-radius: 8px;
 }
 
-#newUserPopup h2 {
+#CreateUserPopup h2 {
     margin-bottom: 10px;
     color: #1F4959;
 }
 
-#newUserPopup form label {
+#CreateUserPopup form label {
     margin-top: 10px;
-}
-
-#newUserPopup form input[type="email"],
-#newUserPopup form input[type="password"],
-#newUserPopup form input[type="checkbox"] {
-    margin-top: 5px;
 }
 
 .create-button-container {
@@ -161,7 +154,7 @@ body {
     transform: scale(1.05);
 }
 
-#newUserPopup {
+#CreateUserPopup {
     display: none;
     position: fixed;
     top: 50%;
@@ -169,30 +162,30 @@ body {
     transform: translate(-50%, -50%);
     padding: 20px;
     background-color: #5C7C89;
-    border: 1px solid #1F4959;
     border-radius: 10px;
+    border: none;
     color: white;
     z-index: 1000;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    width: 300px;
+    width: 30%;
     text-align: center;
 }
 
-#newUserPopup h2 {
+#CreateUserPopup h2 {
     margin-bottom: 20px;
     color: #FFFFFF;
 }
 
-#newUserPopup label {
+#CreateUserPopup label {
     display: block;
     margin-top: 10px;
     color: #FFFFFF;
     text-align: left;
 }
 
-#newUserPopup input[type="email"],
-#newUserPopup input[type="password"],
-#newUserPopup input[type="checkbox"] {
+#CreateUserPopup input[type="email"],
+#CreateUserPopup input[type="password"],
+#CreateUserPopup input[type="checkbox"] {
     margin-top: 5px;
     width: 100%;
     padding: 8px;
@@ -201,12 +194,11 @@ body {
     font-size: 1em;
 }
 
-.popup-buttons {
+.form-buttons {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
 }
-
 .submit-button, .cancel-button {
     background-color: #1F4959;
     color: white;
@@ -214,7 +206,10 @@ body {
     padding: 8px 16px;
     border-radius: 5px;
     cursor: pointer;
+    height: 3rem;
+    font-size: 1rem;
     transition: background-color 0.3s, transform 0.2s;
+    width: 10rem;
 }
 
 .submit-button:hover, .cancel-button:hover {
@@ -224,4 +219,24 @@ body {
 
 .submit-button:active, .cancel-button:active {
     transform: scale(1);
+}
+
+#checkbox-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#checkbox-container p {
+    display: flex;
+    align-items: center;
+}
+
+#CreateUserPopup form div #email, #CreateUserPopup form div #password {
+    height: 3rem;
+    font-size: 1rem;
+}
+
+#CreateUserPopup form div {
+    margin-top: 20px;
 }

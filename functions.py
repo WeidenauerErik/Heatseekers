@@ -64,4 +64,4 @@ def save_User(filepath, data):
 
 def get_AdminPage():
     users = get_User("data/user.json")
-    return render_template("admin_page.html", users=users)
+    return render_template("AdminPage.html", users=users)

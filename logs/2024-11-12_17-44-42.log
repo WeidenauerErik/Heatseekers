@@ -1,0 +1,17 @@
+2024-11-12 17:44:42,356 - INFO - Server started, log file: ./logs/2024-11-12_17-44-42.log
+2024-11-12 17:44:42,378 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.31.190:8000
+2024-11-12 17:44:42,379 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-12 17:44:46,733 - INFO - Login page accessed
+2024-11-12 17:44:46,742 - INFO - 192.168.31.190 - - [12/Nov/2024 17:44:46] "GET / HTTP/1.1" 200 -
+2024-11-12 17:44:46,887 - INFO - 192.168.31.190 - - [12/Nov/2024 17:44:46] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-11-12 17:44:47,018 - INFO - 192.168.31.190 - - [12/Nov/2024 17:44:47] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
+2024-11-12 17:44:50,056 - INFO - View page accessed
+2024-11-12 17:44:50,060 - INFO - 192.168.31.190 - - [12/Nov/2024 17:44:50] "POST /view HTTP/1.1" 200 -
+2024-11-12 17:44:50,129 - INFO - 192.168.31.190 - - [12/Nov/2024 17:44:50] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-12 17:44:50,132 - INFO - Video feed accessed
+2024-11-12 17:44:50,137 - INFO - 192.168.31.190 - - [12/Nov/2024 17:44:50] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-12 17:44:50,158 - INFO - 192.168.31.190 - - [12/Nov/2024 17:44:50] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-12 17:44:51,106 - INFO - 192.168.31.190 - - [12/Nov/2024 17:44:51] "GET /video_feed HTTP/1.1" 200 -
