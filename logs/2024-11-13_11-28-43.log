@@ -1,0 +1,92 @@
+2024-11-13 11:28:43,858 - INFO - Server started, log file: ./logs/2024-11-13_11-28-43.log
+2024-11-13 11:28:43,880 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.21.16.72:8000
+2024-11-13 11:28:43,880 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-13 11:28:44,558 - INFO - 10.21.16.72 - - [13/Nov/2024 11:28:44] "GET /data/raspberrydata.txt?timestamp=1731493724533 HTTP/1.1" 200 -
+2024-11-13 11:28:45,419 - INFO - Login page accessed
+2024-11-13 11:28:45,421 - ERROR - An error occurred: <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <link rel="stylesheet" href="/static/LoginPage.css">
+    <link rel="icon" href="/static/images/icon.png" type="image/x-icon">
+    <title>Heatseekers - Login</title>
+</head>
+<body>
+<div class="stripe"><p>Welcome to HeatSeekers</p></div>
+
+<h1>Login to HeatSeekers!</h1>
+
+<form action="/view" method="post">
+    <section id="LoginField">
+        <div class="loginItem">
+            <label for="email"></label>
+            <input id="email" name="email" required type="text">
+            <span>Email</span>
+        </div>
+
+        <div class="loginItem">
+            <label for="password"></label>
+            <input id="password" name="password" required type="password">
+            <span>Password</span>
+        </div>
+
+        <button type="submit" class="submitButton">Login</button>
+    </section>
+</form>
+
+</body>
+</html>
+
+2024-11-13 11:28:45,422 - INFO - 10.21.16.72 - - [13/Nov/2024 11:28:45] "[32mGET / HTTP/1.1[0m" 302 -
+2024-11-13 11:28:45,429 - INFO - Error page accessed
+2024-11-13 11:28:45,445 - INFO - 10.21.16.72 - - [13/Nov/2024 11:28:45] "GET /error HTTP/1.1" 200 -
+2024-11-13 11:28:45,471 - INFO - 10.21.16.72 - - [13/Nov/2024 11:28:45] "GET /static/ErrorPage.css HTTP/1.1" 200 -
+2024-11-13 11:28:49,153 - INFO - Login page accessed
+2024-11-13 11:28:49,153 - ERROR - An error occurred: <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <link rel="stylesheet" href="/static/LoginPage.css">
+    <link rel="icon" href="/static/images/icon.png" type="image/x-icon">
+    <title>Heatseekers - Login</title>
+</head>
+<body>
+<div class="stripe"><p>Welcome to HeatSeekers</p></div>
+
+<h1>Login to HeatSeekers!</h1>
+
+<form action="/view" method="post">
+    <section id="LoginField">
+        <div class="loginItem">
+            <label for="email"></label>
+            <input id="email" name="email" required type="text">
+            <span>Email</span>
+        </div>
+
+        <div class="loginItem">
+            <label for="password"></label>
+            <input id="password" name="password" required type="password">
+            <span>Password</span>
+        </div>
+
+        <button type="submit" class="submitButton">Login</button>
+    </section>
+</form>
+
+</body>
+</html>
+
+2024-11-13 11:28:49,154 - INFO - 10.21.16.72 - - [13/Nov/2024 11:28:49] "[32mGET / HTTP/1.1[0m" 302 -
+2024-11-13 11:28:49,157 - INFO - Error page accessed
+2024-11-13 11:28:49,159 - INFO - 10.21.16.72 - - [13/Nov/2024 11:28:49] "GET /error HTTP/1.1" 200 -
+2024-11-13 11:28:49,189 - INFO - 10.21.16.72 - - [13/Nov/2024 11:28:49] "[36mGET /static/ErrorPage.css HTTP/1.1[0m" 304 -
+2024-11-13 11:28:49,525 - INFO - 10.21.16.72 - - [13/Nov/2024 11:28:49] "GET /data/raspberrydata.txt?timestamp=1731493729522 HTTP/1.1" 200 -

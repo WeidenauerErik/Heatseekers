@@ -29,7 +29,7 @@ logger.addHandler(console_handler)
 @app.route('/')
 def index():
     app.logger.info('Login page accessed')
-    return render_template(functions.read_file("templates/LoginPage.html"))
+    return render_template_string(functions.read_file("templates/LoginPage.html"))
 
 
 @app.route('/admin')
@@ -111,10 +111,10 @@ def error():
 @app.route('/data/raspberrydata.txt')
 def serve_data():
     response = send_file('data/raspberrydata.txt')
-    response.cache_control.no_cache = True  # Verhindern von Cache
-    response.cache_control.no_store = True  # Verhindern von Cache-Speicherung
-    response.cache_control.max_age = 0     # Maximale Gültigkeitsdauer von 0
-    response.expires = -1                  # Setzen Sie den "Expires"-Header auf -1
+    response.cache_control.no_cache = True
+    response.cache_control.no_store = True
+    response.cache_control.max_age = 0
+    response.expires = -1
     return response
 
 

@@ -1,0 +1,49 @@
+2024-11-13 11:32:28,596 - INFO - Server started, log file: ./logs/2024-11-13_11-32-28.log
+2024-11-13 11:32:28,596 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.21.16.72:8000
+2024-11-13 11:32:28,596 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-13 11:32:29,960 - INFO - Login page accessed
+2024-11-13 11:32:29,961 - ERROR - An error occurred: <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <link rel="stylesheet" href="/static/LoginPage.css">
+    <link rel="icon" href="/static/images/icon.png" type="image/x-icon">
+    <title>Heatseekers - Login</title>
+</head>
+<body>
+<div class="stripe"><p>Welcome to HeatSeekers</p></div>
+
+<h1>Login to HeatSeekers!</h1>
+
+<form action="/view" method="post">
+    <section id="LoginField">
+        <div class="loginItem">
+            <label for="email"></label>
+            <input id="email" name="email" required type="text">
+            <span>Email</span>
+        </div>
+
+        <div class="loginItem">
+            <label for="password"></label>
+            <input id="password" name="password" required type="password">
+            <span>Password</span>
+        </div>
+
+        <button type="submit" class="submitButton">Login</button>
+    </section>
+</form>
+
+</body>
+</html>
+
+2024-11-13 11:32:29,965 - INFO - 10.21.16.72 - - [13/Nov/2024 11:32:29] "[32mGET / HTTP/1.1[0m" 302 -
+2024-11-13 11:32:29,970 - INFO - Error page accessed
+2024-11-13 11:32:29,972 - INFO - 10.21.16.72 - - [13/Nov/2024 11:32:29] "GET /error HTTP/1.1" 200 -
+2024-11-13 11:32:30,021 - INFO - 10.21.16.72 - - [13/Nov/2024 11:32:30] "[36mGET /static/ErrorPage.css HTTP/1.1[0m" 304 -
+2024-11-13 11:32:34,532 - INFO - 10.21.16.72 - - [13/Nov/2024 11:32:34] "GET /data/raspberrydata.txt?timestamp=1731493954527 HTTP/1.1" 200 -

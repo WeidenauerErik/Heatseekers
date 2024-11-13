@@ -1,0 +1,38 @@
+2024-11-13 11:33:41,644 - INFO - Server started, log file: ./logs/2024-11-13_11-33-41.log
+2024-11-13 11:33:41,654 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.21.16.72:8000
+2024-11-13 11:33:41,654 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-13 11:33:45,532 - INFO - Login page accessed
+2024-11-13 11:33:45,535 - INFO - 10.21.16.72 - - [13/Nov/2024 11:33:45] "GET / HTTP/1.1" 200 -
+2024-11-13 11:33:45,588 - INFO - 10.21.16.72 - - [13/Nov/2024 11:33:45] "GET /static/LoginPage.css HTTP/1.1" 200 -
+2024-11-13 11:33:48,656 - INFO - View page accessed
+2024-11-13 11:33:48,656 - INFO - 10.21.16.72 - - [13/Nov/2024 11:33:48] "POST /view HTTP/1.1" 200 -
+2024-11-13 11:33:48,707 - INFO - 10.21.16.72 - - [13/Nov/2024 11:33:48] "GET /static/MainPage.css HTTP/1.1" 200 -
+2024-11-13 11:33:48,707 - INFO - Video feed accessed
+2024-11-13 11:33:48,707 - INFO - 10.21.16.72 - - [13/Nov/2024 11:33:48] "GET /static/MainPage.js HTTP/1.1" 200 -
+2024-11-13 11:33:48,718 - INFO - 10.21.16.72 - - [13/Nov/2024 11:33:48] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-13 11:33:48,734 - INFO - 10.21.16.72 - - [13/Nov/2024 11:33:48] "GET /data/raspberrydata.txt?timestamp=1731494028731 HTTP/1.1" 200 -
+2024-11-13 11:33:49,357 - INFO - 10.21.16.72 - - [13/Nov/2024 11:33:49] "GET /video_feed HTTP/1.1" 200 -
+2024-11-13 11:33:53,793 - INFO - 10.21.16.72 - - [13/Nov/2024 11:33:53] "GET /data/raspberrydata.txt?timestamp=1731494033790 HTTP/1.1" 200 -
+2024-11-13 11:33:58,795 - INFO - 10.21.16.72 - - [13/Nov/2024 11:33:58] "GET /data/raspberrydata.txt?timestamp=1731494038791 HTTP/1.1" 200 -
+2024-11-13 11:34:03,794 - INFO - 10.21.16.72 - - [13/Nov/2024 11:34:03] "GET /data/raspberrydata.txt?timestamp=1731494043791 HTTP/1.1" 200 -
+2024-11-13 11:34:05,503 - INFO - Admin page accessed
+2024-11-13 11:34:05,544 - INFO - 10.21.16.72 - - [13/Nov/2024 11:34:05] "GET /admin HTTP/1.1" 200 -
+2024-11-13 11:34:05,573 - INFO - 10.21.16.72 - - [13/Nov/2024 11:34:05] "GET /static/AdminPage.css HTTP/1.1" 200 -
+2024-11-13 11:34:05,573 - INFO - 10.21.16.72 - - [13/Nov/2024 11:34:05] "GET /static/images/delete-icon.svg HTTP/1.1" 200 -
+2024-11-13 11:34:05,586 - INFO - 10.21.16.72 - - [13/Nov/2024 11:34:05] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-13 11:34:05,849 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-13 11:34:05,849 - INFO - 10.21.16.72 - - [13/Nov/2024 11:34:05] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2024-11-13 11:34:05,853 - INFO - Error page accessed
+2024-11-13 11:34:05,854 - INFO - 10.21.16.72 - - [13/Nov/2024 11:34:05] "GET /error HTTP/1.1" 200 -
+2024-11-13 11:34:09,529 - INFO - 10.21.16.72 - - [13/Nov/2024 11:34:09] "GET /data/raspberrydata.txt?timestamp=1731494049525 HTTP/1.1" 200 -
+2024-11-13 11:34:13,793 - INFO - 10.21.16.72 - - [13/Nov/2024 11:34:13] "GET /data/raspberrydata.txt?timestamp=1731494053790 HTTP/1.1" 200 -
+2024-11-13 11:34:18,792 - INFO - 10.21.16.72 - - [13/Nov/2024 11:34:18] "GET /data/raspberrydata.txt?timestamp=1731494058792 HTTP/1.1" 200 -
+2024-11-13 11:34:23,791 - INFO - 10.21.16.72 - - [13/Nov/2024 11:34:23] "GET /data/raspberrydata.txt?timestamp=1731494063791 HTTP/1.1" 200 -
+2024-11-13 11:34:28,795 - INFO - 10.21.16.72 - - [13/Nov/2024 11:34:28] "GET /data/raspberrydata.txt?timestamp=1731494068791 HTTP/1.1" 200 -
+2024-11-13 11:34:34,536 - INFO - 10.21.16.72 - - [13/Nov/2024 11:34:34] "GET /data/raspberrydata.txt?timestamp=1731494074533 HTTP/1.1" 200 -
+2024-11-13 11:34:34,536 - INFO - 10.21.16.72 - - [13/Nov/2024 11:34:34] "GET /data/raspberrydata.txt?timestamp=1731494074532 HTTP/1.1" 200 -
+2024-11-13 11:34:39,541 - INFO - 10.21.16.72 - - [13/Nov/2024 11:34:39] "GET /data/raspberrydata.txt?timestamp=1731494079533 HTTP/1.1" 200 -
+2024-11-13 11:34:44,525 - INFO - 10.21.16.72 - - [13/Nov/2024 11:34:44] "GET /data/raspberrydata.txt?timestamp=1731494084520 HTTP/1.1" 200 -
