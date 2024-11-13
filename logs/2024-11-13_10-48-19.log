@@ -1,0 +1,83 @@
+2024-11-13 10:48:19,064 - INFO - Server started, log file: ./logs/2024-11-13_10-48-19.log
+2024-11-13 10:48:19,083 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.21.16.72:8000
+2024-11-13 10:48:19,083 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-13 10:48:25,954 - INFO - View page accessed
+2024-11-13 10:48:25,994 - INFO - 10.21.16.72 - - [13/Nov/2024 10:48:25] "POST /view HTTP/1.1" 200 -
+2024-11-13 10:48:26,038 - INFO - Video feed accessed
+2024-11-13 10:48:26,115 - INFO - 10.21.16.72 - - [13/Nov/2024 10:48:26] "GET /static/MainPage.css HTTP/1.1" 200 -
+2024-11-13 10:48:26,130 - INFO - 10.21.16.72 - - [13/Nov/2024 10:48:26] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-13 10:48:26,139 - INFO - 10.21.16.72 - - [13/Nov/2024 10:48:26] "GET /static/Slider.css HTTP/1.1" 200 -
+2024-11-13 10:48:27,100 - INFO - 10.21.16.72 - - [13/Nov/2024 10:48:27] "GET /video_feed HTTP/1.1" 200 -
+2024-11-13 10:48:34,507 - INFO - Admin page accessed
+2024-11-13 10:48:34,610 - INFO - 10.21.16.72 - - [13/Nov/2024 10:48:34] "GET /admin HTTP/1.1" 200 -
+2024-11-13 10:48:34,735 - INFO - 10.21.16.72 - - [13/Nov/2024 10:48:34] "GET /static/AdminPage.css HTTP/1.1" 200 -
+2024-11-13 10:48:34,736 - INFO - 10.21.16.72 - - [13/Nov/2024 10:48:34] "GET /static/images/delete-icon.svg HTTP/1.1" 200 -
+2024-11-13 10:48:34,758 - INFO - 10.21.16.72 - - [13/Nov/2024 10:48:34] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-13 10:48:35,186 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-13 10:48:35,186 - INFO - 10.21.16.72 - - [13/Nov/2024 10:48:35] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2024-11-13 10:48:35,191 - INFO - Error page accessed
+2024-11-13 10:48:35,192 - ERROR - An error occurred: templates/ErrorPage.html
+2024-11-13 10:48:35,192 - INFO - 10.21.16.72 - - [13/Nov/2024 10:48:35] "[32mGET /error HTTP/1.1[0m" 302 -
+2024-11-13 10:48:35,209 - INFO - Error page accessed
+2024-11-13 10:48:35,210 - ERROR - An error occurred: templates/ErrorPage.html
+2024-11-13 10:48:35,210 - INFO - 10.21.16.72 - - [13/Nov/2024 10:48:35] "[32mGET /error HTTP/1.1[0m" 302 -
+2024-11-13 10:48:35,214 - INFO - Error page accessed
+2024-11-13 10:48:35,214 - ERROR - An error occurred: templates/ErrorPage.html
+2024-11-13 10:48:35,214 - INFO - 10.21.16.72 - - [13/Nov/2024 10:48:35] "[32mGET /error HTTP/1.1[0m" 302 -
+2024-11-13 10:48:35,218 - INFO - Error page accessed
+2024-11-13 10:48:35,218 - ERROR - An error occurred: templates/ErrorPage.html
+2024-11-13 10:48:35,218 - INFO - 10.21.16.72 - - [13/Nov/2024 10:48:35] "[32mGET /error HTTP/1.1[0m" 302 -
+2024-11-13 10:48:35,223 - INFO - Error page accessed
+2024-11-13 10:48:35,223 - ERROR - An error occurred: templates/ErrorPage.html
+2024-11-13 10:48:35,224 - INFO - 10.21.16.72 - - [13/Nov/2024 10:48:35] "[32mGET /error HTTP/1.1[0m" 302 -
+2024-11-13 10:48:35,227 - INFO - Error page accessed
+2024-11-13 10:48:35,228 - ERROR - An error occurred: templates/ErrorPage.html
+2024-11-13 10:48:35,228 - INFO - 10.21.16.72 - - [13/Nov/2024 10:48:35] "[32mGET /error HTTP/1.1[0m" 302 -
+2024-11-13 10:48:35,232 - INFO - Error page accessed
+2024-11-13 10:48:35,232 - ERROR - An error occurred: templates/ErrorPage.html
+2024-11-13 10:48:35,233 - INFO - 10.21.16.72 - - [13/Nov/2024 10:48:35] "[32mGET /error HTTP/1.1[0m" 302 -
+2024-11-13 10:48:35,236 - INFO - Error page accessed
+2024-11-13 10:48:35,237 - ERROR - An error occurred: templates/ErrorPage.html
+2024-11-13 10:48:35,237 - INFO - 10.21.16.72 - - [13/Nov/2024 10:48:35] "[32mGET /error HTTP/1.1[0m" 302 -
+2024-11-13 10:48:35,242 - INFO - Error page accessed
+2024-11-13 10:48:35,242 - ERROR - An error occurred: templates/ErrorPage.html
+2024-11-13 10:48:35,242 - INFO - 10.21.16.72 - - [13/Nov/2024 10:48:35] "[32mGET /error HTTP/1.1[0m" 302 -
+2024-11-13 10:48:35,246 - INFO - Error page accessed
+2024-11-13 10:48:35,247 - ERROR - An error occurred: templates/ErrorPage.html
+2024-11-13 10:48:35,247 - INFO - 10.21.16.72 - - [13/Nov/2024 10:48:35] "[32mGET /error HTTP/1.1[0m" 302 -
+2024-11-13 10:48:35,251 - INFO - Error page accessed
+2024-11-13 10:48:35,251 - ERROR - An error occurred: templates/ErrorPage.html
+2024-11-13 10:48:35,251 - INFO - 10.21.16.72 - - [13/Nov/2024 10:48:35] "[32mGET /error HTTP/1.1[0m" 302 -
+2024-11-13 10:48:35,255 - INFO - Error page accessed
+2024-11-13 10:48:35,255 - ERROR - An error occurred: templates/ErrorPage.html
+2024-11-13 10:48:35,255 - INFO - 10.21.16.72 - - [13/Nov/2024 10:48:35] "[32mGET /error HTTP/1.1[0m" 302 -
+2024-11-13 10:48:35,259 - INFO - Error page accessed
+2024-11-13 10:48:35,259 - ERROR - An error occurred: templates/ErrorPage.html
+2024-11-13 10:48:35,260 - INFO - 10.21.16.72 - - [13/Nov/2024 10:48:35] "[32mGET /error HTTP/1.1[0m" 302 -
+2024-11-13 10:48:35,264 - INFO - Error page accessed
+2024-11-13 10:48:35,265 - ERROR - An error occurred: templates/ErrorPage.html
+2024-11-13 10:48:35,265 - INFO - 10.21.16.72 - - [13/Nov/2024 10:48:35] "[32mGET /error HTTP/1.1[0m" 302 -
+2024-11-13 10:48:35,270 - INFO - Error page accessed
+2024-11-13 10:48:35,270 - ERROR - An error occurred: templates/ErrorPage.html
+2024-11-13 10:48:35,270 - INFO - 10.21.16.72 - - [13/Nov/2024 10:48:35] "[32mGET /error HTTP/1.1[0m" 302 -
+2024-11-13 10:48:35,275 - INFO - Error page accessed
+2024-11-13 10:48:35,275 - ERROR - An error occurred: templates/ErrorPage.html
+2024-11-13 10:48:35,276 - INFO - 10.21.16.72 - - [13/Nov/2024 10:48:35] "[32mGET /error HTTP/1.1[0m" 302 -
+2024-11-13 10:48:35,281 - INFO - Error page accessed
+2024-11-13 10:48:35,281 - ERROR - An error occurred: templates/ErrorPage.html
+2024-11-13 10:48:35,282 - INFO - 10.21.16.72 - - [13/Nov/2024 10:48:35] "[32mGET /error HTTP/1.1[0m" 302 -
+2024-11-13 10:48:35,285 - INFO - Error page accessed
+2024-11-13 10:48:35,286 - ERROR - An error occurred: templates/ErrorPage.html
+2024-11-13 10:48:35,286 - INFO - 10.21.16.72 - - [13/Nov/2024 10:48:35] "[32mGET /error HTTP/1.1[0m" 302 -
+2024-11-13 10:48:35,290 - INFO - Error page accessed
+2024-11-13 10:48:35,290 - ERROR - An error occurred: templates/ErrorPage.html
+2024-11-13 10:48:35,290 - INFO - 10.21.16.72 - - [13/Nov/2024 10:48:35] "[32mGET /error HTTP/1.1[0m" 302 -
+2024-11-13 10:48:35,294 - INFO - Error page accessed
+2024-11-13 10:48:35,295 - ERROR - An error occurred: templates/ErrorPage.html
+2024-11-13 10:48:35,295 - INFO - 10.21.16.72 - - [13/Nov/2024 10:48:35] "[32mGET /error HTTP/1.1[0m" 302 -
+2024-11-13 10:48:56,974 - INFO - Login page accessed
+2024-11-13 10:48:56,976 - INFO - 10.21.16.72 - - [13/Nov/2024 10:48:56] "GET / HTTP/1.1" 200 -
+2024-11-13 10:48:57,041 - INFO - 10.21.16.72 - - [13/Nov/2024 10:48:57] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -

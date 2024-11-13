@@ -1,0 +1,10 @@
+2024-11-13 10:49:47,755 - INFO - Server started, log file: ./logs/2024-11-13_10-49-47.log
+2024-11-13 10:49:47,769 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.21.16.72:8000
+2024-11-13 10:49:47,769 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-13 10:49:51,361 - INFO - Login page accessed
+2024-11-13 10:49:51,366 - INFO - 10.21.16.72 - - [13/Nov/2024 10:49:51] "GET / HTTP/1.1" 200 -
+2024-11-13 10:49:51,468 - INFO - 10.21.16.72 - - [13/Nov/2024 10:49:51] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-11-13 10:49:51,587 - INFO - 10.21.16.72 - - [13/Nov/2024 10:49:51] "[36mGET /static/images/icon.png HTTP/1.1[0m" 304 -
