@@ -1,11 +1,9 @@
 import hashlib
-import os
 
 from flask import Flask, Response, render_template_string, request, redirect, url_for, send_file
 import logging
 from datetime import datetime
 import functions
-from functions import get_AdminPage
 
 app = Flask(__name__)
 app.config['DEBUG'] = True

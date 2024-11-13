@@ -64,33 +64,9 @@ const app = Vue.createApp({
                 });
 
                 console.log("Parsed Data:", newLabels, newTemperatureData, newHumidityData);
-
-                // Only update the data if something has changed
-                let dataChanged = false;
-                if (newLabels.length !== this.labels.length ||
-                    newTemperatureData.length !== this.temperatureData.length ||
-                    newHumidityData.length !== this.humidityData.length) {
-                    dataChanged = true;
-                } else {
-                    // Compare each element individually for better performance
-                    for (let i = 0; i < newLabels.length; i++) {
-                        if (newLabels[i] !== this.labels[i] ||
-                            newTemperatureData[i] !== this.temperatureData[i] ||
-                            newHumidityData[i] !== this.humidityData[i]) {
-                            dataChanged = true;
-                            break;
-                        }
-                    }
-                }
-
-                if (dataChanged) {
-                    console.log("Data has changed. Updating...");
                     this.labels = newLabels;
                     this.temperatureData = newTemperatureData;
                     this.humidityData = newHumidityData;
-                } else {
-                    console.log("Data has not changed. Skipping update.");
-                }
             } catch (error) {
                 console.error("Error fetching data:", error);
             }
@@ -136,6 +112,7 @@ const app = Vue.createApp({
         } else {
             console.log("Updating humidity chart...");
             if (this.humidityChart) {
+
                 this.humidityChart.destroy();  // Zerstören Sie das alte Diagramm
             }
         this.createChart('humidity', this.humidityChartType, this.humidityData, 'rgba(75, 192, 192, 0.2)', 'rgba(75, 192, 192, 1)');  // Neues Diagramm erstellen
