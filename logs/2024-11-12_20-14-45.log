@@ -66,3 +66,10 @@
 2024-11-12 20:18:47,052 - INFO - 127.0.0.1 - - [12/Nov/2024 20:18:47] "GET /data/raspberrydata.txt?timestamp=1731439127048 HTTP/1.1" 200 -
 2024-11-12 20:18:52,052 - INFO - 127.0.0.1 - - [12/Nov/2024 20:18:52] "GET /data/raspberrydata.txt?timestamp=1731439132049 HTTP/1.1" 200 -
 2024-11-12 20:18:57,052 - INFO - 127.0.0.1 - - [12/Nov/2024 20:18:57] "GET /data/raspberrydata.txt?timestamp=1731439137048 HTTP/1.1" 200 -
+2024-11-12 20:49:39,785 - INFO - View page accessed
+2024-11-12 20:49:39,791 - INFO - 127.0.0.1 - - [12/Nov/2024 20:49:39] "POST /view HTTP/1.1" 200 -
+2024-11-12 20:49:39,826 - INFO - 127.0.0.1 - - [12/Nov/2024 20:49:39] "GET /static/MainPage.css HTTP/1.1" 200 -
+2024-11-12 20:49:39,835 - INFO - Video feed accessed
+2024-11-12 20:49:39,838 - INFO - 127.0.0.1 - - [12/Nov/2024 20:49:39] "GET /static/MainPage.js HTTP/1.1" 200 -
+2024-11-12 20:49:40,063 - INFO - 127.0.0.1 - - [12/Nov/2024 20:49:40] "GET /data/raspberrydata.txt?timestamp=1731440980061 HTTP/1.1" 200 -
+2024-11-12 20:49:41,129 - INFO - 127.0.0.1 - - [12/Nov/2024 20:49:41] "GET /video_feed HTTP/1.1" 200 -
