@@ -1,0 +1,48 @@
+2024-11-13 11:19:31,623 - INFO - Server started, log file: ./logs/2024-11-13_11-19-31.log
+2024-11-13 11:19:31,630 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.21.16.131:8000
+2024-11-13 11:19:31,630 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-13 11:19:34,947 - INFO - Login page accessed
+2024-11-13 11:19:34,952 - INFO - 127.0.0.1 - - [13/Nov/2024 11:19:34] "GET / HTTP/1.1" 200 -
+2024-11-13 11:19:34,965 - INFO - 127.0.0.1 - - [13/Nov/2024 11:19:34] "GET /static/LoginPage.css HTTP/1.1" 200 -
+2024-11-13 11:19:37,707 - INFO - View page accessed
+2024-11-13 11:19:37,712 - INFO - 127.0.0.1 - - [13/Nov/2024 11:19:37] "POST /view HTTP/1.1" 200 -
+2024-11-13 11:19:37,724 - INFO - Video feed accessed
+2024-11-13 11:19:37,728 - INFO - 127.0.0.1 - - [13/Nov/2024 11:19:37] "GET /static/MainPage.js HTTP/1.1" 200 -
+2024-11-13 11:19:37,729 - INFO - 127.0.0.1 - - [13/Nov/2024 11:19:37] "GET /static/MainPage.css HTTP/1.1" 200 -
+2024-11-13 11:19:37,742 - INFO - 127.0.0.1 - - [13/Nov/2024 11:19:37] "GET /data/raspberrydata.txt?timestamp=1731493177736 HTTP/1.1" 200 -
+2024-11-13 11:19:39,250 - INFO - 127.0.0.1 - - [13/Nov/2024 11:19:39] "GET /video_feed HTTP/1.1" 200 -
+2024-11-13 11:19:42,766 - INFO - 127.0.0.1 - - [13/Nov/2024 11:19:42] "GET /data/raspberrydata.txt?timestamp=1731493182762 HTTP/1.1" 200 -
+2024-11-13 11:19:48,186 - INFO - 127.0.0.1 - - [13/Nov/2024 11:19:48] "GET /data/raspberrydata.txt?timestamp=1731493188183 HTTP/1.1" 200 -
+2024-11-13 11:19:53,187 - INFO - 127.0.0.1 - - [13/Nov/2024 11:19:53] "GET /data/raspberrydata.txt?timestamp=1731493193183 HTTP/1.1" 200 -
+2024-11-13 11:19:56,190 - INFO - 127.0.0.1 - - [13/Nov/2024 11:19:56] "GET /data/raspberrydata.txt?timestamp=1731493196185 HTTP/1.1" 200 -
+2024-11-13 11:19:56,193 - INFO - 127.0.0.1 - - [13/Nov/2024 11:19:56] "GET /data/raspberrydata.txt?timestamp=1731493196185 HTTP/1.1" 200 -
+2024-11-13 11:19:57,766 - INFO - 127.0.0.1 - - [13/Nov/2024 11:19:57] "GET /data/raspberrydata.txt?timestamp=1731493197761 HTTP/1.1" 200 -
+2024-11-13 11:20:03,187 - INFO - 127.0.0.1 - - [13/Nov/2024 11:20:03] "GET /data/raspberrydata.txt?timestamp=1731493203184 HTTP/1.1" 200 -
+2024-11-13 11:20:07,764 - INFO - 127.0.0.1 - - [13/Nov/2024 11:20:07] "GET /data/raspberrydata.txt?timestamp=1731493207762 HTTP/1.1" 200 -
+2024-11-13 11:20:13,186 - INFO - 127.0.0.1 - - [13/Nov/2024 11:20:13] "GET /data/raspberrydata.txt?timestamp=1731493213183 HTTP/1.1" 200 -
+2024-11-13 11:20:18,186 - INFO - 127.0.0.1 - - [13/Nov/2024 11:20:18] "GET /data/raspberrydata.txt?timestamp=1731493218183 HTTP/1.1" 200 -
+2024-11-13 11:20:23,187 - INFO - 127.0.0.1 - - [13/Nov/2024 11:20:23] "GET /data/raspberrydata.txt?timestamp=1731493223184 HTTP/1.1" 200 -
+2024-11-13 11:20:28,187 - INFO - 127.0.0.1 - - [13/Nov/2024 11:20:28] "GET /data/raspberrydata.txt?timestamp=1731493228183 HTTP/1.1" 200 -
+2024-11-13 11:20:33,186 - INFO - 127.0.0.1 - - [13/Nov/2024 11:20:33] "GET /data/raspberrydata.txt?timestamp=1731493233183 HTTP/1.1" 200 -
+2024-11-13 11:20:37,765 - INFO - 127.0.0.1 - - [13/Nov/2024 11:20:37] "GET /data/raspberrydata.txt?timestamp=1731493237761 HTTP/1.1" 200 -
+2024-11-13 11:20:43,187 - INFO - 127.0.0.1 - - [13/Nov/2024 11:20:43] "GET /data/raspberrydata.txt?timestamp=1731493243184 HTTP/1.1" 200 -
+2024-11-13 11:20:48,187 - INFO - 127.0.0.1 - - [13/Nov/2024 11:20:48] "GET /data/raspberrydata.txt?timestamp=1731493248184 HTTP/1.1" 200 -
+2024-11-13 11:20:53,189 - INFO - 127.0.0.1 - - [13/Nov/2024 11:20:53] "GET /data/raspberrydata.txt?timestamp=1731493253185 HTTP/1.1" 200 -
+2024-11-13 11:20:56,190 - INFO - 127.0.0.1 - - [13/Nov/2024 11:20:56] "GET /data/raspberrydata.txt?timestamp=1731493256185 HTTP/1.1" 200 -
+2024-11-13 11:20:56,190 - INFO - 127.0.0.1 - - [13/Nov/2024 11:20:56] "GET /data/raspberrydata.txt?timestamp=1731493256184 HTTP/1.1" 200 -
+2024-11-13 11:20:58,187 - INFO - 127.0.0.1 - - [13/Nov/2024 11:20:58] "GET /data/raspberrydata.txt?timestamp=1731493258184 HTTP/1.1" 200 -
+2024-11-13 11:21:03,187 - INFO - 127.0.0.1 - - [13/Nov/2024 11:21:03] "GET /data/raspberrydata.txt?timestamp=1731493263185 HTTP/1.1" 200 -
+2024-11-13 11:21:08,187 - INFO - 127.0.0.1 - - [13/Nov/2024 11:21:08] "GET /data/raspberrydata.txt?timestamp=1731493268185 HTTP/1.1" 200 -
+2024-11-13 11:21:11,401 - INFO - 127.0.0.1 - - [13/Nov/2024 11:21:11] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-13 11:21:12,766 - INFO - 127.0.0.1 - - [13/Nov/2024 11:21:12] "GET /data/raspberrydata.txt?timestamp=1731493272762 HTTP/1.1" 200 -
+2024-11-13 11:21:17,770 - INFO - 127.0.0.1 - - [13/Nov/2024 11:21:17] "GET /data/raspberrydata.txt?timestamp=1731493277763 HTTP/1.1" 200 -
+2024-11-13 11:21:22,767 - INFO - 127.0.0.1 - - [13/Nov/2024 11:21:22] "GET /data/raspberrydata.txt?timestamp=1731493282763 HTTP/1.1" 200 -
+2024-11-13 11:21:27,768 - INFO - 127.0.0.1 - - [13/Nov/2024 11:21:27] "GET /data/raspberrydata.txt?timestamp=1731493287763 HTTP/1.1" 200 -
+2024-11-13 11:21:32,767 - INFO - 127.0.0.1 - - [13/Nov/2024 11:21:32] "GET /data/raspberrydata.txt?timestamp=1731493292763 HTTP/1.1" 200 -
+2024-11-13 11:21:37,766 - INFO - 127.0.0.1 - - [13/Nov/2024 11:21:37] "GET /data/raspberrydata.txt?timestamp=1731493297762 HTTP/1.1" 200 -
+2024-11-13 11:21:43,189 - INFO - 127.0.0.1 - - [13/Nov/2024 11:21:43] "GET /data/raspberrydata.txt?timestamp=1731493303185 HTTP/1.1" 200 -
+2024-11-13 11:21:48,187 - INFO - 127.0.0.1 - - [13/Nov/2024 11:21:48] "GET /data/raspberrydata.txt?timestamp=1731493308184 HTTP/1.1" 200 -
+2024-11-13 11:21:53,199 - INFO - 127.0.0.1 - - [13/Nov/2024 11:21:53] "GET /data/raspberrydata.txt?timestamp=1731493313185 HTTP/1.1" 200 -
