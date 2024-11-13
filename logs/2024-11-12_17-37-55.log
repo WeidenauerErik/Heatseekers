@@ -1,0 +1,161 @@
+2024-11-12 17:37:55,877 - INFO - Server started, log file: ./logs/2024-11-12_17-37-55.log
+2024-11-12 17:37:55,884 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.21.16.131:8000
+2024-11-12 17:37:55,884 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-12 17:37:59,477 - INFO - View page accessed
+2024-11-12 17:37:59,484 - INFO - 127.0.0.1 - - [12/Nov/2024 17:37:59] "POST /view HTTP/1.1" 200 -
+2024-11-12 17:37:59,494 - INFO - Video feed accessed
+2024-11-12 17:37:59,501 - INFO - 127.0.0.1 - - [12/Nov/2024 17:37:59] "GET /static/MainPage.js HTTP/1.1" 200 -
+2024-11-12 17:37:59,501 - INFO - 127.0.0.1 - - [12/Nov/2024 17:37:59] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-12 17:37:59,514 - INFO - 127.0.0.1 - - [12/Nov/2024 17:37:59] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:38:00,902 - INFO - 127.0.0.1 - - [12/Nov/2024 17:38:00] "GET /video_feed HTTP/1.1" 200 -
+2024-11-12 17:38:01,022 - INFO - 127.0.0.1 - - [12/Nov/2024 17:38:01] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
+2024-11-12 17:38:04,529 - INFO - 127.0.0.1 - - [12/Nov/2024 17:38:04] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:38:09,538 - INFO - 127.0.0.1 - - [12/Nov/2024 17:38:09] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:38:15,246 - INFO - 127.0.0.1 - - [12/Nov/2024 17:38:15] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:38:20,246 - INFO - 127.0.0.1 - - [12/Nov/2024 17:38:20] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:38:25,247 - INFO - 127.0.0.1 - - [12/Nov/2024 17:38:25] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:38:30,247 - INFO - 127.0.0.1 - - [12/Nov/2024 17:38:30] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:38:33,954 - INFO - View page accessed
+2024-11-12 17:38:33,956 - INFO - 127.0.0.1 - - [12/Nov/2024 17:38:33] "POST /view HTTP/1.1" 200 -
+2024-11-12 17:38:33,965 - INFO - Video feed accessed
+2024-11-12 17:38:33,967 - INFO - 127.0.0.1 - - [12/Nov/2024 17:38:33] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-12 17:38:33,967 - INFO - 127.0.0.1 - - [12/Nov/2024 17:38:33] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-12 17:38:33,975 - INFO - 127.0.0.1 - - [12/Nov/2024 17:38:33] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:38:34,088 - INFO - 127.0.0.1 - - [12/Nov/2024 17:38:34] "GET /video_feed HTTP/1.1" 200 -
+2024-11-12 17:38:34,198 - INFO - 127.0.0.1 - - [12/Nov/2024 17:38:34] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
+2024-11-12 17:38:38,993 - INFO - 127.0.0.1 - - [12/Nov/2024 17:38:38] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:38:43,993 - INFO - 127.0.0.1 - - [12/Nov/2024 17:38:43] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:38:48,992 - INFO - 127.0.0.1 - - [12/Nov/2024 17:38:48] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:38:52,150 - INFO - View page accessed
+2024-11-12 17:38:52,152 - INFO - 127.0.0.1 - - [12/Nov/2024 17:38:52] "POST /view HTTP/1.1" 200 -
+2024-11-12 17:38:52,163 - INFO - 127.0.0.1 - - [12/Nov/2024 17:38:52] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-12 17:38:52,164 - INFO - Video feed accessed
+2024-11-12 17:38:52,165 - INFO - 127.0.0.1 - - [12/Nov/2024 17:38:52] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-12 17:38:52,176 - INFO - 127.0.0.1 - - [12/Nov/2024 17:38:52] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:38:52,293 - INFO - 127.0.0.1 - - [12/Nov/2024 17:38:52] "GET /video_feed HTTP/1.1" 200 -
+2024-11-12 17:38:52,369 - INFO - 127.0.0.1 - - [12/Nov/2024 17:38:52] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
+2024-11-12 17:38:57,191 - INFO - 127.0.0.1 - - [12/Nov/2024 17:38:57] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:39:02,196 - INFO - 127.0.0.1 - - [12/Nov/2024 17:39:02] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:39:07,245 - INFO - 127.0.0.1 - - [12/Nov/2024 17:39:07] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:39:12,191 - INFO - 127.0.0.1 - - [12/Nov/2024 17:39:12] "GET /data/raspberrydata.txt HTTP/1.1" 200 -
+2024-11-12 17:39:17,192 - INFO - 127.0.0.1 - - [12/Nov/2024 17:39:17] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:39:22,245 - INFO - 127.0.0.1 - - [12/Nov/2024 17:39:22] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:39:27,245 - INFO - 127.0.0.1 - - [12/Nov/2024 17:39:27] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:39:32,245 - INFO - 127.0.0.1 - - [12/Nov/2024 17:39:32] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:39:37,246 - INFO - 127.0.0.1 - - [12/Nov/2024 17:39:37] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:39:42,245 - INFO - 127.0.0.1 - - [12/Nov/2024 17:39:42] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:39:47,247 - INFO - 127.0.0.1 - - [12/Nov/2024 17:39:47] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:39:52,246 - INFO - 127.0.0.1 - - [12/Nov/2024 17:39:52] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:39:57,246 - INFO - 127.0.0.1 - - [12/Nov/2024 17:39:57] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:40:02,194 - INFO - 127.0.0.1 - - [12/Nov/2024 17:40:02] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:40:02,998 - INFO - View page accessed
+2024-11-12 17:40:03,001 - INFO - 127.0.0.1 - - [12/Nov/2024 17:40:03] "POST /view HTTP/1.1" 200 -
+2024-11-12 17:40:03,011 - INFO - Video feed accessed
+2024-11-12 17:40:03,012 - INFO - 127.0.0.1 - - [12/Nov/2024 17:40:03] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-12 17:40:03,013 - INFO - 127.0.0.1 - - [12/Nov/2024 17:40:03] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-12 17:40:03,025 - INFO - 127.0.0.1 - - [12/Nov/2024 17:40:03] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:40:03,315 - INFO - 127.0.0.1 - - [12/Nov/2024 17:40:03] "GET /video_feed HTTP/1.1" 200 -
+2024-11-12 17:40:03,431 - INFO - 127.0.0.1 - - [12/Nov/2024 17:40:03] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
+2024-11-12 17:40:08,048 - INFO - 127.0.0.1 - - [12/Nov/2024 17:40:08] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:40:13,047 - INFO - 127.0.0.1 - - [12/Nov/2024 17:40:13] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:40:18,042 - INFO - 127.0.0.1 - - [12/Nov/2024 17:40:18] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:40:19,437 - INFO - View page accessed
+2024-11-12 17:40:19,439 - INFO - 127.0.0.1 - - [12/Nov/2024 17:40:19] "POST /view HTTP/1.1" 200 -
+2024-11-12 17:40:19,449 - INFO - Video feed accessed
+2024-11-12 17:40:19,451 - INFO - 127.0.0.1 - - [12/Nov/2024 17:40:19] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-12 17:40:19,451 - INFO - 127.0.0.1 - - [12/Nov/2024 17:40:19] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-12 17:40:19,460 - INFO - 127.0.0.1 - - [12/Nov/2024 17:40:19] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:40:19,555 - INFO - 127.0.0.1 - - [12/Nov/2024 17:40:19] "GET /video_feed HTTP/1.1" 200 -
+2024-11-12 17:40:19,657 - INFO - 127.0.0.1 - - [12/Nov/2024 17:40:19] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
+2024-11-12 17:40:24,477 - INFO - 127.0.0.1 - - [12/Nov/2024 17:40:24] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:40:29,477 - INFO - 127.0.0.1 - - [12/Nov/2024 17:40:29] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:40:34,476 - INFO - 127.0.0.1 - - [12/Nov/2024 17:40:34] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:40:40,246 - INFO - 127.0.0.1 - - [12/Nov/2024 17:40:40] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:40:45,246 - INFO - 127.0.0.1 - - [12/Nov/2024 17:40:45] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:40:49,476 - INFO - 127.0.0.1 - - [12/Nov/2024 17:40:49] "GET /data/raspberrydata.txt HTTP/1.1" 200 -
+2024-11-12 17:40:50,462 - INFO - View page accessed
+2024-11-12 17:40:50,465 - INFO - 127.0.0.1 - - [12/Nov/2024 17:40:50] "POST /view HTTP/1.1" 200 -
+2024-11-12 17:40:50,476 - INFO - Video feed accessed
+2024-11-12 17:40:50,478 - INFO - 127.0.0.1 - - [12/Nov/2024 17:40:50] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-12 17:40:50,479 - INFO - 127.0.0.1 - - [12/Nov/2024 17:40:50] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-12 17:40:50,492 - INFO - 127.0.0.1 - - [12/Nov/2024 17:40:50] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:40:50,579 - INFO - 127.0.0.1 - - [12/Nov/2024 17:40:50] "GET /video_feed HTTP/1.1" 200 -
+2024-11-12 17:40:50,651 - INFO - 127.0.0.1 - - [12/Nov/2024 17:40:50] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
+2024-11-12 17:40:55,518 - INFO - 127.0.0.1 - - [12/Nov/2024 17:40:55] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:41:00,512 - INFO - 127.0.0.1 - - [12/Nov/2024 17:41:00] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:41:06,248 - INFO - 127.0.0.1 - - [12/Nov/2024 17:41:06] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:41:10,508 - INFO - 127.0.0.1 - - [12/Nov/2024 17:41:10] "GET /data/raspberrydata.txt HTTP/1.1" 200 -
+2024-11-12 17:41:15,508 - INFO - 127.0.0.1 - - [12/Nov/2024 17:41:15] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:41:21,247 - INFO - 127.0.0.1 - - [12/Nov/2024 17:41:21] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:41:26,246 - INFO - 127.0.0.1 - - [12/Nov/2024 17:41:26] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:41:30,509 - INFO - 127.0.0.1 - - [12/Nov/2024 17:41:30] "GET /data/raspberrydata.txt HTTP/1.1" 200 -
+2024-11-12 17:41:36,247 - INFO - 127.0.0.1 - - [12/Nov/2024 17:41:36] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:41:38,992 - INFO - View page accessed
+2024-11-12 17:41:38,994 - INFO - 127.0.0.1 - - [12/Nov/2024 17:41:38] "POST /view HTTP/1.1" 200 -
+2024-11-12 17:41:39,002 - INFO - Video feed accessed
+2024-11-12 17:41:39,003 - INFO - 127.0.0.1 - - [12/Nov/2024 17:41:39] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-12 17:41:39,003 - INFO - 127.0.0.1 - - [12/Nov/2024 17:41:39] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-12 17:41:39,014 - INFO - 127.0.0.1 - - [12/Nov/2024 17:41:39] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:41:39,107 - INFO - 127.0.0.1 - - [12/Nov/2024 17:41:39] "GET /video_feed HTTP/1.1" 200 -
+2024-11-12 17:41:39,213 - INFO - 127.0.0.1 - - [12/Nov/2024 17:41:39] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
+2024-11-12 17:41:44,246 - INFO - 127.0.0.1 - - [12/Nov/2024 17:41:44] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:41:49,247 - INFO - 127.0.0.1 - - [12/Nov/2024 17:41:49] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:41:53,403 - INFO - View page accessed
+2024-11-12 17:41:53,406 - INFO - 127.0.0.1 - - [12/Nov/2024 17:41:53] "POST /view HTTP/1.1" 200 -
+2024-11-12 17:41:53,416 - INFO - Video feed accessed
+2024-11-12 17:41:53,418 - INFO - 127.0.0.1 - - [12/Nov/2024 17:41:53] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-12 17:41:53,418 - INFO - 127.0.0.1 - - [12/Nov/2024 17:41:53] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-12 17:41:53,428 - INFO - 127.0.0.1 - - [12/Nov/2024 17:41:53] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:41:53,550 - INFO - 127.0.0.1 - - [12/Nov/2024 17:41:53] "GET /video_feed HTTP/1.1" 200 -
+2024-11-12 17:41:53,622 - INFO - 127.0.0.1 - - [12/Nov/2024 17:41:53] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
+2024-11-12 17:41:59,247 - INFO - 127.0.0.1 - - [12/Nov/2024 17:41:59] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:42:03,445 - INFO - 127.0.0.1 - - [12/Nov/2024 17:42:03] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:42:09,248 - INFO - 127.0.0.1 - - [12/Nov/2024 17:42:09] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:42:13,444 - INFO - 127.0.0.1 - - [12/Nov/2024 17:42:13] "GET /data/raspberrydata.txt HTTP/1.1" 200 -
+2024-11-12 17:42:18,447 - INFO - 127.0.0.1 - - [12/Nov/2024 17:42:18] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:42:24,246 - INFO - 127.0.0.1 - - [12/Nov/2024 17:42:24] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:42:29,247 - INFO - 127.0.0.1 - - [12/Nov/2024 17:42:29] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:42:33,446 - INFO - 127.0.0.1 - - [12/Nov/2024 17:42:33] "GET /data/raspberrydata.txt HTTP/1.1" 200 -
+2024-11-12 17:42:38,447 - INFO - 127.0.0.1 - - [12/Nov/2024 17:42:38] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:42:43,444 - INFO - 127.0.0.1 - - [12/Nov/2024 17:42:43] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:42:48,445 - INFO - 127.0.0.1 - - [12/Nov/2024 17:42:48] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:42:54,246 - INFO - 127.0.0.1 - - [12/Nov/2024 17:42:54] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:42:58,451 - INFO - 127.0.0.1 - - [12/Nov/2024 17:42:58] "GET /data/raspberrydata.txt HTTP/1.1" 200 -
+2024-11-12 17:43:03,445 - INFO - 127.0.0.1 - - [12/Nov/2024 17:43:03] "GET /data/raspberrydata.txt HTTP/1.1" 200 -
+2024-11-12 17:43:08,446 - INFO - 127.0.0.1 - - [12/Nov/2024 17:43:08] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:43:14,246 - INFO - 127.0.0.1 - - [12/Nov/2024 17:43:14] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:43:19,247 - INFO - 127.0.0.1 - - [12/Nov/2024 17:43:19] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:43:24,246 - INFO - 127.0.0.1 - - [12/Nov/2024 17:43:24] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:43:29,247 - INFO - 127.0.0.1 - - [12/Nov/2024 17:43:29] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:43:33,444 - INFO - 127.0.0.1 - - [12/Nov/2024 17:43:33] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:43:38,445 - INFO - 127.0.0.1 - - [12/Nov/2024 17:43:38] "GET /data/raspberrydata.txt HTTP/1.1" 200 -
+2024-11-12 17:43:38,913 - INFO - View page accessed
+2024-11-12 17:43:38,919 - INFO - 127.0.0.1 - - [12/Nov/2024 17:43:38] "POST /view HTTP/1.1" 200 -
+2024-11-12 17:43:38,931 - INFO - Video feed accessed
+2024-11-12 17:43:38,932 - INFO - 127.0.0.1 - - [12/Nov/2024 17:43:38] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-12 17:43:38,933 - INFO - 127.0.0.1 - - [12/Nov/2024 17:43:38] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-12 17:43:38,946 - INFO - 127.0.0.1 - - [12/Nov/2024 17:43:38] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:43:39,245 - INFO - 127.0.0.1 - - [12/Nov/2024 17:43:39] "GET /video_feed HTTP/1.1" 200 -
+2024-11-12 17:43:39,364 - INFO - 127.0.0.1 - - [12/Nov/2024 17:43:39] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
+2024-11-12 17:43:43,971 - INFO - 127.0.0.1 - - [12/Nov/2024 17:43:43] "GET /data/raspberrydata.txt HTTP/1.1" 200 -
+2024-11-12 17:43:48,963 - INFO - 127.0.0.1 - - [12/Nov/2024 17:43:48] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:43:53,963 - INFO - 127.0.0.1 - - [12/Nov/2024 17:43:53] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:43:58,963 - INFO - 127.0.0.1 - - [12/Nov/2024 17:43:58] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:44:03,963 - INFO - 127.0.0.1 - - [12/Nov/2024 17:44:03] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:44:08,964 - INFO - 127.0.0.1 - - [12/Nov/2024 17:44:08] "GET /data/raspberrydata.txt HTTP/1.1" 200 -
+2024-11-12 17:44:13,963 - INFO - 127.0.0.1 - - [12/Nov/2024 17:44:13] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:44:18,965 - INFO - 127.0.0.1 - - [12/Nov/2024 17:44:18] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:44:23,963 - INFO - 127.0.0.1 - - [12/Nov/2024 17:44:23] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:44:29,247 - INFO - 127.0.0.1 - - [12/Nov/2024 17:44:29] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:44:33,973 - INFO - 127.0.0.1 - - [12/Nov/2024 17:44:33] "GET /data/raspberrydata.txt HTTP/1.1" 200 -
+2024-11-12 17:44:38,963 - INFO - 127.0.0.1 - - [12/Nov/2024 17:44:38] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:44:44,247 - INFO - 127.0.0.1 - - [12/Nov/2024 17:44:44] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:44:48,962 - INFO - 127.0.0.1 - - [12/Nov/2024 17:44:48] "GET /data/raspberrydata.txt HTTP/1.1" 200 -
+2024-11-12 17:44:53,962 - INFO - 127.0.0.1 - - [12/Nov/2024 17:44:53] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:44:58,965 - INFO - 127.0.0.1 - - [12/Nov/2024 17:44:58] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:45:03,964 - INFO - 127.0.0.1 - - [12/Nov/2024 17:45:03] "GET /data/raspberrydata.txt HTTP/1.1" 200 -
+2024-11-12 17:45:08,963 - INFO - 127.0.0.1 - - [12/Nov/2024 17:45:08] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:45:13,964 - INFO - 127.0.0.1 - - [12/Nov/2024 17:45:13] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -

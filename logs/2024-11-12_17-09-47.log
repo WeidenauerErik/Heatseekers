@@ -1,0 +1,49 @@
+2024-11-12 17:09:47,030 - INFO - Server started, log file: ./logs/2024-11-12_17-09-47.log
+2024-11-12 17:09:47,036 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.21.16.131:8000
+2024-11-12 17:09:47,036 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-12 17:09:50,141 - INFO - View page accessed
+2024-11-12 17:09:50,149 - INFO - 127.0.0.1 - - [12/Nov/2024 17:09:50] "POST /view HTTP/1.1" 200 -
+2024-11-12 17:09:50,158 - INFO - Video feed accessed
+2024-11-12 17:09:50,165 - INFO - 127.0.0.1 - - [12/Nov/2024 17:09:50] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-12 17:09:50,166 - INFO - 127.0.0.1 - - [12/Nov/2024 17:09:50] "GET /static/MainPage.js HTTP/1.1" 200 -
+2024-11-12 17:09:50,176 - INFO - 127.0.0.1 - - [12/Nov/2024 17:09:50] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:09:50,641 - INFO - 127.0.0.1 - - [12/Nov/2024 17:09:50] "GET /video_feed HTTP/1.1" 200 -
+2024-11-12 17:09:50,760 - INFO - 127.0.0.1 - - [12/Nov/2024 17:09:50] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
+2024-11-12 17:09:55,195 - INFO - 127.0.0.1 - - [12/Nov/2024 17:09:55] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:09:55,406 - INFO - Admin page accessed
+2024-11-12 17:09:55,409 - INFO - 127.0.0.1 - - [12/Nov/2024 17:09:55] "GET /admin HTTP/1.1" 200 -
+2024-11-12 17:09:55,417 - INFO - 127.0.0.1 - - [12/Nov/2024 17:09:55] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-12 17:09:55,417 - INFO - 127.0.0.1 - - [12/Nov/2024 17:09:55] "[36mGET /static/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-12 17:09:55,433 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-12 17:09:55,433 - INFO - 127.0.0.1 - - [12/Nov/2024 17:09:55] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2024-11-12 17:09:55,445 - INFO - Error page accessed
+2024-11-12 17:09:55,446 - INFO - 127.0.0.1 - - [12/Nov/2024 17:09:55] "GET /error HTTP/1.1" 200 -
+2024-11-12 17:10:00,191 - INFO - 127.0.0.1 - - [12/Nov/2024 17:10:00] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:10:05,249 - INFO - 127.0.0.1 - - [12/Nov/2024 17:10:05] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:10:10,251 - INFO - 127.0.0.1 - - [12/Nov/2024 17:10:10] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:10:15,249 - INFO - 127.0.0.1 - - [12/Nov/2024 17:10:15] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:10:20,189 - INFO - 127.0.0.1 - - [12/Nov/2024 17:10:20] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:10:24,164 - INFO - Admin page accessed
+2024-11-12 17:10:24,166 - INFO - 127.0.0.1 - - [12/Nov/2024 17:10:24] "GET /admin HTTP/1.1" 200 -
+2024-11-12 17:10:24,175 - INFO - 127.0.0.1 - - [12/Nov/2024 17:10:24] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-12 17:10:24,175 - INFO - 127.0.0.1 - - [12/Nov/2024 17:10:24] "[36mGET /static/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-12 17:10:24,190 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-12 17:10:24,190 - INFO - 127.0.0.1 - - [12/Nov/2024 17:10:24] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2024-11-12 17:10:24,195 - INFO - Error page accessed
+2024-11-12 17:10:24,196 - INFO - 127.0.0.1 - - [12/Nov/2024 17:10:24] "GET /error HTTP/1.1" 200 -
+2024-11-12 17:10:25,249 - INFO - 127.0.0.1 - - [12/Nov/2024 17:10:25] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:10:30,253 - INFO - 127.0.0.1 - - [12/Nov/2024 17:10:30] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:10:35,252 - INFO - 127.0.0.1 - - [12/Nov/2024 17:10:35] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:10:40,250 - INFO - 127.0.0.1 - - [12/Nov/2024 17:10:40] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:10:45,252 - INFO - 127.0.0.1 - - [12/Nov/2024 17:10:45] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:10:50,250 - INFO - 127.0.0.1 - - [12/Nov/2024 17:10:50] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:10:55,250 - INFO - 127.0.0.1 - - [12/Nov/2024 17:10:55] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:11:00,252 - INFO - 127.0.0.1 - - [12/Nov/2024 17:11:00] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:11:05,249 - INFO - 127.0.0.1 - - [12/Nov/2024 17:11:05] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:11:10,251 - INFO - 127.0.0.1 - - [12/Nov/2024 17:11:10] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:11:15,252 - INFO - 127.0.0.1 - - [12/Nov/2024 17:11:15] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:11:20,250 - INFO - 127.0.0.1 - - [12/Nov/2024 17:11:20] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:11:59,265 - INFO - 127.0.0.1 - - [12/Nov/2024 17:11:59] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -

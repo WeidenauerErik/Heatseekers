@@ -1,0 +1,17 @@
+2024-11-12 16:50:44,385 - INFO - Server started, log file: ./logs/2024-11-12_16-50-44.log
+2024-11-12 16:50:44,390 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.21.16.131:8000
+2024-11-12 16:50:44,390 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-12 16:50:47,235 - INFO - View page accessed
+2024-11-12 16:50:47,241 - INFO - 127.0.0.1 - - [12/Nov/2024 16:50:47] "POST /view HTTP/1.1" 200 -
+2024-11-12 16:50:47,254 - INFO - Video feed accessed
+2024-11-12 16:50:47,261 - INFO - 127.0.0.1 - - [12/Nov/2024 16:50:47] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-12 16:50:47,265 - INFO - 127.0.0.1 - - [12/Nov/2024 16:50:47] "GET /static/MainPage.js HTTP/1.1" 200 -
+2024-11-12 16:50:47,274 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-12 16:50:47,274 - INFO - 127.0.0.1 - - [12/Nov/2024 16:50:47] "[32mGET /Users/julianfichtinger/Library/CloudStorage/OneDrive-HTLWien3Rennweg/4.%20Jahr/1.%20Semester/ITP/Heatseekers/data/raspberrydata.txt HTTP/1.1[0m" 302 -
+2024-11-12 16:50:47,275 - INFO - Error page accessed
+2024-11-12 16:50:47,277 - INFO - 127.0.0.1 - - [12/Nov/2024 16:50:47] "GET /error HTTP/1.1" 200 -
+2024-11-12 16:50:48,667 - INFO - 127.0.0.1 - - [12/Nov/2024 16:50:48] "GET /video_feed HTTP/1.1" 200 -
+2024-11-12 16:50:48,787 - INFO - 127.0.0.1 - - [12/Nov/2024 16:50:48] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -

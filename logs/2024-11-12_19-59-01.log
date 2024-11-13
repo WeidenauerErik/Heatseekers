@@ -1,0 +1,21 @@
+2024-11-12 19:59:01,366 - INFO - Server started, log file: ./logs/2024-11-12_19-59-01.log
+2024-11-12 19:59:01,373 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.0.199:8000
+2024-11-12 19:59:01,373 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-12 19:59:03,822 - INFO - View page accessed
+2024-11-12 19:59:03,828 - INFO - 127.0.0.1 - - [12/Nov/2024 19:59:03] "POST /view HTTP/1.1" 200 -
+2024-11-12 19:59:03,840 - INFO - Video feed accessed
+2024-11-12 19:59:03,847 - INFO - 127.0.0.1 - - [12/Nov/2024 19:59:03] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-12 19:59:03,847 - INFO - 127.0.0.1 - - [12/Nov/2024 19:59:03] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-12 19:59:03,858 - ERROR - An error occurred: [Errno 2] No such file or directory: '/data/raspberrydata.txt'
+2024-11-12 19:59:03,858 - INFO - 127.0.0.1 - - [12/Nov/2024 19:59:03] "[32mGET /data/raspberrydata.txt HTTP/1.1[0m" 302 -
+2024-11-12 19:59:03,859 - INFO - Error page accessed
+2024-11-12 19:59:03,861 - INFO - 127.0.0.1 - - [12/Nov/2024 19:59:03] "GET /error HTTP/1.1" 200 -
+2024-11-12 19:59:05,240 - INFO - 127.0.0.1 - - [12/Nov/2024 19:59:05] "GET /video_feed HTTP/1.1" 200 -
+2024-11-12 19:59:05,363 - INFO - 127.0.0.1 - - [12/Nov/2024 19:59:05] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
+2024-11-12 19:59:08,872 - ERROR - An error occurred: [Errno 2] No such file or directory: '/data/raspberrydata.txt'
+2024-11-12 19:59:08,874 - INFO - 127.0.0.1 - - [12/Nov/2024 19:59:08] "[32mGET /data/raspberrydata.txt HTTP/1.1[0m" 302 -
+2024-11-12 19:59:08,876 - INFO - Error page accessed
+2024-11-12 19:59:08,877 - INFO - 127.0.0.1 - - [12/Nov/2024 19:59:08] "GET /error HTTP/1.1" 200 -

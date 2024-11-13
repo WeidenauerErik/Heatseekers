@@ -1,0 +1,19 @@
+2024-11-12 19:57:25,254 - INFO - Server started, log file: ./logs/2024-11-12_19-57-25.log
+2024-11-12 19:57:25,261 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.0.199:8000
+2024-11-12 19:57:25,261 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-12 19:57:28,671 - INFO - View page accessed
+2024-11-12 19:57:28,679 - INFO - 127.0.0.1 - - [12/Nov/2024 19:57:28] "POST /view HTTP/1.1" 200 -
+2024-11-12 19:57:28,692 - INFO - Video feed accessed
+2024-11-12 19:57:28,699 - INFO - 127.0.0.1 - - [12/Nov/2024 19:57:28] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-12 19:57:28,699 - INFO - 127.0.0.1 - - [12/Nov/2024 19:57:28] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-12 19:57:28,713 - INFO - Sending data file: raspberrydata.txt
+2024-11-12 19:57:28,714 - ERROR - Error fetching data: [Errno 2] No such file or directory: '/Users/julianfichtinger/Library/CloudStorage/OneDrive-HTLWien3Rennweg/4. Jahr/1. Semester/ITP/Heatseekers/path/to/raspberrydata.txt'
+2024-11-12 19:57:28,714 - INFO - 127.0.0.1 - - [12/Nov/2024 19:57:28] "[35m[1mGET /data/raspberrydata.txt HTTP/1.1[0m" 500 -
+2024-11-12 19:57:30,103 - INFO - 127.0.0.1 - - [12/Nov/2024 19:57:30] "GET /video_feed HTTP/1.1" 200 -
+2024-11-12 19:57:30,224 - INFO - 127.0.0.1 - - [12/Nov/2024 19:57:30] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
+2024-11-12 19:57:34,110 - INFO - Sending data file: raspberrydata.txt
+2024-11-12 19:57:34,110 - ERROR - Error fetching data: [Errno 2] No such file or directory: '/Users/julianfichtinger/Library/CloudStorage/OneDrive-HTLWien3Rennweg/4. Jahr/1. Semester/ITP/Heatseekers/path/to/raspberrydata.txt'
+2024-11-12 19:57:34,111 - INFO - 127.0.0.1 - - [12/Nov/2024 19:57:34] "[35m[1mGET /data/raspberrydata.txt HTTP/1.1[0m" 500 -

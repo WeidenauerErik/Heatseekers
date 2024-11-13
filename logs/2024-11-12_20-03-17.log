@@ -1,0 +1,29 @@
+2024-11-12 20:03:17,143 - INFO - Server started, log file: ./logs/2024-11-12_20-03-17.log
+2024-11-12 20:03:17,150 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.0.199:8000
+2024-11-12 20:03:17,150 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-12 20:03:19,586 - INFO - View page accessed
+2024-11-12 20:03:19,594 - INFO - 127.0.0.1 - - [12/Nov/2024 20:03:19] "POST /view HTTP/1.1" 200 -
+2024-11-12 20:03:19,609 - INFO - Video feed accessed
+2024-11-12 20:03:19,613 - INFO - 127.0.0.1 - - [12/Nov/2024 20:03:19] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-12 20:03:19,616 - INFO - 127.0.0.1 - - [12/Nov/2024 20:03:19] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-12 20:03:19,626 - INFO - 127.0.0.1 - - [12/Nov/2024 20:03:19] "GET /data/raspberrydata.txt HTTP/1.1" 200 -
+2024-11-12 20:03:21,010 - INFO - 127.0.0.1 - - [12/Nov/2024 20:03:21] "GET /video_feed HTTP/1.1" 200 -
+2024-11-12 20:03:21,129 - INFO - 127.0.0.1 - - [12/Nov/2024 20:03:21] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
+2024-11-12 20:03:25,110 - INFO - 127.0.0.1 - - [12/Nov/2024 20:03:25] "GET /data/raspberrydata.txt HTTP/1.1" 200 -
+2024-11-12 20:04:19,427 - INFO - View page accessed
+2024-11-12 20:04:19,430 - INFO - 127.0.0.1 - - [12/Nov/2024 20:04:19] "POST /view HTTP/1.1" 200 -
+2024-11-12 20:04:19,439 - INFO - Video feed accessed
+2024-11-12 20:04:19,440 - INFO - 127.0.0.1 - - [12/Nov/2024 20:04:19] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-12 20:04:19,441 - INFO - 127.0.0.1 - - [12/Nov/2024 20:04:19] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-12 20:04:19,453 - INFO - 127.0.0.1 - - [12/Nov/2024 20:04:19] "GET /data/raspberrydata.txt HTTP/1.1" 200 -
+2024-11-12 20:04:19,745 - INFO - 127.0.0.1 - - [12/Nov/2024 20:04:19] "GET /video_feed HTTP/1.1" 200 -
+2024-11-12 20:04:19,862 - INFO - 127.0.0.1 - - [12/Nov/2024 20:04:19] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
+2024-11-12 20:04:25,102 - INFO - 127.0.0.1 - - [12/Nov/2024 20:04:25] "GET /data/raspberrydata.txt HTTP/1.1" 200 -
+2024-11-12 20:05:09,114 - INFO - 127.0.0.1 - - [12/Nov/2024 20:05:09] "GET /data/raspberrydata.txt HTTP/1.1" 200 -
+2024-11-12 20:05:09,136 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-12 20:05:09,137 - INFO - 127.0.0.1 - - [12/Nov/2024 20:05:09] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2024-11-12 20:05:09,138 - INFO - Error page accessed
+2024-11-12 20:05:09,140 - INFO - 127.0.0.1 - - [12/Nov/2024 20:05:09] "GET /error HTTP/1.1" 200 -

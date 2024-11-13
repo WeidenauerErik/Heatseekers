@@ -1,0 +1,43 @@
+2024-11-12 17:12:08,977 - INFO - Server started, log file: ./logs/2024-11-12_17-12-08.log
+2024-11-12 17:12:08,982 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.21.16.131:8000
+2024-11-12 17:12:08,982 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-12 17:12:10,787 - INFO - Admin page accessed
+2024-11-12 17:12:10,796 - INFO - 127.0.0.1 - - [12/Nov/2024 17:12:10] "GET /admin HTTP/1.1" 200 -
+2024-11-12 17:12:10,814 - INFO - 127.0.0.1 - - [12/Nov/2024 17:12:10] "[36mGET /static/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-12 17:12:10,814 - INFO - 127.0.0.1 - - [12/Nov/2024 17:12:10] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-12 17:12:10,822 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-12 17:12:10,823 - INFO - 127.0.0.1 - - [12/Nov/2024 17:12:10] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2024-11-12 17:12:10,826 - INFO - Error page accessed
+2024-11-12 17:12:10,827 - INFO - 127.0.0.1 - - [12/Nov/2024 17:12:10] "GET /error HTTP/1.1" 200 -
+2024-11-12 17:12:11,499 - INFO - Admin page accessed
+2024-11-12 17:12:11,500 - INFO - 127.0.0.1 - - [12/Nov/2024 17:12:11] "GET /admin HTTP/1.1" 200 -
+2024-11-12 17:12:11,518 - INFO - 127.0.0.1 - - [12/Nov/2024 17:12:11] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-12 17:12:11,519 - INFO - 127.0.0.1 - - [12/Nov/2024 17:12:11] "[36mGET /static/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-12 17:12:11,524 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-12 17:12:11,525 - INFO - 127.0.0.1 - - [12/Nov/2024 17:12:11] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2024-11-12 17:12:11,530 - INFO - Error page accessed
+2024-11-12 17:12:11,533 - INFO - 127.0.0.1 - - [12/Nov/2024 17:12:11] "GET /error HTTP/1.1" 200 -
+2024-11-12 17:12:12,145 - INFO - 127.0.0.1 - - [12/Nov/2024 17:12:12] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:12:14,466 - INFO - View page accessed
+2024-11-12 17:12:14,471 - INFO - 127.0.0.1 - - [12/Nov/2024 17:12:14] "POST /view HTTP/1.1" 200 -
+2024-11-12 17:12:14,480 - INFO - Video feed accessed
+2024-11-12 17:12:14,481 - INFO - 127.0.0.1 - - [12/Nov/2024 17:12:14] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-12 17:12:14,482 - INFO - 127.0.0.1 - - [12/Nov/2024 17:12:14] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-12 17:12:14,504 - INFO - 127.0.0.1 - - [12/Nov/2024 17:12:14] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:12:15,879 - INFO - 127.0.0.1 - - [12/Nov/2024 17:12:15] "GET /video_feed HTTP/1.1" 200 -
+2024-11-12 17:12:16,000 - INFO - 127.0.0.1 - - [12/Nov/2024 17:12:16] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
+2024-11-12 17:12:19,520 - INFO - 127.0.0.1 - - [12/Nov/2024 17:12:19] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:12:21,877 - INFO - Admin page accessed
+2024-11-12 17:12:21,878 - INFO - 127.0.0.1 - - [12/Nov/2024 17:12:21] "GET /admin HTTP/1.1" 200 -
+2024-11-12 17:12:21,886 - INFO - 127.0.0.1 - - [12/Nov/2024 17:12:21] "[36mGET /static/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-12 17:12:21,886 - INFO - 127.0.0.1 - - [12/Nov/2024 17:12:21] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-12 17:12:21,901 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-12 17:12:21,901 - INFO - 127.0.0.1 - - [12/Nov/2024 17:12:21] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2024-11-12 17:12:21,914 - INFO - Error page accessed
+2024-11-12 17:12:21,915 - INFO - 127.0.0.1 - - [12/Nov/2024 17:12:21] "GET /error HTTP/1.1" 200 -
+2024-11-12 17:12:25,251 - INFO - 127.0.0.1 - - [12/Nov/2024 17:12:25] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:12:30,250 - INFO - 127.0.0.1 - - [12/Nov/2024 17:12:30] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -
+2024-11-12 17:12:35,250 - INFO - 127.0.0.1 - - [12/Nov/2024 17:12:35] "[36mGET /data/raspberrydata.txt HTTP/1.1[0m" 304 -

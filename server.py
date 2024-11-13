@@ -1,10 +1,14 @@
 import hashlib
-from flask import Flask, Response, render_template_string, request, redirect, url_for, render_template
+import os
+
+from flask import Flask, Response, render_template_string, request, redirect, url_for, send_file
 import logging
 from datetime import datetime
 import functions
+from functions import get_AdminPage
 
 app = Flask(__name__)
+app.config['DEBUG'] = True
 
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
@@ -27,7 +31,7 @@ logger.addHandler(console_handler)
 @app.route('/')
 def index():
     app.logger.info('Login page accessed')
-    return render_template("LoginPage.html")
+    return render_template_string(functions.read_file("templates/LoginPage.html"))
 
 
 @app.route('/admin')
@@ -91,7 +95,7 @@ def view():
             return render_template_string(functions.read_file("templates/MainPage.html"))
 
     app.logger.info('Login failed')
-    return render_template("LoginPage.html")+ "<p>Password or email incorrect!</p>"
+    return render_template_string(functions.read_file("templates/LoginPage.html") + "<p>Password or email incorrect!</p>")
 
 
 @app.route('/video_feed')
@@ -103,7 +107,17 @@ def video_feed():
 @app.route('/error')
 def error():
     app.logger.info('Error page accessed')
-    return render_template("templates/ErrorPage.html")
+    return render_template_string(functions.read_file("templates/ErrorPage.html"))
+
+
+@app.route('/data/raspberrydata.txt')
+def serve_data():
+    response = send_file('data/raspberrydata.txt')
+    response.cache_control.no_cache = True  # Verhindern von Cache
+    response.cache_control.no_store = True  # Verhindern von Cache-Speicherung
+    response.cache_control.max_age = 0     # Maximale Gültigkeitsdauer von 0
+    response.expires = -1                  # Setzen Sie den "Expires"-Header auf -1
+    return response
 
 
 @app.errorhandler(Exception)

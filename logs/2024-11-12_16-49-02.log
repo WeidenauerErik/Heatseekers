@@ -1,0 +1,28 @@
+2024-11-12 16:49:02,006 - INFO - Server started, log file: ./logs/2024-11-12_16-49-02.log
+2024-11-12 16:49:02,012 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.21.16.131:8000
+2024-11-12 16:49:02,012 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-12 16:49:04,654 - INFO - View page accessed
+2024-11-12 16:49:04,661 - INFO - 127.0.0.1 - - [12/Nov/2024 16:49:04] "POST /view HTTP/1.1" 200 -
+2024-11-12 16:49:04,672 - INFO - Video feed accessed
+2024-11-12 16:49:04,680 - INFO - 127.0.0.1 - - [12/Nov/2024 16:49:04] "GET /static/MainPage.js HTTP/1.1" 200 -
+2024-11-12 16:49:04,680 - INFO - 127.0.0.1 - - [12/Nov/2024 16:49:04] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-12 16:49:04,693 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-12 16:49:04,694 - INFO - 127.0.0.1 - - [12/Nov/2024 16:49:04] "[32mGET /data/raspberrydata.txt HTTP/1.1[0m" 302 -
+2024-11-12 16:49:04,695 - INFO - Error page accessed
+2024-11-12 16:49:04,696 - INFO - 127.0.0.1 - - [12/Nov/2024 16:49:04] "GET /error HTTP/1.1" 200 -
+2024-11-12 16:49:06,068 - INFO - 127.0.0.1 - - [12/Nov/2024 16:49:06] "GET /video_feed HTTP/1.1" 200 -
+2024-11-12 16:49:06,187 - INFO - 127.0.0.1 - - [12/Nov/2024 16:49:06] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
+2024-11-12 16:49:06,882 - INFO - View page accessed
+2024-11-12 16:49:06,884 - INFO - 127.0.0.1 - - [12/Nov/2024 16:49:06] "POST /view HTTP/1.1" 200 -
+2024-11-12 16:49:06,895 - INFO - 127.0.0.1 - - [12/Nov/2024 16:49:06] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-12 16:49:06,896 - INFO - Video feed accessed
+2024-11-12 16:49:06,899 - INFO - 127.0.0.1 - - [12/Nov/2024 16:49:06] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-12 16:49:06,907 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-12 16:49:06,907 - INFO - 127.0.0.1 - - [12/Nov/2024 16:49:06] "[32mGET /data/raspberrydata.txt HTTP/1.1[0m" 302 -
+2024-11-12 16:49:06,908 - INFO - Error page accessed
+2024-11-12 16:49:06,910 - INFO - 127.0.0.1 - - [12/Nov/2024 16:49:06] "GET /error HTTP/1.1" 200 -
+2024-11-12 16:49:07,198 - INFO - 127.0.0.1 - - [12/Nov/2024 16:49:07] "GET /video_feed HTTP/1.1" 200 -
+2024-11-12 16:49:07,314 - INFO - 127.0.0.1 - - [12/Nov/2024 16:49:07] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -

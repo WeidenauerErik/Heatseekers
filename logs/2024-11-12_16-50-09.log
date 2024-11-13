@@ -1,0 +1,17 @@
+2024-11-12 16:50:09,532 - INFO - Server started, log file: ./logs/2024-11-12_16-50-09.log
+2024-11-12 16:50:09,539 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.21.16.131:8000
+2024-11-12 16:50:09,539 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-12 16:50:12,086 - INFO - View page accessed
+2024-11-12 16:50:12,094 - INFO - 127.0.0.1 - - [12/Nov/2024 16:50:12] "POST /view HTTP/1.1" 200 -
+2024-11-12 16:50:12,104 - INFO - Video feed accessed
+2024-11-12 16:50:12,112 - INFO - 127.0.0.1 - - [12/Nov/2024 16:50:12] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-12 16:50:12,114 - INFO - 127.0.0.1 - - [12/Nov/2024 16:50:12] "GET /static/MainPage.js HTTP/1.1" 200 -
+2024-11-12 16:50:12,123 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-12 16:50:12,123 - INFO - 127.0.0.1 - - [12/Nov/2024 16:50:12] "[32mGET /data/raspberrydata.txt HTTP/1.1[0m" 302 -
+2024-11-12 16:50:12,124 - INFO - Error page accessed
+2024-11-12 16:50:12,126 - INFO - 127.0.0.1 - - [12/Nov/2024 16:50:12] "GET /error HTTP/1.1" 200 -
+2024-11-12 16:50:12,567 - INFO - 127.0.0.1 - - [12/Nov/2024 16:50:12] "GET /video_feed HTTP/1.1" 200 -
+2024-11-12 16:50:12,687 - INFO - 127.0.0.1 - - [12/Nov/2024 16:50:12] "[36mGET /static/icon.png HTTP/1.1[0m" 304 -
