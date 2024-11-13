@@ -1,11 +1,9 @@
 import hashlib
-import os
 
-from flask import Flask, Response, render_template_string, request, redirect, url_for, send_file
+from flask import Flask, Response, render_template_string, request, redirect, url_for, send_file, render_template
 import logging
 from datetime import datetime
 import functions
-from functions import get_AdminPage
 
 app = Flask(__name__)
 app.config['DEBUG'] = True
@@ -31,7 +29,7 @@ logger.addHandler(console_handler)
 @app.route('/')
 def index():
     app.logger.info('Login page accessed')
-    return render_template_string(functions.read_file("templates/LoginPage.html"))
+    return render_template(functions.read_file("templates/LoginPage.html"))
 
 
 @app.route('/admin')
