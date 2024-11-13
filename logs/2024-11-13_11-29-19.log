@@ -1,0 +1,50 @@
+2024-11-13 11:29:19,454 - INFO - Server started, log file: ./logs/2024-11-13_11-29-19.log
+2024-11-13 11:29:19,462 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.21.16.131:8000
+2024-11-13 11:29:19,462 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-13 11:29:23,417 - INFO - Login page accessed
+2024-11-13 11:29:23,418 - ERROR - An error occurred: <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <link rel="stylesheet" href="/static/LoginPage.css">
+    <link rel="icon" href="/static/images/icon.png" type="image/x-icon">
+    <title>Heatseekers - Login</title>
+</head>
+<body>
+<div class="stripe"><p>Welcome to HeatSeekers</p></div>
+
+<h1>Login to HeatSeekers!</h1>
+
+<form action="/view" method="post">
+    <section id="LoginField">
+        <div class="loginItem">
+            <label for="email"></label>
+            <input id="email" name="email" required type="text">
+            <span>Email</span>
+        </div>
+
+        <div class="loginItem">
+            <label for="password"></label>
+            <input id="password" name="password" required type="password">
+            <span>Password</span>
+        </div>
+
+        <button type="submit" class="submitButton">Login</button>
+    </section>
+</form>
+
+</body>
+</html>
+
+2024-11-13 11:29:23,418 - INFO - 10.21.16.131 - - [13/Nov/2024 11:29:23] "[32mGET / HTTP/1.1[0m" 302 -
+2024-11-13 11:29:23,425 - INFO - Error page accessed
+2024-11-13 11:29:23,429 - INFO - 10.21.16.131 - - [13/Nov/2024 11:29:23] "GET /error HTTP/1.1" 200 -
+2024-11-13 11:29:23,462 - INFO - 10.21.16.131 - - [13/Nov/2024 11:29:23] "GET /static/ErrorPage.css HTTP/1.1" 200 -
+2024-11-13 11:29:23,665 - INFO - 10.21.16.131 - - [13/Nov/2024 11:29:23] "GET /static/images/icon.png HTTP/1.1" 200 -
+2024-11-13 11:29:56,195 - INFO - 127.0.0.1 - - [13/Nov/2024 11:29:56] "GET /data/raspberrydata.txt?timestamp=1731493796188 HTTP/1.1" 200 -
