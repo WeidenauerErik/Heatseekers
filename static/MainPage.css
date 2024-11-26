@@ -15,13 +15,12 @@ body {
 #app {
     width: 100%;
     display: grid;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto 1fr;
     grid-template-columns: 1fr;
     grid-template-areas:
         "navbar"
-        "content"
-        "footer";
-    height: 100vh;
+        "content";
+    min-height: 100vh;
     background-color: #f0f0f0;
 }
 
@@ -29,50 +28,46 @@ body {
     grid-area: navbar;
     width: 100%;
     background-color: #1F4959;
-    padding: 15px 50px 10px 50px;
+    padding: 15px 20px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
 }
 
 .admin-page-div {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .navbar h1 {
-    margin: 0;
-    padding: 0;
+    margin-bottom: 10px;
     color: white;
-    font-size: 2em;
+    font-size: 1.8em;
+    width: 100%;
+    text-align: center;
 }
 
 .navbar a {
-    margin: 0;
-    padding: 0;
     color: white;
     text-decoration: none;
-}
-
-.navbar a:hover {
-    text-decoration: white;
+    text-align: center;
 }
 
 .container {
     grid-area: content;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
     gap: 20px;
     padding: 20px;
     width: 100%;
-    height: 100%;
     max-width: 1200px;
     margin: auto;
-    align-self: stretch;
 }
 
-.bottom-left, .bottom-right {
+.top-left, .top-right, .bottom-left, .bottom-right {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
@@ -82,18 +77,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;
-}
-
-.top-left, .top-right {
-    background-color: white;
-    padding: 50px 20px 20px 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
+    margin-bottom: 20px;
 }
 
 canvas {
@@ -112,23 +96,56 @@ canvas {
 .bottom-right h2 {
     margin-bottom: 20px;
     font-size: 1.5rem;
+    text-align: center;
 }
+
 .blinking {
-    color: red; /* Schriftfarbe */
-    font-weight: bold; /* Fett für bessere Sichtbarkeit */
-    text-align: center; /* Zentriert */
-    font-size: 1.8rem; /* Schriftgröße anpassen */
-    animation: blinking-animation 1.5s infinite; /* Blinken alle 1 Sekunde */
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.8rem;
+    animation: blinking-animation 1.5s infinite;
 }
 
 @keyframes blinking-animation {
-    0% {
-        opacity: 1;
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Responsive Breakpoints */
+@media screen and (min-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
     }
-    50% {
-        opacity: 0;
+
+    .navbar {
+        padding: 15px 50px;
     }
-    100% {
-        opacity: 1;
+
+    .navbar h1 {
+        width: auto;
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    .navbar a {
+        text-align: right;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar h1 {
+        margin-bottom: 10px;
+    }
+
+    .blinking {
+        font-size: 1.5rem;
     }
 }
