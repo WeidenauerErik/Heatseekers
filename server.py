@@ -38,7 +38,7 @@ def index():
     return render_template("LoginPage.html")
 
 
-@app.route('/admin')
+@app.route('/AdminDashboard')
 def admin_page():
     if 'user_email' not in session:
         app.logger.info('Unauthorized access to admin page')
@@ -55,6 +55,28 @@ def admin_page():
 
     return render_template(
         'AdminPage.html',
+        users=users,
+        current_user_email=current_user_email,
+        isAdmin=is_admin
+    )
+
+@app.route('/UserDashboard')
+def user_page():
+    if 'user_email' not in session:
+        app.logger.info('Unauthorized access to admin page')
+        return redirect(url_for('index'))
+
+    users = functions.get_User("data/user.json")
+    current_user_email = session['user_email']
+
+    is_admin = False
+    for user in users:
+        if user['email'] == current_user_email and user['admin'] == 'true':
+            is_admin = True
+            break
+
+    return render_template(
+        'UserDashboard.html',
         users=users,
         current_user_email=current_user_email,
         isAdmin=is_admin
@@ -121,7 +143,7 @@ def send_password_via_email(email, password):
     sender_password = "olra pafg dvmk alfv"
 
     subject = "Your New Account Password"
-    body = f"Hello, \n\nYour new password is: {password}\n\nPlease change it after logging in."
+    body = f"Hi, \n\nThis is your temporary password: {password}\n\nPlease change it after logging in."
 
     msg = MIMEMultipart()
     msg['From'] = sender_email

@@ -1,0 +1,20 @@
+2024-11-26 17:30:46,409 - INFO - Server started, log file: ./logs/2024-11-26_17-30-46.log
+2024-11-26 17:30:46,414 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://10.21.16.131:8001
+2024-11-26 17:30:46,414 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-26 17:30:46,680 - INFO - 127.0.0.1 - - [26/Nov/2024 17:30:46] "GET /data/raspberrydata.txt?timestamp=1732638646667 HTTP/1.1" 200 -
+2024-11-26 17:30:52,680 - INFO - 127.0.0.1 - - [26/Nov/2024 17:30:52] "GET /data/raspberrydata.txt?timestamp=1732638652670 HTTP/1.1" 200 -
+2024-11-26 17:30:54,443 - INFO - 127.0.0.1 - - [26/Nov/2024 17:30:54] "GET /UserDashboard HTTP/1.1" 200 -
+2024-11-26 17:30:54,453 - INFO - 127.0.0.1 - - [26/Nov/2024 17:30:54] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-26 17:30:54,472 - INFO - 127.0.0.1 - - [26/Nov/2024 17:30:54] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 17:31:04,950 - INFO - 127.0.0.1 - - [26/Nov/2024 17:31:04] "GET /data/raspberrydata.txt?timestamp=1732638664941 HTTP/1.1" 200 -
+2024-11-26 17:31:26,167 - INFO - 127.0.0.1 - - [26/Nov/2024 17:31:26] "GET /data/raspberrydata.txt?timestamp=1732638686158 HTTP/1.1" 200 -
+2024-11-26 17:31:34,033 - INFO - 127.0.0.1 - - [26/Nov/2024 17:31:34] "GET /data/raspberrydata.txt?timestamp=1732638694025 HTTP/1.1" 200 -
+2024-11-26 17:32:07,334 - INFO - 127.0.0.1 - - [26/Nov/2024 17:32:07] "GET /data/raspberrydata.txt?timestamp=1732638727325 HTTP/1.1" 200 -
+2024-11-26 17:32:38,117 - INFO - 127.0.0.1 - - [26/Nov/2024 17:32:38] "GET /data/raspberrydata.txt?timestamp=1732638758108 HTTP/1.1" 200 -
+2024-11-26 17:32:52,101 - INFO - 127.0.0.1 - - [26/Nov/2024 17:32:52] "GET /data/raspberrydata.txt?timestamp=1732638772092 HTTP/1.1" 200 -
+2024-11-26 17:33:44,819 - INFO - 127.0.0.1 - - [26/Nov/2024 17:33:44] "GET /data/raspberrydata.txt?timestamp=1732638824810 HTTP/1.1" 200 -
+2024-11-26 17:33:55,542 - INFO - 127.0.0.1 - - [26/Nov/2024 17:33:55] "GET /data/raspberrydata.txt?timestamp=1732638835539 HTTP/1.1" 200 -
+2024-11-26 17:33:55,982 - INFO - 127.0.0.1 - - [26/Nov/2024 17:33:55] "GET /data/raspberrydata.txt?timestamp=1732638835979 HTTP/1.1" 200 -

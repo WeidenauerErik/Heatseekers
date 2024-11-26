@@ -1,0 +1,87 @@
+2024-11-26 17:28:51,040 - INFO - Server started, log file: ./logs/2024-11-26_17-28-51.log
+2024-11-26 17:28:51,047 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://10.21.16.131:8001
+2024-11-26 17:28:51,047 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-26 17:29:02,088 - INFO - Login page accessed
+2024-11-26 17:29:02,093 - INFO - 127.0.0.1 - - [26/Nov/2024 17:29:02] "GET / HTTP/1.1" 200 -
+2024-11-26 17:29:02,105 - INFO - 127.0.0.1 - - [26/Nov/2024 17:29:02] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-11-26 17:29:21,019 - INFO - Login failed
+2024-11-26 17:29:21,022 - INFO - 127.0.0.1 - - [26/Nov/2024 17:29:21] "POST /view HTTP/1.1" 200 -
+2024-11-26 17:29:21,030 - INFO - 127.0.0.1 - - [26/Nov/2024 17:29:21] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-11-26 17:29:26,274 - INFO - Login failed
+2024-11-26 17:29:26,276 - INFO - 127.0.0.1 - - [26/Nov/2024 17:29:26] "POST /view HTTP/1.1" 200 -
+2024-11-26 17:29:26,285 - INFO - 127.0.0.1 - - [26/Nov/2024 17:29:26] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-11-26 17:29:28,772 - INFO - Login failed
+2024-11-26 17:29:28,775 - INFO - 127.0.0.1 - - [26/Nov/2024 17:29:28] "POST /view HTTP/1.1" 200 -
+2024-11-26 17:29:28,785 - INFO - 127.0.0.1 - - [26/Nov/2024 17:29:28] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-11-26 17:29:34,811 - INFO - Login failed
+2024-11-26 17:29:34,813 - INFO - 127.0.0.1 - - [26/Nov/2024 17:29:34] "POST /view HTTP/1.1" 200 -
+2024-11-26 17:29:34,822 - INFO - 127.0.0.1 - - [26/Nov/2024 17:29:34] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-11-26 17:29:42,371 - INFO - User logged in: user
+2024-11-26 17:29:42,375 - INFO - 127.0.0.1 - - [26/Nov/2024 17:29:42] "POST /view HTTP/1.1" 200 -
+2024-11-26 17:29:42,383 - INFO - Video feed accessed
+2024-11-26 17:29:42,386 - INFO - 127.0.0.1 - - [26/Nov/2024 17:29:42] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-26 17:29:42,386 - INFO - 127.0.0.1 - - [26/Nov/2024 17:29:42] "GET /static/MainPage.css HTTP/1.1" 200 -
+2024-11-26 17:29:42,390 - INFO - 127.0.0.1 - - [26/Nov/2024 17:29:42] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 17:29:42,415 - INFO - 127.0.0.1 - - [26/Nov/2024 17:29:42] "[36mGET /static/images/flood-icon2.png HTTP/1.1[0m" 304 -
+2024-11-26 17:29:42,415 - INFO - 127.0.0.1 - - [26/Nov/2024 17:29:42] "GET /data/raspberrydata.txt?timestamp=1732638582411 HTTP/1.1" 200 -
+2024-11-26 17:29:42,435 - INFO - 127.0.0.1 - - [26/Nov/2024 17:29:42] "[36mGET /static/images/flood-icon.png HTTP/1.1[0m" 304 -
+2024-11-26 17:29:43,780 - INFO - 127.0.0.1 - - [26/Nov/2024 17:29:43] "GET /video_feed HTTP/1.1" 200 -
+2024-11-26 17:29:44,724 - INFO - 127.0.0.1 - - [26/Nov/2024 17:29:44] "GET /UserDashboard HTTP/1.1" 200 -
+2024-11-26 17:29:44,755 - INFO - 127.0.0.1 - - [26/Nov/2024 17:29:44] "[36mGET /static/images/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-26 17:29:44,755 - INFO - 127.0.0.1 - - [26/Nov/2024 17:29:44] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-26 17:29:44,771 - INFO - 127.0.0.1 - - [26/Nov/2024 17:29:44] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 17:29:47,508 - INFO - 127.0.0.1 - - [26/Nov/2024 17:29:47] "GET /data/raspberrydata.txt?timestamp=1732638587501 HTTP/1.1" 200 -
+2024-11-26 17:29:51,909 - INFO - 127.0.0.1 - - [26/Nov/2024 17:29:51] "GET /data/raspberrydata.txt?timestamp=1732638591901 HTTP/1.1" 200 -
+2024-11-26 17:29:52,539 - INFO - 127.0.0.1 - - [26/Nov/2024 17:29:52] "GET /data/raspberrydata.txt?timestamp=1732638592528 HTTP/1.1" 200 -
+2024-11-26 17:29:57,634 - INFO - 127.0.0.1 - - [26/Nov/2024 17:29:57] "GET /data/raspberrydata.txt?timestamp=1732638597625 HTTP/1.1" 200 -
+2024-11-26 17:30:02,730 - INFO - 127.0.0.1 - - [26/Nov/2024 17:30:02] "GET /data/raspberrydata.txt?timestamp=1732638602725 HTTP/1.1" 200 -
+2024-11-26 17:30:07,828 - INFO - 127.0.0.1 - - [26/Nov/2024 17:30:07] "GET /data/raspberrydata.txt?timestamp=1732638607824 HTTP/1.1" 200 -
+2024-11-26 17:30:12,929 - INFO - 127.0.0.1 - - [26/Nov/2024 17:30:12] "GET /data/raspberrydata.txt?timestamp=1732638612925 HTTP/1.1" 200 -
+2024-11-26 17:30:23,931 - INFO - 127.0.0.1 - - [26/Nov/2024 17:30:23] "GET /data/raspberrydata.txt?timestamp=1732638623915 HTTP/1.1" 200 -
+2024-11-26 17:30:32,160 - INFO - 127.0.0.1 - - [26/Nov/2024 17:30:32] "GET /UserDashboard HTTP/1.1" 200 -
+2024-11-26 17:30:32,172 - INFO - 127.0.0.1 - - [26/Nov/2024 17:30:32] "[36mGET /static/images/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-26 17:30:32,173 - INFO - 127.0.0.1 - - [26/Nov/2024 17:30:32] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-26 17:30:32,177 - INFO - 127.0.0.1 - - [26/Nov/2024 17:30:32] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 17:30:32,919 - INFO - 127.0.0.1 - - [26/Nov/2024 17:30:32] "GET /UserDashboard HTTP/1.1" 200 -
+2024-11-26 17:30:32,927 - INFO - 127.0.0.1 - - [26/Nov/2024 17:30:32] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-26 17:30:32,931 - INFO - 127.0.0.1 - - [26/Nov/2024 17:30:32] "[36mGET /static/images/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-26 17:30:32,932 - INFO - 127.0.0.1 - - [26/Nov/2024 17:30:32] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 17:30:33,731 - INFO - 127.0.0.1 - - [26/Nov/2024 17:30:33] "GET /UserDashboard HTTP/1.1" 200 -
+2024-11-26 17:30:33,741 - INFO - 127.0.0.1 - - [26/Nov/2024 17:30:33] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-26 17:30:33,742 - INFO - 127.0.0.1 - - [26/Nov/2024 17:30:33] "[36mGET /static/images/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-26 17:30:33,746 - INFO - 127.0.0.1 - - [26/Nov/2024 17:30:33] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 17:30:34,456 - INFO - 127.0.0.1 - - [26/Nov/2024 17:30:34] "GET /UserDashboard HTTP/1.1" 200 -
+2024-11-26 17:30:34,464 - INFO - 127.0.0.1 - - [26/Nov/2024 17:30:34] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-26 17:30:34,465 - INFO - 127.0.0.1 - - [26/Nov/2024 17:30:34] "[36mGET /static/images/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-26 17:30:34,468 - INFO - 127.0.0.1 - - [26/Nov/2024 17:30:34] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 17:30:35,218 - INFO - 127.0.0.1 - - [26/Nov/2024 17:30:35] "GET /UserDashboard HTTP/1.1" 200 -
+2024-11-26 17:30:35,230 - INFO - 127.0.0.1 - - [26/Nov/2024 17:30:35] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-26 17:30:35,230 - INFO - 127.0.0.1 - - [26/Nov/2024 17:30:35] "[36mGET /static/images/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-26 17:30:35,233 - INFO - 127.0.0.1 - - [26/Nov/2024 17:30:35] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 17:30:35,911 - INFO - 127.0.0.1 - - [26/Nov/2024 17:30:35] "GET /UserDashboard HTTP/1.1" 200 -
+2024-11-26 17:30:35,919 - INFO - 127.0.0.1 - - [26/Nov/2024 17:30:35] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-26 17:30:35,920 - INFO - 127.0.0.1 - - [26/Nov/2024 17:30:35] "[36mGET /static/images/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-26 17:30:35,923 - INFO - 127.0.0.1 - - [26/Nov/2024 17:30:35] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 17:30:36,471 - INFO - 127.0.0.1 - - [26/Nov/2024 17:30:36] "GET /UserDashboard HTTP/1.1" 200 -
+2024-11-26 17:30:36,482 - INFO - 127.0.0.1 - - [26/Nov/2024 17:30:36] "[36mGET /static/images/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-26 17:30:36,483 - INFO - 127.0.0.1 - - [26/Nov/2024 17:30:36] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-26 17:30:36,489 - INFO - 127.0.0.1 - - [26/Nov/2024 17:30:36] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 17:30:37,006 - INFO - 127.0.0.1 - - [26/Nov/2024 17:30:37] "GET /UserDashboard HTTP/1.1" 200 -
+2024-11-26 17:30:37,015 - INFO - 127.0.0.1 - - [26/Nov/2024 17:30:37] "[36mGET /static/images/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-26 17:30:37,016 - INFO - 127.0.0.1 - - [26/Nov/2024 17:30:37] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-26 17:30:37,020 - INFO - 127.0.0.1 - - [26/Nov/2024 17:30:37] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 17:30:40,241 - INFO - 127.0.0.1 - - [26/Nov/2024 17:30:40] "GET /UserDashboard HTTP/1.1" 200 -
+2024-11-26 17:30:40,269 - INFO - 127.0.0.1 - - [26/Nov/2024 17:30:40] "[36mGET /static/images/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-26 17:30:40,269 - INFO - 127.0.0.1 - - [26/Nov/2024 17:30:40] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-26 17:30:40,271 - INFO - 127.0.0.1 - - [26/Nov/2024 17:30:40] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 17:30:41,588 - INFO - 127.0.0.1 - - [26/Nov/2024 17:30:41] "GET /data/raspberrydata.txt?timestamp=1732638641584 HTTP/1.1" 200 -
+2024-11-26 17:30:42,568 - INFO - 127.0.0.1 - - [26/Nov/2024 17:30:42] "GET /UserDashboard HTTP/1.1" 200 -
+2024-11-26 17:30:42,575 - INFO - 127.0.0.1 - - [26/Nov/2024 17:30:42] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 17:30:42,576 - INFO - 127.0.0.1 - - [26/Nov/2024 17:30:42] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-26 17:30:42,576 - INFO - 127.0.0.1 - - [26/Nov/2024 17:30:42] "[36mGET /static/images/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-26 17:30:42,579 - INFO - 127.0.0.1 - - [26/Nov/2024 17:30:42] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-26 17:30:42,579 - INFO - 127.0.0.1 - - [26/Nov/2024 17:30:42] "[36mGET /static/images/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-26 17:30:42,583 - INFO - 127.0.0.1 - - [26/Nov/2024 17:30:42] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
