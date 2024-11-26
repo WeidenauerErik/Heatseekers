@@ -1,0 +1,32 @@
+2024-11-26 15:34:50,754 - INFO - Server started, log file: ./logs/2024-11-26_15-34-50.log
+2024-11-26 15:34:50,761 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://10.21.16.131:8001
+2024-11-26 15:34:50,761 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-26 15:34:52,200 - INFO - Login page accessed
+2024-11-26 15:34:52,203 - INFO - 127.0.0.1 - - [26/Nov/2024 15:34:52] "GET / HTTP/1.1" 200 -
+2024-11-26 15:34:52,217 - INFO - 127.0.0.1 - - [26/Nov/2024 15:34:52] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-26 15:34:52,217 - INFO - 127.0.0.1 - - [26/Nov/2024 15:34:52] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 15:34:52,221 - INFO - 127.0.0.1 - - [26/Nov/2024 15:34:52] "[36mGET /static/images/flood-icon2.png HTTP/1.1[0m" 304 -
+2024-11-26 15:34:52,221 - INFO - 127.0.0.1 - - [26/Nov/2024 15:34:52] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-26 15:34:52,231 - INFO - 127.0.0.1 - - [26/Nov/2024 15:34:52] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-11-26 15:34:55,612 - INFO - User logged in: admin
+2024-11-26 15:34:55,613 - ERROR - An error occurred: The session is unavailable because no secret key was set.  Set the secret_key on the application to something unique and secret.
+2024-11-26 15:34:55,613 - INFO - 127.0.0.1 - - [26/Nov/2024 15:34:55] "[32mPOST /view HTTP/1.1[0m" 302 -
+2024-11-26 15:34:55,919 - INFO - Error page accessed
+2024-11-26 15:34:55,924 - INFO - 127.0.0.1 - - [26/Nov/2024 15:34:55] "GET /error HTTP/1.1" 200 -
+2024-11-26 15:34:55,932 - INFO - 127.0.0.1 - - [26/Nov/2024 15:34:55] "[36mGET /static/ErrorPage.css HTTP/1.1[0m" 304 -
+2024-11-26 15:34:56,171 - INFO - 127.0.0.1 - - [26/Nov/2024 15:34:56] "GET /data/raspberrydata.txt?timestamp=1732631696166 HTTP/1.1" 200 -
+2024-11-26 15:34:58,150 - INFO - Login page accessed
+2024-11-26 15:34:58,152 - INFO - 127.0.0.1 - - [26/Nov/2024 15:34:58] "GET / HTTP/1.1" 200 -
+2024-11-26 15:34:58,155 - INFO - 127.0.0.1 - - [26/Nov/2024 15:34:58] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-11-26 15:34:58,163 - INFO - 127.0.0.1 - - [26/Nov/2024 15:34:58] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-11-26 15:35:00,651 - INFO - User logged in: admin
+2024-11-26 15:35:00,651 - ERROR - An error occurred: The session is unavailable because no secret key was set.  Set the secret_key on the application to something unique and secret.
+2024-11-26 15:35:00,651 - INFO - 127.0.0.1 - - [26/Nov/2024 15:35:00] "[32mPOST /view HTTP/1.1[0m" 302 -
+2024-11-26 15:35:00,961 - INFO - Error page accessed
+2024-11-26 15:35:00,964 - INFO - 127.0.0.1 - - [26/Nov/2024 15:35:00] "GET /error HTTP/1.1" 200 -
+2024-11-26 15:35:00,974 - INFO - 127.0.0.1 - - [26/Nov/2024 15:35:00] "[36mGET /static/ErrorPage.css HTTP/1.1[0m" 304 -
+2024-11-26 15:35:14,941 - INFO - 127.0.0.1 - - [26/Nov/2024 15:35:14] "GET /data/raspberrydata.txt?timestamp=1732631714933 HTTP/1.1" 200 -
+2024-11-26 15:35:24,467 - INFO - 127.0.0.1 - - [26/Nov/2024 15:35:24] "GET /data/raspberrydata.txt?timestamp=1732631724459 HTTP/1.1" 200 -

@@ -1,0 +1,21 @@
+2024-11-26 15:35:25,311 - INFO - Server started, log file: ./logs/2024-11-26_15-35-25.log
+2024-11-26 15:35:25,316 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://10.21.16.131:8001
+2024-11-26 15:35:25,316 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-26 15:35:29,299 - INFO - Login page accessed
+2024-11-26 15:35:29,303 - INFO - 127.0.0.1 - - [26/Nov/2024 15:35:29] "GET / HTTP/1.1" 200 -
+2024-11-26 15:35:29,309 - INFO - 127.0.0.1 - - [26/Nov/2024 15:35:29] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-11-26 15:35:30,003 - INFO - 127.0.0.1 - - [26/Nov/2024 15:35:30] "GET /data/raspberrydata.txt?timestamp=1732631729999 HTTP/1.1" 200 -
+2024-11-26 15:35:30,139 - INFO - 127.0.0.1 - - [26/Nov/2024 15:35:30] "GET /data/raspberrydata.txt?timestamp=1732631730134 HTTP/1.1" 200 -
+2024-11-26 15:35:33,655 - INFO - Login page accessed
+2024-11-26 15:35:33,655 - INFO - 127.0.0.1 - - [26/Nov/2024 15:35:33] "GET / HTTP/1.1" 200 -
+2024-11-26 15:35:33,661 - INFO - 127.0.0.1 - - [26/Nov/2024 15:35:33] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-11-26 15:35:33,683 - INFO - 127.0.0.1 - - [26/Nov/2024 15:35:33] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-11-26 15:35:35,847 - INFO - User logged in: admin
+2024-11-26 15:35:35,847 - ERROR - An error occurred: The session is unavailable because no secret key was set.  Set the secret_key on the application to something unique and secret.
+2024-11-26 15:35:35,848 - INFO - 127.0.0.1 - - [26/Nov/2024 15:35:35] "[32mPOST /view HTTP/1.1[0m" 302 -
+2024-11-26 15:35:36,151 - INFO - Error page accessed
+2024-11-26 15:35:36,155 - INFO - 127.0.0.1 - - [26/Nov/2024 15:35:36] "GET /error HTTP/1.1" 200 -
+2024-11-26 15:35:36,165 - INFO - 127.0.0.1 - - [26/Nov/2024 15:35:36] "[36mGET /static/ErrorPage.css HTTP/1.1[0m" 304 -

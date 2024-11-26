@@ -1,6 +1,7 @@
 import hashlib
 
-from flask import Flask, Response, request, redirect, url_for, send_file, render_template
+from flask import Flask, Response, request, redirect, url_for, send_file, render_template, render_template_string, \
+    session
 import logging
 from datetime import datetime
 import functions
@@ -25,6 +26,7 @@ console_handler.setFormatter(formatter)
 logger.addHandler(file_handler)
 logger.addHandler(console_handler)
 
+app.config['SECRET_KEY'] = 'cisco'
 
 @app.route('/')
 def index():
@@ -34,22 +36,44 @@ def index():
 
 @app.route('/admin')
 def admin_page():
+    # Prüfen, ob der Benutzer eingeloggt ist
+    if 'user_email' not in session:
+        app.logger.info('Unauthorized access to admin page')
+        return redirect(url_for('index'))
+
+    # Benutzer-Daten laden
     app.logger.info('Admin page accessed')
-    return functions.get_AdminPage()
+    users = functions.get_User("data/user.json")
+    current_user_email = session['user_email']  # E-Mail des eingeloggten Benutzers
+    return render_template_string(
+        functions.get_AdminPage(),
+        users=users,
+        current_user_email=current_user_email
+    )
 
 
 @app.route('/delete-user', methods=['POST'])
 def delete_user():
+    if 'user_email' not in session:
+        return redirect(url_for('index'))
+
     user_id = request.form.get('id')
-    app.logger.info(f'Delete user page accessed for user ID: {user_id}')
+    app.logger.info(f"Attempt to delete user ID: {user_id}")
 
-    data = functions.get_User("data/user.json")
+    # Benutzer-Daten laden
+    users = functions.get_User("data/user.json")
+    current_user_email = session['user_email']
 
-    data = [user for user in data if user['id'] != user_id]
+    # Prüfen, ob der Benutzer sich selbst löschen möchte
+    user_to_delete = next((user for user in users if user['id'] == user_id), None)
+    if user_to_delete and user_to_delete['email'] == current_user_email:
+        app.logger.info("Attempted to delete the currently logged-in user")
+        return redirect(url_for('admin_page'))
 
-    functions.save_User("data/user.json", {"users": data})
-
-    return functions.get_AdminPage()
+    # Benutzer löschen
+    users = [user for user in users if user['id'] != user_id]
+    functions.save_User("data/user.json", {"users": users})
+    return redirect(url_for('admin_page'))
 
 @app.route('/create-user', methods=['POST'])
 def create_user():
@@ -58,6 +82,13 @@ def create_user():
     admin = request.form.get('admin') == 'true'
 
     users = functions.get_User("data/user.json")
+
+    if any(user['email'] == email for user in users):
+        app.logger.info(f"Attempt to create a user with existing email: {email}")
+        return render_template_string(
+            functions.read_file("templates/AdminPage.html") + "<p>Email already exists!</p>"
+        )
+
 
     new_id = str(len(users) + 1)
 
@@ -83,17 +114,25 @@ def view():
 
     hashed_password = hashlib.sha256(password.encode()).hexdigest()
 
-    user = functions.get_User("data/user.json")
-    for tmp in user:
+    # Benutzer auslesen
+    users = functions.get_User("data/user.json")
+    for tmp in users:
         if email == tmp['email'] and hashed_password == tmp['password']:
-            app.logger.info('View page accessed')
-            if tmp['admin'] == 'true':
-                return render_template("MainPage.html", isAdmin=True)
+            app.logger.info(f"User logged in: {email}")
 
-            return render_template("MainPage.html", isAdmin=False)
+            # Aktuelle Benutzer-E-Mail in der Session speichern
+            session['user_email'] = email
 
+            # Überprüfen, ob der Benutzer ein Admin ist
+            is_admin = tmp['admin'] == 'true'
+
+            # Weiterleitung je nach Admin-Status
+            return render_template_string(functions.read_file("templates/MainPage.html"), isAdmin=is_admin)
+
+    # Login fehlgeschlagen
     app.logger.info('Login failed')
-    return render_template("LoginPage.html") + ("<p>Password or email incorrect!</p>")
+    return render_template_string(
+        functions.read_file("templates/LoginPage.html") + "<p>Password or email incorrect!</p>")
 
 
 @app.route('/video_feed')
