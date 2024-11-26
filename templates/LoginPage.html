@@ -28,9 +28,30 @@
             <span>Password</span>
         </div>
 
-        <button type="submit" class="submitButton">Login</button>
+        <button type="submit" class="submitButton1">Login</button>
     </section>
 </form>
+
+<!-- Passwortänderungs-Popup -->
+{% if show_popup %}
+<div id="CreateUserPopup" style="display:block;">
+    <div class="popup-content">
+        <h2>Change Your Password</h2>
+        <form action="{{ url_for('change_password') }}" method="POST">
+            <div>
+            <input type="hidden" name="email" value="{{ email }}">
+            <label for="new_password">New Password:</label>
+
+                <input type="password" id="new_password" name="new_password" required>
+            </div>
+            <div class="form-buttons">
+                <button type="submit" class="submitButton2">Submit</button>
+            <button type="button" class="cancel-button" onclick="document.getElementById('CreateUserPopup').style.display='none'">Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endif %}
 
 </body>
 </html>

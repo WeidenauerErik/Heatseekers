@@ -1,0 +1,29 @@
+2024-11-26 16:46:14,639 - INFO - Server started, log file: ./logs/2024-11-26_16-46-14.log
+2024-11-26 16:46:14,643 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://10.21.16.131:8001
+2024-11-26 16:46:14,643 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-26 16:46:17,206 - INFO - 127.0.0.1 - - [26/Nov/2024 16:46:17] "GET /data/raspberrydata.txt?timestamp=1732635977196 HTTP/1.1" 200 -
+2024-11-26 16:46:18,991 - INFO - Login page accessed
+2024-11-26 16:46:18,994 - INFO - 127.0.0.1 - - [26/Nov/2024 16:46:18] "GET / HTTP/1.1" 200 -
+2024-11-26 16:46:18,998 - INFO - Video feed accessed
+2024-11-26 16:46:19,024 - INFO - 127.0.0.1 - - [26/Nov/2024 16:46:19] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-11-26 16:46:20,395 - INFO - 127.0.0.1 - - [26/Nov/2024 16:46:20] "GET /video_feed HTTP/1.1" 200 -
+2024-11-26 16:46:24,280 - INFO - 127.0.0.1 - - [26/Nov/2024 16:46:24] "GET /data/raspberrydata.txt?timestamp=1732635984273 HTTP/1.1" 200 -
+2024-11-26 16:46:36,276 - INFO - User logged in: 1126@htl.rennweg.at
+2024-11-26 16:46:36,281 - INFO - 127.0.0.1 - - [26/Nov/2024 16:46:36] "POST /view HTTP/1.1" 200 -
+2024-11-26 16:46:37,963 - INFO - 127.0.0.1 - - [26/Nov/2024 16:46:37] "GET /data/raspberrydata.txt?timestamp=1732635997952 HTTP/1.1" 200 -
+2024-11-26 16:46:45,254 - INFO - Password changed for user: 1126@htl.rennweg.at
+2024-11-26 16:46:45,255 - INFO - 127.0.0.1 - - [26/Nov/2024 16:46:45] "[32mPOST /change-password HTTP/1.1[0m" 302 -
+2024-11-26 16:46:45,564 - INFO - 127.0.0.1 - - [26/Nov/2024 16:46:45] "GET /admin HTTP/1.1" 200 -
+2024-11-26 16:46:45,576 - INFO - 127.0.0.1 - - [26/Nov/2024 16:46:45] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-26 16:46:45,577 - INFO - 127.0.0.1 - - [26/Nov/2024 16:46:45] "[36mGET /static/images/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-26 16:46:45,580 - INFO - 127.0.0.1 - - [26/Nov/2024 16:46:45] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 16:46:49,668 - INFO - 127.0.0.1 - - [26/Nov/2024 16:46:49] "GET /data/raspberrydata.txt?timestamp=1732636009663 HTTP/1.1" 200 -
+2024-11-26 16:47:23,895 - INFO - 127.0.0.1 - - [26/Nov/2024 16:47:23] "GET /data/raspberrydata.txt?timestamp=1732636043888 HTTP/1.1" 200 -
+2024-11-26 16:47:25,412 - INFO - 127.0.0.1 - - [26/Nov/2024 16:47:25] "GET /data/raspberrydata.txt?timestamp=1732636045407 HTTP/1.1" 200 -
+2024-11-26 16:47:54,268 - INFO - 127.0.0.1 - - [26/Nov/2024 16:47:54] "GET /data/raspberrydata.txt?timestamp=1732636074260 HTTP/1.1" 200 -
+2024-11-26 16:49:04,227 - INFO - 127.0.0.1 - - [26/Nov/2024 16:49:04] "GET /data/raspberrydata.txt?timestamp=1732636144219 HTTP/1.1" 200 -
+2024-11-26 16:50:04,101 - INFO - 127.0.0.1 - - [26/Nov/2024 16:50:04] "GET /data/raspberrydata.txt?timestamp=1732636204089 HTTP/1.1" 200 -
+2024-11-26 16:50:04,993 - INFO - 127.0.0.1 - - [26/Nov/2024 16:50:04] "GET /data/raspberrydata.txt?timestamp=1732636204983 HTTP/1.1" 200 -

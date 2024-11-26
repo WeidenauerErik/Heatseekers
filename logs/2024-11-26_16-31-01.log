@@ -1,0 +1,17 @@
+2024-11-26 16:31:01,291 - INFO - Server started, log file: ./logs/2024-11-26_16-31-01.log
+2024-11-26 16:31:01,297 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://10.21.16.131:8001
+2024-11-26 16:31:01,297 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-26 16:31:06,057 - INFO - 127.0.0.1 - - [26/Nov/2024 16:31:06] "GET /data/raspberrydata.txt?timestamp=1732635066040 HTTP/1.1" 200 -
+2024-11-26 16:31:06,376 - INFO - 127.0.0.1 - - [26/Nov/2024 16:31:06] "GET /admin HTTP/1.1" 200 -
+2024-11-26 16:31:06,388 - INFO - 127.0.0.1 - - [26/Nov/2024 16:31:06] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-26 16:31:06,388 - INFO - 127.0.0.1 - - [26/Nov/2024 16:31:06] "[36mGET /static/images/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-26 16:31:06,390 - INFO - 127.0.0.1 - - [26/Nov/2024 16:31:06] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 16:31:57,894 - INFO - 127.0.0.1 - - [26/Nov/2024 16:31:57] "[32mPOST /create-user HTTP/1.1[0m" 302 -
+2024-11-26 16:31:57,916 - INFO - 127.0.0.1 - - [26/Nov/2024 16:31:57] "GET /admin HTTP/1.1" 200 -
+2024-11-26 16:31:57,935 - INFO - 127.0.0.1 - - [26/Nov/2024 16:31:57] "[36mGET /static/images/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-26 16:31:57,936 - INFO - 127.0.0.1 - - [26/Nov/2024 16:31:57] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-26 16:31:57,940 - INFO - 127.0.0.1 - - [26/Nov/2024 16:31:57] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 16:34:03,883 - INFO - 127.0.0.1 - - [26/Nov/2024 16:34:03] "GET /data/raspberrydata.txt?timestamp=1732635243877 HTTP/1.1" 200 -

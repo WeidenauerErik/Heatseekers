@@ -1,0 +1,18 @@
+2024-11-26 16:52:16,660 - INFO - Server started, log file: ./logs/2024-11-26_16-52-16.log
+2024-11-26 16:52:16,664 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://10.21.16.131:8001
+2024-11-26 16:52:16,664 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-26 16:52:19,197 - INFO - 127.0.0.1 - - [26/Nov/2024 16:52:19] "GET /data/raspberrydata.txt?timestamp=1732636339183 HTTP/1.1" 200 -
+2024-11-26 16:52:21,284 - INFO - Login page accessed
+2024-11-26 16:52:21,287 - INFO - 127.0.0.1 - - [26/Nov/2024 16:52:21] "GET / HTTP/1.1" 200 -
+2024-11-26 16:52:21,298 - INFO - 127.0.0.1 - - [26/Nov/2024 16:52:21] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-11-26 16:52:21,489 - INFO - Login page accessed
+2024-11-26 16:52:21,489 - INFO - 127.0.0.1 - - [26/Nov/2024 16:52:21] "GET / HTTP/1.1" 200 -
+2024-11-26 16:52:21,497 - INFO - 127.0.0.1 - - [26/Nov/2024 16:52:21] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-11-26 16:52:21,652 - INFO - Login page accessed
+2024-11-26 16:52:21,653 - INFO - 127.0.0.1 - - [26/Nov/2024 16:52:21] "GET / HTTP/1.1" 200 -
+2024-11-26 16:52:21,659 - INFO - 127.0.0.1 - - [26/Nov/2024 16:52:21] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-11-26 16:52:26,025 - INFO - 127.0.0.1 - - [26/Nov/2024 16:52:26] "GET /data/raspberrydata.txt?timestamp=1732636346017 HTTP/1.1" 200 -
+2024-11-26 16:52:59,662 - INFO - 127.0.0.1 - - [26/Nov/2024 16:52:59] "GET /data/raspberrydata.txt?timestamp=1732636379649 HTTP/1.1" 200 -

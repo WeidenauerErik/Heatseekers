@@ -1,0 +1,50 @@
+2024-11-26 17:02:13,101 - INFO - Server started, log file: ./logs/2024-11-26_17-02-13.log
+2024-11-26 17:02:13,108 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://10.21.16.131:8001
+2024-11-26 17:02:13,108 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-26 17:02:15,304 - INFO - User logged in: 1126@htl.rennweg.at
+2024-11-26 17:02:15,310 - INFO - 127.0.0.1 - - [26/Nov/2024 17:02:15] "POST /view HTTP/1.1" 200 -
+2024-11-26 17:02:15,320 - INFO - 127.0.0.1 - - [26/Nov/2024 17:02:15] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-11-26 17:02:19,845 - INFO - 127.0.0.1 - - [26/Nov/2024 17:02:19] "GET /data/raspberrydata.txt?timestamp=1732636939834 HTTP/1.1" 200 -
+2024-11-26 17:02:25,340 - INFO - User logged in: 1126@htl.rennweg.at
+2024-11-26 17:02:25,343 - INFO - 127.0.0.1 - - [26/Nov/2024 17:02:25] "POST /view HTTP/1.1" 200 -
+2024-11-26 17:02:25,350 - INFO - 127.0.0.1 - - [26/Nov/2024 17:02:25] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-11-26 17:02:38,602 - INFO - Password changed for user: 1126@htl.rennweg.at
+2024-11-26 17:02:38,603 - INFO - 127.0.0.1 - - [26/Nov/2024 17:02:38] "[32mPOST /change-password HTTP/1.1[0m" 302 -
+2024-11-26 17:02:38,910 - INFO - 127.0.0.1 - - [26/Nov/2024 17:02:38] "GET /admin HTTP/1.1" 200 -
+2024-11-26 17:02:38,918 - INFO - 127.0.0.1 - - [26/Nov/2024 17:02:38] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-26 17:02:38,918 - INFO - 127.0.0.1 - - [26/Nov/2024 17:02:38] "[36mGET /static/images/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-26 17:02:38,921 - INFO - 127.0.0.1 - - [26/Nov/2024 17:02:38] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 17:06:14,125 - INFO - 127.0.0.1 - - [26/Nov/2024 17:06:14] "GET /data/raspberrydata.txt?timestamp=1732637174113 HTTP/1.1" 200 -
+2024-11-26 17:06:17,527 - INFO - 127.0.0.1 - - [26/Nov/2024 17:06:17] "GET /data/raspberrydata.txt?timestamp=1732637177524 HTTP/1.1" 200 -
+2024-11-26 17:06:19,114 - INFO - 127.0.0.1 - - [26/Nov/2024 17:06:19] "GET /data/raspberrydata.txt?timestamp=1732637179111 HTTP/1.1" 200 -
+2024-11-26 17:06:28,534 - INFO - Login page accessed
+2024-11-26 17:06:28,538 - INFO - 127.0.0.1 - - [26/Nov/2024 17:06:28] "GET / HTTP/1.1" 200 -
+2024-11-26 17:06:28,542 - INFO - 127.0.0.1 - - [26/Nov/2024 17:06:28] "GET /static/LoginPage.css HTTP/1.1" 200 -
+2024-11-26 17:06:28,564 - INFO - 127.0.0.1 - - [26/Nov/2024 17:06:28] "GET /static/LoginPage.css HTTP/1.1" 200 -
+2024-11-26 17:06:35,376 - INFO - User logged in: 1126@htl.rennweg.at
+2024-11-26 17:06:35,380 - INFO - 127.0.0.1 - - [26/Nov/2024 17:06:35] "POST /view HTTP/1.1" 200 -
+2024-11-26 17:06:35,387 - INFO - 127.0.0.1 - - [26/Nov/2024 17:06:35] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-11-26 17:08:14,633 - INFO - User logged in: 1126@htl.rennweg.at
+2024-11-26 17:08:14,636 - INFO - 127.0.0.1 - - [26/Nov/2024 17:08:14] "POST /view HTTP/1.1" 200 -
+2024-11-26 17:08:14,644 - INFO - 127.0.0.1 - - [26/Nov/2024 17:08:14] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-11-26 17:09:10,821 - INFO - User logged in: 1126@htl.rennweg.at
+2024-11-26 17:09:10,825 - INFO - 127.0.0.1 - - [26/Nov/2024 17:09:10] "POST /view HTTP/1.1" 200 -
+2024-11-26 17:09:10,833 - INFO - 127.0.0.1 - - [26/Nov/2024 17:09:10] "GET /static/LoginPage.css HTTP/1.1" 200 -
+2024-11-26 17:09:13,183 - INFO - User logged in: 1126@htl.rennweg.at
+2024-11-26 17:09:13,186 - INFO - 127.0.0.1 - - [26/Nov/2024 17:09:13] "POST /view HTTP/1.1" 200 -
+2024-11-26 17:09:13,193 - INFO - 127.0.0.1 - - [26/Nov/2024 17:09:13] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-11-26 17:09:21,652 - INFO - User logged in: 1126@htl.rennweg.at
+2024-11-26 17:09:21,655 - INFO - 127.0.0.1 - - [26/Nov/2024 17:09:21] "POST /view HTTP/1.1" 200 -
+2024-11-26 17:09:21,664 - INFO - 127.0.0.1 - - [26/Nov/2024 17:09:21] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-11-26 17:09:59,151 - INFO - User logged in: 1126@htl.rennweg.at
+2024-11-26 17:09:59,154 - INFO - 127.0.0.1 - - [26/Nov/2024 17:09:59] "POST /view HTTP/1.1" 200 -
+2024-11-26 17:09:59,161 - INFO - 127.0.0.1 - - [26/Nov/2024 17:09:59] "GET /static/LoginPage.css HTTP/1.1" 200 -
+2024-11-26 17:10:04,497 - INFO - Password changed for user: 1126@htl.rennweg.at
+2024-11-26 17:10:04,497 - INFO - 127.0.0.1 - - [26/Nov/2024 17:10:04] "[32mPOST /change-password HTTP/1.1[0m" 302 -
+2024-11-26 17:10:04,805 - INFO - 127.0.0.1 - - [26/Nov/2024 17:10:04] "GET /admin HTTP/1.1" 200 -
+2024-11-26 17:10:04,830 - INFO - 127.0.0.1 - - [26/Nov/2024 17:10:04] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-26 17:10:04,831 - INFO - 127.0.0.1 - - [26/Nov/2024 17:10:04] "[36mGET /static/images/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-26 17:10:04,833 - INFO - 127.0.0.1 - - [26/Nov/2024 17:10:04] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -

@@ -4,13 +4,15 @@
             "id": "1",
             "email": "admin",
             "password": "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3",
-            "admin": "true"
+            "admin": "true",
+            "firstlogin": "false"
         },
         {
-            "id": "1",
-            "email": "user",
-            "password": "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3",
-            "admin": "false"
+            "id": "2",
+            "email": "1126@htl.rennweg.at",
+            "password": "e73b79a0b10f8cdb6ac7dbe4c0a5e25776e1148784b86cf98f7d6719d472af69",
+            "admin": "false",
+            "firstlogin": "false"
         }
     ]
 }

@@ -1,0 +1,46 @@
+2024-11-26 16:14:00,561 - INFO - Server started, log file: ./logs/2024-11-26_16-14-00.log
+2024-11-26 16:14:00,566 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://10.21.16.131:8001
+2024-11-26 16:14:00,566 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-26 16:14:10,729 - INFO - Attempt to delete user ID: 3
+2024-11-26 16:14:10,731 - INFO - 127.0.0.1 - - [26/Nov/2024 16:14:10] "[32mPOST /delete-user HTTP/1.1[0m" 302 -
+2024-11-26 16:14:10,742 - INFO - 127.0.0.1 - - [26/Nov/2024 16:14:10] "GET /admin HTTP/1.1" 200 -
+2024-11-26 16:14:10,756 - INFO - 127.0.0.1 - - [26/Nov/2024 16:14:10] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-26 16:14:10,761 - INFO - 127.0.0.1 - - [26/Nov/2024 16:14:10] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 16:14:16,257 - INFO - 127.0.0.1 - - [26/Nov/2024 16:14:16] "[32mPOST /create-user HTTP/1.1[0m" 302 -
+2024-11-26 16:14:16,262 - INFO - 127.0.0.1 - - [26/Nov/2024 16:14:16] "GET /admin HTTP/1.1" 200 -
+2024-11-26 16:14:16,273 - INFO - 127.0.0.1 - - [26/Nov/2024 16:14:16] "[36mGET /static/images/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-26 16:14:16,275 - INFO - 127.0.0.1 - - [26/Nov/2024 16:14:16] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-26 16:14:16,287 - INFO - 127.0.0.1 - - [26/Nov/2024 16:14:16] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 16:14:23,331 - INFO - 127.0.0.1 - - [26/Nov/2024 16:14:23] "GET /data/raspberrydata.txt?timestamp=1732634063323 HTTP/1.1" 200 -
+2024-11-26 16:14:37,168 - INFO - 127.0.0.1 - - [26/Nov/2024 16:14:37] "[32mPOST /create-user HTTP/1.1[0m" 302 -
+2024-11-26 16:14:37,475 - INFO - 127.0.0.1 - - [26/Nov/2024 16:14:37] "GET /admin HTTP/1.1" 200 -
+2024-11-26 16:14:37,483 - INFO - 127.0.0.1 - - [26/Nov/2024 16:14:37] "[36mGET /static/images/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-26 16:14:37,484 - INFO - 127.0.0.1 - - [26/Nov/2024 16:14:37] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-26 16:14:37,487 - INFO - 127.0.0.1 - - [26/Nov/2024 16:14:37] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 16:14:41,491 - INFO - Attempt to delete user ID: 2
+2024-11-26 16:14:41,492 - INFO - 127.0.0.1 - - [26/Nov/2024 16:14:41] "[32mPOST /delete-user HTTP/1.1[0m" 302 -
+2024-11-26 16:14:41,545 - INFO - 127.0.0.1 - - [26/Nov/2024 16:14:41] "GET /admin HTTP/1.1" 200 -
+2024-11-26 16:14:41,556 - INFO - 127.0.0.1 - - [26/Nov/2024 16:14:41] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-26 16:14:41,557 - INFO - 127.0.0.1 - - [26/Nov/2024 16:14:41] "[36mGET /static/images/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-26 16:14:41,560 - INFO - 127.0.0.1 - - [26/Nov/2024 16:14:41] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 16:14:47,463 - INFO - 127.0.0.1 - - [26/Nov/2024 16:14:47] "[32mPOST /create-user HTTP/1.1[0m" 302 -
+2024-11-26 16:14:47,469 - INFO - 127.0.0.1 - - [26/Nov/2024 16:14:47] "GET /admin HTTP/1.1" 200 -
+2024-11-26 16:14:47,478 - INFO - 127.0.0.1 - - [26/Nov/2024 16:14:47] "[36mGET /static/images/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-26 16:14:47,479 - INFO - 127.0.0.1 - - [26/Nov/2024 16:14:47] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-26 16:14:47,482 - INFO - 127.0.0.1 - - [26/Nov/2024 16:14:47] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 16:14:52,123 - INFO - Attempt to delete user ID: 4
+2024-11-26 16:14:52,124 - INFO - 127.0.0.1 - - [26/Nov/2024 16:14:52] "[32mPOST /delete-user HTTP/1.1[0m" 302 -
+2024-11-26 16:14:52,130 - INFO - 127.0.0.1 - - [26/Nov/2024 16:14:52] "GET /admin HTTP/1.1" 200 -
+2024-11-26 16:14:52,138 - INFO - 127.0.0.1 - - [26/Nov/2024 16:14:52] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-26 16:14:52,138 - INFO - 127.0.0.1 - - [26/Nov/2024 16:14:52] "[36mGET /static/images/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-26 16:14:52,141 - INFO - 127.0.0.1 - - [26/Nov/2024 16:14:52] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 16:14:53,190 - INFO - Attempt to delete user ID: 3
+2024-11-26 16:14:53,191 - INFO - 127.0.0.1 - - [26/Nov/2024 16:14:53] "[32mPOST /delete-user HTTP/1.1[0m" 302 -
+2024-11-26 16:14:53,196 - INFO - 127.0.0.1 - - [26/Nov/2024 16:14:53] "GET /admin HTTP/1.1" 200 -
+2024-11-26 16:14:53,204 - INFO - 127.0.0.1 - - [26/Nov/2024 16:14:53] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-26 16:14:53,207 - INFO - 127.0.0.1 - - [26/Nov/2024 16:14:53] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 16:16:43,340 - INFO - 127.0.0.1 - - [26/Nov/2024 16:16:43] "GET /data/raspberrydata.txt?timestamp=1732634203329 HTTP/1.1" 200 -
+2024-11-26 16:19:03,347 - INFO - 127.0.0.1 - - [26/Nov/2024 16:19:03] "GET /data/raspberrydata.txt?timestamp=1732634343335 HTTP/1.1" 200 -

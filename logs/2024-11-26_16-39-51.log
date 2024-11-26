@@ -1,0 +1,46 @@
+2024-11-26 16:39:51,052 - INFO - Server started, log file: ./logs/2024-11-26_16-39-51.log
+2024-11-26 16:39:51,057 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://10.21.16.131:8001
+2024-11-26 16:39:51,057 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-26 16:39:51,109 - INFO - 127.0.0.1 - - [26/Nov/2024 16:39:51] "GET /data/raspberrydata.txt?timestamp=1732635591103 HTTP/1.1" 200 -
+2024-11-26 16:39:56,419 - INFO - 127.0.0.1 - - [26/Nov/2024 16:39:56] "GET /data/raspberrydata.txt?timestamp=1732635596416 HTTP/1.1" 200 -
+2024-11-26 16:40:01,598 - INFO - Login page accessed
+2024-11-26 16:40:01,603 - INFO - 127.0.0.1 - - [26/Nov/2024 16:40:01] "GET / HTTP/1.1" 200 -
+2024-11-26 16:40:01,618 - INFO - 127.0.0.1 - - [26/Nov/2024 16:40:01] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-11-26 16:40:03,625 - INFO - User logged in: admin
+2024-11-26 16:40:03,631 - INFO - 127.0.0.1 - - [26/Nov/2024 16:40:03] "POST /view HTTP/1.1" 200 -
+2024-11-26 16:40:03,638 - INFO - Video feed accessed
+2024-11-26 16:40:03,642 - INFO - 127.0.0.1 - - [26/Nov/2024 16:40:03] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-26 16:40:03,643 - INFO - 127.0.0.1 - - [26/Nov/2024 16:40:03] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-26 16:40:03,646 - INFO - 127.0.0.1 - - [26/Nov/2024 16:40:03] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 16:40:03,654 - INFO - 127.0.0.1 - - [26/Nov/2024 16:40:03] "GET /data/raspberrydata.txt?timestamp=1732635603652 HTTP/1.1" 200 -
+2024-11-26 16:40:03,654 - INFO - 127.0.0.1 - - [26/Nov/2024 16:40:03] "[36mGET /static/images/flood-icon2.png HTTP/1.1[0m" 304 -
+2024-11-26 16:40:03,676 - INFO - 127.0.0.1 - - [26/Nov/2024 16:40:03] "[36mGET /static/images/flood-icon.png HTTP/1.1[0m" 304 -
+2024-11-26 16:40:05,002 - INFO - 127.0.0.1 - - [26/Nov/2024 16:40:05] "GET /video_feed HTTP/1.1" 200 -
+2024-11-26 16:40:05,711 - INFO - 127.0.0.1 - - [26/Nov/2024 16:40:05] "GET /admin HTTP/1.1" 200 -
+2024-11-26 16:40:05,717 - INFO - 127.0.0.1 - - [26/Nov/2024 16:40:05] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 16:40:05,717 - INFO - 127.0.0.1 - - [26/Nov/2024 16:40:05] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-26 16:40:05,738 - INFO - 127.0.0.1 - - [26/Nov/2024 16:40:05] "[36mGET /static/images/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-26 16:40:07,914 - INFO - Attempt to delete user ID: 2
+2024-11-26 16:40:07,915 - INFO - 127.0.0.1 - - [26/Nov/2024 16:40:07] "[32mPOST /delete-user HTTP/1.1[0m" 302 -
+2024-11-26 16:40:07,920 - INFO - 127.0.0.1 - - [26/Nov/2024 16:40:07] "GET /admin HTTP/1.1" 200 -
+2024-11-26 16:40:07,926 - INFO - 127.0.0.1 - - [26/Nov/2024 16:40:07] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-26 16:40:07,928 - INFO - 127.0.0.1 - - [26/Nov/2024 16:40:07] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 16:40:08,752 - INFO - 127.0.0.1 - - [26/Nov/2024 16:40:08] "GET /data/raspberrydata.txt?timestamp=1732635608748 HTTP/1.1" 200 -
+2024-11-26 16:40:13,776 - INFO - 127.0.0.1 - - [26/Nov/2024 16:40:13] "GET /data/raspberrydata.txt?timestamp=1732635613766 HTTP/1.1" 200 -
+2024-11-26 16:40:16,905 - INFO - 127.0.0.1 - - [26/Nov/2024 16:40:16] "[32mPOST /create-user HTTP/1.1[0m" 302 -
+2024-11-26 16:40:16,923 - INFO - 127.0.0.1 - - [26/Nov/2024 16:40:16] "GET /admin HTTP/1.1" 200 -
+2024-11-26 16:40:16,943 - INFO - 127.0.0.1 - - [26/Nov/2024 16:40:16] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-26 16:40:16,943 - INFO - 127.0.0.1 - - [26/Nov/2024 16:40:16] "[36mGET /static/images/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-26 16:40:16,950 - INFO - 127.0.0.1 - - [26/Nov/2024 16:40:16] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 16:40:18,853 - INFO - 127.0.0.1 - - [26/Nov/2024 16:40:18] "GET /data/raspberrydata.txt?timestamp=1732635618846 HTTP/1.1" 200 -
+2024-11-26 16:40:23,934 - INFO - 127.0.0.1 - - [26/Nov/2024 16:40:23] "GET /data/raspberrydata.txt?timestamp=1732635623927 HTTP/1.1" 200 -
+2024-11-26 16:40:29,028 - INFO - 127.0.0.1 - - [26/Nov/2024 16:40:29] "GET /data/raspberrydata.txt?timestamp=1732635629021 HTTP/1.1" 200 -
+2024-11-26 16:40:34,107 - INFO - 127.0.0.1 - - [26/Nov/2024 16:40:34] "GET /data/raspberrydata.txt?timestamp=1732635634102 HTTP/1.1" 200 -
+2024-11-26 16:40:42,237 - INFO - 127.0.0.1 - - [26/Nov/2024 16:40:42] "GET /data/raspberrydata.txt?timestamp=1732635642228 HTTP/1.1" 200 -
+2024-11-26 16:40:55,560 - INFO - 127.0.0.1 - - [26/Nov/2024 16:40:55] "GET /data/raspberrydata.txt?timestamp=1732635655552 HTTP/1.1" 200 -
+2024-11-26 16:41:31,799 - INFO - 127.0.0.1 - - [26/Nov/2024 16:41:31] "GET /data/raspberrydata.txt?timestamp=1732635691792 HTTP/1.1" 200 -
+2024-11-26 16:42:32,449 - INFO - 127.0.0.1 - - [26/Nov/2024 16:42:32] "GET /data/raspberrydata.txt?timestamp=1732635752442 HTTP/1.1" 200 -
+2024-11-26 16:43:05,134 - INFO - 127.0.0.1 - - [26/Nov/2024 16:43:05] "GET /data/raspberrydata.txt?timestamp=1732635785127 HTTP/1.1" 200 -
