@@ -105,7 +105,7 @@ def video_feed():
 @app.route('/error')
 def error():
     app.logger.info('Error page accessed')
-    return render_template_string(functions.read_file("templates/ErrorPage.html"))
+    return render_template("ErrorPage.html")
 
 
 @app.route('/data/raspberrydata.txt')
