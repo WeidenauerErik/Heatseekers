@@ -126,4 +126,4 @@ def handle_exception(e):
 
 if __name__ == '__main__':
     app.logger.info(f'Server started, log file: {log_filename}')
-    app.run(host='0.0.0.0', port=8000, debug=False)
+    app.run(host='0.0.0.0', port=8001, debug=False)

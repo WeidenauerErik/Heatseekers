@@ -1,0 +1,18 @@
+2024-11-19 17:39:58,377 - INFO - Server started, log file: ./logs/2024-11-19_17-39-58.log
+2024-11-19 17:39:58,380 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.21.16.72:8000
+2024-11-19 17:39:58,380 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-19 17:39:59,684 - INFO - 10.21.16.72 - - [19/Nov/2024 17:39:59] "GET /data/raspberrydata.txt?timestamp=1732034399675 HTTP/1.1" 200 -
+2024-11-19 17:39:59,686 - INFO - 10.21.16.72 - - [19/Nov/2024 17:39:59] "GET /data/raspberrydata.txt?timestamp=1732034399675 HTTP/1.1" 200 -
+2024-11-19 17:40:03,513 - INFO - View page accessed
+2024-11-19 17:40:03,515 - INFO - 10.21.16.72 - - [19/Nov/2024 17:40:03] "POST /view HTTP/1.1" 200 -
+2024-11-19 17:40:03,549 - INFO - 10.21.16.72 - - [19/Nov/2024 17:40:03] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-19 17:40:03,554 - INFO - Video feed accessed
+2024-11-19 17:40:03,555 - INFO - 10.21.16.72 - - [19/Nov/2024 17:40:03] "GET /static/MainPage.js HTTP/1.1" 200 -
+2024-11-19 17:40:03,558 - INFO - 10.21.16.72 - - [19/Nov/2024 17:40:03] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-19 17:40:03,572 - INFO - 10.21.16.72 - - [19/Nov/2024 17:40:03] "GET /data/raspberrydata.txt?timestamp=1732034403569 HTTP/1.1" 200 -
+2024-11-19 17:40:04,013 - INFO - 10.21.16.72 - - [19/Nov/2024 17:40:04] "GET /video_feed HTTP/1.1" 200 -
+2024-11-19 17:40:04,082 - INFO - 10.21.16.72 - - [19/Nov/2024 17:40:04] "[36mGET /static/images/icon.png HTTP/1.1[0m" 304 -
+2024-11-19 17:40:08,638 - INFO - 10.21.16.72 - - [19/Nov/2024 17:40:08] "GET /data/raspberrydata.txt?timestamp=1732034408635 HTTP/1.1" 200 -

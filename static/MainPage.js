@@ -64,9 +64,9 @@ const app = Vue.createApp({
                 });
 
                 console.log("Parsed Data:", newLabels, newTemperatureData, newHumidityData);
-                    this.labels = newLabels;
-                    this.temperatureData = newTemperatureData;
-                    this.humidityData = newHumidityData;
+                this.labels = newLabels;
+                this.temperatureData = newTemperatureData;
+                this.humidityData = newHumidityData;
             } catch (error) {
                 console.error("Error fetching data:", error);
             }
@@ -88,6 +88,9 @@ const app = Vue.createApp({
                 },
                 options: {
                     responsive: true,
+                    animation: {
+                        duration: 0 // Deaktiviert die Animation
+                    },
                     scales: {
                         y: {
                             beginAtZero: true
@@ -103,21 +106,20 @@ const app = Vue.createApp({
             }
         },
         updateChart(chartId) {
-        if (chartId === 'temperature') {
-            console.log("Updating temperature chart...");
-            if (this.temperatureChart) {
-                this.temperatureChart.destroy();  // Zerstören Sie das alte Diagramm
+            if (chartId === 'temperature') {
+                console.log("Updating temperature chart...");
+                if (this.temperatureChart) {
+                    this.temperatureChart.destroy();  // Zerstören Sie das alte Diagramm
+                }
+                this.createChart('temperature', this.temperatureChartType, this.temperatureData, 'rgba(75, 192, 192, 0.2)', 'rgba(75, 192, 192, 1)');  // Neues Diagramm erstellen
+            } else {
+                console.log("Updating humidity chart...");
+                if (this.humidityChart) {
+                    this.humidityChart.destroy();  // Zerstören Sie das alte Diagramm
+                }
+                this.createChart('humidity', this.humidityChartType, this.humidityData, 'rgba(75, 192, 192, 0.2)', 'rgba(75, 192, 192, 1)');  // Neues Diagramm erstellen
             }
-            this.createChart('temperature', this.temperatureChartType, this.temperatureData, 'rgba(75, 192, 192, 0.2)', 'rgba(75, 192, 192, 1)');  // Neues Diagramm erstellen
-        } else {
-            console.log("Updating humidity chart...");
-            if (this.humidityChart) {
-
-                this.humidityChart.destroy();  // Zerstören Sie das alte Diagramm
-            }
-        this.createChart('humidity', this.humidityChartType, this.humidityData, 'rgba(75, 192, 192, 0.2)', 'rgba(75, 192, 192, 1)');  // Neues Diagramm erstellen
         }
-}
     }
 });
 
