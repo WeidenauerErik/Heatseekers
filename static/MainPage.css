@@ -74,10 +74,17 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     margin-bottom: 20px;
+}
+
+.toggle-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
 }
 
 canvas {
@@ -135,7 +142,7 @@ canvas {
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
     .navbar {
         flex-direction: column;
         align-items: center;

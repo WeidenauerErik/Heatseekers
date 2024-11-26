@@ -30,19 +30,22 @@
 
     <div class="container">
         <div class="top-left">
-            <label class="switch">
-                <input type="checkbox" v-model="isTemperatureBarChart" @change="updateChart('temperature')">
-                <span class="slider round"></span>
-            </label>
-
+            <div class="toggle-container">
+                <label class="switch">
+                    <input type="checkbox" v-model="isTemperatureBarChart" @change="updateChart('temperature')">
+                    <span class="slider round"></span>
+                </label>
+            </div>
             <canvas id="temperature"></canvas>
         </div>
 
         <div class="top-right">
-            <label class="switch">
-                <input type="checkbox" v-model="isHumidityBarChart" @change="updateChart('humidity')">
-                <span class="slider round"></span>
-            </label>
+            <div class="toggle-container">
+                <label class="switch">
+                    <input type="checkbox" v-model="isHumidityBarChart" @change="updateChart('humidity')">
+                    <span class="slider round"></span>
+                </label>
+            </div>
             <canvas id="humidity"></canvas>
         </div>
 
