@@ -1,0 +1,16 @@
+2024-11-26 14:18:43,762 - INFO - Server started, log file: ./logs/2024-11-26_14-18-43.log
+2024-11-26 14:18:43,768 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://10.21.16.131:8001
+2024-11-26 14:18:43,768 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-26 14:18:46,301 - INFO - View page accessed
+2024-11-26 14:18:46,309 - INFO - 127.0.0.1 - - [26/Nov/2024 14:18:46] "POST /view HTTP/1.1" 200 -
+2024-11-26 14:18:46,319 - INFO - Video feed accessed
+2024-11-26 14:18:46,327 - INFO - 127.0.0.1 - - [26/Nov/2024 14:18:46] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-26 14:18:46,328 - INFO - 127.0.0.1 - - [26/Nov/2024 14:18:46] "GET /static/MainPage.css HTTP/1.1" 200 -
+2024-11-26 14:18:46,330 - INFO - 127.0.0.1 - - [26/Nov/2024 14:18:46] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 14:18:46,338 - INFO - 127.0.0.1 - - [26/Nov/2024 14:18:46] "[36mGET /static/images/flood-icon2.png HTTP/1.1[0m" 304 -
+2024-11-26 14:18:46,338 - INFO - 127.0.0.1 - - [26/Nov/2024 14:18:46] "GET /data/raspberrydata.txt?timestamp=1732627126335 HTTP/1.1" 200 -
+2024-11-26 14:18:47,724 - INFO - 127.0.0.1 - - [26/Nov/2024 14:18:47] "GET /video_feed HTTP/1.1" 200 -
+2024-11-26 14:18:51,448 - INFO - 127.0.0.1 - - [26/Nov/2024 14:18:51] "GET /data/raspberrydata.txt?timestamp=1732627131444 HTTP/1.1" 200 -

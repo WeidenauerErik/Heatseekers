@@ -44,10 +44,12 @@
 
         <div class="bottom-right">
             <template v-if="showFloodWarning">
-                <img src="/static/images/flood-icon.png" alt="Flood Alert" height="250">
+                 <h2 class="blinking">Flood Warning</h2>
+                <img class="blinking" src="/static/images/flood-icon.png" alt="Flood Alert" height="250">
             </template>
             <template v-else>
-                <img src="/static/images/flood-icon2.png" alt="Flood Alert" height="250">
+                <h2>No Flood Warning</h2>
+                <img src="/static/images/flood-icon2.png" alt="System Status: Okay" height="250">
             </template>
         </div>
     </div>
