@@ -17,7 +17,7 @@ body {
     flex-direction: column;
 }
 
-.submitButton {
+.submitButton1 {
     color: #ECFCEC;
     font-weight: bold;
     width: 100%;
@@ -98,4 +98,74 @@ body {
     border-left: 1px solid #1F4959;
     border-right: 1px solid #1F4959;
     letter-spacing: 0.2em;
+}
+
+
+
+
+#CreateUserPopup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #5C7C89;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    width: 30%;
+    text-align: center;
+}
+
+#CreateUserPopup h2 {
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+#CreateUserPopup label {
+    display: block;
+    margin-top: 10px;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+#CreateUserPopup input[type="email"],
+#CreateUserPopup input[type="password"],
+#CreateUserPopup input[type="checkbox"] {
+    margin-top: 5px;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.submitButton2, .cancel-button {
+    background-color: #1F4959;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 3rem;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.2s;
+    width: 10rem;
+}
+
+.submitButton2:hover, .cancel-button:hover {
+    background-color: #2a6a81;
+    transform: scale(1.05);
+}
+
+.submitButton2:active, .cancel-button:active {
+    transform: scale(1);
 }

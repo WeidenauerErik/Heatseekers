@@ -1,4 +1,8 @@
 import hashlib
+import secrets
+import smtplib
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
 
 from flask import Flask, Response, request, redirect, url_for, send_file, render_template, render_template_string, \
     session
@@ -36,19 +40,24 @@ def index():
 
 @app.route('/admin')
 def admin_page():
-    # Prüfen, ob der Benutzer eingeloggt ist
     if 'user_email' not in session:
         app.logger.info('Unauthorized access to admin page')
         return redirect(url_for('index'))
 
-    # Benutzer-Daten laden
-    app.logger.info('Admin page accessed')
     users = functions.get_User("data/user.json")
-    current_user_email = session['user_email']  # E-Mail des eingeloggten Benutzers
-    return render_template_string(
-        functions.get_AdminPage(),
+    current_user_email = session['user_email']
+
+    is_admin = False
+    for user in users:
+        if user['email'] == current_user_email and user['admin'] == 'true':
+            is_admin = True
+            break
+
+    return render_template(
+        'AdminPage.html',
         users=users,
-        current_user_email=current_user_email
+        current_user_email=current_user_email,
+        isAdmin=is_admin
     )
 
 
@@ -60,17 +69,14 @@ def delete_user():
     user_id = request.form.get('id')
     app.logger.info(f"Attempt to delete user ID: {user_id}")
 
-    # Benutzer-Daten laden
     users = functions.get_User("data/user.json")
     current_user_email = session['user_email']
 
-    # Prüfen, ob der Benutzer sich selbst löschen möchte
     user_to_delete = next((user for user in users if user['id'] == user_id), None)
     if user_to_delete and user_to_delete['email'] == current_user_email:
         app.logger.info("Attempted to delete the currently logged-in user")
         return redirect(url_for('admin_page'))
 
-    # Benutzer löschen
     users = [user for user in users if user['id'] != user_id]
     functions.save_User("data/user.json", {"users": users})
     return redirect(url_for('admin_page'))
@@ -78,34 +84,59 @@ def delete_user():
 @app.route('/create-user', methods=['POST'])
 def create_user():
     email = request.form.get('email')
-    password = request.form.get('password')
     admin = request.form.get('admin') == 'true'
 
     users = functions.get_User("data/user.json")
 
     if any(user['email'] == email for user in users):
         app.logger.info(f"Attempt to create a user with existing email: {email}")
-        return render_template_string(
-            functions.read_file("templates/AdminPage.html") + "<p>Email already exists!</p>"
-        )
+        return redirect(url_for('admin_page'))
 
+    existing_ids = [int(user['id']) for user in users]
+    new_id = str(max(existing_ids) + 1) if existing_ids else '1'
 
-    new_id = str(len(users) + 1)
+    random_password = secrets.token_urlsafe(5)
 
-    hashed_password = hashlib.sha256(password.encode()).hexdigest()
+    hashed_password = hashlib.sha256(random_password.encode()).hexdigest()
 
     new_user = {
         "id": new_id,
         "email": email,
         "password": hashed_password,
-        "admin": str(admin).lower()
+        "admin": str(admin).lower(),
+        "firstlogin": "true"
     }
+
+    send_password_via_email(email, random_password)
 
     users.append(new_user)
     functions.save_User("data/user.json", {"users": users})
 
     return redirect(url_for('admin_page'))
 
+def send_password_via_email(email, password):
+    smtp_server = "smtp.gmail.com"
+    smtp_port = 587
+    sender_email = "htlrennweg.heatseekers@gmail.com"
+    sender_password = "olra pafg dvmk alfv"
+
+    subject = "Your New Account Password"
+    body = f"Hello, \n\nYour new password is: {password}\n\nPlease change it after logging in."
+
+    msg = MIMEMultipart()
+    msg['From'] = sender_email
+    msg['To'] = email
+    msg['Subject'] = subject
+    msg.attach(MIMEText(body, 'plain'))
+
+    try:
+        with smtplib.SMTP(smtp_server, smtp_port) as server:
+            server.starttls()
+            server.login(sender_email, sender_password)
+            server.sendmail(sender_email, email, msg.as_string())
+        print(f"Password email sent to {email}")
+    except Exception as e:
+        print(f"Failed to send email to {email}: {e}")
 
 @app.route('/view', methods=['POST'])
 def view():
@@ -114,26 +145,43 @@ def view():
 
     hashed_password = hashlib.sha256(password.encode()).hexdigest()
 
-    # Benutzer auslesen
     users = functions.get_User("data/user.json")
     for tmp in users:
         if email == tmp['email'] and hashed_password == tmp['password']:
             app.logger.info(f"User logged in: {email}")
 
-            # Aktuelle Benutzer-E-Mail in der Session speichern
             session['user_email'] = email
 
-            # Überprüfen, ob der Benutzer ein Admin ist
             is_admin = tmp['admin'] == 'true'
 
-            # Weiterleitung je nach Admin-Status
+            if tmp.get('firstlogin') == 'true':
+                return render_template_string(functions.read_file("templates/LoginPage.html"), show_popup=True, email=email)
+
             return render_template_string(functions.read_file("templates/MainPage.html"), isAdmin=is_admin)
 
-    # Login fehlgeschlagen
     app.logger.info('Login failed')
     return render_template_string(
         functions.read_file("templates/LoginPage.html") + "<p>Password or email incorrect!</p>")
 
+@app.route('/change-password', methods=['POST'])
+def change_password():
+    email = request.form.get('email')
+    new_password = request.form.get('new_password')
+    new_password_hashed = hashlib.sha256(new_password.encode()).hexdigest()
+
+    users = functions.get_User("data/user.json")
+
+    for tmp in users:
+        if tmp['email'] == email:
+            tmp['password'] = new_password_hashed
+            tmp['firstlogin'] = 'false'
+
+            functions.save_User("data/user.json", {"users": users})
+            app.logger.info(f"Password changed for user: {email}")
+            return redirect(url_for('index'))
+
+    app.logger.error(f"Failed to change password for {email}")
+    return redirect(url_for('index'))
 
 @app.route('/video_feed')
 def video_feed():

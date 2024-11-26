@@ -1,0 +1,38 @@
+2024-11-26 16:09:26,175 - INFO - Server started, log file: ./logs/2024-11-26_16-09-26.log
+2024-11-26 16:09:26,180 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://10.21.16.131:8001
+2024-11-26 16:09:26,180 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-26 16:09:28,606 - INFO - Attempt to create a user with existing email: test@gmail.com
+2024-11-26 16:09:28,606 - INFO - 127.0.0.1 - - [26/Nov/2024 16:09:28] "[32mPOST /create-user HTTP/1.1[0m" 302 -
+2024-11-26 16:09:29,928 - INFO - 127.0.0.1 - - [26/Nov/2024 16:09:29] "GET /admin HTTP/1.1" 200 -
+2024-11-26 16:09:29,991 - INFO - 127.0.0.1 - - [26/Nov/2024 16:09:29] "[36mGET /static/images/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-26 16:09:29,992 - INFO - 127.0.0.1 - - [26/Nov/2024 16:09:29] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-26 16:09:29,995 - INFO - 127.0.0.1 - - [26/Nov/2024 16:09:29] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 16:09:34,289 - INFO - 127.0.0.1 - - [26/Nov/2024 16:09:34] "GET /data/raspberrydata.txt?timestamp=1732633774280 HTTP/1.1" 200 -
+2024-11-26 16:09:40,178 - INFO - Attempt to create a user with existing email: test@gmail.com
+2024-11-26 16:09:40,178 - INFO - 127.0.0.1 - - [26/Nov/2024 16:09:40] "[32mPOST /create-user HTTP/1.1[0m" 302 -
+2024-11-26 16:09:40,479 - INFO - 127.0.0.1 - - [26/Nov/2024 16:09:40] "GET /admin HTTP/1.1" 200 -
+2024-11-26 16:09:40,550 - INFO - 127.0.0.1 - - [26/Nov/2024 16:09:40] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-26 16:09:40,551 - INFO - 127.0.0.1 - - [26/Nov/2024 16:09:40] "[36mGET /static/images/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-26 16:09:40,554 - INFO - 127.0.0.1 - - [26/Nov/2024 16:09:40] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 16:10:10,376 - INFO - 127.0.0.1 - - [26/Nov/2024 16:10:10] "GET /data/raspberrydata.txt?timestamp=1732633810366 HTTP/1.1" 200 -
+2024-11-26 16:10:57,732 - INFO - 127.0.0.1 - - [26/Nov/2024 16:10:57] "[32mPOST /create-user HTTP/1.1[0m" 302 -
+2024-11-26 16:10:58,038 - INFO - 127.0.0.1 - - [26/Nov/2024 16:10:58] "GET /admin HTTP/1.1" 200 -
+2024-11-26 16:10:58,065 - INFO - 127.0.0.1 - - [26/Nov/2024 16:10:58] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-26 16:10:58,065 - INFO - 127.0.0.1 - - [26/Nov/2024 16:10:58] "[36mGET /static/images/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-26 16:10:58,068 - INFO - 127.0.0.1 - - [26/Nov/2024 16:10:58] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 16:11:03,741 - INFO - Attempt to delete user ID: 2
+2024-11-26 16:11:03,742 - INFO - 127.0.0.1 - - [26/Nov/2024 16:11:03] "[32mPOST /delete-user HTTP/1.1[0m" 302 -
+2024-11-26 16:11:03,747 - INFO - 127.0.0.1 - - [26/Nov/2024 16:11:03] "GET /admin HTTP/1.1" 200 -
+2024-11-26 16:11:03,757 - INFO - 127.0.0.1 - - [26/Nov/2024 16:11:03] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-26 16:11:03,760 - INFO - 127.0.0.1 - - [26/Nov/2024 16:11:03] "[36mGET /static/images/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-26 16:11:03,762 - INFO - 127.0.0.1 - - [26/Nov/2024 16:11:03] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 16:11:13,188 - INFO - 127.0.0.1 - - [26/Nov/2024 16:11:13] "[32mPOST /create-user HTTP/1.1[0m" 302 -
+2024-11-26 16:11:13,204 - INFO - 127.0.0.1 - - [26/Nov/2024 16:11:13] "GET /admin HTTP/1.1" 200 -
+2024-11-26 16:11:13,220 - INFO - 127.0.0.1 - - [26/Nov/2024 16:11:13] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-26 16:11:13,221 - INFO - 127.0.0.1 - - [26/Nov/2024 16:11:13] "[36mGET /static/images/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-26 16:11:13,224 - INFO - 127.0.0.1 - - [26/Nov/2024 16:11:13] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 16:11:20,399 - INFO - 127.0.0.1 - - [26/Nov/2024 16:11:20] "GET /data/raspberrydata.txt?timestamp=1732633880389 HTTP/1.1" 200 -
+2024-11-26 16:12:03,332 - INFO - 127.0.0.1 - - [26/Nov/2024 16:12:03] "GET /data/raspberrydata.txt?timestamp=1732633923321 HTTP/1.1" 200 -

@@ -13,66 +13,55 @@
         </div>
 
         <div id="user-container">
-    {% for tmp in users %}
-    <div class="user">
-        <div class="user-info">
-            <p class="user-email">{{ tmp.email }}</p>
-            <p class="admin-status">{{ "Admin" if tmp.admin == "true" else "User" }}</p>
+        {% for tmp in users %}
+        <div class="user">
+            <div class="user-info">
+                <p class="user-email">{{ tmp.email }}</p>
+                <p class="admin-status">{{ "Admin" if tmp.admin == "true" else "User" }}</p>
+            </div>
+
+            {% if tmp.email != current_user_email %}
+            <form action="/delete-user" method="post">
+                <input type="hidden" value="{{ tmp.id }}" name="id">
+                <button type="submit" class="delete-button">
+                    <img src="/static/images/delete-icon.svg" alt="Delete" />
+                </button>
+            </form>
+            {% endif %}
         </div>
-        <form action="/delete-user" method="post">
-            <input type="hidden" value="{{ tmp.id }}" name="id">
-            <button type="submit" class="delete-button">
-                <img src="/static/images/delete-icon.svg" alt="Delete" />
+        {% endfor %}
+        </div>
+
+        <!-- Create New User Button -->
+        <div class="create-button-container">
+            <button onclick="document.getElementById('CreateUserPopup').style.display='block'" class="create-button">
+                Create New User
             </button>
-        </form>
-    </div>
-    {% endfor %}
-</div>
-
-<!-- Create New User Button -->
-<div class="create-button-container">
-    <button onclick="document.getElementById('CreateUserPopup').style.display='block'" class="create-button">
-        Create New User
-    </button>
-</div>
-
-<div id="CreateUserPopup">
-    <h2>Create New User</h2>
-    <form action="/create-user" method="post">
-
-        <div>
-        <label for="email"></label>
-        <input type="email" id="email" name="email" required placeholder="EMAIL">
         </div>
 
-        <div>
-            <label for="password"></label>
-        <input type="password" id="password" name="password" required placeholder="PASSWORD">
-        </div>
+        <div id="CreateUserPopup">
+            <h2>Create New User</h2>
+            <form action="/create-user" method="post">
 
-        <div id="checkbox-container">
-            <p>isAdmin</p>
-            <label class="switch">
-                <input type="checkbox" id="admin" name="admin" value="true">
-                <span class="slider round"></span>
-            </label>
-        </div>
+                <div>
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" required placeholder="EMAIL">
+                </div>
 
-        <div class="form-buttons">
-            <button type="submit" class="submit-button">Add User</button>
-            <button type="button" class="cancel-button" onclick="document.getElementById('CreateUserPopup').style.display='none'">Cancel</button>
-        </div>
-    </form>
-</div>
+                <div id="checkbox-container">
+                    <p>isAdmin</p>
+                    <label class="switch">
+                        <input type="checkbox" id="admin" name="admin" value="true">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
 
-<script>
-    window.onclick = function(event) {
-        var popup = document.getElementById('CreateUserPopup');
-        if (event.target == popup) {
-            popup.style.display = "none";
-        }
-    }
-</script>
+                <div class="form-buttons">
+                    <button type="submit" class="submit-button">Add User</button>
+                    <button type="button" class="cancel-button" onclick="document.getElementById('CreateUserPopup').style.display='none'">Cancel</button>
+                </div>
+            </form>
+        </div>
 
         <script>
             window.onclick = function(event) {
