@@ -29,9 +29,9 @@ body {
     grid-area: navbar;
     width: 100%;
     background-color: #1F4959;
-    padding: 15px;
+    padding: 15px 50px 10px 50px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 #admin-page-div {
