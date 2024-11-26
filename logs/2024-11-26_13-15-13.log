@@ -1,0 +1,40 @@
+2024-11-26 13:15:13,694 - INFO - Server started, log file: ./logs/2024-11-26_13-15-13.log
+2024-11-26 13:15:13,700 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://10.21.16.131:8001
+2024-11-26 13:15:13,700 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-26 13:15:18,863 - INFO - 127.0.0.1 - - [26/Nov/2024 13:15:18] "GET /data/raspberrydata.txt?timestamp=1732623318852 HTTP/1.1" 200 -
+2024-11-26 13:15:18,880 - INFO - 127.0.0.1 - - [26/Nov/2024 13:15:18] "[36mGET /static/images/flood-icon2.png HTTP/1.1[0m" 304 -
+2024-11-26 13:15:20,964 - INFO - View page accessed
+2024-11-26 13:15:20,970 - INFO - 127.0.0.1 - - [26/Nov/2024 13:15:20] "POST /view HTTP/1.1" 200 -
+2024-11-26 13:15:20,982 - INFO - Video feed accessed
+2024-11-26 13:15:20,984 - INFO - 127.0.0.1 - - [26/Nov/2024 13:15:20] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-26 13:15:20,989 - INFO - 127.0.0.1 - - [26/Nov/2024 13:15:20] "GET /static/MainPage.js HTTP/1.1" 200 -
+2024-11-26 13:15:20,990 - INFO - 127.0.0.1 - - [26/Nov/2024 13:15:20] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 13:15:21,012 - INFO - 127.0.0.1 - - [26/Nov/2024 13:15:21] "GET /data/raspberrydata.txt?timestamp=1732623321000 HTTP/1.1" 200 -
+2024-11-26 13:15:21,014 - INFO - 127.0.0.1 - - [26/Nov/2024 13:15:21] "[36mGET /static/images/flood-icon2.png HTTP/1.1[0m" 304 -
+2024-11-26 13:15:21,063 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-26 13:15:21,063 - INFO - 127.0.0.1 - - [26/Nov/2024 13:15:21] "[32mGET /static/sounds/alarm.mp3 HTTP/1.1[0m" 302 -
+2024-11-26 13:15:21,064 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-26 13:15:21,065 - INFO - 127.0.0.1 - - [26/Nov/2024 13:15:21] "[32mGET /static/sounds/alarm.mp3 HTTP/1.1[0m" 302 -
+2024-11-26 13:15:21,071 - INFO - Error page accessed
+2024-11-26 13:15:21,074 - INFO - 127.0.0.1 - - [26/Nov/2024 13:15:21] "GET /error HTTP/1.1" 200 -
+2024-11-26 13:15:21,081 - INFO - Error page accessed
+2024-11-26 13:15:21,083 - INFO - 127.0.0.1 - - [26/Nov/2024 13:15:21] "GET /error HTTP/1.1" 200 -
+2024-11-26 13:15:21,093 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-26 13:15:21,093 - INFO - 127.0.0.1 - - [26/Nov/2024 13:15:21] "[32mGET /static/sounds/alarm.mp3 HTTP/1.1[0m" 302 -
+2024-11-26 13:15:21,096 - INFO - Error page accessed
+2024-11-26 13:15:21,098 - INFO - 127.0.0.1 - - [26/Nov/2024 13:15:21] "GET /error HTTP/1.1" 200 -
+2024-11-26 13:15:22,418 - INFO - 127.0.0.1 - - [26/Nov/2024 13:15:22] "GET /video_feed HTTP/1.1" 200 -
+2024-11-26 13:15:26,060 - INFO - 127.0.0.1 - - [26/Nov/2024 13:15:26] "GET /data/raspberrydata.txt?timestamp=1732623326058 HTTP/1.1" 200 -
+2024-11-26 13:15:31,064 - INFO - 127.0.0.1 - - [26/Nov/2024 13:15:31] "GET /data/raspberrydata.txt?timestamp=1732623331058 HTTP/1.1" 200 -
+2024-11-26 13:15:31,077 - INFO - 127.0.0.1 - - [26/Nov/2024 13:15:31] "[36mGET /static/images/flood-icon.png HTTP/1.1[0m" 304 -
+2024-11-26 13:15:36,060 - INFO - 127.0.0.1 - - [26/Nov/2024 13:15:36] "GET /data/raspberrydata.txt?timestamp=1732623336058 HTTP/1.1" 200 -
+2024-11-26 13:15:41,063 - INFO - 127.0.0.1 - - [26/Nov/2024 13:15:41] "GET /data/raspberrydata.txt?timestamp=1732623341058 HTTP/1.1" 200 -
+2024-11-26 13:15:46,064 - INFO - 127.0.0.1 - - [26/Nov/2024 13:15:46] "GET /data/raspberrydata.txt?timestamp=1732623346060 HTTP/1.1" 200 -
+2024-11-26 13:15:51,062 - INFO - 127.0.0.1 - - [26/Nov/2024 13:15:51] "GET /data/raspberrydata.txt?timestamp=1732623351058 HTTP/1.1" 200 -
+2024-11-26 13:15:56,062 - INFO - 127.0.0.1 - - [26/Nov/2024 13:15:56] "GET /data/raspberrydata.txt?timestamp=1732623356058 HTTP/1.1" 200 -
+2024-11-26 13:16:01,224 - INFO - 127.0.0.1 - - [26/Nov/2024 13:16:01] "GET /data/raspberrydata.txt?timestamp=1732623361216 HTTP/1.1" 200 -
+2024-11-26 13:16:10,365 - INFO - 127.0.0.1 - - [26/Nov/2024 13:16:10] "GET /data/raspberrydata.txt?timestamp=1732623370359 HTTP/1.1" 200 -
+2024-11-26 13:16:17,329 - INFO - 127.0.0.1 - - [26/Nov/2024 13:16:17] "GET /data/raspberrydata.txt?timestamp=1732623377326 HTTP/1.1" 200 -

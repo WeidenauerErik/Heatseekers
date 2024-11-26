@@ -1,0 +1,19 @@
+2024-11-26 13:19:40,608 - INFO - Server started, log file: ./logs/2024-11-26_13-19-40.log
+2024-11-26 13:19:40,614 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://10.21.16.131:8001
+2024-11-26 13:19:40,614 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-26 13:19:41,559 - INFO - 127.0.0.1 - - [26/Nov/2024 13:19:41] "GET /data/raspberrydata.txt?timestamp=1732623581551 HTTP/1.1" 200 -
+2024-11-26 13:19:41,966 - INFO - View page accessed
+2024-11-26 13:19:41,971 - INFO - 127.0.0.1 - - [26/Nov/2024 13:19:41] "POST /view HTTP/1.1" 200 -
+2024-11-26 13:19:41,982 - INFO - Video feed accessed
+2024-11-26 13:19:41,985 - INFO - 127.0.0.1 - - [26/Nov/2024 13:19:41] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-26 13:19:41,985 - INFO - 127.0.0.1 - - [26/Nov/2024 13:19:41] "GET /static/MainPage.js HTTP/1.1" 200 -
+2024-11-26 13:19:41,989 - INFO - 127.0.0.1 - - [26/Nov/2024 13:19:41] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 13:19:41,996 - INFO - 127.0.0.1 - - [26/Nov/2024 13:19:41] "GET /data/raspberrydata.txt?timestamp=1732623581994 HTTP/1.1" 200 -
+2024-11-26 13:19:41,997 - INFO - 127.0.0.1 - - [26/Nov/2024 13:19:41] "[36mGET /static/images/flood-icon2.png HTTP/1.1[0m" 304 -
+2024-11-26 13:19:42,001 - INFO - 127.0.0.1 - - [26/Nov/2024 13:19:42] "[36mGET /static/images/flood-icon.png HTTP/1.1[0m" 304 -
+2024-11-26 13:19:42,420 - INFO - 127.0.0.1 - - [26/Nov/2024 13:19:42] "GET /video_feed HTTP/1.1" 200 -
+2024-11-26 13:19:42,542 - INFO - 127.0.0.1 - - [26/Nov/2024 13:19:42] "[36mGET /static/images/icon.png HTTP/1.1[0m" 304 -
+2024-11-26 13:19:47,635 - INFO - 127.0.0.1 - - [26/Nov/2024 13:19:47] "GET /data/raspberrydata.txt?timestamp=1732623587632 HTTP/1.1" 200 -

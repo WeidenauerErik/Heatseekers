@@ -108,3 +108,27 @@ canvas {
     height: auto;
     border-radius: 5px;
 }
+
+.bottom-right h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+.blinking {
+    color: red; /* Schriftfarbe */
+    font-weight: bold; /* Fett für bessere Sichtbarkeit */
+    text-align: center; /* Zentriert */
+    font-size: 1.8rem; /* Schriftgröße anpassen */
+    animation: blinking-animation 1.5s infinite; /* Blinken alle 1 Sekunde */
+}
+
+@keyframes blinking-animation {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,89 @@
+2024-11-26 13:24:15,603 - INFO - Server started, log file: ./logs/2024-11-26_13-24-15.log
+2024-11-26 13:24:15,608 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://10.21.16.131:8001
+2024-11-26 13:24:15,608 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-26 13:24:16,540 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:16] "GET /data/raspberrydata.txt?timestamp=1732623856534 HTTP/1.1" 200 -
+2024-11-26 13:24:16,863 - INFO - View page accessed
+2024-11-26 13:24:16,869 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:16] "POST /view HTTP/1.1" 200 -
+2024-11-26 13:24:16,877 - INFO - Video feed accessed
+2024-11-26 13:24:16,881 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:16] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-26 13:24:16,882 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:16] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-26 13:24:16,885 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:16] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 13:24:16,915 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:16] "GET /data/raspberrydata.txt?timestamp=1732623856911 HTTP/1.1" 200 -
+2024-11-26 13:24:16,921 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:16] "[35m[1mGET /static/audio/alarm.mp3 HTTP/1.1[0m" 206 -
+2024-11-26 13:24:16,924 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:16] "[36mGET /static/images/flood-icon2.png HTTP/1.1[0m" 304 -
+2024-11-26 13:24:16,926 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:16] "[36mGET /static/images/flood-icon.png HTTP/1.1[0m" 304 -
+2024-11-26 13:24:16,927 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:16] "[35m[1mGET /static/audio/alarm.mp3 HTTP/1.1[0m" 206 -
+2024-11-26 13:24:16,930 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:16] "[35m[1mGET /static/audio/alarm.mp3 HTTP/1.1[0m" 206 -
+2024-11-26 13:24:17,005 - INFO - View page accessed
+2024-11-26 13:24:17,006 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:17] "POST /view HTTP/1.1" 200 -
+2024-11-26 13:24:17,013 - INFO - Video feed accessed
+2024-11-26 13:24:17,015 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:17] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-26 13:24:17,016 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:17] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-26 13:24:17,018 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:17] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 13:24:17,049 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:17] "GET /data/raspberrydata.txt?timestamp=1732623857042 HTTP/1.1" 200 -
+2024-11-26 13:24:17,051 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:17] "[36mGET /static/images/flood-icon2.png HTTP/1.1[0m" 304 -
+2024-11-26 13:24:17,060 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:17] "[36mGET /static/images/flood-icon.png HTTP/1.1[0m" 304 -
+2024-11-26 13:24:17,278 - INFO - View page accessed
+2024-11-26 13:24:17,279 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:17] "POST /view HTTP/1.1" 200 -
+2024-11-26 13:24:17,286 - INFO - Video feed accessed
+2024-11-26 13:24:17,289 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:17] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-26 13:24:17,289 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:17] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-26 13:24:17,291 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:17] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 13:24:17,320 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:17] "GET /data/raspberrydata.txt?timestamp=1732623857314 HTTP/1.1" 200 -
+2024-11-26 13:24:17,321 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:17] "[36mGET /static/images/flood-icon2.png HTTP/1.1[0m" 304 -
+2024-11-26 13:24:17,327 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:17] "[36mGET /static/images/flood-icon.png HTTP/1.1[0m" 304 -
+2024-11-26 13:24:17,344 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:17] "GET /video_feed HTTP/1.1" 200 -
+2024-11-26 13:24:17,346 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:17] "GET /video_feed HTTP/1.1" 200 -
+2024-11-26 13:24:17,399 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:17] "GET /video_feed HTTP/1.1" 200 -
+2024-11-26 13:24:17,471 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:17] "[36mGET /static/images/icon.png HTTP/1.1[0m" 304 -
+2024-11-26 13:24:18,042 - INFO - View page accessed
+2024-11-26 13:24:18,043 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:18] "POST /view HTTP/1.1" 200 -
+2024-11-26 13:24:18,056 - INFO - Video feed accessed
+2024-11-26 13:24:18,057 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:18] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-26 13:24:18,057 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:18] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-26 13:24:18,059 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:18] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 13:24:18,084 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:18] "[36mGET /static/images/flood-icon2.png HTTP/1.1[0m" 304 -
+2024-11-26 13:24:18,086 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:18] "GET /data/raspberrydata.txt?timestamp=1732623858080 HTTP/1.1" 200 -
+2024-11-26 13:24:18,090 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:18] "[36mGET /static/images/flood-icon.png HTTP/1.1[0m" 304 -
+2024-11-26 13:24:18,146 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:18] "GET /video_feed HTTP/1.1" 200 -
+2024-11-26 13:24:18,219 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:18] "[36mGET /static/images/icon.png HTTP/1.1[0m" 304 -
+2024-11-26 13:24:18,320 - INFO - View page accessed
+2024-11-26 13:24:18,322 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:18] "POST /view HTTP/1.1" 200 -
+2024-11-26 13:24:18,415 - INFO - Video feed accessed
+2024-11-26 13:24:18,416 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:18] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-26 13:24:18,416 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:18] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-26 13:24:18,422 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:18] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 13:24:18,450 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:18] "GET /data/raspberrydata.txt?timestamp=1732623858445 HTTP/1.1" 200 -
+2024-11-26 13:24:18,452 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:18] "[36mGET /static/images/flood-icon2.png HTTP/1.1[0m" 304 -
+2024-11-26 13:24:18,456 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:18] "[36mGET /static/images/flood-icon.png HTTP/1.1[0m" 304 -
+2024-11-26 13:24:18,642 - INFO - View page accessed
+2024-11-26 13:24:18,644 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:18] "POST /view HTTP/1.1" 200 -
+2024-11-26 13:24:18,653 - INFO - Video feed accessed
+2024-11-26 13:24:18,657 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:18] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-26 13:24:18,659 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:18] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-26 13:24:18,660 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:18] "GET /video_feed HTTP/1.1" 200 -
+2024-11-26 13:24:18,661 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:18] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 13:24:18,723 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:18] "GET /data/raspberrydata.txt?timestamp=1732623858682 HTTP/1.1" 200 -
+2024-11-26 13:24:18,724 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:18] "[36mGET /static/images/flood-icon2.png HTTP/1.1[0m" 304 -
+2024-11-26 13:24:18,725 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:18] "[36mGET /static/images/flood-icon.png HTTP/1.1[0m" 304 -
+2024-11-26 13:24:18,930 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:18] "GET /video_feed HTTP/1.1" 200 -
+2024-11-26 13:24:19,013 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:19] "[36mGET /static/images/icon.png HTTP/1.1[0m" 304 -
+2024-11-26 13:24:20,687 - INFO - View page accessed
+2024-11-26 13:24:20,689 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:20] "POST /view HTTP/1.1" 200 -
+2024-11-26 13:24:20,699 - INFO - Video feed accessed
+2024-11-26 13:24:20,701 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:20] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-26 13:24:20,705 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:20] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-26 13:24:20,707 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:20] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 13:24:20,808 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:20] "[36mGET /static/images/flood-icon2.png HTTP/1.1[0m" 304 -
+2024-11-26 13:24:20,808 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:20] "GET /data/raspberrydata.txt?timestamp=1732623860736 HTTP/1.1" 200 -
+2024-11-26 13:24:20,813 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:20] "[36mGET /static/images/flood-icon.png HTTP/1.1[0m" 304 -
+2024-11-26 13:24:21,016 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:21] "GET /video_feed HTTP/1.1" 200 -
+2024-11-26 13:24:21,131 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:21] "[36mGET /static/images/icon.png HTTP/1.1[0m" 304 -
+2024-11-26 13:24:26,639 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:26] "GET /data/raspberrydata.txt?timestamp=1732623866635 HTTP/1.1" 200 -
+2024-11-26 13:24:30,977 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:30] "GET /data/raspberrydata.txt?timestamp=1732623870968 HTTP/1.1" 200 -
+2024-11-26 13:24:35,823 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:35] "GET /data/raspberrydata.txt?timestamp=1732623875820 HTTP/1.1" 200 -
+2024-11-26 13:24:41,638 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:41] "GET /data/raspberrydata.txt?timestamp=1732623881635 HTTP/1.1" 200 -
+2024-11-26 13:24:46,640 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:46] "GET /data/raspberrydata.txt?timestamp=1732623886635 HTTP/1.1" 200 -

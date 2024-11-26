@@ -9,8 +9,9 @@ const app = Vue.createApp({
             temperatureData: [],
             humidityData: [],
             dataSource: '/data/raspberrydata.txt',
-            isFetchingData: false,  // Statusvariable, um den Abruf zu überwachen
-            intervalId: null,  // Zum Speichern der Interval-ID
+            isFetchingData: false, // Statusvariable, um den Abruf zu überwachen
+            intervalId: null, // Zum Speichern der Interval-ID
+            showFloodWarning: false // Variable für Flood Warning
         };
     },
     computed: {
@@ -31,15 +32,12 @@ const app = Vue.createApp({
             if (!this.isFetchingData) {
                 console.log("Fetching new data...");
                 this.isFetchingData = true;
-                await this.fetchData();  // Fetch the latest data
-                this.updateChart('temperature');  // Update the temperature chart
-                this.updateChart('humidity');     // Update the humidity chart
-                this.isFetchingData = false;  // Reset the fetching status after the data has been processed
+                await this.fetchData(); // Fetch the latest data
+                this.updateChart('temperature'); // Update the temperature chart
+                this.updateChart('humidity'); // Update the humidity chart
+                this.isFetchingData = false; // Reset the fetching status after the data has been processed
             }
         }, 5000); // 5000 ms = 5 seconds
-    },
-    beforeUnmount() {
-        clearInterval(this.intervalId);  // Clear interval when the component is destroyed
     },
     methods: {
         async fetchData() {
@@ -56,14 +54,19 @@ const app = Vue.createApp({
 
                 parsedData.forEach(entry => {
                     const [dateTime, temperature, humidity, flood] = entry.split('/');
-                    let timeOnly = dateTime.split('-')[1];  // Gets 'hour_minute_second'
+                    let timeOnly = dateTime.split('-')[1]; // Gets 'hour_minute_second'
                     const formattedTime = timeOnly.replace(/_/g, ':');
-                    newLabels.push(formattedTime);  // Use timeOnly as labels
+                    newLabels.push(formattedTime); // Use timeOnly as labels
                     newTemperatureData.push(parseFloat(temperature));
                     newHumidityData.push(parseFloat(humidity));
                 });
 
-                console.log("Parsed Data:", newLabels, newTemperatureData, newHumidityData);
+                const lastEntry = parsedData[parsedData.length - 1];
+                const [, , , flood] = lastEntry.split('/');
+                this.showFloodWarning = parseInt(flood) === 1;
+
+                console.log("Flood Warning Status:", this.showFloodWarning);
+
                 this.labels = newLabels;
                 this.temperatureData = newTemperatureData;
                 this.humidityData = newHumidityData;
@@ -89,7 +92,7 @@ const app = Vue.createApp({
                 options: {
                     responsive: true,
                     animation: {
-                        duration: 0 // Deaktiviert die Animation
+                        duration: 0
                     },
                     scales: {
                         y: {
@@ -109,15 +112,15 @@ const app = Vue.createApp({
             if (chartId === 'temperature') {
                 console.log("Updating temperature chart...");
                 if (this.temperatureChart) {
-                    this.temperatureChart.destroy();  // Zerstören Sie das alte Diagramm
+                    this.temperatureChart.destroy(); // Zerstören Sie das alte Diagramm
                 }
-                this.createChart('temperature', this.temperatureChartType, this.temperatureData, 'rgba(75, 192, 192, 0.2)', 'rgba(75, 192, 192, 1)');  // Neues Diagramm erstellen
+                this.createChart('temperature', this.temperatureChartType, this.temperatureData, 'rgba(75, 192, 192, 0.2)', 'rgba(75, 192, 192, 1)'); // Neues Diagramm erstellen
             } else {
                 console.log("Updating humidity chart...");
                 if (this.humidityChart) {
-                    this.humidityChart.destroy();  // Zerstören Sie das alte Diagramm
+                    this.humidityChart.destroy(); // Zerstören Sie das alte Diagramm
                 }
-                this.createChart('humidity', this.humidityChartType, this.humidityData, 'rgba(75, 192, 192, 0.2)', 'rgba(75, 192, 192, 1)');  // Neues Diagramm erstellen
+                this.createChart('humidity', this.humidityChartType, this.humidityData, 'rgba(75, 192, 192, 0.2)', 'rgba(75, 192, 192, 1)'); // Neues Diagramm erstellen
             }
         }
     }

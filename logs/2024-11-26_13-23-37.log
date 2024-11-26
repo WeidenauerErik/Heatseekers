@@ -1,0 +1,90 @@
+2024-11-26 13:23:37,346 - INFO - Server started, log file: ./logs/2024-11-26_13-23-37.log
+2024-11-26 13:23:37,354 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://10.21.16.131:8001
+2024-11-26 13:23:37,354 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-26 13:23:37,640 - INFO - 127.0.0.1 - - [26/Nov/2024 13:23:37] "GET /data/raspberrydata.txt?timestamp=1732623817634 HTTP/1.1" 200 -
+2024-11-26 13:23:40,035 - INFO - 127.0.0.1 - - [26/Nov/2024 13:23:40] "GET /data/raspberrydata.txt?timestamp=1732623820029 HTTP/1.1" 200 -
+2024-11-26 13:23:42,336 - INFO - 127.0.0.1 - - [26/Nov/2024 13:23:42] "GET /data/raspberrydata.txt?timestamp=1732623822327 HTTP/1.1" 200 -
+2024-11-26 13:23:44,960 - INFO - View page accessed
+2024-11-26 13:23:44,966 - INFO - 127.0.0.1 - - [26/Nov/2024 13:23:44] "POST /view HTTP/1.1" 200 -
+2024-11-26 13:23:44,974 - INFO - Video feed accessed
+2024-11-26 13:23:44,978 - INFO - 127.0.0.1 - - [26/Nov/2024 13:23:44] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-26 13:23:44,979 - INFO - 127.0.0.1 - - [26/Nov/2024 13:23:44] "GET /static/MainPage.js HTTP/1.1" 200 -
+2024-11-26 13:23:44,984 - INFO - 127.0.0.1 - - [26/Nov/2024 13:23:44] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 13:23:45,013 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-26 13:23:45,014 - INFO - 127.0.0.1 - - [26/Nov/2024 13:23:45] "GET /data/raspberrydata.txt?timestamp=1732623825010 HTTP/1.1" 200 -
+2024-11-26 13:23:45,015 - INFO - 127.0.0.1 - - [26/Nov/2024 13:23:45] "[32mGET /static/sounds/alarm.mp3 HTTP/1.1[0m" 302 -
+2024-11-26 13:23:45,016 - INFO - 127.0.0.1 - - [26/Nov/2024 13:23:45] "[36mGET /static/images/flood-icon2.png HTTP/1.1[0m" 304 -
+2024-11-26 13:23:45,030 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-26 13:23:45,037 - INFO - Error page accessed
+2024-11-26 13:23:45,037 - INFO - 127.0.0.1 - - [26/Nov/2024 13:23:45] "[32mGET /static/sounds/alarm.mp3 HTTP/1.1[0m" 302 -
+2024-11-26 13:23:45,038 - INFO - 127.0.0.1 - - [26/Nov/2024 13:23:45] "[36mGET /static/images/flood-icon.png HTTP/1.1[0m" 304 -
+2024-11-26 13:23:45,039 - INFO - 127.0.0.1 - - [26/Nov/2024 13:23:45] "GET /error HTTP/1.1" 200 -
+2024-11-26 13:23:45,040 - INFO - Error page accessed
+2024-11-26 13:23:45,041 - INFO - 127.0.0.1 - - [26/Nov/2024 13:23:45] "GET /error HTTP/1.1" 200 -
+2024-11-26 13:23:46,953 - INFO - 127.0.0.1 - - [26/Nov/2024 13:23:46] "GET /video_feed HTTP/1.1" 200 -
+2024-11-26 13:23:47,074 - INFO - 127.0.0.1 - - [26/Nov/2024 13:23:47] "[36mGET /static/images/icon.png HTTP/1.1[0m" 304 -
+2024-11-26 13:23:50,638 - INFO - 127.0.0.1 - - [26/Nov/2024 13:23:50] "GET /data/raspberrydata.txt?timestamp=1732623830635 HTTP/1.1" 200 -
+2024-11-26 13:23:54,324 - INFO - 127.0.0.1 - - [26/Nov/2024 13:23:54] "GET /data/raspberrydata.txt?timestamp=1732623834318 HTTP/1.1" 200 -
+2024-11-26 13:23:55,638 - INFO - 127.0.0.1 - - [26/Nov/2024 13:23:55] "GET /data/raspberrydata.txt?timestamp=1732623835635 HTTP/1.1" 200 -
+2024-11-26 13:24:00,032 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:00] "GET /data/raspberrydata.txt?timestamp=1732623840030 HTTP/1.1" 200 -
+2024-11-26 13:24:04,157 - INFO - View page accessed
+2024-11-26 13:24:04,158 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:04] "POST /view HTTP/1.1" 200 -
+2024-11-26 13:24:04,165 - INFO - Video feed accessed
+2024-11-26 13:24:04,167 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:04] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-26 13:24:04,169 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:04] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-26 13:24:04,173 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:04] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 13:24:04,201 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:04] "GET /data/raspberrydata.txt?timestamp=1732623844197 HTTP/1.1" 200 -
+2024-11-26 13:24:04,200 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-26 13:24:04,203 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:04] "[32mGET /static/audo/alarm.mp3 HTTP/1.1[0m" 302 -
+2024-11-26 13:24:04,207 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:04] "[36mGET /static/images/flood-icon2.png HTTP/1.1[0m" 304 -
+2024-11-26 13:24:04,207 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-26 13:24:04,208 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:04] "[32mGET /static/audo/alarm.mp3 HTTP/1.1[0m" 302 -
+2024-11-26 13:24:04,209 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:04] "[36mGET /static/images/flood-icon.png HTTP/1.1[0m" 304 -
+2024-11-26 13:24:04,218 - INFO - Error page accessed
+2024-11-26 13:24:04,219 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:04] "GET /error HTTP/1.1" 200 -
+2024-11-26 13:24:04,221 - INFO - Error page accessed
+2024-11-26 13:24:04,222 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:04] "GET /error HTTP/1.1" 200 -
+2024-11-26 13:24:04,253 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:04] "GET /video_feed HTTP/1.1" 200 -
+2024-11-26 13:24:04,362 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:04] "[36mGET /static/images/icon.png HTTP/1.1[0m" 304 -
+2024-11-26 13:24:05,181 - INFO - View page accessed
+2024-11-26 13:24:05,182 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:05] "POST /view HTTP/1.1" 200 -
+2024-11-26 13:24:05,193 - INFO - Video feed accessed
+2024-11-26 13:24:05,194 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:05] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-26 13:24:05,195 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:05] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-26 13:24:05,198 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:05] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 13:24:05,227 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-26 13:24:05,228 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:05] "[32mGET /static/audo/alarm.mp3 HTTP/1.1[0m" 302 -
+2024-11-26 13:24:05,229 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:05] "GET /data/raspberrydata.txt?timestamp=1732623845222 HTTP/1.1" 200 -
+2024-11-26 13:24:05,231 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:05] "[36mGET /static/images/flood-icon2.png HTTP/1.1[0m" 304 -
+2024-11-26 13:24:05,233 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-26 13:24:05,235 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:05] "[32mGET /static/audo/alarm.mp3 HTTP/1.1[0m" 302 -
+2024-11-26 13:24:05,235 - INFO - Error page accessed
+2024-11-26 13:24:05,237 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:05] "GET /error HTTP/1.1" 200 -
+2024-11-26 13:24:05,238 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:05] "[36mGET /static/images/flood-icon.png HTTP/1.1[0m" 304 -
+2024-11-26 13:24:05,245 - INFO - Error page accessed
+2024-11-26 13:24:05,246 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:05] "GET /error HTTP/1.1" 200 -
+2024-11-26 13:24:05,281 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:05] "GET /video_feed HTTP/1.1" 200 -
+2024-11-26 13:24:05,388 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:05] "[36mGET /static/images/icon.png HTTP/1.1[0m" 304 -
+2024-11-26 13:24:06,464 - INFO - View page accessed
+2024-11-26 13:24:06,467 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:06] "POST /view HTTP/1.1" 200 -
+2024-11-26 13:24:06,478 - INFO - Video feed accessed
+2024-11-26 13:24:06,480 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:06] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-26 13:24:06,480 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:06] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-26 13:24:06,483 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:06] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 13:24:06,516 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-26 13:24:06,517 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:06] "[36mGET /static/images/flood-icon2.png HTTP/1.1[0m" 304 -
+2024-11-26 13:24:06,518 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:06] "[32mGET /static/audo/alarm.mp3 HTTP/1.1[0m" 302 -
+2024-11-26 13:24:06,518 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:06] "GET /data/raspberrydata.txt?timestamp=1732623846511 HTTP/1.1" 200 -
+2024-11-26 13:24:06,523 - INFO - Error page accessed
+2024-11-26 13:24:06,524 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-26 13:24:06,524 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:06] "[32mGET /static/audo/alarm.mp3 HTTP/1.1[0m" 302 -
+2024-11-26 13:24:06,525 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:06] "GET /error HTTP/1.1" 200 -
+2024-11-26 13:24:06,611 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:06] "[36mGET /static/images/flood-icon.png HTTP/1.1[0m" 304 -
+2024-11-26 13:24:06,611 - INFO - Error page accessed
+2024-11-26 13:24:06,612 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:06] "GET /error HTTP/1.1" 200 -
+2024-11-26 13:24:06,817 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:06] "GET /video_feed HTTP/1.1" 200 -
+2024-11-26 13:24:06,934 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:06] "[36mGET /static/images/icon.png HTTP/1.1[0m" 304 -
+2024-11-26 13:24:11,638 - INFO - 127.0.0.1 - - [26/Nov/2024 13:24:11] "GET /data/raspberrydata.txt?timestamp=1732623851636 HTTP/1.1" 200 -

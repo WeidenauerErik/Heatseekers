@@ -1,0 +1,23 @@
+2024-11-26 13:55:56,062 - INFO - Server started, log file: ./logs/2024-11-26_13-55-56.log
+2024-11-26 13:55:56,068 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://10.21.16.131:8001
+2024-11-26 13:55:56,069 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-26 13:56:03,044 - INFO - 127.0.0.1 - - [26/Nov/2024 13:56:03] "GET /data/raspberrydata.txt?timestamp=1732625763030 HTTP/1.1" 200 -
+2024-11-26 13:56:53,592 - INFO - 127.0.0.1 - - [26/Nov/2024 13:56:53] "GET /data/raspberrydata.txt?timestamp=1732625813584 HTTP/1.1" 200 -
+2024-11-26 13:57:24,391 - INFO - 127.0.0.1 - - [26/Nov/2024 13:57:24] "GET /data/raspberrydata.txt?timestamp=1732625844386 HTTP/1.1" 200 -
+2024-11-26 13:57:26,082 - INFO - View page accessed
+2024-11-26 13:57:26,088 - INFO - 127.0.0.1 - - [26/Nov/2024 13:57:26] "POST /view HTTP/1.1" 200 -
+2024-11-26 13:57:26,215 - INFO - Video feed accessed
+2024-11-26 13:57:26,217 - INFO - 127.0.0.1 - - [26/Nov/2024 13:57:26] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-26 13:57:26,218 - INFO - 127.0.0.1 - - [26/Nov/2024 13:57:26] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-26 13:57:26,224 - INFO - 127.0.0.1 - - [26/Nov/2024 13:57:26] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 13:57:26,256 - INFO - 127.0.0.1 - - [26/Nov/2024 13:57:26] "[36mGET /static/images/flood-icon2.png HTTP/1.1[0m" 304 -
+2024-11-26 13:57:26,256 - INFO - 127.0.0.1 - - [26/Nov/2024 13:57:26] "GET /data/raspberrydata.txt?timestamp=1732625846251 HTTP/1.1" 200 -
+2024-11-26 13:57:26,363 - INFO - 127.0.0.1 - - [26/Nov/2024 13:57:26] "[36mGET /static/images/flood-icon.png HTTP/1.1[0m" 304 -
+2024-11-26 13:57:26,460 - INFO - 127.0.0.1 - - [26/Nov/2024 13:57:26] "[35m[1mGET /static/audio/alarm.mp3 HTTP/1.1[0m" 206 -
+2024-11-26 13:57:26,463 - INFO - 127.0.0.1 - - [26/Nov/2024 13:57:26] "[35m[1mGET /static/audio/alarm.mp3 HTTP/1.1[0m" 206 -
+2024-11-26 13:57:27,620 - INFO - 127.0.0.1 - - [26/Nov/2024 13:57:27] "GET /video_feed HTTP/1.1" 200 -
+2024-11-26 13:57:31,423 - INFO - 127.0.0.1 - - [26/Nov/2024 13:57:31] "GET /data/raspberrydata.txt?timestamp=1732625851418 HTTP/1.1" 200 -
+2024-11-26 13:57:36,420 - INFO - 127.0.0.1 - - [26/Nov/2024 13:57:36] "GET /data/raspberrydata.txt?timestamp=1732625856417 HTTP/1.1" 200 -

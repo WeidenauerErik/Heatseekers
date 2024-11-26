@@ -1,0 +1,26 @@
+2024-11-26 10:56:12,722 - INFO - Server started, log file: ./logs/2024-11-26_10-56-12.log
+2024-11-26 10:56:12,726 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://10.21.16.131:8001
+2024-11-26 10:56:12,726 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-26 10:56:12,870 - INFO - 127.0.0.1 - - [26/Nov/2024 10:56:12] "GET /data/raspberrydata.txt?timestamp=1732614972866 HTTP/1.1" 200 -
+2024-11-26 10:56:13,992 - INFO - View page accessed
+2024-11-26 10:56:13,999 - INFO - 127.0.0.1 - - [26/Nov/2024 10:56:13] "POST /view HTTP/1.1" 200 -
+2024-11-26 10:56:14,009 - INFO - Video feed accessed
+2024-11-26 10:56:14,012 - INFO - 127.0.0.1 - - [26/Nov/2024 10:56:14] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-26 10:56:14,012 - INFO - 127.0.0.1 - - [26/Nov/2024 10:56:14] "GET /static/MainPage.js HTTP/1.1" 200 -
+2024-11-26 10:56:14,019 - INFO - 127.0.0.1 - - [26/Nov/2024 10:56:14] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 10:56:14,058 - INFO - 127.0.0.1 - - [26/Nov/2024 10:56:14] "GET /data/raspberrydata.txt?timestamp=1732614974049 HTTP/1.1" 200 -
+2024-11-26 10:56:15,394 - INFO - 127.0.0.1 - - [26/Nov/2024 10:56:15] "GET /video_feed HTTP/1.1" 200 -
+2024-11-26 10:56:15,518 - INFO - 127.0.0.1 - - [26/Nov/2024 10:56:15] "[36mGET /static/images/icon.png HTTP/1.1[0m" 304 -
+2024-11-26 10:56:18,164 - INFO - View page accessed
+2024-11-26 10:56:18,166 - INFO - 127.0.0.1 - - [26/Nov/2024 10:56:18] "POST /view HTTP/1.1" 200 -
+2024-11-26 10:56:18,174 - INFO - Video feed accessed
+2024-11-26 10:56:18,175 - INFO - 127.0.0.1 - - [26/Nov/2024 10:56:18] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-26 10:56:18,176 - INFO - 127.0.0.1 - - [26/Nov/2024 10:56:18] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-26 10:56:18,178 - INFO - 127.0.0.1 - - [26/Nov/2024 10:56:18] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 10:56:18,210 - INFO - 127.0.0.1 - - [26/Nov/2024 10:56:18] "GET /data/raspberrydata.txt?timestamp=1732614978206 HTTP/1.1" 200 -
+2024-11-26 10:56:18,279 - INFO - 127.0.0.1 - - [26/Nov/2024 10:56:18] "GET /video_feed HTTP/1.1" 200 -
+2024-11-26 10:56:18,382 - INFO - 127.0.0.1 - - [26/Nov/2024 10:56:18] "[36mGET /static/images/icon.png HTTP/1.1[0m" 304 -
+2024-11-26 10:56:18,845 - INFO - 127.0.0.1 - - [26/Nov/2024 10:56:18] "GET /data/raspberrydata.txt?timestamp=1732614978841 HTTP/1.1" 200 -

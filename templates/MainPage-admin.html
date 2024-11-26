@@ -41,10 +41,16 @@
         </div>
 
         <div class="bottom-right">
-            <p>Additional Information or Controls</p>
+            <template v-if="showFloodWarning">
+                 <h2 class="blinking">Flood Warning</h2>
+                <img class="blinking" src="/static/images/flood-icon.png" alt="Flood Alert" height="250">
+            </template>
+            <template v-else>
+                <h2>No Flood Warning</h2>
+                <img src="/static/images/flood-icon2.png" alt="System Status: Okay" height="250">
+            </template>
         </div>
     </div>
-
     <script src="/static/MainPage.js"></script>
 </div>
 </body>
