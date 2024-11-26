@@ -15,9 +15,17 @@
 <body>
 <div id="app">
     <div class="navbar">
-        <div></div>
         <h1>Heatseekers</h1>
-        <div></div>
+
+        {% if isAdmin == True %}
+        <div class="admin-page-div">
+            <a href="{{ url_for('admin_page')}}" target="_blank">Admin Dashboard</a>
+        </div>
+        {% else %}
+        <div class="admin-page-div">
+            <a href="{{ url_for('admin_page')}}" target="_blank">My Dashboard</a>
+        </div>
+        {% endif %}
     </div>
 
     <div class="container">
@@ -44,7 +52,7 @@
 
         <div class="bottom-right">
             <template v-if="showFloodWarning">
-                 <h2 class="blinking">Flood Warning</h2>
+                <h2 class="blinking">Flood Warning</h2>
                 <img class="blinking" src="/static/images/flood-icon.png" alt="Flood Alert" height="250">
             </template>
             <template v-else>

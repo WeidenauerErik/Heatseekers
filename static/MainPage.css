@@ -34,7 +34,7 @@ body {
     justify-content: space-between;
 }
 
-#admin-page-div {
+.admin-page-div {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -104,8 +104,8 @@ canvas {
 
 #webcam {
     width: 100%;
-    max-width: 500px;
     height: auto;
+    border: none;
     border-radius: 5px;
 }
 

@@ -1,0 +1,133 @@
+2024-11-26 15:18:06,610 - INFO - Server started, log file: ./logs/2024-11-26_15-18-06.log
+2024-11-26 15:18:06,613 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://10.21.16.72:8001
+2024-11-26 15:18:06,613 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-26 15:18:10,069 - INFO - Login page accessed
+2024-11-26 15:18:10,071 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:10] "GET / HTTP/1.1" 200 -
+2024-11-26 15:18:10,112 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:10] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-11-26 15:18:10,195 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:10] "[36mGET /static/images/icon.png HTTP/1.1[0m" 304 -
+2024-11-26 15:18:10,689 - INFO - Login page accessed
+2024-11-26 15:18:10,690 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:10] "GET / HTTP/1.1" 200 -
+2024-11-26 15:18:10,728 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:10] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-11-26 15:18:10,812 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:10] "[36mGET /static/images/icon.png HTTP/1.1[0m" 304 -
+2024-11-26 15:18:12,468 - INFO - Login page accessed
+2024-11-26 15:18:12,468 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:12] "GET / HTTP/1.1" 200 -
+2024-11-26 15:18:12,497 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:12] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-11-26 15:18:12,560 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:12] "[36mGET /static/images/icon.png HTTP/1.1[0m" 304 -
+2024-11-26 15:18:14,791 - INFO - Login page accessed
+2024-11-26 15:18:14,792 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:14] "GET / HTTP/1.1" 200 -
+2024-11-26 15:18:14,829 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:14] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-11-26 15:18:14,893 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:14] "[36mGET /static/images/icon.png HTTP/1.1[0m" 304 -
+2024-11-26 15:18:15,241 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:15] "GET /data/raspberrydata.txt?timestamp=1732630695236 HTTP/1.1" 200 -
+2024-11-26 15:18:15,243 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:15] "GET /data/raspberrydata.txt?timestamp=1732630695236 HTTP/1.1" 200 -
+2024-11-26 15:18:15,254 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:15] "GET /data/raspberrydata.txt?timestamp=1732630695236 HTTP/1.1" 200 -
+2024-11-26 15:18:19,402 - INFO - View page accessed
+2024-11-26 15:18:19,404 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:19] "POST /view HTTP/1.1" 200 -
+2024-11-26 15:18:19,455 - INFO - Video feed accessed
+2024-11-26 15:18:19,456 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:19] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-26 15:18:19,456 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:19] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-26 15:18:19,479 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:19] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 15:18:19,497 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:19] "GET /data/raspberrydata.txt?timestamp=1732630699492 HTTP/1.1" 200 -
+2024-11-26 15:18:19,497 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:19] "[36mGET /static/images/flood-icon2.png HTTP/1.1[0m" 304 -
+2024-11-26 15:18:19,821 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:19] "GET /video_feed HTTP/1.1" 200 -
+2024-11-26 15:18:25,755 - INFO - View page accessed
+2024-11-26 15:18:25,756 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:25] "POST /view HTTP/1.1" 200 -
+2024-11-26 15:18:25,776 - INFO - Video feed accessed
+2024-11-26 15:18:25,777 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:25] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-26 15:18:25,778 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:25] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-26 15:18:25,788 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:25] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 15:18:25,804 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:25] "[36mGET /static/images/flood-icon2.png HTTP/1.1[0m" 304 -
+2024-11-26 15:18:25,810 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:25] "GET /data/raspberrydata.txt?timestamp=1732630705796 HTTP/1.1" 200 -
+2024-11-26 15:18:26,135 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:26] "GET /video_feed HTTP/1.1" 200 -
+2024-11-26 15:18:30,845 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:30] "GET /data/raspberrydata.txt?timestamp=1732630710840 HTTP/1.1" 200 -
+2024-11-26 15:18:35,844 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:35] "GET /data/raspberrydata.txt?timestamp=1732630715840 HTTP/1.1" 200 -
+2024-11-26 15:18:40,856 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:40] "GET /data/raspberrydata.txt?timestamp=1732630720850 HTTP/1.1" 200 -
+2024-11-26 15:18:45,845 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:45] "GET /data/raspberrydata.txt?timestamp=1732630725840 HTTP/1.1" 200 -
+2024-11-26 15:18:50,845 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:50] "GET /data/raspberrydata.txt?timestamp=1732630730840 HTTP/1.1" 200 -
+2024-11-26 15:18:54,070 - INFO - Login page accessed
+2024-11-26 15:18:54,070 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:54] "GET / HTTP/1.1" 200 -
+2024-11-26 15:18:54,094 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:54] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-11-26 15:18:57,463 - INFO - View page accessed
+2024-11-26 15:18:57,463 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:57] "POST /view HTTP/1.1" 200 -
+2024-11-26 15:18:57,510 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:57] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-26 15:18:57,520 - INFO - Video feed accessed
+2024-11-26 15:18:57,534 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:57] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-26 15:18:57,536 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:57] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 15:18:57,564 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:57] "GET /data/raspberrydata.txt?timestamp=1732630737554 HTTP/1.1" 200 -
+2024-11-26 15:18:57,565 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:57] "[36mGET /static/images/flood-icon2.png HTTP/1.1[0m" 304 -
+2024-11-26 15:18:57,882 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:57] "GET /video_feed HTTP/1.1" 200 -
+2024-11-26 15:18:58,829 - INFO - Admin page accessed
+2024-11-26 15:18:58,831 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:58] "GET /admin HTTP/1.1" 200 -
+2024-11-26 15:18:58,857 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:58] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-26 15:18:58,858 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:58] "[36mGET /static/images/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-26 15:18:58,870 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:58] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-26 15:18:59,118 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-26 15:18:59,119 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:59] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2024-11-26 15:18:59,121 - INFO - Error page accessed
+2024-11-26 15:18:59,121 - ERROR - An error occurred: name 'render_template_string' is not defined
+2024-11-26 15:18:59,122 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:59] "[32mGET /error HTTP/1.1[0m" 302 -
+2024-11-26 15:18:59,132 - INFO - Error page accessed
+2024-11-26 15:18:59,132 - ERROR - An error occurred: name 'render_template_string' is not defined
+2024-11-26 15:18:59,133 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:59] "[32mGET /error HTTP/1.1[0m" 302 -
+2024-11-26 15:18:59,137 - INFO - Error page accessed
+2024-11-26 15:18:59,137 - ERROR - An error occurred: name 'render_template_string' is not defined
+2024-11-26 15:18:59,138 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:59] "[32mGET /error HTTP/1.1[0m" 302 -
+2024-11-26 15:18:59,140 - INFO - Error page accessed
+2024-11-26 15:18:59,140 - ERROR - An error occurred: name 'render_template_string' is not defined
+2024-11-26 15:18:59,141 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:59] "[32mGET /error HTTP/1.1[0m" 302 -
+2024-11-26 15:18:59,143 - INFO - Error page accessed
+2024-11-26 15:18:59,143 - ERROR - An error occurred: name 'render_template_string' is not defined
+2024-11-26 15:18:59,144 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:59] "[32mGET /error HTTP/1.1[0m" 302 -
+2024-11-26 15:18:59,146 - INFO - Error page accessed
+2024-11-26 15:18:59,146 - ERROR - An error occurred: name 'render_template_string' is not defined
+2024-11-26 15:18:59,147 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:59] "[32mGET /error HTTP/1.1[0m" 302 -
+2024-11-26 15:18:59,149 - INFO - Error page accessed
+2024-11-26 15:18:59,149 - ERROR - An error occurred: name 'render_template_string' is not defined
+2024-11-26 15:18:59,149 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:59] "[32mGET /error HTTP/1.1[0m" 302 -
+2024-11-26 15:18:59,153 - INFO - Error page accessed
+2024-11-26 15:18:59,153 - ERROR - An error occurred: name 'render_template_string' is not defined
+2024-11-26 15:18:59,153 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:59] "[32mGET /error HTTP/1.1[0m" 302 -
+2024-11-26 15:18:59,155 - INFO - Error page accessed
+2024-11-26 15:18:59,156 - ERROR - An error occurred: name 'render_template_string' is not defined
+2024-11-26 15:18:59,156 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:59] "[32mGET /error HTTP/1.1[0m" 302 -
+2024-11-26 15:18:59,157 - INFO - Error page accessed
+2024-11-26 15:18:59,158 - ERROR - An error occurred: name 'render_template_string' is not defined
+2024-11-26 15:18:59,158 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:59] "[32mGET /error HTTP/1.1[0m" 302 -
+2024-11-26 15:18:59,160 - INFO - Error page accessed
+2024-11-26 15:18:59,160 - ERROR - An error occurred: name 'render_template_string' is not defined
+2024-11-26 15:18:59,160 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:59] "[32mGET /error HTTP/1.1[0m" 302 -
+2024-11-26 15:18:59,162 - INFO - Error page accessed
+2024-11-26 15:18:59,162 - ERROR - An error occurred: name 'render_template_string' is not defined
+2024-11-26 15:18:59,163 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:59] "[32mGET /error HTTP/1.1[0m" 302 -
+2024-11-26 15:18:59,164 - INFO - Error page accessed
+2024-11-26 15:18:59,165 - ERROR - An error occurred: name 'render_template_string' is not defined
+2024-11-26 15:18:59,165 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:59] "[32mGET /error HTTP/1.1[0m" 302 -
+2024-11-26 15:18:59,167 - INFO - Error page accessed
+2024-11-26 15:18:59,167 - ERROR - An error occurred: name 'render_template_string' is not defined
+2024-11-26 15:18:59,167 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:59] "[32mGET /error HTTP/1.1[0m" 302 -
+2024-11-26 15:18:59,170 - INFO - Error page accessed
+2024-11-26 15:18:59,170 - ERROR - An error occurred: name 'render_template_string' is not defined
+2024-11-26 15:18:59,170 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:59] "[32mGET /error HTTP/1.1[0m" 302 -
+2024-11-26 15:18:59,172 - INFO - Error page accessed
+2024-11-26 15:18:59,172 - ERROR - An error occurred: name 'render_template_string' is not defined
+2024-11-26 15:18:59,172 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:59] "[32mGET /error HTTP/1.1[0m" 302 -
+2024-11-26 15:18:59,175 - INFO - Error page accessed
+2024-11-26 15:18:59,175 - ERROR - An error occurred: name 'render_template_string' is not defined
+2024-11-26 15:18:59,175 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:59] "[32mGET /error HTTP/1.1[0m" 302 -
+2024-11-26 15:18:59,178 - INFO - Error page accessed
+2024-11-26 15:18:59,178 - ERROR - An error occurred: name 'render_template_string' is not defined
+2024-11-26 15:18:59,178 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:59] "[32mGET /error HTTP/1.1[0m" 302 -
+2024-11-26 15:18:59,181 - INFO - Error page accessed
+2024-11-26 15:18:59,181 - ERROR - An error occurred: name 'render_template_string' is not defined
+2024-11-26 15:18:59,181 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:59] "[32mGET /error HTTP/1.1[0m" 302 -
+2024-11-26 15:18:59,184 - INFO - Error page accessed
+2024-11-26 15:18:59,184 - ERROR - An error occurred: name 'render_template_string' is not defined
+2024-11-26 15:18:59,185 - INFO - 10.21.16.72 - - [26/Nov/2024 15:18:59] "[32mGET /error HTTP/1.1[0m" 302 -
+2024-11-26 15:19:02,638 - INFO - 10.21.16.72 - - [26/Nov/2024 15:19:02] "GET /data/raspberrydata.txt?timestamp=1732630742632 HTTP/1.1" 200 -
+2024-11-26 15:19:03,901 - INFO - 10.21.16.72 - - [26/Nov/2024 15:19:03] "GET /data/raspberrydata.txt?timestamp=1732630743874 HTTP/1.1" 200 -
+2024-11-26 15:19:04,321 - INFO - 10.21.16.72 - - [26/Nov/2024 15:19:04] "GET /data/raspberrydata.txt?timestamp=1732630744317 HTTP/1.1" 200 -
+2024-11-26 15:19:06,096 - INFO - 10.21.16.72 - - [26/Nov/2024 15:19:06] "GET /data/raspberrydata.txt?timestamp=1732630746079 HTTP/1.1" 200 -
+2024-11-26 15:19:15,243 - INFO - 10.21.16.72 - - [26/Nov/2024 15:19:15] "GET /data/raspberrydata.txt?timestamp=1732630755236 HTTP/1.1" 200 -
+2024-11-26 15:20:15,244 - INFO - 10.21.16.72 - - [26/Nov/2024 15:20:15] "GET /data/raspberrydata.txt?timestamp=1732630815236 HTTP/1.1" 200 -
