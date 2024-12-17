@@ -1,0 +1,57 @@
+2024-12-17 15:43:44,870 - INFO - Server started, log file: ./logs/2024-12-17_15-43-44.log
+2024-12-17 15:43:44,877 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://10.21.16.131:8001
+2024-12-17 15:43:44,877 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-17 15:43:49,004 - INFO - Login page accessed
+2024-12-17 15:43:49,007 - INFO - 127.0.0.1 - - [17/Dec/2024 15:43:49] "GET / HTTP/1.1" 200 -
+2024-12-17 15:43:49,014 - INFO - 127.0.0.1 - - [17/Dec/2024 15:43:49] "[36mGET /static/images/flood-icon.png HTTP/1.1[0m" 304 -
+2024-12-17 15:43:49,018 - INFO - 127.0.0.1 - - [17/Dec/2024 15:43:49] "[36mGET /static/images/flood-icon2.png HTTP/1.1[0m" 304 -
+2024-12-17 15:43:49,019 - INFO - 127.0.0.1 - - [17/Dec/2024 15:43:49] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-12-17 15:43:49,019 - INFO - 127.0.0.1 - - [17/Dec/2024 15:43:49] "GET /static/MainPage.css HTTP/1.1" 200 -
+2024-12-17 15:43:49,019 - INFO - 127.0.0.1 - - [17/Dec/2024 15:43:49] "GET /static/MainPage.js HTTP/1.1" 200 -
+2024-12-17 15:43:50,221 - INFO - 127.0.0.1 - - [17/Dec/2024 15:43:50] "GET /data/raspberrydata.txt?timestamp=1734446630215 HTTP/1.1" 200 -
+2024-12-17 15:43:50,233 - INFO - 127.0.0.1 - - [17/Dec/2024 15:43:50] "GET /data/raspberrydata.txt?timestamp=1734446630228 HTTP/1.1" 200 -
+2024-12-17 15:43:50,259 - INFO - 127.0.0.1 - - [17/Dec/2024 15:43:50] "[36mGET /static/images/flood-icon2.png HTTP/1.1[0m" 304 -
+2024-12-17 15:43:55,221 - INFO - 127.0.0.1 - - [17/Dec/2024 15:43:55] "GET /data/raspberrydata.txt?timestamp=1734446635212 HTTP/1.1" 200 -
+2024-12-17 15:43:59,076 - INFO - Login page accessed
+2024-12-17 15:43:59,077 - INFO - 127.0.0.1 - - [17/Dec/2024 15:43:59] "GET / HTTP/1.1" 200 -
+2024-12-17 15:43:59,079 - INFO - 127.0.0.1 - - [17/Dec/2024 15:43:59] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-12-17 15:43:59,101 - INFO - 127.0.0.1 - - [17/Dec/2024 15:43:59] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-12-17 15:44:02,727 - INFO - User logged in: admin
+2024-12-17 15:44:02,733 - INFO - 127.0.0.1 - - [17/Dec/2024 15:44:02] "POST /view HTTP/1.1" 200 -
+2024-12-17 15:44:02,739 - INFO - Video feed accessed
+2024-12-17 15:44:02,744 - INFO - 127.0.0.1 - - [17/Dec/2024 15:44:02] "GET /static/MainPage.css HTTP/1.1" 200 -
+2024-12-17 15:44:02,744 - INFO - 127.0.0.1 - - [17/Dec/2024 15:44:02] "GET /static/MainPage.js HTTP/1.1" 200 -
+2024-12-17 15:44:02,747 - INFO - 127.0.0.1 - - [17/Dec/2024 15:44:02] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-12-17 15:44:02,767 - INFO - 127.0.0.1 - - [17/Dec/2024 15:44:02] "[36mGET /static/images/flood-icon2.png HTTP/1.1[0m" 304 -
+2024-12-17 15:44:02,767 - INFO - 127.0.0.1 - - [17/Dec/2024 15:44:02] "GET /data/raspberrydata.txt?timestamp=1734446642764 HTTP/1.1" 200 -
+2024-12-17 15:44:04,136 - INFO - 127.0.0.1 - - [17/Dec/2024 15:44:04] "GET /video_feed HTTP/1.1" 200 -
+2024-12-17 15:44:07,800 - INFO - 127.0.0.1 - - [17/Dec/2024 15:44:07] "GET /data/raspberrydata.txt?timestamp=1734446647796 HTTP/1.1" 200 -
+2024-12-17 15:44:12,809 - INFO - 127.0.0.1 - - [17/Dec/2024 15:44:12] "GET /data/raspberrydata.txt?timestamp=1734446652804 HTTP/1.1" 200 -
+2024-12-17 15:44:17,873 - INFO - 127.0.0.1 - - [17/Dec/2024 15:44:17] "GET /data/raspberrydata.txt?timestamp=1734446657867 HTTP/1.1" 200 -
+2024-12-17 15:44:22,871 - INFO - 127.0.0.1 - - [17/Dec/2024 15:44:22] "GET /data/raspberrydata.txt?timestamp=1734446662867 HTTP/1.1" 200 -
+2024-12-17 15:44:26,537 - INFO - Alert emails sent successfully.
+2024-12-17 15:44:26,538 - INFO - 127.0.0.1 - - [17/Dec/2024 15:44:26] "POST /send-alert HTTP/1.1" 200 -
+2024-12-17 15:44:27,892 - INFO - 127.0.0.1 - - [17/Dec/2024 15:44:27] "GET /data/raspberrydata.txt?timestamp=1734446667888 HTTP/1.1" 200 -
+2024-12-17 15:44:27,903 - INFO - Alert skipped due to cooldown period.
+2024-12-17 15:44:27,903 - INFO - 127.0.0.1 - - [17/Dec/2024 15:44:27] "POST /send-alert HTTP/1.1" 200 -
+2024-12-17 15:44:32,993 - INFO - 127.0.0.1 - - [17/Dec/2024 15:44:32] "GET /data/raspberrydata.txt?timestamp=1734446672987 HTTP/1.1" 200 -
+2024-12-17 15:44:33,000 - INFO - Alert skipped due to cooldown period.
+2024-12-17 15:44:33,001 - INFO - 127.0.0.1 - - [17/Dec/2024 15:44:33] "POST /send-alert HTTP/1.1" 200 -
+2024-12-17 15:44:38,182 - INFO - 127.0.0.1 - - [17/Dec/2024 15:44:38] "GET /data/raspberrydata.txt?timestamp=1734446678174 HTTP/1.1" 200 -
+2024-12-17 15:44:38,189 - INFO - Alert skipped due to cooldown period.
+2024-12-17 15:44:38,190 - INFO - 127.0.0.1 - - [17/Dec/2024 15:44:38] "POST /send-alert HTTP/1.1" 200 -
+2024-12-17 15:44:46,152 - INFO - 127.0.0.1 - - [17/Dec/2024 15:44:46] "GET /data/raspberrydata.txt?timestamp=1734446686144 HTTP/1.1" 200 -
+2024-12-17 15:44:46,158 - INFO - Alert skipped due to cooldown period.
+2024-12-17 15:44:46,159 - INFO - 127.0.0.1 - - [17/Dec/2024 15:44:46] "POST /send-alert HTTP/1.1" 200 -
+2024-12-17 15:44:51,891 - INFO - 127.0.0.1 - - [17/Dec/2024 15:44:51] "GET /data/raspberrydata.txt?timestamp=1734446691887 HTTP/1.1" 200 -
+2024-12-17 15:44:51,902 - INFO - Alert skipped due to cooldown period.
+2024-12-17 15:44:51,902 - INFO - 127.0.0.1 - - [17/Dec/2024 15:44:51] "POST /send-alert HTTP/1.1" 200 -
+2024-12-17 15:44:56,914 - INFO - 127.0.0.1 - - [17/Dec/2024 15:44:56] "GET /data/raspberrydata.txt?timestamp=1734446696907 HTTP/1.1" 200 -
+2024-12-17 15:44:56,924 - INFO - Alert skipped due to cooldown period.
+2024-12-17 15:44:56,925 - INFO - 127.0.0.1 - - [17/Dec/2024 15:44:56] "POST /send-alert HTTP/1.1" 200 -
+2024-12-17 15:45:04,746 - INFO - 127.0.0.1 - - [17/Dec/2024 15:45:04] "GET /data/raspberrydata.txt?timestamp=1734446704741 HTTP/1.1" 200 -
+2024-12-17 15:45:04,755 - INFO - Alert skipped due to cooldown period.
+2024-12-17 15:45:04,756 - INFO - 127.0.0.1 - - [17/Dec/2024 15:45:04] "POST /send-alert HTTP/1.1" 200 -

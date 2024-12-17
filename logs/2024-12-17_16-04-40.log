@@ -1,0 +1,7 @@
+2024-12-17 16:04:40,768 - INFO - Server started, log file: ./logs/2024-12-17_16-04-40.log
+2024-12-17 16:04:40,773 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://10.21.16.131:8001
+2024-12-17 16:04:40,773 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-17 16:04:41,567 - INFO - 127.0.0.1 - - [17/Dec/2024 16:04:41] "GET /data/raspberrydata.txt?timestamp=1734447881561 HTTP/1.1" 200 -
