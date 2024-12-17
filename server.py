@@ -1,10 +1,10 @@
 import hashlib
 import secrets
 import smtplib
+import time
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-from email.mime.base import MIMEBase
-from email import encoders
+from email.mime.image import MIMEImage
 
 from flask import Flask, Response, request, redirect, url_for, send_file, render_template, render_template_string, \
     session
@@ -33,6 +33,11 @@ logger.addHandler(file_handler)
 logger.addHandler(console_handler)
 
 app.config['SECRET_KEY'] = 'cisco'
+
+last_temperature_alert_time = 0
+last_humidity_alert_time = 0
+last_flood_alert_time = 0
+EMAIL_COOLDOWN = 300
 
 @app.route('/')
 def index():
@@ -116,16 +121,10 @@ def create_user():
 
     return redirect(url_for('admin_page'))
 
-import smtplib
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
-from email.mime.image import MIMEImage
-
 def send_password_via_email(email, password):
     sender_email = "htlrennweg.heatseekers@gmail.com"
     subject = "Your New Account Password"
 
-    # HTML-Body der E-Mail
     body = f"""
     <html>
       <body>
@@ -160,11 +159,106 @@ def send_password_via_email(email, password):
     try:
         with smtplib.SMTP("smtp.gmail.com", 587) as server:
             server.starttls()
-            server.login(sender_email, "olra pafg dvmk alfv")  # App-spezifisches Passwort
+            server.login(sender_email, "olra pafg dvmk alfv")
             server.sendmail(sender_email, email, msg.as_string())
         print(f"Password email sent to {email}")
     except Exception as e:
         print(f"Failed to send email to {email}: {e}")
+
+@app.route('/send-alert', methods=['POST'])
+def send_alert():
+    global last_temperature_alert_time, last_humidity_alert_time, last_flood_alert_time
+
+    data = request.json
+    temperature = data.get('temperature')
+    humidity = data.get('humidity')
+    flood_status = data.get('flood')
+
+    TEMPERATURE_THRESHOLD = 30
+    HUMIDITY_THRESHOLD = 80
+
+    current_time = time.time()
+
+    users = functions.get_User("data/user.json")
+    recipients = [user['email'] for user in users]
+
+    alert_messages = []
+    alert_subject = []
+
+    if temperature and temperature > TEMPERATURE_THRESHOLD:
+        if current_time - last_temperature_alert_time > EMAIL_COOLDOWN:
+            alert_subject.append("Critical Temperature Alert")
+            alert_messages.append(f"{temperature}°C exceeded the threshold of {TEMPERATURE_THRESHOLD}°C.")
+            last_temperature_alert_time = current_time
+        else:
+            app.logger.info("Temperature alert skipped due to cooldown.")
+
+    if humidity and humidity > HUMIDITY_THRESHOLD:
+        if current_time - last_humidity_alert_time > EMAIL_COOLDOWN:
+            alert_subject.append("Critical Humidity Alert")
+            alert_messages.append(f"{humidity}% exceeded the threshold of {HUMIDITY_THRESHOLD}%.")
+            last_humidity_alert_time = current_time
+        else:
+            app.logger.info("Humidity alert skipped due to cooldown.")
+
+    if flood_status == 1:
+        if current_time - last_flood_alert_time > EMAIL_COOLDOWN:
+            alert_subject.append("Flood Warning")
+            alert_messages.append("Water level has reached critical status!")
+            last_flood_alert_time = current_time
+        else:
+            app.logger.info("Flood alert skipped due to cooldown.")
+
+    if alert_messages:
+        message = "\n".join(alert_messages)
+        subject = "\n".join(alert_subject)
+        for recipient in recipients:
+            send_warning_email(recipient, subject, message)
+        app.logger.info("Alert emails sent successfully.")
+        return {"status": "success", "message": "Alerts sent successfully."}, 200
+    else:
+        return {"status": "ok", "message": "No new critical alerts."}, 200
+
+def send_warning_email(recipient, subject, message):
+
+    sender_email = "htlrennweg.heatseekers@gmail.com"
+    body = f"""
+    <html>
+      <body>
+        <p>Dear Sir or Madam,</p> 
+        <p>{message}</p>
+        <p>Kind regards,<br>
+           HeatSeeker Team<br>
+           HTL Rennweg</p>
+        <img src="cid:logo_image" alt="HeatSeekers Logo" style="width:200px;height:auto;">
+      </body>
+    </html>
+    """
+
+    msg = MIMEMultipart("related")
+    msg['From'] = sender_email
+    msg['To'] = recipient
+    msg['Subject'] = subject
+
+    msg_alternative = MIMEMultipart("alternative")
+    msg.attach(msg_alternative)
+    msg_alternative.attach(MIMEText(body, "html"))
+
+    logo_path = "static/images/icon.png"
+    with open(logo_path, "rb") as img:
+        mime_img = MIMEImage(img.read())
+        mime_img.add_header("Content-ID", "<logo_image>")
+        mime_img.add_header("Content-Disposition", "inline", filename="icon.png")
+        msg.attach(mime_img)
+
+    try:
+        with smtplib.SMTP("smtp.gmail.com", 587) as server:
+            server.starttls()
+            server.login(sender_email, "olra pafg dvmk alfv")
+            server.sendmail(sender_email, recipient, msg.as_string())
+        print(f"Warning email sent to {recipient}")
+    except Exception as e:
+        print(f"Failed to send warning email to {recipient}: {e}")
 
 @app.route('/view', methods=['POST'])
 def view():
