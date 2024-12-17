@@ -53,30 +53,9 @@ def admin_page():
             is_admin = True
             break
 
+    print(users)
     return render_template(
         'AdminPage.html',
-        users=users,
-        current_user_email=current_user_email,
-        isAdmin=is_admin
-    )
-
-@app.route('/UserDashboard')
-def user_page():
-    if 'user_email' not in session:
-        app.logger.info('Unauthorized access to admin page')
-        return redirect(url_for('index'))
-
-    users = functions.get_User("data/user.json")
-    current_user_email = session['user_email']
-
-    is_admin = False
-    for user in users:
-        if user['email'] == current_user_email and user['admin'] == 'true':
-            is_admin = True
-            break
-
-    return render_template(
-        'UserDashboard.html',
         users=users,
         current_user_email=current_user_email,
         isAdmin=is_admin
