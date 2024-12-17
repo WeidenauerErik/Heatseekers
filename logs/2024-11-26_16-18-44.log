@@ -58,3 +58,10 @@
 2024-11-26 16:20:26,462 - INFO - 172.20.10.1 - - [26/Nov/2024 16:20:26] "GET /data/raspberrydata.txt?timestamp=1732634426358 HTTP/1.1" 200 -
 2024-11-26 16:20:31,486 - INFO - 172.20.10.1 - - [26/Nov/2024 16:20:31] "GET /data/raspberrydata.txt?timestamp=1732634431359 HTTP/1.1" 200 -
 2024-11-26 16:20:36,820 - INFO - 172.20.10.1 - - [26/Nov/2024 16:20:36] "GET /data/raspberrydata.txt?timestamp=1732634436360 HTTP/1.1" 200 -
+2024-11-26 16:31:36,977 - INFO - 172.20.10.1 - - [26/Nov/2024 16:31:36] "GET /data/raspberrydata.txt?timestamp=1732635094170 HTTP/1.1" 200 -
+2024-11-26 16:31:36,981 - INFO - 172.20.10.1 - - [26/Nov/2024 16:31:36] "GET /data/raspberrydata.txt?timestamp=1732634438630 HTTP/1.1" 200 -
+2024-11-26 16:31:39,348 - INFO - 172.20.10.1 - - [26/Nov/2024 16:31:39] "GET /data/raspberrydata.txt?timestamp=1732635099169 HTTP/1.1" 200 -
+2024-11-26 16:31:44,462 - INFO - 172.20.10.1 - - [26/Nov/2024 16:31:44] "GET /data/raspberrydata.txt?timestamp=1732635104326 HTTP/1.1" 200 -
+2024-11-26 16:31:45,050 - INFO - 172.20.10.1 - - [26/Nov/2024 16:31:45] "GET /static/images/flood-icon.png HTTP/1.1" 200 -
+2024-11-26 16:31:49,750 - INFO - 172.20.10.1 - - [26/Nov/2024 16:31:49] "GET /data/raspberrydata.txt?timestamp=1732635109659 HTTP/1.1" 200 -
+2024-11-26 16:31:50,527 - INFO - 172.20.10.1 - - [26/Nov/2024 16:31:50] "GET /data/raspberrydata.txt?timestamp=1732635110328 HTTP/1.1" 200 -

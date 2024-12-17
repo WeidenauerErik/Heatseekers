@@ -13,6 +13,20 @@
             "password": "e73b79a0b10f8cdb6ac7dbe4c0a5e25776e1148784b86cf98f7d6719d472af69",
             "admin": "false",
             "firstlogin": "false"
+        },
+        {
+            "id": "3",
+            "email": "erik.weidenauer@gmail.com",
+            "password": "08a841e996781e9e77d30a4e4420a8f501a280b00624e6d1224bf54aaff73eba",
+            "admin": "false",
+            "firstlogin": "false"
+        },
+        {
+            "id": "4",
+            "email": "marina.weidenauer@gmail.com",
+            "password": "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3",
+            "admin": "false",
+            "firstlogin": "false"
         }
     ]
 }

@@ -1,0 +1,30 @@
+2024-11-27 18:49:10,893 - INFO - Server started, log file: ./logs/2024-11-27_18-49-10.log
+2024-11-27 18:49:10,899 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.113:8080
+2024-11-27 18:49:10,899 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-27 18:49:12,748 - INFO - Login page accessed
+2024-11-27 18:49:12,760 - INFO - 192.168.1.113 - - [27/Nov/2024 18:49:12] "GET / HTTP/1.1" 200 -
+2024-11-27 18:49:12,828 - INFO - 192.168.1.113 - - [27/Nov/2024 18:49:12] "GET /static/LoginPage.css HTTP/1.1" 200 -
+2024-11-27 18:49:13,261 - INFO - 192.168.1.113 - - [27/Nov/2024 18:49:13] "GET /static/images/icon.png HTTP/1.1" 200 -
+2024-11-27 18:49:17,641 - INFO - User logged in: admin
+2024-11-27 18:49:17,645 - INFO - 192.168.1.113 - - [27/Nov/2024 18:49:17] "POST /view HTTP/1.1" 200 -
+2024-11-27 18:49:17,721 - INFO - Video feed accessed
+2024-11-27 18:49:17,721 - INFO - 192.168.1.113 - - [27/Nov/2024 18:49:17] "GET /static/MainPage.css HTTP/1.1" 200 -
+2024-11-27 18:49:17,730 - INFO - 192.168.1.113 - - [27/Nov/2024 18:49:17] "GET /static/MainPage.js HTTP/1.1" 200 -
+2024-11-27 18:49:17,739 - INFO - 192.168.1.113 - - [27/Nov/2024 18:49:17] "GET /static/Slider.css HTTP/1.1" 200 -
+2024-11-27 18:49:18,109 - INFO - 192.168.1.113 - - [27/Nov/2024 18:49:18] "GET /video_feed HTTP/1.1" 200 -
+2024-11-27 18:49:18,267 - INFO - 192.168.1.113 - - [27/Nov/2024 18:49:18] "GET /data/raspberrydata.txt?timestamp=1732729758261 HTTP/1.1" 200 -
+2024-11-27 18:49:18,268 - INFO - 192.168.1.113 - - [27/Nov/2024 18:49:18] "GET /static/images/flood-icon2.png HTTP/1.1" 200 -
+2024-11-27 18:49:18,354 - INFO - 192.168.1.113 - - [27/Nov/2024 18:49:18] "GET /static/images/flood-icon.png HTTP/1.1" 200 -
+2024-11-27 18:49:23,382 - INFO - 192.168.1.113 - - [27/Nov/2024 18:49:23] "GET /data/raspberrydata.txt?timestamp=1732729763352 HTTP/1.1" 200 -
+2024-11-27 18:49:25,343 - INFO - 192.168.1.113 - - [27/Nov/2024 18:49:25] "GET /AdminDashboard HTTP/1.1" 200 -
+2024-11-27 18:49:25,427 - INFO - 192.168.1.113 - - [27/Nov/2024 18:49:25] "GET /static/AdminPage.css HTTP/1.1" 200 -
+2024-11-27 18:49:25,427 - INFO - 192.168.1.113 - - [27/Nov/2024 18:49:25] "GET /static/images/delete-icon.svg HTTP/1.1" 200 -
+2024-11-27 18:49:25,455 - INFO - 192.168.1.113 - - [27/Nov/2024 18:49:25] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-27 18:49:25,859 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-27 18:49:25,860 - INFO - 192.168.1.113 - - [27/Nov/2024 18:49:25] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2024-11-27 18:49:25,882 - INFO - Error page accessed
+2024-11-27 18:49:25,886 - INFO - 192.168.1.113 - - [27/Nov/2024 18:49:25] "GET /error HTTP/1.1" 200 -
+2024-11-27 18:49:28,847 - INFO - 192.168.1.113 - - [27/Nov/2024 18:49:28] "GET /data/raspberrydata.txt?timestamp=1732729768783 HTTP/1.1" 200 -

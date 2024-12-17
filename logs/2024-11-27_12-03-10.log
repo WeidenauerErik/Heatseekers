@@ -1,0 +1,110 @@
+2024-11-27 12:03:10,077 - INFO - Server started, log file: ./logs/2024-11-27_12-03-10.log
+2024-11-27 12:03:10,080 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://10.21.16.72:8001
+2024-11-27 12:03:10,080 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-27 12:03:12,414 - INFO - Login page accessed
+2024-11-27 12:03:12,419 - INFO - 10.21.16.72 - - [27/Nov/2024 12:03:12] "GET / HTTP/1.1" 200 -
+2024-11-27 12:03:12,462 - INFO - 10.21.16.72 - - [27/Nov/2024 12:03:12] "GET /static/LoginPage.css HTTP/1.1" 200 -
+2024-11-27 12:03:18,070 - INFO - User logged in: admin
+2024-11-27 12:03:18,073 - INFO - 10.21.16.72 - - [27/Nov/2024 12:03:18] "POST /view HTTP/1.1" 200 -
+2024-11-27 12:03:18,118 - INFO - Video feed accessed
+2024-11-27 12:03:18,119 - INFO - 10.21.16.72 - - [27/Nov/2024 12:03:18] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-27 12:03:18,125 - INFO - 10.21.16.72 - - [27/Nov/2024 12:03:18] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-27 12:03:18,143 - INFO - 10.21.16.72 - - [27/Nov/2024 12:03:18] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-27 12:03:18,168 - INFO - 10.21.16.72 - - [27/Nov/2024 12:03:18] "[36mGET /static/images/flood-icon2.png HTTP/1.1[0m" 304 -
+2024-11-27 12:03:18,169 - INFO - 10.21.16.72 - - [27/Nov/2024 12:03:18] "GET /data/raspberrydata.txt?timestamp=1732705398158 HTTP/1.1" 200 -
+2024-11-27 12:03:18,241 - INFO - 10.21.16.72 - - [27/Nov/2024 12:03:18] "GET /static/images/flood-icon.png HTTP/1.1" 200 -
+2024-11-27 12:03:18,477 - INFO - 10.21.16.72 - - [27/Nov/2024 12:03:18] "GET /video_feed HTTP/1.1" 200 -
+2024-11-27 12:03:23,243 - INFO - 10.21.16.72 - - [27/Nov/2024 12:03:23] "GET /data/raspberrydata.txt?timestamp=1732705403236 HTTP/1.1" 200 -
+2024-11-27 12:03:28,246 - INFO - 10.21.16.72 - - [27/Nov/2024 12:03:28] "GET /data/raspberrydata.txt?timestamp=1732705408238 HTTP/1.1" 200 -
+2024-11-27 12:03:29,887 - INFO - 10.21.16.72 - - [27/Nov/2024 12:03:29] "GET /AdminDashboard HTTP/1.1" 200 -
+2024-11-27 12:03:29,914 - INFO - 10.21.16.72 - - [27/Nov/2024 12:03:29] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-27 12:03:29,917 - INFO - 10.21.16.72 - - [27/Nov/2024 12:03:29] "[36mGET /static/images/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-27 12:03:29,922 - INFO - 10.21.16.72 - - [27/Nov/2024 12:03:29] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-27 12:03:30,161 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-27 12:03:30,162 - INFO - 10.21.16.72 - - [27/Nov/2024 12:03:30] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2024-11-27 12:03:30,166 - INFO - Error page accessed
+2024-11-27 12:03:30,170 - INFO - 10.21.16.72 - - [27/Nov/2024 12:03:30] "GET /error HTTP/1.1" 200 -
+2024-11-27 12:03:33,822 - INFO - 10.21.16.72 - - [27/Nov/2024 12:03:33] "GET /data/raspberrydata.txt?timestamp=1732705413816 HTTP/1.1" 200 -
+2024-11-27 12:03:38,822 - INFO - 10.21.16.72 - - [27/Nov/2024 12:03:38] "GET /data/raspberrydata.txt?timestamp=1732705418816 HTTP/1.1" 200 -
+2024-11-27 12:03:43,820 - INFO - 10.21.16.72 - - [27/Nov/2024 12:03:43] "GET /data/raspberrydata.txt?timestamp=1732705423816 HTTP/1.1" 200 -
+2024-11-27 12:03:49,127 - INFO - Login failed
+2024-11-27 12:03:49,129 - INFO - 10.21.16.72 - - [27/Nov/2024 12:03:49] "POST /view HTTP/1.1" 200 -
+2024-11-27 12:03:49,179 - INFO - 10.21.16.72 - - [27/Nov/2024 12:03:49] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-11-27 12:03:57,359 - INFO - User logged in: admin
+2024-11-27 12:03:57,361 - INFO - 10.21.16.72 - - [27/Nov/2024 12:03:57] "POST /view HTTP/1.1" 200 -
+2024-11-27 12:03:57,407 - INFO - 10.21.16.72 - - [27/Nov/2024 12:03:57] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-27 12:03:57,419 - INFO - Video feed accessed
+2024-11-27 12:03:57,433 - INFO - 10.21.16.72 - - [27/Nov/2024 12:03:57] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-27 12:03:57,438 - INFO - 10.21.16.72 - - [27/Nov/2024 12:03:57] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-27 12:03:57,459 - INFO - 10.21.16.72 - - [27/Nov/2024 12:03:57] "GET /data/raspberrydata.txt?timestamp=1732705437454 HTTP/1.1" 200 -
+2024-11-27 12:03:57,461 - INFO - 10.21.16.72 - - [27/Nov/2024 12:03:57] "[36mGET /static/images/flood-icon2.png HTTP/1.1[0m" 304 -
+2024-11-27 12:03:57,531 - INFO - 10.21.16.72 - - [27/Nov/2024 12:03:57] "[36mGET /static/images/flood-icon.png HTTP/1.1[0m" 304 -
+2024-11-27 12:03:57,780 - INFO - 10.21.16.72 - - [27/Nov/2024 12:03:57] "GET /video_feed HTTP/1.1" 200 -
+2024-11-27 12:03:59,524 - INFO - 10.21.16.72 - - [27/Nov/2024 12:03:59] "GET /AdminDashboard HTTP/1.1" 200 -
+2024-11-27 12:03:59,561 - INFO - 10.21.16.72 - - [27/Nov/2024 12:03:59] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-27 12:03:59,563 - INFO - 10.21.16.72 - - [27/Nov/2024 12:03:59] "[36mGET /static/images/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-27 12:03:59,571 - INFO - 10.21.16.72 - - [27/Nov/2024 12:03:59] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-27 12:03:59,916 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-27 12:03:59,916 - INFO - 10.21.16.72 - - [27/Nov/2024 12:03:59] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2024-11-27 12:03:59,922 - INFO - Error page accessed
+2024-11-27 12:03:59,923 - INFO - 10.21.16.72 - - [27/Nov/2024 12:03:59] "GET /error HTTP/1.1" 200 -
+2024-11-27 12:04:02,823 - INFO - 10.21.16.72 - - [27/Nov/2024 12:04:02] "GET /data/raspberrydata.txt?timestamp=1732705442817 HTTP/1.1" 200 -
+2024-11-27 12:04:07,853 - INFO - 10.21.16.72 - - [27/Nov/2024 12:04:07] "GET /data/raspberrydata.txt?timestamp=1732705447816 HTTP/1.1" 200 -
+2024-11-27 12:04:12,843 - INFO - 10.21.16.72 - - [27/Nov/2024 12:04:12] "GET /data/raspberrydata.txt?timestamp=1732705452816 HTTP/1.1" 200 -
+2024-11-27 12:04:17,823 - INFO - 10.21.16.72 - - [27/Nov/2024 12:04:17] "GET /data/raspberrydata.txt?timestamp=1732705457816 HTTP/1.1" 200 -
+2024-11-27 12:04:22,822 - INFO - 10.21.16.72 - - [27/Nov/2024 12:04:22] "GET /data/raspberrydata.txt?timestamp=1732705462816 HTTP/1.1" 200 -
+2024-11-27 12:04:26,290 - INFO - 10.21.16.72 - - [27/Nov/2024 12:04:26] "[32mPOST /create-user HTTP/1.1[0m" 302 -
+2024-11-27 12:04:26,295 - INFO - 10.21.16.72 - - [27/Nov/2024 12:04:26] "GET /AdminDashboard HTTP/1.1" 200 -
+2024-11-27 12:04:26,334 - INFO - 10.21.16.72 - - [27/Nov/2024 12:04:26] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-27 12:04:26,341 - INFO - 10.21.16.72 - - [27/Nov/2024 12:04:26] "[36mGET /static/images/delete-icon.svg HTTP/1.1[0m" 304 -
+2024-11-27 12:04:26,345 - INFO - 10.21.16.72 - - [27/Nov/2024 12:04:26] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-27 12:04:26,421 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-27 12:04:26,421 - INFO - 10.21.16.72 - - [27/Nov/2024 12:04:26] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2024-11-27 12:04:26,426 - INFO - Error page accessed
+2024-11-27 12:04:26,426 - INFO - 10.21.16.72 - - [27/Nov/2024 12:04:26] "GET /error HTTP/1.1" 200 -
+2024-11-27 12:04:27,821 - INFO - 10.21.16.72 - - [27/Nov/2024 12:04:27] "GET /data/raspberrydata.txt?timestamp=1732705467816 HTTP/1.1" 200 -
+2024-11-27 12:04:32,821 - INFO - 10.21.16.72 - - [27/Nov/2024 12:04:32] "GET /data/raspberrydata.txt?timestamp=1732705472816 HTTP/1.1" 200 -
+2024-11-27 12:04:34,571 - INFO - Login page accessed
+2024-11-27 12:04:34,572 - INFO - 10.21.16.72 - - [27/Nov/2024 12:04:34] "GET / HTTP/1.1" 200 -
+2024-11-27 12:04:34,616 - INFO - 10.21.16.72 - - [27/Nov/2024 12:04:34] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-11-27 12:04:37,820 - INFO - 10.21.16.72 - - [27/Nov/2024 12:04:37] "GET /data/raspberrydata.txt?timestamp=1732705477816 HTTP/1.1" 200 -
+2024-11-27 12:04:42,821 - INFO - 10.21.16.72 - - [27/Nov/2024 12:04:42] "GET /data/raspberrydata.txt?timestamp=1732705482816 HTTP/1.1" 200 -
+2024-11-27 12:04:47,821 - INFO - 10.21.16.72 - - [27/Nov/2024 12:04:47] "GET /data/raspberrydata.txt?timestamp=1732705487816 HTTP/1.1" 200 -
+2024-11-27 12:04:52,821 - INFO - 10.21.16.72 - - [27/Nov/2024 12:04:52] "GET /data/raspberrydata.txt?timestamp=1732705492816 HTTP/1.1" 200 -
+2024-11-27 12:04:57,821 - INFO - 10.21.16.72 - - [27/Nov/2024 12:04:57] "GET /data/raspberrydata.txt?timestamp=1732705497816 HTTP/1.1" 200 -
+2024-11-27 12:05:13,461 - INFO - User logged in: erik.weidenauer@gmail.com
+2024-11-27 12:05:13,463 - INFO - 10.21.16.72 - - [27/Nov/2024 12:05:13] "POST /view HTTP/1.1" 200 -
+2024-11-27 12:05:13,488 - INFO - 10.21.16.72 - - [27/Nov/2024 12:05:13] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-11-27 12:05:21,052 - INFO - Password changed for user: erik.weidenauer@gmail.com
+2024-11-27 12:05:21,053 - INFO - 10.21.16.72 - - [27/Nov/2024 12:05:21] "[32mPOST /change-password HTTP/1.1[0m" 302 -
+2024-11-27 12:05:21,059 - INFO - Login page accessed
+2024-11-27 12:05:21,059 - INFO - 10.21.16.72 - - [27/Nov/2024 12:05:21] "GET / HTTP/1.1" 200 -
+2024-11-27 12:05:21,087 - INFO - 10.21.16.72 - - [27/Nov/2024 12:05:21] "[36mGET /static/LoginPage.css HTTP/1.1[0m" 304 -
+2024-11-27 12:05:26,823 - INFO - 10.21.16.72 - - [27/Nov/2024 12:05:26] "GET /data/raspberrydata.txt?timestamp=1732705526816 HTTP/1.1" 200 -
+2024-11-27 12:05:43,188 - INFO - User logged in: erik.weidenauer@gmail.com
+2024-11-27 12:05:43,191 - INFO - 10.21.16.72 - - [27/Nov/2024 12:05:43] "POST /view HTTP/1.1" 200 -
+2024-11-27 12:05:43,222 - INFO - Video feed accessed
+2024-11-27 12:05:43,223 - INFO - 10.21.16.72 - - [27/Nov/2024 12:05:43] "[36mGET /static/MainPage.css HTTP/1.1[0m" 304 -
+2024-11-27 12:05:43,224 - INFO - 10.21.16.72 - - [27/Nov/2024 12:05:43] "GET /video_feed HTTP/1.1" 200 -
+2024-11-27 12:05:43,227 - INFO - 10.21.16.72 - - [27/Nov/2024 12:05:43] "[36mGET /static/MainPage.js HTTP/1.1[0m" 304 -
+2024-11-27 12:05:43,236 - INFO - 10.21.16.72 - - [27/Nov/2024 12:05:43] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-27 12:05:43,259 - INFO - 10.21.16.72 - - [27/Nov/2024 12:05:43] "GET /data/raspberrydata.txt?timestamp=1732705543248 HTTP/1.1" 200 -
+2024-11-27 12:05:43,260 - INFO - 10.21.16.72 - - [27/Nov/2024 12:05:43] "[36mGET /static/images/flood-icon2.png HTTP/1.1[0m" 304 -
+2024-11-27 12:05:43,312 - INFO - 10.21.16.72 - - [27/Nov/2024 12:05:43] "[36mGET /static/images/flood-icon.png HTTP/1.1[0m" 304 -
+2024-11-27 12:05:48,309 - INFO - 10.21.16.72 - - [27/Nov/2024 12:05:48] "GET /data/raspberrydata.txt?timestamp=1732705548304 HTTP/1.1" 200 -
+2024-11-27 12:05:52,091 - INFO - 10.21.16.72 - - [27/Nov/2024 12:05:52] "GET /UserDashboard HTTP/1.1" 200 -
+2024-11-27 12:05:52,140 - INFO - 10.21.16.72 - - [27/Nov/2024 12:05:52] "[36mGET /static/AdminPage.css HTTP/1.1[0m" 304 -
+2024-11-27 12:05:52,190 - INFO - 10.21.16.72 - - [27/Nov/2024 12:05:52] "[36mGET /static/Slider.css HTTP/1.1[0m" 304 -
+2024-11-27 12:05:52,410 - ERROR - An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-27 12:05:52,411 - INFO - 10.21.16.72 - - [27/Nov/2024 12:05:52] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2024-11-27 12:05:52,427 - INFO - Error page accessed
+2024-11-27 12:05:52,428 - INFO - 10.21.16.72 - - [27/Nov/2024 12:05:52] "GET /error HTTP/1.1" 200 -
+2024-11-27 12:05:53,822 - INFO - 10.21.16.72 - - [27/Nov/2024 12:05:53] "GET /data/raspberrydata.txt?timestamp=1732705553816 HTTP/1.1" 200 -
+2024-11-27 12:05:58,820 - INFO - 10.21.16.72 - - [27/Nov/2024 12:05:58] "GET /data/raspberrydata.txt?timestamp=1732705558816 HTTP/1.1" 200 -
+2024-11-27 12:06:00,380 - INFO - 10.21.16.72 - - [27/Nov/2024 12:06:00] "GET /data/raspberrydata.txt?timestamp=1732705560367 HTTP/1.1" 200 -
+2024-11-27 12:06:02,822 - INFO - 10.21.16.72 - - [27/Nov/2024 12:06:02] "GET /data/raspberrydata.txt?timestamp=1732705562817 HTTP/1.1" 200 -
+2024-11-27 12:06:03,822 - INFO - 10.21.16.72 - - [27/Nov/2024 12:06:03] "GET /data/raspberrydata.txt?timestamp=1732705563816 HTTP/1.1" 200 -
+2024-11-27 12:06:07,522 - INFO - 10.21.16.72 - - [27/Nov/2024 12:06:07] "GET /data/raspberrydata.txt?timestamp=1732705567519 HTTP/1.1" 200 -
