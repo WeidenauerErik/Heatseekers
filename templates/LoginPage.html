@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="/static/LoginPage.css">
     <link rel="icon" href="/static/images/icon.png" type="image/x-icon">
     <title>Heatseekers - Login</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
 <div class="stripe"><p>Welcome to HeatSeekers</p></div>
@@ -32,26 +34,25 @@
     </section>
 </form>
 
-<!-- Passwortänderungs-Popup -->
-{% if show_popup %}
-<div id="CreateUserPopup" style="display:block;">
-    <div class="popup-content">
-        <h2>Change Your Password</h2>
-        <form action="{{ url_for('change_password') }}" method="POST">
-            <div>
-            <input type="hidden" name="email" value="{{ email }}">
-            <label for="new_password">New Password:</label>
-
-                <input type="password" id="new_password" name="new_password" required>
-            </div>
-            <div class="form-buttons">
-                <button type="submit" class="submitButton2">Submit</button>
-            <button type="button" class="cancel-button" onclick="document.getElementById('CreateUserPopup').style.display='none'">Cancel</button>
-            </div>
-        </form>
-    </div>
-</div>
-{% endif %}
-
+<!-- Passwortänderungs-Popup mit SweetAlert -->
+<script>
+    {% if show_popup %}
+        Swal.fire({
+            title: 'Change Your Password',
+            html: `
+                <form id="changePasswordForm" action="{{ url_for('change_password') }}" method="POST">
+                    <input type="hidden" name="email" value="{{ email }}">
+                    <label for="new_password">New Password:</label>
+                    <input type="password" id="new_password" name="new_password" required>
+                </form>
+            `,
+            showCancelButton: true,
+            cancelButtonText: 'Cancel',
+            confirmButtonText: 'Submit',
+            customClass: {confirmButton: 'sweetalert-button'},
+            preConfirm: () => {document.getElementById('changePasswordForm').submit();}
+        });
+    {% endif %}
+</script>
 </body>
 </html>
