@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Page</title>
     <link rel="stylesheet" type="text/css" href="/static/AdminPage.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     <div id="app">
@@ -34,42 +36,53 @@
 
         <!-- Create New User Button -->
         <div class="create-button-container">
-            <button onclick="document.getElementById('CreateUserPopup').style.display='block'" class="create-button">
+            <button id="create-button">
                 Create New User
             </button>
         </div>
 
-        <div id="CreateUserPopup">
-            <h2>Create New User</h2>
-            <form action="/create-user" method="post">
-
-                <div>
-                    <label for="email"></label>
-                    <input type="email" id="email" name="email" required placeholder="EMAIL">
-                </div>
-
-                <div id="checkbox-container">
-                    <p>isAdmin</p>
-                    <label class="switch">
-                        <input type="checkbox" id="admin" name="admin" value="true">
-                        <span class="slider round"></span>
-                    </label>
-                </div>
-
-                <div class="form-buttons">
-                    <button type="submit" class="submit-button">Add User</button>
-                    <button type="button" class="cancel-button" onclick="document.getElementById('CreateUserPopup').style.display='none'">Cancel</button>
-                </div>
-            </form>
-        </div>
-
         <script>
-            window.onclick = function(event) {
-                var popup = document.getElementById('CreateUserPopup');
-                if (event.target == popup) {
-                    popup.style.display = "none";
+            document.getElementById("create-button").addEventListener("click", function () {
+            Swal.fire({
+                title: 'Create new User',
+                html: `
+                <form id="createUserForm" action="/create-user" method="post">
+                    <div id="checkbox-container">
+                        <label for="email"><span>Email:</span></label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div id="checkbox-container">
+                        <p>isAdmin</p>
+                        <label class="switch">
+                            <input type="checkbox" id="admin" name="admin" value="true">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+
+                    <div class="form-buttons">
+                        <button type="submit" class="submit-button">Add User</button>
+                        <button type="button" class="cancel-button" onclick="Swal.close()">Cancel</button>
+                    </div>
+                </form>
+            `,
+                showConfirmButton: false,  // Hide the default confirm button
+                showCancelButton: false,   // Hide the default cancel button
+                focusConfirm: false,       // Prevent focus on the confirm button
+                customClass: {
+                    cancelButton: 'custom-cancel-button',
+                    popup: 'custom-popup',
+                    content: 'custom-content',
+                },
+                willOpen: () => {
+                    // Automatically focus on the email input field
+                    document.getElementById("email").focus();
+                },
+                preConfirm: () => {
+                    document.getElementById("createUserForm").submit();
                 }
-            }
+            });
+        });
         </script>
     </div>
 </body>

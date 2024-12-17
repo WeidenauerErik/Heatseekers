@@ -55,6 +55,7 @@ def admin_page():
             is_admin = True
             break
 
+    print(users)
     return render_template(
         'AdminPage.html',
         users=users,
