@@ -3,6 +3,8 @@ import secrets
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+from email.mime.base import MIMEBase
+from email import encoders
 
 from flask import Flask, Response, request, redirect, url_for, send_file, render_template, render_template_string, \
     session
@@ -38,7 +40,7 @@ def index():
     return render_template("LoginPage.html")
 
 
-@app.route('/AdminDashboard')
+@app.route('/admin')
 def admin_page():
     if 'user_email' not in session:
         app.logger.info('Unauthorized access to admin page')
@@ -55,28 +57,6 @@ def admin_page():
 
     return render_template(
         'AdminPage.html',
-        users=users,
-        current_user_email=current_user_email,
-        isAdmin=is_admin
-    )
-
-@app.route('/UserDashboard')
-def user_page():
-    if 'user_email' not in session:
-        app.logger.info('Unauthorized access to admin page')
-        return redirect(url_for('index'))
-
-    users = functions.get_User("data/user.json")
-    current_user_email = session['user_email']
-
-    is_admin = False
-    for user in users:
-        if user['email'] == current_user_email and user['admin'] == 'true':
-            is_admin = True
-            break
-
-    return render_template(
-        'UserDashboard.html',
         users=users,
         current_user_email=current_user_email,
         isAdmin=is_admin
@@ -136,25 +116,51 @@ def create_user():
 
     return redirect(url_for('admin_page'))
 
+import smtplib
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+from email.mime.image import MIMEImage
+
 def send_password_via_email(email, password):
-    smtp_server = "smtp.gmail.com"
-    smtp_port = 587
     sender_email = "htlrennweg.heatseekers@gmail.com"
-    sender_password = "olra pafg dvmk alfv"
-
     subject = "Your New Account Password"
-    body = f"Hi, \n\nThis is your temporary password: {password}\n\nPlease change it after logging in."
 
-    msg = MIMEMultipart()
+    # HTML-Body der E-Mail
+    body = f"""
+    <html>
+      <body>
+        <p>Dear Sir or Madam,</p>
+        <p>We are providing you with your new account password: <b>{password}</b></p>
+        <p>For security reasons, please make sure to change your password immediately after logging in for the first time.</p>
+        <p>If you have any questions or need further assistance, please do not hesitate to contact us.</p>
+        <p>Kind regards,<br>
+           HeatSeeker<br>
+           HTL Rennweg</p>
+        <img src="cid:logo_image" alt="HeatSeekers Logo" style="width:200px;height:auto;">
+      </body>
+    </html>
+    """
+
+    msg = MIMEMultipart("related")
     msg['From'] = sender_email
     msg['To'] = email
     msg['Subject'] = subject
-    msg.attach(MIMEText(body, 'plain'))
+
+    msg_alternative = MIMEMultipart("alternative")
+    msg.attach(msg_alternative)
+    msg_alternative.attach(MIMEText(body, "html"))
+
+    logo_path = "static/images/icon.png"
+    with open(logo_path, "rb") as img:
+        mime_img = MIMEImage(img.read())
+        mime_img.add_header("Content-ID", "<logo_image>")
+        mime_img.add_header("Content-Disposition", "inline", filename="icon.png")
+        msg.attach(mime_img)
 
     try:
-        with smtplib.SMTP(smtp_server, smtp_port) as server:
+        with smtplib.SMTP("smtp.gmail.com", 587) as server:
             server.starttls()
-            server.login(sender_email, sender_password)
+            server.login(sender_email, "olra pafg dvmk alfv")  # App-spezifisches Passwort
             server.sendmail(sender_email, email, msg.as_string())
         print(f"Password email sent to {email}")
     except Exception as e:
@@ -235,4 +241,4 @@ def handle_exception(e):
 
 if __name__ == '__main__':
     app.logger.info(f'Server started, log file: {log_filename}')
-    app.run(host='0.0.0.0', port=8080, debug=False)
+    app.run(host='0.0.0.0', port=8001, debug=False)
