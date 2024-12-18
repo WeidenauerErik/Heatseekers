@@ -39,6 +39,7 @@ last_humidity_alert_time = 0
 last_flood_alert_time = 0
 EMAIL_COOLDOWN = 300
 
+
 @app.route('/')
 def index():
     app.logger.info('Login page accessed')
@@ -60,7 +61,6 @@ def admin_page():
             is_admin = True
             break
 
-    print(users)
     return render_template(
         'AdminPage.html',
         users=users,
@@ -89,6 +89,7 @@ def delete_user():
     functions.save_User("data/user.json", {"users": users})
     return redirect(url_for('admin_page'))
 
+
 @app.route('/create-user', methods=['POST'])
 def create_user():
     email = request.form.get('email')
@@ -115,22 +116,47 @@ def create_user():
         "firstlogin": "true"
     }
 
-    send_password_via_email(email, random_password)
+    text = f"""
+        <html>
+          <body>
+            <p>Dear Sir or Madam,</p>
+            <p>We are providing you with your new account password: <b>{random_password}</b></p>
+            <p>For security reasons, please make sure to change your password immediately after logging in for the first time.</p>
+            <p>If you have any questions or need further assistance, please do not hesitate to contact us.</p>
+            <p>Kind regards,<br>
+               HeatSeeker<br>
+               HTL Rennweg</p>
+            <img src="cid:logo_image" alt="HeatSeekers Logo" style="width:200px;height:auto;">
+          </body>
+        </html>
+        """
+    send_password_via_email(email, text)
 
     users.append(new_user)
     functions.save_User("data/user.json", {"users": users})
 
     return redirect(url_for('admin_page'))
 
-def send_password_via_email(email, password):
-    sender_email = "htlrennweg.heatseekers@gmail.com"
-    subject = "Your New Account Password"
 
-    body = f"""
+@app.route('/reset-password', methods=['POST'])
+def reset_password():
+    email = request.form.get('email')
+    print(email)
+
+    users = functions.get_User("data/user.json")
+
+    for user in users:
+        if user['email'] == email:
+            random_password = secrets.token_urlsafe(5)
+            hashed_password = hashlib.sha256(random_password.encode()).hexdigest()
+
+            user['password'] = hashed_password
+            user['firstlogin'] = "true"
+            text = f"""
     <html>
       <body>
         <p>Dear Sir or Madam,</p>
-        <p>We are providing you with your new account password: <b>{password}</b></p>
+        <p>This is your new password: <b>{random_password}</b></p>
         <p>For security reasons, please make sure to change your password immediately after logging in for the first time.</p>
         <p>If you have any questions or need further assistance, please do not hesitate to contact us.</p>
         <p>Kind regards,<br>
@@ -140,6 +166,20 @@ def send_password_via_email(email, password):
       </body>
     </html>
     """
+            send_password_via_email(email, text)
+
+            functions.save_User("data/user.json", {"users": users})
+
+            app.logger.info(f"Password for {email} was reset and sent via email.")
+            return redirect(url_for('admin_page'))
+
+    app.logger.info(f"Attempt to reset password for non-existing email: {email}")
+    return redirect(url_for('admin_page'))
+
+
+def send_password_via_email(email, text):
+    sender_email = "htlrennweg.heatseekers@gmail.com"
+    subject = "Your New Account Password"
 
     msg = MIMEMultipart("related")
     msg['From'] = sender_email
@@ -148,7 +188,7 @@ def send_password_via_email(email, password):
 
     msg_alternative = MIMEMultipart("alternative")
     msg.attach(msg_alternative)
-    msg_alternative.attach(MIMEText(body, "html"))
+    msg_alternative.attach(MIMEText(text, "html"))
 
     logo_path = "static/images/icon.png"
     with open(logo_path, "rb") as img:
@@ -162,9 +202,10 @@ def send_password_via_email(email, password):
             server.starttls()
             server.login(sender_email, "olra pafg dvmk alfv")
             server.sendmail(sender_email, email, msg.as_string())
-        print(f"Password email sent to {email}")
+        app.logger.info(f"Password email sent to {email}")
     except Exception as e:
-        print(f"Failed to send email to {email}: {e}")
+        app.logger.info(f"Failed to send email to {email}: {e}")
+
 
 @app.route('/send-alert', methods=['POST'])
 def send_alert():
@@ -220,8 +261,8 @@ def send_alert():
     else:
         return {"status": "ok", "message": "No new critical alerts."}, 200
 
-def send_warning_email(recipient, subject, message):
 
+def send_warning_email(recipient, subject, message):
     sender_email = "htlrennweg.heatseekers@gmail.com"
     body = f"""
     <html>
@@ -257,9 +298,10 @@ def send_warning_email(recipient, subject, message):
             server.starttls()
             server.login(sender_email, "olra pafg dvmk alfv")
             server.sendmail(sender_email, recipient, msg.as_string())
-        print(f"Warning email sent to {recipient}")
+        app.logger.info(f"Warning email sent to {recipient}")
     except Exception as e:
-        print(f"Failed to send warning email to {recipient}: {e}")
+        app.logger.info(f"Failed to send warning email to {recipient}: {e}")
+
 
 @app.route('/view', methods=['POST'])
 def view():
@@ -278,13 +320,15 @@ def view():
             is_admin = tmp['admin'] == 'true'
 
             if tmp.get('firstlogin') == 'true':
-                return render_template_string(functions.read_file("templates/LoginPage.html"), show_popup=True, email=email)
+                return render_template_string(functions.read_file("templates/LoginPage.html"), show_popup=True,
+                                              email=email)
 
             return render_template_string(functions.read_file("templates/MainPage.html"), isAdmin=is_admin)
 
     app.logger.info('Login failed')
     return render_template_string(
         functions.read_file("templates/LoginPage.html") + "<p>Password or email incorrect!</p>")
+
 
 @app.route('/change-password', methods=['POST'])
 def change_password():
@@ -305,6 +349,7 @@ def change_password():
 
     app.logger.error(f"Failed to change password for {email}")
     return redirect(url_for('index'))
+
 
 @app.route('/video_feed')
 def video_feed():

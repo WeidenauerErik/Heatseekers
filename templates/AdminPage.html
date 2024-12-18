@@ -9,12 +9,12 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
-    <div id="app">
-        <div id="navbar">
-            <h1>Admin Dashboard</h1>
-        </div>
+<div id="app">
+    <div id="navbar">
+        <h1>Admin Dashboard</h1>
+    </div>
 
-        <div id="user-container">
+    <div id="user-container">
         {% for tmp in users %}
         <div class="user">
             <div class="user-info">
@@ -22,34 +22,41 @@
                 <p class="admin-status">{{ "Admin" if tmp.admin == "true" else "User" }}</p>
             </div>
 
-            {% if tmp.email != current_user_email %}
-            <form action="/delete-user" method="post">
-                <input type="hidden" value="{{ tmp.id }}" name="id">
-                <button type="submit" class="delete-button">
-                    <img src="/static/images/delete-icon.svg" alt="Delete" />
-                </button>
-            </form>
-            {% endif %}
+            <div class="user-buttons">
+                <form class="reset-form" action="/reset-password" method="post">
+                    <input type="hidden" value="{{ tmp.email }}" name="email">
+                    <button type="button" class="reset-button">Reset Password</button>
+                </form>
+
+                {% if tmp.email != current_user_email %}
+                <form class="edit-form" action="/delete-user" method="post" style="margin-left: 1rem">
+                    <input type="hidden" value="{{ tmp.id }}" name="id">
+                    <button type="button" class="delete-button">
+                        Delete user
+                    </button>
+                </form>
+                {% endif %}
+            </div>
+
+
         </div>
         {% endfor %}
-        </div>
+    </div>
 
-        <!-- Create New User Button -->
-        <div class="create-button-container">
-            <button id="create-button">
-                Create New User
-            </button>
-        </div>
+    <div class="create-button-container">
+        <button id="create-button">
+            Create New User
+        </button>
+    </div>
 
-        <script>
-            document.getElementById("create-button").addEventListener("click", function () {
+    <script>
+        document.getElementById("create-button").addEventListener("click", function () {
             Swal.fire({
-                title: 'Create new User',
+                title: 'Create new user',
                 html: `
                 <form id="createUserForm" action="/create-user" method="post">
                     <div id="checkbox-container">
-                        <label for="email"><span>Email:</span></label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="email" name="email" required placeholder="email">
                     </div>
 
                     <div id="checkbox-container">
@@ -59,31 +66,66 @@
                             <span class="slider round"></span>
                         </label>
                     </div>
-
-                    <div class="form-buttons">
-                        <button type="submit" class="submit-button">Add User</button>
-                        <button type="button" class="cancel-button" onclick="Swal.close()">Cancel</button>
-                    </div>
                 </form>
-            `,
-                showConfirmButton: false,  // Hide the default confirm button
-                showCancelButton: false,   // Hide the default cancel button
-                focusConfirm: false,       // Prevent focus on the confirm button
-                customClass: {
-                    cancelButton: 'custom-cancel-button',
-                    popup: 'custom-popup',
-                    content: 'custom-content',
-                },
-                willOpen: () => {
-                    // Automatically focus on the email input field
-                    document.getElementById("email").focus();
-                },
+                `,
+                showConfirmButton: true,
+                confirmButtonText: 'Create User',
+                showCancelButton: true,
+                cancelButtonText: 'Cancel',
                 preConfirm: () => {
+                    const form = document.getElementById("createUserForm");
+                    if (!form.reportValidity()) {
+                        Swal.showValidationMessage("Please fill out the email field.");
+                        return false;
+                    }
+                }
+            }).then((result) => {
+                if (result.isConfirmed) {
                     document.getElementById("createUserForm").submit();
                 }
             });
         });
-        </script>
-    </div>
+
+        const deleteButtons = document.querySelectorAll(".delete-button");
+
+        deleteButtons.forEach((button) => {
+            button.addEventListener("click", function () {
+                const form = button.closest(".edit-form");
+
+                Swal.fire({
+                    text: "Do you want to delete this user?",
+                    icon: 'question',
+                    showCancelButton: true,
+                    confirmButtonText: 'Yes, delete it!',
+                    cancelButtonText: 'Cancel'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        form.submit();
+                    }
+                });
+            });
+        });
+
+        const resetButtons = document.querySelectorAll(".reset-button");
+
+        resetButtons.forEach((button) => {
+            button.addEventListener("click", function () {
+                const form = button.closest(".reset-form");
+
+                Swal.fire({
+                    text: "Do you want to reset the password for this user?",
+                    icon: 'question',
+                    showCancelButton: true,
+                    confirmButtonText: 'Yes, reset it!',
+                    cancelButtonText: 'Cancel'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        form.submit();
+                    }
+                });
+            });
+        });
+    </script>
+</div>
 </body>
 </html>
