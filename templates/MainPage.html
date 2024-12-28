@@ -16,12 +16,15 @@
 <div id="app">
     <div class="navbar">
         <h1>Heatseekers</h1>
+        <div class="navbar-buttons">
+            {% if isAdmin == True %}
+            <div class="admin-page-div">
+                <a href="{{ url_for('admin_page')}}" target="_blank">Admin Dashboard</a>
+            </div>
+            {% endif %}
 
-        {% if isAdmin == True %}
-        <div class="admin-page-div">
-            <a href="{{ url_for('admin_page')}}" target="_blank">Admin Dashboard</a>
+            <a href="../data/raspberrydata.txt" download="data.txt" style="margin-left: 1rem">Download Data</a>
         </div>
-        {% endif %}
     </div>
 
     <div class="container">

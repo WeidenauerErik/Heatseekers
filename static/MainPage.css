@@ -156,3 +156,8 @@ canvas {
         font-size: 1.5rem;
     }
 }
+
+.navbar-buttons {
+    display: flex;
+    flex-direction: row;
+}

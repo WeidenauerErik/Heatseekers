@@ -52,7 +52,7 @@ const app = Vue.createApp({
                 let floodStatus = 0;
 
                 parsedData.forEach(entry => {
-                    const [dateTime, temperature, humidity, flood] = entry.split('/');
+                    const [dateTime, temperature, humidity, flood] = entry.split(';');
                     const formattedTime = dateTime.split('-')[1].replace(/_/g, ':');
                     newLabels.push(formattedTime);
                     newTemperatureData.push(parseFloat(temperature));
@@ -61,7 +61,7 @@ const app = Vue.createApp({
                 });
 
                 const lastEntry = parsedData[parsedData.length - 1];
-                const [, , , flood] = lastEntry.split('/');
+                const [, , , flood] = lastEntry.split(';');
                 this.showFloodWarning = parseInt(flood) === 1;
 
                 console.log("Flood Warning Status:", this.showFloodWarning);
