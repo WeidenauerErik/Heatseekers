@@ -15,33 +15,33 @@
     </div>
 
     <div id="user-container">
-        {% for tmp in users %}
-        <div class="user">
-            <div class="user-info">
-                <p class="user-email">{{ tmp.email }}</p>
-                <p class="admin-status">{{ "Admin" if tmp.admin == "true" else "User" }}</p>
-            </div>
-
-            <div class="user-buttons">
-                <form class="reset-form" action="/reset-password" method="post">
-                    <input type="hidden" value="{{ tmp.email }}" name="email">
-                    <button type="button" class="reset-button">Reset Password</button>
-                </form>
-
-                {% if tmp.email != current_user_email %}
-                <form class="edit-form" action="/delete-user" method="post" style="margin-left: 1rem">
-                    <input type="hidden" value="{{ tmp.id }}" name="id">
-                    <button type="button" class="delete-button">
-                        Delete user
-                    </button>
-                </form>
-                {% endif %}
-            </div>
-
-
+    {% for tmp in users %}
+    <div class="user">
+        <div class="user-info">
+            <p class="user-email">{{ tmp.email }}</p>
+            <p class="admin-status">{{ "Admin" if tmp.admin == "true" else "User" }}</p>
         </div>
-        {% endfor %}
+
+        <div class="user-buttons">
+            <form class="reset-form" action="/reset-password" method="post">
+                <input type="hidden" value="{{ tmp.email }}" name="email">
+                <button type="button" class="reset-button">
+                    <img src="/static/images/edit-icon.svg" alt="Reset Password" width="24" height="24">
+                </button>
+            </form>
+
+            {% if tmp.email != current_user_email %}
+            <form class="edit-form" action="/delete-user" method="post" style="margin-left: 1rem">
+                <input type="hidden" value="{{ tmp.id }}" name="id">
+                <button type="button" class="delete-button">
+                    <img src="/static/images/delete-icon.svg" alt="Delete User" width="24" height="24">
+                </button>
+            </form>
+            {% endif %}
+        </div>
     </div>
+    {% endfor %}
+</div>
 
     <div class="create-button-container">
         <button id="create-button">

@@ -107,15 +107,9 @@ body {
 }
 
 #user-container .user form button {
-    background-color: #1F4959;
-    color: white;
-    font-size: 1.2em;
-    padding: 10px 20px;
+    background:none;
+    padding: 10px 10px;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s, transform 0.2s;
 }
 
 #user-container .user form button img {
@@ -214,26 +208,14 @@ body {
     margin-top: 20px;
 }
 .submit-button, .cancel-button {
-    background-color: #1F4959;
-    color: white;
     border: none;
     padding: 8px 16px;
-    border-radius: 5px;
     cursor: pointer;
     height: 3rem;
     font-size: 1rem;
-    transition: background-color 0.3s, transform 0.2s;
     width: 10rem;
 }
 
-.submit-button:hover, .cancel-button:hover {
-    background-color: #2a6a81;
-    transform: scale(1.05);
-}
-
-.submit-button:active, .cancel-button:active {
-    transform: scale(1);
-}
 
 #checkbox-container {
     margin-top: 1rem;
