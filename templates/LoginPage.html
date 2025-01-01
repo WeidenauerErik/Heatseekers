@@ -34,24 +34,46 @@
     </section>
 </form>
 
-<!-- Passwortänderungs-Popup mit SweetAlert -->
 <script>
     {% if show_popup %}
-        Swal.fire({
-            title: 'Change Your Password',
-            html: `
-                <form id="changePasswordForm" action="{{ url_for('change_password') }}" method="POST">
-                    <input type="hidden" name="email" value="{{ email }}">
+    Swal.fire({
+        title: 'Change Your Password',
+        html: `
+            <form id="changePasswordForm" action="{{ url_for('change_password') }}" method="POST">
+                <input type="hidden" name="email" value="{{ email }}">
+
+                <div style="margin-bottom: 1em;">
                     <label for="new_password">New Password:</label>
-                    <input type="password" id="new_password" name="new_password" required>
-                </form>
-            `,
-            showCancelButton: true,
-            cancelButtonText: 'Cancel',
-            confirmButtonText: 'Submit',
-            customClass: {confirmButton: 'sweetalert-button'},
-            preConfirm: () => {document.getElementById('changePasswordForm').submit();}
-        });
+                    <input type="password" id="new_password" name="new_password" class="swal2-input" required>
+                </div>
+
+                <div style="margin-bottom: 1em;">
+                    <label for="confirm_password">Confirm New Password:</label>
+                    <input type="password" id="confirm_password" name="confirm_password" class="swal2-input" required>
+                </div>
+            </form>
+        `,
+        showCancelButton: true,
+        cancelButtonText: 'Cancel',
+        confirmButtonText: 'Submit',
+        customClass: { confirmButton: 'sweetalert-button' },
+        preConfirm: () => {
+            const newPassword = Swal.getPopup().querySelector('#new_password').value;
+            const confirmPassword = Swal.getPopup().querySelector('#confirm_password').value;
+
+            if (!newPassword || !confirmPassword) {
+                Swal.showValidationMessage('Please fill in both password fields.');
+                return false;
+            }
+
+            if (newPassword !== confirmPassword) {
+                Swal.showValidationMessage('Passwords do not match. Please try again.');
+                return false;
+            }
+
+            document.getElementById('changePasswordForm').submit();
+        }
+    });
     {% endif %}
 </script>
 </body>
