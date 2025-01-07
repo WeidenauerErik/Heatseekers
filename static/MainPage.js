@@ -102,7 +102,6 @@ const app = Vue.createApp({
                     '1 Minute': 13, // 13 Einträge pro Minute (5-Sekunden-Intervalle)
                     '1 Stunde': 13 * 60, // 13 Einträge pro Minute * 60 Minuten
                     '1 Tag': 13 * 60 * 24, // 13 Einträge pro Minute * 60 Minuten * 24 Stunden
-                    '1 Woche': 13 * 60 * 24 * 7 // 13 Einträge pro Minute * 60 Minuten * 24 Stunden * 7 Tage
                 };
 
                 const numberOfEntries = timeMap[this.selectedTimeRange] || this.labels.length;
