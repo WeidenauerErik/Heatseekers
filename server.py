@@ -216,7 +216,7 @@ def send_alert():
     humidity = data.get('humidity')
     flood_status = data.get('flood')
 
-    TEMPERATURE_THRESHOLD = 30
+    TEMPERATURE_THRESHOLD = 40
     HUMIDITY_THRESHOLD = 80
 
     current_time = time.time()

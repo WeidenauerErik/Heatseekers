@@ -16,18 +16,23 @@
 <div id="app">
     <div class="navbar">
         <h1>Heatseekers</h1>
+        <select v-model="selectedTimeRange">
+            <option value="1 Minute">Minute</option>
+            <option value="1 Stunde">Stunde</option>
+            <option value="1 Tag">Tag</option>
+            <option value="1 Woche">Woche</option>
+        </select>
         <div class="navbar-buttons">
             {% if isAdmin == True %}
             <div class="admin-page-div">
                 <a href="{{ url_for('admin_page')}}" target="_blank">Admin Dashboard</a>
             </div>
             {% endif %}
-
             <a href="../data/raspberrydata.txt" download="data.txt" style="margin-left: 1rem">Download Data</a>
         </div>
     </div>
-
     <div class="container">
+
         <div class="top-left">
             <div class="toggle-container">
                 <label class="switch">
@@ -67,5 +72,4 @@
     <script src="/static/MainPage.js"></script>
 </div>
 </body>
-
 </html>
