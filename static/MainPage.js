@@ -136,7 +136,7 @@ const app = Vue.createApp({
                     },
                     plugins: {
                         tooltip: {
-                            enabled: true
+                            enabled: false
                         }
                     },
                     scales: {
