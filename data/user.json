@@ -8,13 +8,6 @@
             "firstlogin": "false"
         },
         {
-            "id": "5",
-            "email": "erik.weidenauer@gmail.com",
-            "password": "4ef98dfc5a39e85e7368706a35280878d23f46e90a59214fd04bb19942ccb1e5",
-            "admin": "false",
-            "firstlogin": "true"
-        },
-        {
             "id": "7",
             "email": "0141@htl.rennweg.at",
             "password": "db7acaf04260685ba9c91a498c1f791adbaa6478b7f879e7c06f19745e95a066",
@@ -27,6 +20,13 @@
             "password": "e73b79a0b10f8cdb6ac7dbe4c0a5e25776e1148784b86cf98f7d6719d472af69",
             "admin": "false",
             "firstlogin": "false"
+        },
+        {
+            "id": "9",
+            "email": "erik.weidenauer@gmail.com",
+            "password": "22e4d4cf21eade21219c7bcfee48da3270b9907935a3fecedd7ef63a0b8634df",
+            "admin": "true",
+            "firstlogin": "true"
         }
     ]
 }

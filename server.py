@@ -2,15 +2,19 @@ import hashlib
 import secrets
 import smtplib
 import time
+
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.image import MIMEImage
 
+from datetime import datetime
+
 from flask import Flask, Response, request, redirect, url_for, send_file, render_template, render_template_string, \
     session
+
 import logging
-from datetime import datetime
 import functions
+import variabels
 
 app = Flask(__name__)
 app.config['DEBUG'] = True
@@ -33,11 +37,6 @@ logger.addHandler(file_handler)
 logger.addHandler(console_handler)
 
 app.config['SECRET_KEY'] = 'cisco'
-
-last_temperature_alert_time = 0
-last_humidity_alert_time = 0
-last_flood_alert_time = 0
-EMAIL_COOLDOWN = 300
 
 
 @app.route('/')
@@ -115,23 +114,11 @@ def create_user():
         "admin": str(admin).lower(),
         "firstlogin": "true"
     }
-
-    text = f"""
-        <html>
-          <body>
-            <p>Dear Sir or Madam,</p>
-            <p>We are providing you with your new account password: <b>{random_password}</b></p>
-            <p>For security reasons, please make sure to change your password immediately after logging in for the first time.</p>
-            <p>If you have any questions or need further assistance, please do not hesitate to contact us.</p>
-            <p>Kind regards,<br>
-               HeatSeeker<br>
-               HTL Rennweg</p>
-            <img src="cid:logo_image" alt="HeatSeekers Logo" style="width:200px;height:auto;">
-          </body>
-        </html>
-        """
-    send_password_via_email(email, text)
-
+    try:
+        functions.send_email(email, variabels.create_user_password_text.replace("random_password", random_password))
+        app.logger.info(f"Password email sent to {email}")
+    except Exception as e:
+        app.logger.info(f"Failed to send email to {email}: {e}")
     users.append(new_user)
     functions.save_User("data/user.json", {"users": users})
 
@@ -141,8 +128,6 @@ def create_user():
 @app.route('/reset-password', methods=['POST'])
 def reset_password():
     email = request.form.get('email')
-    print(email)
-
     users = functions.get_User("data/user.json")
 
     for user in users:
@@ -152,22 +137,12 @@ def reset_password():
 
             user['password'] = hashed_password
             user['firstlogin'] = "true"
-            text = f"""
-    <html>
-      <body>
-        <p>Dear Sir or Madam,</p>
-        <p>This is your new password: <b>{random_password}</b></p>
-        <p>For security reasons, please make sure to change your password immediately after logging in for the first time.</p>
-        <p>If you have any questions or need further assistance, please do not hesitate to contact us.</p>
-        <p>Kind regards,<br>
-           HeatSeeker<br>
-           HTL Rennweg</p>
-        <img src="cid:logo_image" alt="HeatSeekers Logo" style="width:200px;height:auto;">
-      </body>
-    </html>
-    """
-            send_password_via_email(email, text)
 
+            try:
+                functions.send_email(email,variabels.reset_password_text.replace("random_password", random_password))
+                app.logger.info(f"Password email sent to {email}")
+            except Exception as e:
+                app.logger.info(f"Failed to send email to {email}: {e}")
             functions.save_User("data/user.json", {"users": users})
 
             app.logger.info(f"Password for {email} was reset and sent via email.")
@@ -175,36 +150,6 @@ def reset_password():
 
     app.logger.info(f"Attempt to reset password for non-existing email: {email}")
     return redirect(url_for('admin_page'))
-
-
-def send_password_via_email(email, text):
-    sender_email = "htlrennweg.heatseekers@gmail.com"
-    subject = "Your New Account Password"
-
-    msg = MIMEMultipart("related")
-    msg['From'] = sender_email
-    msg['To'] = email
-    msg['Subject'] = subject
-
-    msg_alternative = MIMEMultipart("alternative")
-    msg.attach(msg_alternative)
-    msg_alternative.attach(MIMEText(text, "html"))
-
-    logo_path = "static/images/icon.png"
-    with open(logo_path, "rb") as img:
-        mime_img = MIMEImage(img.read())
-        mime_img.add_header("Content-ID", "<logo_image>")
-        mime_img.add_header("Content-Disposition", "inline", filename="icon.png")
-        msg.attach(mime_img)
-
-    try:
-        with smtplib.SMTP("smtp.gmail.com", 587) as server:
-            server.starttls()
-            server.login(sender_email, "olra pafg dvmk alfv")
-            server.sendmail(sender_email, email, msg.as_string())
-        app.logger.info(f"Password email sent to {email}")
-    except Exception as e:
-        app.logger.info(f"Failed to send email to {email}: {e}")
 
 
 @app.route('/send-alert', methods=['POST'])
@@ -228,7 +173,7 @@ def send_alert():
     alert_subject = []
 
     if temperature and temperature > TEMPERATURE_THRESHOLD:
-        if current_time - last_temperature_alert_time > EMAIL_COOLDOWN:
+        if current_time - last_temperature_alert_time > variabels.EMAIL_COOLDOWN:
             alert_subject.append("Critical Temperature Alert")
             alert_messages.append(f"{temperature}°C exceeded the threshold of {TEMPERATURE_THRESHOLD}°C.")
             last_temperature_alert_time = current_time
@@ -236,7 +181,7 @@ def send_alert():
             app.logger.info("Temperature alert skipped due to cooldown.")
 
     if humidity and humidity > HUMIDITY_THRESHOLD:
-        if current_time - last_humidity_alert_time > EMAIL_COOLDOWN:
+        if current_time - last_humidity_alert_time > variabels.EMAIL_COOLDOWN:
             alert_subject.append("Critical Humidity Alert")
             alert_messages.append(f"{humidity}% exceeded the threshold of {HUMIDITY_THRESHOLD}%.")
             last_humidity_alert_time = current_time
@@ -244,7 +189,7 @@ def send_alert():
             app.logger.info("Humidity alert skipped due to cooldown.")
 
     if flood_status == 1:
-        if current_time - last_flood_alert_time > EMAIL_COOLDOWN:
+        if current_time - last_flood_alert_time > variabels.EMAIL_COOLDOWN:
             alert_subject.append("Flood Warning")
             alert_messages.append("Water level has reached critical status!")
             last_flood_alert_time = current_time
